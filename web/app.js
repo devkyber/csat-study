@@ -1,84 +1,204 @@
 import {marked} from './vendor/marked.esm.js';
-const $=s=>document.querySelector(s);
-const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const subjects={korean:{name:'국어',color:'#725492',desc:'독서의 관계, 문학의 근거, 선지의 범위를 읽는 법'},math:{name:'수학',color:'#365c91',desc:'조건에서 발상으로, 식과 그래프에서 풀이로'},english:{name:'영어',color:'#916537',desc:'글의 중심과 연결을 잡고 선택을 점검하는 법'},physics:{name:'물리학Ⅰ',color:'#237c81',desc:'계와 방향을 정하고 관계식으로 비교하는 법'},earth:{name:'지구과학Ⅰ',color:'#59774a',desc:'자료의 기준을 잡고 개념으로 추론하는 법'},study:{name:'공부하는 법',color:'#98605d',desc:'오답 분석, 인강 활용, 계획과 실전의 연결'}};
-const issues=[['조건을 놓쳤을 때','조건'],['비교 기준이 헷갈릴 때','비교'],['선지 판단이 흔들릴 때','선지'],['발상이 떠오르지 않을 때','발상'],['계산이 자꾸 꼬일 때','계산'],['복습이 남지 않을 때','복습']];
-let articles=[],exams=[],manifest={},references={},lastRoute='';
-let saved=readLocal('csat-saved',[]),recent=readLocal('csat-recent',[]);
-function readLocal(k,fallback){try{return JSON.parse(localStorage.getItem(k))??fallback}catch{return fallback}}
-function writeLocal(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch{return false}}
-function notify(s){$('#toast').textContent=s;$('#toast').classList.add('show');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>$('#toast').classList.remove('show'),2200)}
-function link(url,label,cls=''){return `<a class="${cls}" href="${escape(url)}" target="_blank" rel="noopener noreferrer">${label}</a>`}
-function subjectTabs(current=''){return `<div class="chip-list subject-tabs">${Object.entries(subjects).map(([k,s])=>`<a href="#/subject/${k}" class="chip ${k===current?'selected':''}">${s.name}</a>`).join('')}</div>`}
-function articleRow(a,withSubject=false){return `<a class="article-row" href="#/read/${a.id}">${withSubject?`<small>${subjects[a.subject].name} / ${escape(a.category)}</small>`:''}<h3>${escape(a.title)}</h3><p>${escape(a.summary)}</p></a>`}
-function group(items,key){return Object.groupBy(items,a=>a[key])}
-function home(){
-  const recently=recent.map(id=>articles.find(a=>a.id===id)).filter(Boolean).slice(0,3);
-  return `<div class="page"><section class="intro"><div><h1>막힌 지점에서 다시 읽는<br>수능 판단 노트</h1><p>조건을 놓쳤을 때, 개념을 적용하지 못했을 때.<br>실제 문제풀이에서 모은 강령과 분석을 찾아 읽고<br>다음 문제에서 쓸 판단으로 가져가세요.</p><button class="intro-search" data-action="search"><span>노트에서 찾아보기</span><span>단원 · 실수 · 기출 코드</span><span aria-hidden="true">⌕</span></button></div><aside class="reading-note"><strong>한 번에 모두 읽지 않아도 됩니다.</strong><p>지금 풀던 문제와 연결되는 글부터 읽으세요.<br>판단의 이유를 확인하고, 관련 기출에서<br>같은 생각을 직접 해보는 것이 이 노트의 사용법입니다.</p></aside></section>
-  <section><div class="section-top"><h2>과목별로 읽기</h2><span>강령과 분석을 한곳에</span></div><div class="subject-grid">${Object.entries(subjects).map(([k,s])=>`<a class="subject-entry" href="#/subject/${k}" style="--subject:${s.color}"><span class="subject-stem"></span><div><h3>${s.name}</h3><p>${s.desc}</p></div><span class="count">${articles.filter(a=>a.subject===k).length}개 글</span></a>`).join('')}</div></section>
-  <section><div class="section-top"><h2>실수에서 찾아보기</h2></div><div class="chip-list">${issues.map(([label,q])=>`<a class="chip" href="#/search?q=${encodeURIComponent(q)}">${label}</a>`).join('')}</div></section>
-  ${recently.length?`<section><div class="section-top"><h2>이어서 읽기</h2><span>이 기기에 저장된 기록</span></div><div class="article-list">${recently.map(a=>articleRow(a,true)).join('')}</div></section>`:''}
-  <a class="link-row" href="#/exams"><div><h3>필요한 기출을 바로 찾으세요.</h3><p>국어·수학·영어·물리학Ⅰ·지구과학Ⅰ. 평가원 수능과 모의평가의 공식 문제·정답 자료.</p></div><span class="button">기출 자료실 열기</span></a></div>`;
+import {subjects, escape, icon, external as link, decayFigure} from './ui.js';
+import {createArchive} from './archive.js';
+import {insertExamples, openQuestionImage} from './examples.js';
+
+const $ = selector => document.querySelector(selector);
+const issues = [['조건을 놓쳤을 때','조건'],['비교 기준이 헷갈릴 때','비교'],['선지 둘 중 고민될 때','선지'],['풀이가 떠오르지 않을 때','발상'],['계산이 꼬일 때','계산'],['복습할 때','복습']];
+let articles=[], exams=[], manifest={}, references={}, examples=[], archive;
+let currentRoute='', currentBase='', restoreScroll=false;
+const scrollPositions=new Map();
+let saved=readLocal('csat-saved',[]), recent=readLocal('csat-recent',[]);
+
+function readLocal(key, fallback) {
+  try {const value=JSON.parse(localStorage.getItem(key)); return Array.isArray(value) ? value.filter(x => typeof x === 'string') : fallback;} catch {return fallback;}
 }
-function subjectPage(id){const s=subjects[id];if(!s)return notFound();const items=articles.filter(a=>a.subject===id);return `<div class="page" style="--subject:${s.color}"><div class="crumb"><a href="#/">노트 읽기</a><span>/</span><span>${s.name}</span></div><h1>${s.name}</h1><p class="page-description">${s.desc}</p>${subjectTabs(id)}${Object.entries(group(items,'category')).map(([category,items])=>`<section class="category-section"><h2>${escape(category)}</h2><div class="article-list">${items.map(a=>articleRow(a)).join('')}</div></section>`).join('')}</div>`}
-function markdown(source){const math=[];source=source.replace(/\$\$[\s\S]*?\$\$|\$(?!\s)[^$\n]+?\$|\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\)/g,m=>{const i=math.push(m)-1;return `MATHSLOT${i}END`});source=source.replace(/<([가-힣][^<>\n]{0,30})>/g,(_,s)=>'&lt;'+s+'&gt;');let html=marked.parse(source,{breaks:false,gfm:true});html=html.replace(/MATHSLOT(\d+)END/g,(_,i)=>escape(math[+i]));return window.DOMPurify.sanitize(html)}
-function parseRef(raw,subject,articleId=''){
-  const verified=references[articleId+':'+raw]||references[subject+':'+raw]||references[raw];
-  if(verified)return {...verified,raw};
+function writeLocal(key, value) {
+  try {localStorage.setItem(key,JSON.stringify(value)); return true;} catch {return false;}
+}
+function notify(message) {
+  $('#toast').textContent=message;
+  $('#toast').classList.add('show');
+  clearTimeout(window.toastTimer);
+  window.toastTimer=setTimeout(() => $('#toast').classList.remove('show'),2400);
+}
+function group(items,key) {return Object.groupBy(items,item => item[key]);}
+function subjectTabs(current='') {
+  return `<nav class="chip-list subject-tabs" aria-label="과목 선택">${Object.entries(subjects).map(([key,s]) => `<a href="#/subject/${key}" class="chip ${key === current ? 'selected' : ''}" ${key === current ? 'aria-current="page"' : ''}>${s.name}</a>`).join('')}</nav>`;
+}
+function articleRow(article, withSubject=false) {
+  return `<a class="article-row" href="#/read/${article.id}">${withSubject ? `<small>${subjects[article.subject].name} / ${escape(article.category)}</small>` : ''}<h3>${escape(article.title)}</h3><p>${escape(article.summary)}</p>${icon('arrow')}</a>`;
+}
+function home() {
+  const recently=recent.map(id => articles.find(a => a.id === id)).filter(Boolean).slice(0,3);
+  return `<div class="page">
+    <section class="intro"><div><h1>배운 개념을<br>문제에 쓰는 법.</h1><p>문제를 풀며 적어 둔 생각과 공부 팁을 모았습니다.<br>어디서 막혔는지 짚고, 실제 기출에 적용해 보세요.</p><button class="intro-search" data-action="search">${icon('search')}<span>단원이나 막힌 부분을 검색하세요</span>${icon('arrow')}</button></div>${decayFigure()}</section>
+    <section><div class="section-top"><h2>과목별로 읽기</h2><span>강령부터 문항 분석까지</span></div><div class="subject-grid">${Object.entries(subjects).map(([key,s]) => {const items=articles.filter(a => a.subject === key); return `<a class="subject-entry" href="#/subject/${key}">${icon(key)}<div><h3>${s.name}</h3><p>${s.desc}</p><span class="category-preview">${Object.keys(group(items,'category')).slice(0,4).map(escape).join(' / ')}</span></div><span class="count">${items.length}개 글</span></a>`;}).join('')}</div></section>
+    <section><div class="section-top"><h2>이럴 때 찾아보세요</h2></div><div class="chip-list">${issues.map(([label,q]) => `<a class="chip" href="#/search?q=${encodeURIComponent(q)}">${label}</a>`).join('')}</div></section>
+    ${recently.length ? `<section><div class="section-top"><h2>이어서 읽기</h2><span>최근 읽은 글</span></div><div class="article-list">${recently.map(a => articleRow(a,true)).join('')}</div></section>` : ''}
+    <a class="link-row" href="#/exams"><div><h3>문제지를 펼쳐 놓고 읽으세요.</h3><p>과목과 학년도를 고르면 평가원 기출 PDF를 바로 열 수 있습니다.</p></div><span class="button primary">기출 PDF 찾기 ${icon('arrow')}</span></a>
+  </div>`;
+}
+function subjectPage(id) {
+  const s=subjects[id]; if (!s) return notFound();
+  const items=articles.filter(a => a.subject === id), groups=Object.entries(group(items,'category'));
+  return `<div class="page"><div class="crumb"><a href="#/">학습 노트</a><span>/</span><span>${s.name}</span></div><div class="subject-heading"><div><h1>${s.name}</h1><p class="page-description">${s.desc}</p></div><span class="total">${items.length}개 글</span></div>${subjectTabs(id)}
+    <div class="subject-layout"><nav class="category-index" aria-label="단원 색인"><p>단원별 목차</p>${groups.map(([category,rows],i) => `<a href="#/subject/${id}?section=category-${i}" data-section="category-${i}">${escape(category)}<span>${rows.length}</span></a>`).join('')}</nav><div>${groups.map(([category,rows],i) => `<section class="category-section" id="category-${i}"><h2>${escape(category)}</h2><div class="article-list">${rows.map(a => articleRow(a)).join('')}</div></section>`).join('')}</div></div>
+  </div>`;
+}
+function markdown(source) {
+  const math=[];
+  source=source.replace(/\$\$[\s\S]*?\$\$|\$(?!\s)[^$\n]+?\$|\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\)/g,m => `MATHSLOT${math.push(m)-1}END`);
+  source=source.replace(/<([가-힣][^<>\n]{0,30})>/g,(_,s) => '&lt;'+s+'&gt;');
+  let html=marked.parse(source,{breaks:false,gfm:true});
+  html=html.replace(/MATHSLOT(\d+)END/g,(_,i) => escape(math[+i]));
+  return window.DOMPurify.sanitize(html);
+}
+function parseRef(raw,subject,articleId='') {
+  const verified=references[articleId+':'+raw] || references[subject+':'+raw] || references[raw];
+  if (verified) return {...verified,raw};
   const m=raw.trim().match(/^(\d{2})(06|09|11)$/);
-  if(!m)return {raw,status:'unresolved',label:raw};
-  const year=2000+Number(m[1]),session={"06":"6월","09":"9월","11":"수능"}[m[2]];
-  return {raw,year,session,status:'exam',label:`${year}학년도 ${session==='수능'?'수능':session+' 모의평가'}`};
+  if (!m) return {raw,status:'unresolved',label:raw};
+  const year=2000+Number(m[1]), session={'06':'6월','09':'9월','11':'수능'}[m[2]];
+  return {raw,year,session,status:'exam',label:`${year}학년도 ${session === '수능' ? '수능' : session+' 모의평가'}`};
 }
-function matchingExams(ref,subject){return exams.filter(e=>e.year===ref.year&&e.session===ref.session&&(subject==='study'||e.subjects.includes(subject)))}
-function refsHtml(a){if(!a.refs?.length)return `<p class="tiny-note">이 글에 특정 기출 번호가 적혀 있지 않습니다. 같은 과목의 문제와 함께 적용해보세요.</p><a class="button" href="#/exams?subject=${a.subject==='study'?'':a.subject}">과목 기출 찾기</a>`;return a.refs.map(raw=>{const r=parseRef(raw,a.subject,a.id),matches=matchingExams(r,a.subject);return `<div class="exam-ref"><strong>${escape(r.label||raw)}</strong><small>${r.status==='question'?'문항 대조 완료'+(r.questions?' · '+r.questions+'번':''):r.status==='exam'?'시험 회차 연결 · 문항별 대조 전':'출처 확인 중 · 원문 표기'}${r.note?' · '+escape(r.note):''}</small>${r.sourceUrl?link(r.sourceUrl,'대조 자료'):''}${matches.slice(0,2).map(e=>link(e.url,'공식 문제·정답')).join('')}${matches.length?`<a href="#/exams?year=${r.year}&session=${encodeURIComponent(r.session)}&subject=${a.subject==='study'?'':a.subject}">자료실에서 보기</a>`:''}</div>`}).join('')}
-function readPage(id){const a=articles.find(x=>x.id===id);if(!a)return notFound();const s=subjects[a.subject];recent=[id,...recent.filter(x=>x!==id)].slice(0,12);writeLocal('csat-recent',recent);const groups=Object.entries(group(articles.filter(x=>x.subject===a.subject),'category'));
-  const nav=groups.map(([category,items])=>`<details ${category===a.category?'open':''}><summary>${escape(category)}</summary>${items.map(x=>`<a href="#/read/${x.id}" class="${x.id===id?'current':''}" ${x.id===id?'aria-current="page"':''}>${escape(x.title)}</a>`).join('')}</details>`).join('');
-  const related=articles.filter(x=>x.id!==id&&x.subject===a.subject).map(x=>({a:x,score:(x.category===a.category?4:0)+(x.tags||[]).filter(t=>a.tags?.includes(t)).length})).sort((x,y)=>y.score-x.score).slice(0,3);
-  return `<div class="read-shell" style="--subject:${s.color}"><aside class="sidebar" aria-label="${s.name} 목차"><a href="#/subject/${a.subject}">${s.name} 전체 목차</a>${nav}</aside><article class="reading"><div class="crumb"><a href="#/">노트 읽기</a><span>/</span><a href="#/subject/${a.subject}">${s.name}</a><span>/</span><span>${escape(a.category)}</span></div><details class="mobile-index"><summary>${s.name} 목차 보기</summary>${nav}</details><h1>${escape(a.title)}</h1><p class="lead">${escape(a.summary)}</p><div class="article-actions"><button class="button ${saved.includes(id)?'saved':''}" data-action="save" data-id="${id}">${saved.includes(id)?'저장됨':'글 저장'}</button><button class="button" data-action="share">링크 복사</button><button class="button" data-action="print">인쇄</button><a class="button" href="#/exams?subject=${a.subject==='study'?'':a.subject}">기출 찾기</a></div><div class="prose">${markdown(a.body)}</div><section class="related"><h2>함께 읽을 노트</h2>${related.map(({a:x})=>`<a href="#/read/${x.id}">${escape(x.title)}</a>`).join('')}</section></article><aside class="aside"><div class="toc"><h2>이 글의 순서</h2><div id="toc-links"></div></div><section class="exam-links"><h2>원문에 연결된 기출</h2><div>${refsHtml(a)}</div></section></aside></div>`;
+function refsHtml(article) {
+  if (!article.refs?.length) return '<p class="tiny-note">원문에는 별도의 기출 번호가 적혀 있지 않습니다.</p>';
+  return article.refs.map(raw => {
+    const r=parseRef(raw,article.subject,article.id);
+    const variant=article.subject === 'math' ? r.label?.match(/(?:가|나|A|B)형/)?.[0] || '' : '';
+    const original=exams.flatMap(e => e.files).find(f => f.url === r.sourceUrl && f.format.toLowerCase() === 'pdf' && f.kind === 'question');
+    const paper=original || archive.questionFor(r.year,r.session,article.subject,variant);
+    const compressed=exams.some(e => e.files.some(f => f.url === r.sourceUrl && ['zip','exe','hwp'].includes(f.format.toLowerCase()))) || /\.(zip|exe|hwp)(\?|$)/i.test(r.sourceUrl || '');
+    return `<div class="exam-ref"><strong>${escape(r.label || raw)}</strong><small>${r.status === 'question' ? '문항 대조 완료'+(r.questions ? ' · '+r.questions+'번' : '') : r.status === 'exam' ? '시험 회차 확인 · 문항 번호 대조 전' : '원문 표기 · 출처 확인 중'}${r.note ? '<br>'+escape(r.note) : ''}</small>${paper ? link(paper.url,'문제 PDF 열기','ref-primary') : ''}${r.sourceUrl && r.sourceUrl !== paper?.url && !compressed ? link(r.sourceUrl,'대조 자료') : ''}${r.year ? `<a href="#/exams?year=${r.year}&session=${encodeURIComponent(r.session)}&subject=${article.subject === 'study' ? '' : article.subject}">같은 시험 자료</a>` : ''}</div>`;
+  }).join('');
 }
-function searchArticles(query){const terms=query.toLowerCase().split(/\s+/).filter(Boolean);if(!terms.length)return [];return articles.map(a=>{const text=[a.title,a.summary,a.category,...a.tags,a.body,...(a.refs||[])].join(' ').toLowerCase();return {a,score:terms.every(q=>text.includes(q))?terms.reduce((score,q)=>score+(a.title.toLowerCase().includes(q)?10:0)+(a.summary.toLowerCase().includes(q)?3:0)+1,0):0}}).filter(x=>x.score).sort((x,y)=>y.score-x.score).map(x=>x.a)}
-function searchPage(params){const q=params.get('q')||'',items=searchArticles(q),subject=params.get('subject')||'';const filtered=subject?items.filter(a=>a.subject===subject):items;return `<div class="page"><div class="crumb"><a href="#/">노트 읽기</a><span>/</span><span>찾아보기</span></div><h1>필요한 판단 찾기</h1><form id="page-search" class="filters" style="grid-template-columns:1fr auto"><div><label for="page-search-input">검색어</label><input id="page-search-input" name="q" value="${escape(q)}" type="search" placeholder="조건, 선지, 반감기, 2406…"></div><button class="button primary" style="align-self:end" type="submit">검색</button></form><div class="chip-list"><a class="chip ${!subject?'selected':''}" href="#/search?q=${encodeURIComponent(q)}">전체 ${items.length}</a>${Object.entries(subjects).map(([k,s])=>{const n=items.filter(a=>a.subject===k).length;return n?`<a class="chip ${subject===k?'selected':''}" href="#/search?q=${encodeURIComponent(q)}&subject=${k}">${s.name} ${n}</a>`:''}).join('')}</div><div class="section-top"><h2>${escape(q||'검색어를 입력하세요')}</h2><span>${filtered.length}개 글</span></div>${filtered.length?`<div class="article-list">${filtered.map(a=>articleRow(a,true)).join('')}</div>`:`<p class="empty">${q?'검색 결과가 없습니다. 더 짧은 단어나 과목별 목차로 찾아보세요.':'문제에서 막힌 단원이나 판단을 검색해보세요.'}</p>`}</div>`}
-function savedPage(){const items=saved.map(id=>articles.find(a=>a.id===id)).filter(Boolean);return `<div class="page"><h1>저장한 글</h1><p class="page-description">다음 문제를 풀기 전에 다시 볼 판단들입니다. 저장 기록은 현재 브라우저에만 남습니다.</p>${items.length?`<div class="article-list">${items.map(a=>articleRow(a,true)).join('')}</div>`:'<p class="empty">글에서 ‘글 저장’을 누르면 이곳에 모입니다.<br><a class="button" href="#/">노트 읽으러 가기</a></p>'}</div>`}
-function option(value,label,current){return `<option value="${escape(value)}" ${value===current?'selected':''}>${escape(label)}</option>`}
-function examPage(params){let subject=params.get('subject')||'',year=params.get('year')||'',session=params.get('session')||'',q=params.get('q')||'',page=Number(params.get('page'))||1;
-  const code=q.match(/^(\d{2})(06|09|11)$/);if(code){year=String(2000+Number(code[1]));session={"06":"6월","09":"9월","11":"수능"}[code[2]];q=''}
-  const terms=q.toLowerCase().split(/\s+/).filter(Boolean);const rows=exams.filter(e=>(!subject||e.subjects.includes(subject))&&(!year||String(e.year)===year)&&(!session||e.session===session)&&terms.every(t=>[e.title,...e.files.map(f=>f.name)].join(' ').toLowerCase().includes(t)));
-  const pageCount=Math.max(1,Math.ceil(rows.length/20));page=Math.min(pageCount,Math.max(1,page));const shown=rows.slice((page-1)*20,page*20);const years=[...new Set(exams.map(e=>e.year))].sort((a,b)=>b-a);
-  const pageLink=n=>{const p=new URLSearchParams(params);p.set('page',n);return '#/exams?'+p.toString()};
-  return `<div class="page"><div class="crumb"><a href="#/">홈</a><span>/</span><span>기출 자료실</span></div><h1>평가원 기출 자료실</h1><p class="page-description">필요한 시험을 고르고 공식 문제지·정답을 여세요. 노트의 기출 표기도 같은 자료실로 연결됩니다.</p><form id="exam-filter" class="filters"><div><label for="exam-query">시험·파일 검색</label><input type="search" id="exam-query" name="q" value="${escape(q)}" placeholder="예: 2406, 듣기, 홀수형"></div><div><label for="exam-subject">과목</label><select id="exam-subject" name="subject">${option('','5과목 전체',subject)}${Object.entries(subjects).filter(([k])=>k!=='study').map(([k,s])=>option(k,s.name,subject)).join('')}</select></div><div><label for="exam-year">학년도</label><select id="exam-year" name="year">${option('','전 연도',year)}${years.map(y=>option(String(y),y+'학년도',year)).join('')}</select></div><div><label for="exam-session">시험</label><select id="exam-session" name="session">${option('','전체 회차',session)}${[...new Set(exams.map(e=>e.session))].map(s=>option(s,s==='수능'?s:s+' 모의평가',session)).join('')}</select></div></form>
-  <div class="result-meta"><span>공식 게시물 ${rows.length}건${subject==='physics'||subject==='earth'?' · 과학탐구 묶음 포함':''}</span><span>학년도 기준 · ${escape(manifest.examCheckedAt||'2026-10-28')} 확인</span></div>
-  ${subject==='physics'||subject==='earth'?'<p class="notice">과학탐구 ZIP에는 여러 선택과목이 함께 들어 있습니다. 압축을 푼 뒤 물리학Ⅰ 또는 지구과학Ⅰ 파일을 선택하세요. 옛 통합 과학탐구는 당시 체계로 표시합니다.</p>':''}
-  <div class="exam-list">${shown.map(e=>`<section class="exam-row"><div><h3>${e.year}학년도 ${e.session==='수능'?'수능':escape(e.session)+' 모의평가'}</h3><div class="exam-area">${escape(e.area)}${e.track?' · '+escape(e.track):''}${e.legacy?' · 옛 교육과정':''}</div><div style="margin-top:10px">${link(e.url,'공식 게시물','tiny-note')}</div></div><div class="exam-files">${e.files.map(f=>link(f.url,`${{question:'문제지',answer:'정답',script:'듣기 대본',audio:'듣기 음원'}[f.kind]||'자료'}<b>${escape(f.format.toUpperCase())}</b><span class="exam-file-name">${escape(f.name)}</span>`,`file-link ${f.kind==='answer'?'answer':''}`)).join('')}</div></section>`).join('')||'<p class="empty">선택한 조건에 해당하는 공식 게시물이 없습니다.<br>과목·연도·회차를 바꿔보세요.</p>'}</div>
-  <div class="pagination">${page>1?`<a class="button" href="${pageLink(page-1)}">이전</a>`:'<button class="button" disabled>이전</button>'}<span>${page} / ${pageCount}</span>${page<pageCount?`<a class="button" href="${pageLink(page+1)}">다음</a>`:'<button class="button" disabled>다음</button>'}</div><p class="tiny-note">공식 공개 목록에 있는 자료를 연결했습니다. 과목별 자체 해설은 노트가 연결된 문항에 한합니다. 국어 원본 시험지에는 공통·선택 영역이 함께 들어 있을 수 있으며, 이 사이트의 학습 노트에서는 언어와 매체를 제외했습니다. 문제지의 저작권은 한국교육과정평가원과 해당 권리자에게 있습니다.</p></div>`;
+function readPage(id) {
+  const a=articles.find(x => x.id === id); if (!a) return notFound();
+  const s=subjects[a.subject]; recent=[id,...recent.filter(x => x !== id)].slice(0,12); writeLocal('csat-recent',recent);
+  const groups=Object.entries(group(articles.filter(x => x.subject === a.subject),'category'));
+  const nav=groups.map(([category,items]) => `<details ${category === a.category ? 'open' : ''}><summary>${escape(category)}</summary>${items.map(x => `<a href="#/read/${x.id}" class="${x.id === id ? 'current' : ''}" ${x.id === id ? 'aria-current="page"' : ''}>${escape(x.title)}</a>`).join('')}</details>`).join('');
+  const related=articles.filter(x => x.id !== id && x.subject === a.subject).map(x => ({a:x,score:(x.category === a.category ? 4 : 0)+(x.tags || []).filter(t => a.tags?.includes(t)).length})).sort((x,y) => y.score-x.score).slice(0,3);
+  return `<div class="read-shell"><aside class="sidebar" aria-label="${s.name} 목차"><a href="#/subject/${a.subject}">${s.name} 전체 목차</a>${nav}</aside>
+    <article class="reading"><div class="crumb"><a href="#/">학습 노트</a><span>/</span><a href="#/subject/${a.subject}">${s.name}</a><span>/</span><span>${escape(a.category)}</span></div><details class="mobile-index"><summary>${s.name} 목차</summary>${nav}</details><h1>${escape(a.title)}</h1><p class="lead">${escape(a.summary)}</p><div class="article-actions"><button class="button ${saved.includes(id) ? 'saved' : ''}" data-action="save" data-id="${id}" aria-pressed="${saved.includes(id)}">${saved.includes(id) ? '저장됨' : '글 저장'}</button><button class="button" data-action="share">링크 복사</button><button class="button" data-action="print">인쇄</button><a class="button" href="#/exams?subject=${a.subject === 'study' ? '' : a.subject}">기출 PDF</a></div>
+    <div class="prose">${markdown(a.body)}</div><section class="related"><h2>함께 읽을 노트</h2>${related.map(({a:x}) => `<a href="#/read/${x.id}">${escape(x.title)}</a>`).join('')}</section></article>
+    <aside class="aside"><div class="toc"><h2>이 글의 순서</h2><div id="toc-links"></div></div><section class="exam-links"><h2>원문에 적힌 기출</h2><div>${refsHtml(a)}</div></section></aside>
+  </div>`;
 }
-function about(){return `<div class="page about"><h1>이 노트에 대하여</h1><p>공부하면서 남긴 풀이 강령, 모의고사 복기, 개념을 적용하며 얻은 생각을 다시 엮었습니다. 이미 배운 개념을 문제에서 선택하고, 반복되는 실수를 줄이는 데 쓰는 노트입니다.</p><h2>원문의 판단을 보존했습니다</h2><p>개인적인 날짜·점수·상황은 덜어내고, 그 경험에서 얻은 판단 과정과 구체적인 팁을 남겼습니다. 반복되는 내용은 합치고 과목별·상황별로 찾아볼 수 있게 했습니다. 적용 조건이 빠진 표현은 확인한 조건을 보완했습니다.</p><p>원본 ${manifest.sourceFiles||113}개를 검토해 ${articles.length}개 글로 구성했습니다. 언어와 매체, 개인 신상과 입시 기록, 내용 없는 문서는 학습 본문에서 제외했습니다. 영어와 미적분 일부는 원래 기록의 분량에 맞추었으며, 작성하지 않은 범위를 별도 강의로 채우지 않았습니다.</p><h2>기출 표기를 읽는 법</h2><p><strong>2406</strong>은 2024학년도 6월 모의평가, <strong>2409</strong>는 2024학년도 9월 모의평가, <strong>2411</strong>은 2024학년도 수능입니다. 학년도와 실제 시행 연도는 다릅니다. 수능 코드의 ‘11’이 실제 시행 월을 항상 뜻하는 것도 아닙니다.</p><ul><li><strong>문항 대조 완료:</strong> 원문 자료로 문항·지문 연결을 확인했습니다.</li><li><strong>시험 회차 연결:</strong> 원문의 학년도·시험 표기에 맞는 자료를 연결했습니다. 문항별 대조 전에는 특정 번호를 확정하지 않습니다.</li><li><strong>출처 확인 중:</strong> 교재 약호나 불명확한 날짜 표기를 임의로 기출 번호로 바꾸지 않았습니다.</li></ul><h2>공식 기출 자료실</h2><p>평가원의 수능·모의평가 공개 목록을 수집해 ${exams.length}개 관련 게시물을 연결했습니다. 국어·수학·영어·과학탐구의 옛 명칭과 과거 계열도 원문대로 표시합니다. 과학탐구는 공식 묶음 파일로 제공되는 회차가 있습니다.</p><p>기출 전체를 직접 재배포하지 않고 공식 문제지와 정답으로 연결합니다. 자료가 이동하면 공식 게시물에서 다시 찾을 수 있습니다. 2027학년도 수능은 수록 기준일에 시행 전이며 2027학년도 6월·9월 자료까지 포함됩니다.</p><p>${link('https://www.suneung.re.kr/boardCnts/list.do?boardID=1500234&m=0403&s=suneung','평가원 수능 자료')} · ${link('https://www.suneung.re.kr/boardCnts/list.do?boardID=1500236&m=0403&s=suneung','평가원 모의평가 자료')}</p><h2>저장과 수정</h2><p>저장한 글과 최근 읽은 글은 이 브라우저에만 보관됩니다. 별도의 회원가입이나 학생 정보 수집은 없습니다. 내용 오류나 기출 연결 문제는 ${link('https://github.com/devkyber/csat-study/issues','GitHub 이슈')}로 남길 수 있습니다.</p></div>`}
-function notFound(){return '<div class="page"><h1>글을 찾을 수 없습니다.</h1><p>목차에서 다시 찾아주세요.</p><a class="button" href="#/">전체 목차</a></div>'}
-function route(){
- const raw=location.hash.slice(1)||'/',[path,query]=raw.split('?'),params=new URLSearchParams(query||'');const parts=path.split('/').filter(Boolean);let html;
- if(!parts.length)html=home();else if(parts[0]==='subject')html=subjectPage(parts[1]);else if(parts[0]==='read')html=readPage(parts[1]);else if(parts[0]==='search')html=searchPage(params);else if(parts[0]==='exams')html=examPage(params);else if(parts[0]==='saved')html=savedPage();else if(parts[0]==='about')html=about();else html=notFound();
- $('#main').innerHTML=html;document.querySelectorAll('[data-nav]').forEach(a=>a.classList.toggle('active',a.dataset.nav===(parts[0]==='exams'?'exams':parts[0]==='saved'?'saved':'home')));
- const title=$('main h1')?.textContent||'수능 판단 노트';document.title=title==='수능 판단 노트'?title:title+' | 수능 판단 노트';
- if(window.renderMathInElement)window.renderMathInElement($('#main'),{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false,strict:'ignore',trust:false});
- document.querySelectorAll('.prose table').forEach(t=>{const wrap=document.createElement('div');wrap.className='table-wrap';t.before(wrap);wrap.append(t)});
- document.querySelectorAll('.prose a').forEach(a=>{if(a.href.startsWith('http')){a.target='_blank';a.rel='noopener noreferrer'}});
- const headings=[...document.querySelectorAll('.prose h2,.prose h3')];headings.forEach((h,i)=>h.id='section-'+i);if($('#toc-links')){$('#toc-links').innerHTML=headings.map((h,i)=>`<a href="#section-${i}" data-section="section-${i}">${escape(h.textContent)}</a>`).join('');if(!headings.length)$('.toc').hidden=true;}
- if(lastRoute!==raw){window.scrollTo(0,0);lastRoute=raw}
- $('#exam-filter')?.addEventListener('change',()=>filterExams());$('#exam-filter')?.addEventListener('submit',e=>{e.preventDefault();filterExams()});$('#page-search')?.addEventListener('submit',e=>{e.preventDefault();location.hash='/search?q='+encodeURIComponent($('#page-search-input').value)});
+function searchArticles(query) {
+  const terms=query.toLowerCase().split(/\s+/).filter(Boolean); if (!terms.length) return [];
+  return articles.map(a => {
+    const text=[a.title,a.summary,a.category,...a.tags,a.body,...(a.refs || [])].join(' ').toLowerCase();
+    return {a,score:terms.every(q => text.includes(q)) ? terms.reduce((score,q) => score+(a.title.toLowerCase().includes(q) ? 10 : 0)+(a.summary.toLowerCase().includes(q) ? 3 : 0)+1,0) : 0};
+  }).filter(x => x.score).sort((x,y) => y.score-x.score).map(x => x.a);
 }
-function filterExams(){const data=new FormData($('#exam-filter')),p=new URLSearchParams();for(const[k,v]of data)if(v)p.set(k,v);location.hash='/exams?'+p.toString()}
-function openSearch(){const d=$('#search-dialog');d.showModal();$('#global-search').focus();searchDialog()}
-function searchDialog(){const q=$('#global-search').value,found=searchArticles(q);$('#search-results').innerHTML=q?`${found.slice(0,9).map(a=>`<a href="#/read/${a.id}" data-close-search><small>${subjects[a.subject].name} / ${escape(a.category)}</small><strong>${escape(a.title)}</strong><p>${escape(a.summary)}</p></a>`).join('')||'<p class="empty">다른 단어로 찾아보세요.</p>'}${found.length>9?`<a href="#/search?q=${encodeURIComponent(q)}" data-close-search><strong>${found.length}개 결과 모두 보기</strong></a>`:''}`:'<p class="tiny-note">예: 고지자기, 선지, 부호, 경우, 인강, 2406</p>'}
-document.addEventListener('click',async e=>{
- const section=e.target.closest('[data-section]');if(section){e.preventDefault();document.getElementById(section.dataset.section)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'center'});return}
- if(e.target.closest('[data-close-search]'))$('#search-dialog').close();
- const el=e.target.closest('[data-action]');if(!el)return;
- if(el.dataset.action==='search')openSearch();
- if(el.dataset.action==='save'){const id=el.dataset.id;const existing=saved.includes(id);saved=existing?saved.filter(x=>x!==id):[id,...saved];if(writeLocal('csat-saved',saved)){el.textContent=existing?'글 저장':'저장됨';el.classList.toggle('saved',!existing);notify(existing?'저장을 해제했습니다.':'이 브라우저에 저장했습니다.')}else notify('브라우저 저장 공간을 사용할 수 없습니다.')}
- if(el.dataset.action==='share'){try{await navigator.clipboard.writeText(location.href);notify('글 링크를 복사했습니다.')}catch{notify('주소창의 링크를 복사해주세요.')}}
- if(el.dataset.action==='print')window.print();
+function searchPage(params) {
+  const q=params.get('q') || '', items=searchArticles(q), subject=params.get('subject') || '';
+  const filtered=subject ? items.filter(a => a.subject === subject) : items;
+  return `<div class="page"><div class="crumb"><a href="#/">학습 노트</a><span>/</span><span>검색</span></div><h1>노트에서 찾아보기</h1><form id="page-search" class="filters search-form"><div><label for="page-search-input">검색어</label><input id="page-search-input" name="q" value="${escape(q)}" type="search" placeholder="조건, 선지, 반감기, 2406…"></div><input type="hidden" name="subject" value="${escape(subject)}"><button class="button primary" type="submit">검색</button></form><div class="chip-list"><a class="chip ${!subject ? 'selected' : ''}" href="#/search?q=${encodeURIComponent(q)}">전체 ${items.length}</a>${Object.entries(subjects).map(([key,s]) => {const n=items.filter(a => a.subject === key).length;return n ? `<a class="chip ${subject === key ? 'selected' : ''}" href="#/search?q=${encodeURIComponent(q)}&subject=${key}">${s.name} ${n}</a>` : '';}).join('')}</div><div class="result-meta"><span>${escape(q || '검색어를 입력하세요')}</span><span>${filtered.length}개 글</span></div>${filtered.length ? `<div class="article-list">${filtered.map(a => articleRow(a,true)).join('')}</div>` : `<p class="empty">${q ? '검색 결과가 없습니다. 더 짧은 단어를 입력하거나 과목별 목차를 살펴보세요.' : '막힌 단원이나 궁금한 내용을 검색해 보세요.'}</p>`}</div>`;
+}
+function savedPage() {
+  const items=saved.map(id => articles.find(a => a.id === id)).filter(Boolean);
+  return `<div class="page"><h1>저장한 글</h1><p class="page-description">다시 읽고 싶은 글을 모아 두세요. 저장한 글은 이 브라우저에만 남습니다.</p>${items.length ? `<div class="article-list" style="margin-top:36px">${items.map(a => articleRow(a,true)).join('')}</div>` : '<p class="empty">글에서 ‘글 저장’을 누르면 이곳에 모입니다.<br><a class="button" href="#/">학습 노트 읽기</a></p>'}</div>`;
+}
+function about() {
+  return `<div class="page about"><h1>이 노트에 대하여</h1><p>공부하면서 적어 둔 풀이 방법, 자주 한 실수, 공부에 대한 생각을 모았습니다. 개념을 처음부터 설명하기보다는 이미 배운 것을 문제에 어떻게 쓸지 다룹니다.</p><h2>어떤 내용을 담았나요?</h2><ul><li>과목별로 문제를 읽고 푸는 방법</li><li>실제로 틀린 이유와 다음에 확인할 것</li><li>기출 지문·문항을 읽으며 남긴 분석</li><li>오답, 복습, 인강, 시험 운영에 관한 팁</li></ul><p>원본 ${manifest.sourceFiles || 113}개를 검토해 ${articles.length}개 글로 정리했습니다. 반복되는 내용은 합치고 개인 점수·신상·입시 기록은 제외했습니다. 언어와 매체도 학습 노트에서 제외했습니다. 원문이 짧은 과목을 별도의 개념 강의로 늘리지는 않았습니다.</p><h2>기출 표기 읽는 법</h2><ul><li><strong>2406</strong>: 2024학년도 6월 모의평가</li><li><strong>2409</strong>: 2024학년도 9월 모의평가</li><li><strong>2411</strong>: 2024학년도 수능</li></ul><p>학년도와 실제 시험을 치른 연도는 다릅니다. 수능 표기의 ‘11’이 항상 실제 시행 월을 뜻하는 것도 아닙니다. 문항 번호는 실제 문제와 대조한 경우에만 확정해 표시합니다.</p><h2>문제와 함께 읽는 방법</h2><p>2017–2026학년도 6월·9월·수능의 제재와 문항 유형을 검토하고, 노트의 판단을 연습할 실제 문제를 골랐습니다. 국어는 독서·문학, 수학은 원노트에 있는 수학Ⅰ·Ⅱ·미적분을 중심으로 연결했습니다. 설명 아래의 문제와 피드백은 원노트를 적용하는 연습을 위해 덧붙인 것입니다.</p><p>설명 아래의 문제에서 어디에 그 판단을 써야 할지 먼저 찾아보세요. 이미지를 누르면 크게 볼 수 있습니다. ‘판단 과정 확인하기’를 열면 이 문제와 노트가 어떻게 연결되는지 볼 수 있습니다.</p><p>과목별 기출 자료실에서는 평가원과 EBSi의 공식 PDF를 바로 엽니다. EBS 해설은 평가원 정답표와 구분했습니다. 공식 개별 PDF가 없는 옛 회차는 표지를 대조한 공개 보관본을 연결하고 보관소 이름을 표시합니다. 문제의 저작권은 한국교육과정평가원 및 해당 권리자에게 있습니다.</p><h2>저장과 수정</h2><p>저장한 글, 최근 읽은 글, 화면 테마는 현재 브라우저에 보관됩니다. 별도의 회원가입은 없습니다. 내용이나 문제 연결의 오류는 ${link('https://github.com/devkyber/csat-study/issues','GitHub 이슈')}로 알려 주세요.</p></div>`;
+}
+function notFound() {return '<div class="page"><h1>글을 찾을 수 없습니다.</h1><p class="page-description">과목별 목차에서 다시 찾아주세요.</p><a class="button" href="#/">전체 목차</a></div>';}
+function formRoute(form,path) {
+  const params=new URLSearchParams();
+  for (const [key,value] of new FormData(form)) if (value) params.set(key,value);
+  location.hash=path+'?'+params;
+}
+function goSection(id) {
+  const target=document.getElementById(id);
+  if (!target) return;
+  target.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',block:'start'});
+  target.tabIndex=-1; target.focus({preventScroll:true});
+}
+function route() {
+  const raw=location.hash.slice(1) || '/', [path,query]=raw.split('?'), params=new URLSearchParams(query || '');
+  const parts=path.split('/').filter(Boolean), baseParams=new URLSearchParams(params);
+  baseParams.delete('section');
+  const base=path+'?'+baseParams;
+  if (currentBase === base && params.get('section')) {currentRoute=raw;restoreScroll=false;goSection(params.get('section'));return;}
+  if (currentRoute) scrollPositions.set(currentRoute,window.scrollY);
+  const readArticle=parts[0] === 'read' ? articles.find(a => a.id === parts[1]) : null;
+  const views={subject:() => subjectPage(parts[1]),read:() => readPage(parts[1]),search:() => searchPage(params),saved:savedPage,exams:() => archive.archivePage(params),paper:() => archive.paperPage(parts[1]),about};
+  $('#main').innerHTML=!parts.length ? home() : views[parts[0]] ? views[parts[0]]() : notFound();
+  if (readArticle) insertExamples(readArticle,examples,markdown);
+  document.querySelectorAll('[data-nav]').forEach(a => {
+    const active=a.dataset.nav === (['exams','paper'].includes(parts[0]) ? 'exams' : parts[0] === 'saved' ? 'saved' : 'home');
+    a.classList.toggle('active',active);
+    if (active) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current');
+  });
+  const title=$('main h1')?.textContent || '수능 판단 노트';document.title=title+' | 수능 판단 노트';
+  const headings=[...document.querySelectorAll('.prose > h2,.prose > h3')];
+  headings.forEach((h,i) => h.id='section-'+i);
+  if ($('#toc-links')) {
+    $('#toc-links').innerHTML=headings.map((h,i) => `<a href="#${escape(path)}?section=section-${i}" data-section="section-${i}" class="${h.tagName === 'H3' ? 'subheading' : ''}">${escape(h.textContent)}</a>`).join('');
+    if (!headings.length) $('.toc').hidden=true;
+  }
+  window.renderMathInElement?.($('#main'),{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false,strict:'ignore',trust:false});
+  document.querySelectorAll('.prose table').forEach(table => {const wrap=document.createElement('div');wrap.className='table-wrap';table.before(wrap);wrap.append(table);});
+  document.querySelectorAll('.prose a').forEach(a => {if (a.href.startsWith('http')) {a.target='_blank';a.rel='noopener noreferrer';}});
+  $('#exam-filter')?.addEventListener('change',event => {if (event.target.tagName === 'SELECT') formRoute(event.currentTarget,'/exams');});
+  $('#exam-filter')?.addEventListener('submit',event => {event.preventDefault();formRoute(event.currentTarget,'/exams');});
+  $('#page-search')?.addEventListener('submit',event => {event.preventDefault();formRoute(event.currentTarget,'/search');});
+  currentBase=base;currentRoute=raw;
+  $('#main').focus({preventScroll:true});
+  if (params.get('section')) requestAnimationFrame(() => goSection(params.get('section')));
+  else window.scrollTo(0,restoreScroll ? scrollPositions.get(raw) || 0 : 0);
+  restoreScroll=false;
+}
+function openSearch() {if (!$('#search-dialog').open) $('#search-dialog').showModal();$('#global-search').focus();searchDialog();}
+function searchDialog() {
+  const query=$('#global-search').value, found=searchArticles(query);
+  $('#search-results').innerHTML=query ? `${found.slice(0,9).map(a => `<a href="#/read/${a.id}" data-close-search><small>${subjects[a.subject].name} / ${escape(a.category)}</small><strong>${escape(a.title)}</strong><p>${escape(a.summary)}</p></a>`).join('') || '<p class="empty">찾은 글이 없습니다. 더 짧은 단어로 검색해 보세요.</p>'}${found.length>9 ? `<a href="#/search?q=${encodeURIComponent(query)}" data-close-search><strong>${found.length}개 결과 모두 보기</strong></a>` : ''}` : '<p class="tiny-note">예: 고지자기, 선지, 부호, 경우, 인강, 2406</p>';
+}
+function updateThemeButton() {
+  const dark=document.documentElement.dataset.theme === 'dark';
+  $('#theme-toggle').setAttribute('aria-pressed',String(dark));
+  $('#theme-toggle').setAttribute('aria-label',dark ? '밝은 화면으로 전환' : '어두운 화면으로 전환');
+  $('meta[name="theme-color"]').content=dark ? '#000000' : '#ffffff';
+}
+document.addEventListener('click',async event => {
+  if (event.target.closest('.skip')) {event.preventDefault();$('#main').focus();window.scrollTo(0,0);return;}
+  const section=event.target.closest('[data-section]');
+  if (section && !event.ctrlKey && !event.metaKey) {
+    event.preventDefault();scrollPositions.set(currentRoute,window.scrollY);history.pushState(null,'',section.href);currentRoute=location.hash.slice(1);goSection(section.dataset.section);return;
+  }
+  const image=event.target.closest('[data-image]');
+  if (image) {openQuestionImage(image.dataset.image,image.dataset.caption,image);return;}
+  if (event.target.closest('[data-close-search]')) $('#search-dialog').close();
+  const element=event.target.closest('[data-action]');if (!element) return;
+  if (element.dataset.action === 'search') openSearch();
+  if (element.dataset.action === 'save') {
+    const id=element.dataset.id, existing=saved.includes(id), next=existing ? saved.filter(x => x !== id) : [id,...saved];
+    if (writeLocal('csat-saved',next)) {saved=next;element.textContent=existing ? '글 저장' : '저장됨';element.classList.toggle('saved',!existing);element.setAttribute('aria-pressed',String(!existing));notify(existing ? '저장을 해제했습니다.' : '이 브라우저에 저장했습니다.');}
+    else notify('브라우저 저장 공간을 사용할 수 없습니다.');
+  }
+  if (element.dataset.action === 'share') {
+    try {await navigator.clipboard.writeText(location.href);notify('글 링크를 복사했습니다.');} catch {notify('주소창의 링크를 복사해 주세요.');}
+  }
+  if (element.dataset.action === 'print') window.print();
 });
-$('#search-open').addEventListener('click',openSearch);$('#search-close').addEventListener('click',()=>$('#search-dialog').close());$('#global-search').addEventListener('input',searchDialog);$('#global-search').addEventListener('keydown',e=>{if(e.key==='Enter'){$('#search-dialog').close();location.hash='/search?q='+encodeURIComponent(e.target.value)}});
-$('#search-dialog').addEventListener('click',e=>{if(e.target===$('#search-dialog')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close()}});
-document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();openSearch()}});
-try{const responses=await Promise.all(['articles','exams','manifest','references'].map(async name=>{const r=await fetch(`./data/${name}.json`);if(!r.ok)throw Error(`${name} 데이터 응답 ${r.status}`);return r.json()}));[articles,{entries:exams},manifest,references]=responses;window.addEventListener('hashchange',route);route()}catch(err){$('#main').innerHTML='<div class="page"><h1>노트를 불러오지 못했습니다.</h1><p>네트워크 연결을 확인하고 새로고침해주세요.</p><button class="button" onclick="location.reload()">다시 불러오기</button></div>';console.error(err)}
+$('#search-open').addEventListener('click',openSearch);
+$('#search-close').addEventListener('click',() => $('#search-dialog').close());
+$('#global-search').addEventListener('input',searchDialog);
+$('#global-search').addEventListener('keydown',event => {if (event.key === 'Enter') {$('#search-dialog').close();location.hash='/search?q='+encodeURIComponent(event.target.value);}});
+$('#theme-toggle').addEventListener('click',() => {const theme=document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';document.documentElement.dataset.theme=theme;try{localStorage.setItem('csat-theme',theme);}catch{}updateThemeButton();});
+$('#search-dialog').addEventListener('click',event => {if (event.target === $('#search-dialog')) {const r=event.target.getBoundingClientRect();if (event.clientX<r.left || event.clientX>r.right || event.clientY<r.top || event.clientY>r.bottom) event.target.close();}});
+document.addEventListener('keydown',event => {if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {event.preventDefault();openSearch();}});
+window.addEventListener('popstate',() => {restoreScroll=true;if (location.hash.slice(1) !== currentRoute) route();});
+updateThemeButton();
+if (!navigator.platform.includes('Mac')) $('kbd').textContent='Ctrl K';
+try {
+  const responses=await Promise.all(['articles','exams','manifest','references','exam-pdfs','examples'].map(async name => {const response=await fetch(`./data/${name}.json`);if (!response.ok) throw Error(`${name}: ${response.status}`);return response.json();}));
+  let supplement;[articles,{entries:exams},manifest,references,supplement,examples]=responses;
+  archive=createArchive(exams,supplement,manifest);
+  window.addEventListener('hashchange',() => {if ((location.hash.slice(1) || '/') !== currentRoute) route();});
+  route();
+} catch (error) {
+  $('#main').innerHTML='<div class="page"><h1>노트를 불러오지 못했습니다.</h1><p class="page-description">네트워크 연결을 확인하고 새로고침해 주세요.</p><button class="button" onclick="location.reload()">다시 불러오기</button></div>';console.error(error);
+}

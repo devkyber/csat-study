@@ -15,5 +15,17 @@
   "curriculum": "2027학년도까지",
   "excludedSubject": "언어와 매체",
   "verifiedQuestionLinks": 30,
-  "verifiedExamLinks": 31
+  "verifiedExamLinks": 31,
+  "inlineExamples": 309,
+  "exampleCounts": {
+    "korean": 93,
+    "math": 55,
+    "english": 14,
+    "physics": 67,
+    "earth": 80,
+    "study": 0
+  },
+  "directPdfEntries": 602,
+  "officialPdfEntries": 546,
+  "legacyPdfEntries": 56
 }

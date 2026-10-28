@@ -1,0 +1,1643 @@
+{
+  "checkedAt": "2026-10-28",
+  "entries": [
+    {
+      "id": "legacy-mogozip-legacy-2003-12-2-1157-0-korean",
+      "year": 2005,
+      "session": "예비",
+      "subject": "korean",
+      "subjectLabel": "언어",
+      "variant": "홀수형",
+      "archiveId": "5006642",
+      "title": "2005학년도 예비 언어 홀수형",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-12-2-1157",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A02/2003/2003%EB%85%84_12%EC%9B%94_%EA%B3%A02_%EC%88%98%EB%8A%A5%EC%98%88%EB%B9%84_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%26%ED%95%B4%EC%84%A4%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2003%EB%85%84_12%EC%9B%94_%EA%B3%A02_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EA%B5%AD%EC%96%B4_%EB%AC%B8%EC%A0%9C-e4a866cee8.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 16,
+        "sha256": "31c5bf1f4d8e2fb8faac53d39a87b7104f10f59f63cbc675f2d1c9772a81ed49",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=5006642&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2003-12-2-1157-2-english",
+      "year": 2005,
+      "session": "예비",
+      "subject": "english",
+      "subjectLabel": "외국어(영어)",
+      "variant": "홀수형",
+      "archiveId": "5006647",
+      "title": "2005학년도 예비 외국어(영어) 홀수형",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-12-2-1157",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A02/2003/2003%EB%85%84_12%EC%9B%94_%EA%B3%A02_%EC%88%98%EB%8A%A5%EC%98%88%EB%B9%84_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%26%ED%95%B4%EC%84%A4%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2003%EB%85%84_12%EC%9B%94_%EA%B3%A02_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%98%81%EC%96%B4_%EB%AC%B8%EC%A0%9C-dfa7396b1c.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "740d2a876024501d80b623f6c006398ae916df8f0fbaf1ab5e28710c03a58a9d",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=5006647&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2003-12-2-1157-5-math",
+      "year": 2005,
+      "session": "예비",
+      "subject": "math",
+      "subjectLabel": "수리",
+      "variant": "가형 · 홀수형",
+      "archiveId": "5006643",
+      "title": "2005학년도 예비 수리 가형 · 홀수형",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-12-2-1157",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A02/2003/2003%EB%85%84_12%EC%9B%94_%EA%B3%A02_%EC%88%98%EB%8A%A5%EC%98%88%EB%B9%84_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%26%ED%95%B4%EC%84%A4%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2003%EB%85%84_12%EC%9B%94_%EA%B3%A02_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%88%98%ED%95%99%EA%B0%80%ED%98%95_%EB%AC%B8%EC%A0%9C-0cc4d628f5.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 16,
+        "sha256": "b1beaa8318fbe3d9a0abe90b770616be02038169226e76f5f1572a8bec17dcb3",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=5006643&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2003-12-2-1157-6-math",
+      "year": 2005,
+      "session": "예비",
+      "subject": "math",
+      "subjectLabel": "수리",
+      "variant": "나형 · 홀수형",
+      "archiveId": "5006643",
+      "title": "2005학년도 예비 수리 나형 · 홀수형",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-12-2-1157",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A02/2003/2003%EB%85%84_12%EC%9B%94_%EA%B3%A02_%EC%88%98%EB%8A%A5%EC%98%88%EB%B9%84_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%26%ED%95%B4%EC%84%A4%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2003%EB%85%84_12%EC%9B%94_%EA%B3%A02_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%88%98%ED%95%99%EB%82%98%ED%98%95_%EB%AC%B8%EC%A0%9C-769791bb0e.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "dde2617ef0aa979a218f4a49c5dc5e180ec7f27527ef66da3310fd1597f84efa",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=5006643&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2003-12-2-1157-20-physics",
+      "year": 2005,
+      "session": "예비",
+      "subject": "physics",
+      "subjectLabel": "물리Ⅰ",
+      "variant": "",
+      "archiveId": "5006645",
+      "title": "2005학년도 예비 물리Ⅰ",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-12-2-1157",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A02/2003/2003%EB%85%84_12%EC%9B%94_%EA%B3%A02_%EC%88%98%EB%8A%A5%EC%98%88%EB%B9%84_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%26%ED%95%B4%EC%84%A4%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2003%EB%85%84_12%EC%9B%94_%EA%B3%A02_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EB%AC%BC%EB%A6%AC1_%EB%AC%B8%EC%A0%9C-427e7b38e2.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 5,
+        "sha256": "30e0eb9214d9b450feb04655d167ed89eea995a6c0c2f6fd357aba704667607f",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=5006645&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2003-12-2-1157-24-earth",
+      "year": 2005,
+      "session": "예비",
+      "subject": "earth",
+      "subjectLabel": "지구과학Ⅰ",
+      "variant": "",
+      "archiveId": "5006645",
+      "title": "2005학년도 예비 지구과학Ⅰ",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-12-2-1157",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A02/2003/2003%EB%85%84_12%EC%9B%94_%EA%B3%A02_%EC%88%98%EB%8A%A5%EC%98%88%EB%B9%84_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%26%ED%95%B4%EC%84%A4%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2003%EB%85%84_12%EC%9B%94_%EA%B3%A02_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%A7%80%EA%B5%AC%EA%B3%BC%ED%95%991_%EB%AC%B8%EC%A0%9C-95220edf1a.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 5,
+        "sha256": "21460b5fbf38621153d67dc7bd35fb212a521fede1d408d0d36de10adf167469",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=5006645&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2003-09-3-1233-0-korean",
+      "year": 2004,
+      "session": "9월",
+      "subject": "korean",
+      "subjectLabel": "언어",
+      "variant": "공통",
+      "archiveId": "3001262",
+      "title": "2004학년도 9월 언어 공통",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-09-3-1233",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2003/2003%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%A3%EA%B8%B0%ED%8C%8C%EC%9D%BC/question-2003%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EA%B5%AD%EC%96%B4_%EB%AC%B8%EC%A0%9C-caf92b2879.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 16,
+        "sha256": "f2e6f3494549f7b71c17f6f7dd3307f133d2db150d8ecd81de6b16c90847d40c",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001262&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2003-09-3-1233-2-english",
+      "year": 2004,
+      "session": "9월",
+      "subject": "english",
+      "subjectLabel": "외국어(영어)",
+      "variant": "공통",
+      "archiveId": "3001221",
+      "title": "2004학년도 9월 외국어(영어) 공통",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-09-3-1233",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2003/2003%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%A3%EA%B8%B0%ED%8C%8C%EC%9D%BC/question-2003%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%98%81%EC%96%B4_%EB%AC%B8%EC%A0%9C-d22d990b85.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "3d77d659b3cd5433a5f7336c0df0e05c1a9012e84ad74ae86be33a9b12ced65b",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001221&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2003-09-3-1233-4-math",
+      "year": 2004,
+      "session": "9월",
+      "subject": "math",
+      "subjectLabel": "수리",
+      "variant": "예체능계",
+      "archiveId": "3001263",
+      "title": "2004학년도 9월 수리 예체능계",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-09-3-1233",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2003/2003%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%A3%EA%B8%B0%ED%8C%8C%EC%9D%BC/question-2003%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%88%98%ED%95%99(%EC%98%88%EC%B2%B4%EB%8A%A5)_%EB%AC%B8%EC%A0%9C-1efcb908b5.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "3d2d00e2950a08d83c0ad59ae98409f51ae71bd2c41b48b2ee9f26cf6b9f8aab",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001263&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2003-09-3-1233-6-math",
+      "year": 2004,
+      "session": "9월",
+      "subject": "math",
+      "subjectLabel": "수리",
+      "variant": "인문계",
+      "archiveId": "3001263",
+      "title": "2004학년도 9월 수리 인문계",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-09-3-1233",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2003/2003%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%A3%EA%B8%B0%ED%8C%8C%EC%9D%BC/question-2003%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%88%98%ED%95%99(%EC%9D%B8%EB%AC%B8%EA%B3%84)_%EB%AC%B8%EC%A0%9C-e2521ad9df.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "65e283dc8716fd8ff09e21e66013ca5921ffbc78c0c06689af80957f21a70656",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001263&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2003-09-3-1233-8-math",
+      "year": 2004,
+      "session": "9월",
+      "subject": "math",
+      "subjectLabel": "수리",
+      "variant": "자연계",
+      "archiveId": "3001263",
+      "title": "2004학년도 9월 수리 자연계",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-09-3-1233",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2003/2003%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%A3%EA%B8%B0%ED%8C%8C%EC%9D%BC/question-2003%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%88%98%ED%95%99(%EC%9E%90%EC%97%B0%EA%B3%84)_%EB%AC%B8%EC%A0%9C-79b0b9815a.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "65db0e96047a95cd9183b6914b6e862a42b82330ede0c8abeffcf742503c8624",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001263&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2003-09-3-1233-12-physics",
+      "year": 2004,
+      "session": "9월",
+      "subject": "physics",
+      "subjectLabel": "사회·과학탐구",
+      "variant": "자연계",
+      "archiveId": "3001220",
+      "title": "2004학년도 9월 사회·과학탐구 자연계",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-09-3-1233",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2003/2003%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%A3%EA%B8%B0%ED%8C%8C%EC%9D%BC/question-2003%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%82%AC%ED%9A%8C%2C%EA%B3%BC%ED%95%99%ED%83%90%EA%B5%AC_%EB%AC%B8%EC%A0%9C(%EC%9E%90%EC%97%B0%EA%B3%84)-ad9457afdd.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 33,
+        "sha256": "97fe013a2692a75ef74c01ea3b04dc983a687585177b1a965a7ef2dc1f46e8f2",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001220&lev=0&m=0403&statusYN=W&s=suneung"
+      },
+      "note": "사회·과학탐구 자연계 합본입니다. 당시 교육과정의 통합 영역으로 현행 물리학Ⅰ·지구과학Ⅰ 단독 시험이 아닙니다."
+    },
+    {
+      "id": "legacy-mogozip-legacy-2003-09-3-1233-12-earth",
+      "year": 2004,
+      "session": "9월",
+      "subject": "earth",
+      "subjectLabel": "사회·과학탐구",
+      "variant": "자연계",
+      "archiveId": "3001220",
+      "title": "2004학년도 9월 사회·과학탐구 자연계",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-09-3-1233",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2003/2003%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%A3%EA%B8%B0%ED%8C%8C%EC%9D%BC/question-2003%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%82%AC%ED%9A%8C%2C%EA%B3%BC%ED%95%99%ED%83%90%EA%B5%AC_%EB%AC%B8%EC%A0%9C(%EC%9E%90%EC%97%B0%EA%B3%84)-ad9457afdd.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 33,
+        "sha256": "97fe013a2692a75ef74c01ea3b04dc983a687585177b1a965a7ef2dc1f46e8f2",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001220&lev=0&m=0403&statusYN=W&s=suneung"
+      },
+      "note": "사회·과학탐구 자연계 합본입니다. 당시 교육과정의 통합 영역으로 현행 물리학Ⅰ·지구과학Ⅰ 단독 시험이 아닙니다."
+    },
+    {
+      "id": "legacy-mogozip-legacy-2004-11-3-1229-61-physics",
+      "year": 2005,
+      "session": "수능",
+      "subject": "physics",
+      "subjectLabel": "물리Ⅰ",
+      "variant": "",
+      "archiveId": "3000971",
+      "title": "2005학년도 수능 물리Ⅰ",
+      "sourcePage": "https://mogozip.com/archive/legacy-2004-11-3-1229",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2004/2004%EB%85%84_%EB%8C%80%ED%95%99%EC%88%98%ED%95%99%EB%8A%A5%EB%A0%A5%EC%8B%9C%ED%97%98%2C%EC%88%98%EB%8A%A5_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%26%ED%95%B4%EC%84%A4%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2004%EB%85%84_%EB%8C%80%ED%95%99%EC%88%98%ED%95%99%EB%8A%A5%EB%A0%A5%EC%8B%9C%ED%97%98%2C%EC%88%98%EB%8A%A5_%EB%AC%BC%EB%A6%AC1_%EB%AC%B8%EC%A0%9C-4966a33a17.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 4,
+        "sha256": "13cc91ff32ebfe8f106447a60112639fa2570c22c8ee4293878602329255f965",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500234&boardSeq=3000971&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2004-11-3-1229-73-earth",
+      "year": 2005,
+      "session": "수능",
+      "subject": "earth",
+      "subjectLabel": "지구과학Ⅰ",
+      "variant": "",
+      "archiveId": "3000971",
+      "title": "2005학년도 수능 지구과학Ⅰ",
+      "sourcePage": "https://mogozip.com/archive/legacy-2004-11-3-1229",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2004/2004%EB%85%84_%EB%8C%80%ED%95%99%EC%88%98%ED%95%99%EB%8A%A5%EB%A0%A5%EC%8B%9C%ED%97%98%2C%EC%88%98%EB%8A%A5_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%26%ED%95%B4%EC%84%A4%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2004%EB%85%84_%EB%8C%80%ED%95%99%EC%88%98%ED%95%99%EB%8A%A5%EB%A0%A5%EC%8B%9C%ED%97%98%2C%EC%88%98%EB%8A%A5_%EC%A7%80%EA%B5%AC%EA%B3%BC%ED%95%991_%EB%AC%B8%EC%A0%9C-de23772df5.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 4,
+        "sha256": "8921fc3b2fd215a20820f743d288f535ca15e8342b2121bc3285b13f5b3bf786",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500234&boardSeq=3000971&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2004-09-3-1227-0-korean",
+      "year": 2005,
+      "session": "9월",
+      "subject": "korean",
+      "subjectLabel": "언어",
+      "variant": "",
+      "archiveId": "3001154",
+      "title": "2005학년도 9월 언어",
+      "sourcePage": "https://mogozip.com/archive/legacy-2004-09-3-1227",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2004/2004%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2004%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EA%B5%AD%EC%96%B4_%EB%AC%B8%EC%A0%9C-8ed5769289.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 16,
+        "sha256": "e0cfb431a6720c65d44cecb4666b77efe316c471a6f19c97127bf1883dcd31c9",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001154&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2004-09-3-1227-3-english",
+      "year": 2005,
+      "session": "9월",
+      "subject": "english",
+      "subjectLabel": "외국어(영어)",
+      "variant": "",
+      "archiveId": "3001156",
+      "title": "2005학년도 9월 외국어(영어)",
+      "sourcePage": "https://mogozip.com/archive/legacy-2004-09-3-1227",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2004/2004%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2004%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%98%81%EC%96%B4_%EB%AC%B8%EC%A0%9C-414a4246a5.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "7ef2632d013ea30a3b74e1df273962dd30187206d4157ba4fab796124c4d650b",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001156&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2004-09-3-1227-6-math",
+      "year": 2005,
+      "session": "9월",
+      "subject": "math",
+      "subjectLabel": "수리",
+      "variant": "가형",
+      "archiveId": "3001155",
+      "title": "2005학년도 9월 수리 가형",
+      "sourcePage": "https://mogozip.com/archive/legacy-2004-09-3-1227",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2004/2004%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2004%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%88%98%ED%95%99%EA%B0%80%ED%98%95_%EB%AC%B8%EC%A0%9C-0387621274.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 16,
+        "sha256": "9f3c611d8edcd4d7dde862002b2485b1305f7267a5050e31c36aa097498e52a1",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001155&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2004-09-3-1227-7-math",
+      "year": 2005,
+      "session": "9월",
+      "subject": "math",
+      "subjectLabel": "수리",
+      "variant": "나형",
+      "archiveId": "3001155",
+      "title": "2005학년도 9월 수리 나형",
+      "sourcePage": "https://mogozip.com/archive/legacy-2004-09-3-1227",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2004/2004%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2004%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%88%98%ED%95%99%EB%82%98%ED%98%95_%EB%AC%B8%EC%A0%9C-901b1a7c5c.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "e381c5099b0b1a86253edc018ac063d2f3eb097ada565f6c4552ffe0d2dc540c",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001155&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2004-09-3-1227-23-physics",
+      "year": 2005,
+      "session": "9월",
+      "subject": "physics",
+      "subjectLabel": "물리Ⅰ",
+      "variant": "",
+      "archiveId": "3001182",
+      "title": "2005학년도 9월 물리Ⅰ",
+      "sourcePage": "https://mogozip.com/archive/legacy-2004-09-3-1227",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2004/2004%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2004%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EB%AC%BC%EB%A6%AC1_%EB%AC%B8%EC%A0%9C-70f25cf3e9.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 4,
+        "sha256": "24f75dda7a3f2ea23fe00d93f61d7156b65a67bd4a3fa2fe9f796ea6be231f99",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001182&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2004-09-3-1227-27-earth",
+      "year": 2005,
+      "session": "9월",
+      "subject": "earth",
+      "subjectLabel": "지구과학Ⅰ",
+      "variant": "",
+      "archiveId": "3001182",
+      "title": "2005학년도 9월 지구과학Ⅰ",
+      "sourcePage": "https://mogozip.com/archive/legacy-2004-09-3-1227",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2004/2004%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2004%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%A7%80%EA%B5%AC%EA%B3%BC%ED%95%991_%EB%AC%B8%EC%A0%9C-d80c2466e0.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 4,
+        "sha256": "4a3a3e469bd0fb8dfa7194e16fd28e0b399598a768b9081158338b8c78b978d7",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001182&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2004-06-3-1226-0-korean",
+      "year": 2005,
+      "session": "6월",
+      "subject": "korean",
+      "subjectLabel": "언어",
+      "variant": "홀수형",
+      "archiveId": "3001147",
+      "title": "2005학년도 6월 언어 홀수형",
+      "sourcePage": "https://mogozip.com/archive/legacy-2004-06-3-1226",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2004/2004%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2004%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EA%B5%AD%EC%96%B4_%EB%AC%B8%EC%A0%9C-639ad014fc.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 16,
+        "sha256": "7d728fb878098e1819b326b17446e255f88ead458b150523705e49bb124ab4c4",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001147&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2004-06-3-1226-2-english",
+      "year": 2005,
+      "session": "6월",
+      "subject": "english",
+      "subjectLabel": "외국어(영어)",
+      "variant": "홀수형",
+      "archiveId": "3001149",
+      "title": "2005학년도 6월 외국어(영어) 홀수형",
+      "sourcePage": "https://mogozip.com/archive/legacy-2004-06-3-1226",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2004/2004%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2004%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%98%81%EC%96%B4_%EB%AC%B8%EC%A0%9C-711b7dfd2a.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "2e145629b5b0ab4a7f060f1fdfbf6f345bba61bb9d7a7e9c1619ccfe882af3e1",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001149&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2004-06-3-1226-4-math",
+      "year": 2005,
+      "session": "6월",
+      "subject": "math",
+      "subjectLabel": "수리",
+      "variant": "가형 · 홀수형",
+      "archiveId": "3001148",
+      "title": "2005학년도 6월 수리 가형 · 홀수형",
+      "sourcePage": "https://mogozip.com/archive/legacy-2004-06-3-1226",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2004/2004%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2004%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%88%98%ED%95%99%EA%B0%80%ED%98%95_%EB%AC%B8%EC%A0%9C-d2e8319c11.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 16,
+        "sha256": "1a7b2a79a5a4e0415f4bdd7bbbb9fe3881ccc46573a38594452badbf8a7611bc",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001148&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2004-06-3-1226-6-math",
+      "year": 2005,
+      "session": "6월",
+      "subject": "math",
+      "subjectLabel": "수리",
+      "variant": "나형 · 홀수형",
+      "archiveId": "3001148",
+      "title": "2005학년도 6월 수리 나형 · 홀수형",
+      "sourcePage": "https://mogozip.com/archive/legacy-2004-06-3-1226",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2004/2004%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2004%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%88%98%ED%95%99%EB%82%98%ED%98%95_%EB%AC%B8%EC%A0%9C-77e5beb5cc.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "4f76f277f3eab291eb2ac2d16b811f584eddeacca20d3a513949ee55c00b8706",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001148&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2004-06-3-1226-34-physics",
+      "year": 2005,
+      "session": "6월",
+      "subject": "physics",
+      "subjectLabel": "물리Ⅰ",
+      "variant": "",
+      "archiveId": "3001151",
+      "title": "2005학년도 6월 물리Ⅰ",
+      "sourcePage": "https://mogozip.com/archive/legacy-2004-06-3-1226",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2004/2004%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2004%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EB%AC%BC%EB%A6%AC1_%EB%AC%B8%EC%A0%9C-9333a418ff.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 4,
+        "sha256": "dc7e19c7223ae94718f0a1e0ff580c8639345dac8df0f203a47b1869a9a247bc",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001151&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2004-06-3-1226-42-earth",
+      "year": 2005,
+      "session": "6월",
+      "subject": "earth",
+      "subjectLabel": "지구과학Ⅰ",
+      "variant": "",
+      "archiveId": "3001151",
+      "title": "2005학년도 6월 지구과학Ⅰ",
+      "sourcePage": "https://mogozip.com/archive/legacy-2004-06-3-1226",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2004/2004%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2004%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%A7%80%EA%B5%AC%EA%B3%BC%ED%95%991_%EB%AC%B8%EC%A0%9C-0c7a28b652.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 4,
+        "sha256": "e0ebf2caee43531d20e860450b9b7074dc549e5f37810609caa6060e63deeaeb",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001151&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2005-11-3-1223-63-physics",
+      "year": 2006,
+      "session": "수능",
+      "subject": "physics",
+      "subjectLabel": "물리Ⅰ",
+      "variant": "",
+      "archiveId": "3000979",
+      "title": "2006학년도 수능 물리Ⅰ",
+      "sourcePage": "https://mogozip.com/archive/legacy-2005-11-3-1223",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2005/2005%EB%85%84_%EB%8C%80%ED%95%99%EC%88%98%ED%95%99%EB%8A%A5%EB%A0%A5%EC%8B%9C%ED%97%98%2C%EC%88%98%EB%8A%A5_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%26%ED%95%B4%EC%84%A4%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2005%EB%85%84_%EB%8C%80%ED%95%99%EC%88%98%ED%95%99%EB%8A%A5%EB%A0%A5%EC%8B%9C%ED%97%98%2C%EC%88%98%EB%8A%A5_%EB%AC%BC%EB%A6%AC1_%EB%AC%B8%EC%A0%9C-c0c80f9e3c.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 4,
+        "sha256": "376fb6121f43def1ba426f5a35971f86e573210fae623403d928a5abf200a03d",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500234&boardSeq=3000979&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2005-11-3-1223-83-earth",
+      "year": 2006,
+      "session": "수능",
+      "subject": "earth",
+      "subjectLabel": "지구과학Ⅰ",
+      "variant": "",
+      "archiveId": "3000979",
+      "title": "2006학년도 수능 지구과학Ⅰ",
+      "sourcePage": "https://mogozip.com/archive/legacy-2005-11-3-1223",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2005/2005%EB%85%84_%EB%8C%80%ED%95%99%EC%88%98%ED%95%99%EB%8A%A5%EB%A0%A5%EC%8B%9C%ED%97%98%2C%EC%88%98%EB%8A%A5_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%26%ED%95%B4%EC%84%A4%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2005%EB%85%84_%EB%8C%80%ED%95%99%EC%88%98%ED%95%99%EB%8A%A5%EB%A0%A5%EC%8B%9C%ED%97%98%2C%EC%88%98%EB%8A%A5_%EC%A7%80%EA%B5%AC%EA%B3%BC%ED%95%991_%EB%AC%B8%EC%A0%9C-45cae193d9.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 4,
+        "sha256": "2f0690f78211dd85046eb60e22968bbb500f43b67bc8935cbf71e689de43d25d",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500234&boardSeq=3000979&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2005-09-3-1221-0-korean",
+      "year": 2006,
+      "session": "9월",
+      "subject": "korean",
+      "subjectLabel": "언어",
+      "variant": "",
+      "archiveId": "3001164",
+      "title": "2006학년도 9월 언어",
+      "sourcePage": "https://mogozip.com/archive/legacy-2005-09-3-1221",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2005/2005%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2005%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EA%B5%AD%EC%96%B4_%EB%AC%B8%EC%A0%9C-b721ea1365.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 16,
+        "sha256": "9668ac3d9eb83e32b1bf57b72a9e7c7df1bdffa674cef22302ae75fc184013b5",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001164&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2005-09-3-1221-4-english",
+      "year": 2006,
+      "session": "9월",
+      "subject": "english",
+      "subjectLabel": "외국어(영어)",
+      "variant": "",
+      "archiveId": "3001166",
+      "title": "2006학년도 9월 외국어(영어)",
+      "sourcePage": "https://mogozip.com/archive/legacy-2005-09-3-1221",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2005/2005%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2005%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%98%81%EC%96%B4_%EB%AC%B8%EC%A0%9C-729a041b4b.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "952fff1364651730e8c4138300dcdaeeb9ca097cfce9ba3654b7ab7f3d8f35f2",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001166&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2005-09-3-1221-8-math",
+      "year": 2006,
+      "session": "9월",
+      "subject": "math",
+      "subjectLabel": "수리",
+      "variant": "가형",
+      "archiveId": "3001165",
+      "title": "2006학년도 9월 수리 가형",
+      "sourcePage": "https://mogozip.com/archive/legacy-2005-09-3-1221",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2005/2005%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2005%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%88%98%ED%95%99%EA%B0%80%ED%98%95_%EB%AC%B8%EC%A0%9C-8277bd4485.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 16,
+        "sha256": "21bb41f25bd81cbec4ad1118aebe44dfac9657912c6b981a2cc4fc8ec5cdf4cd",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001165&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2005-09-3-1221-10-math",
+      "year": 2006,
+      "session": "9월",
+      "subject": "math",
+      "subjectLabel": "수리",
+      "variant": "나형",
+      "archiveId": "3001165",
+      "title": "2006학년도 9월 수리 나형",
+      "sourcePage": "https://mogozip.com/archive/legacy-2005-09-3-1221",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2005/2005%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2005%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%88%98%ED%95%99%EB%82%98%ED%98%95_%EB%AC%B8%EC%A0%9C-e4a043e204.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "1c188b59f7c8c51e682d8a9d1b22aab2309314d05c38d56d01017c3ec2d4b33c",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001165&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2005-09-3-1221-39-physics",
+      "year": 2006,
+      "session": "9월",
+      "subject": "physics",
+      "subjectLabel": "물리Ⅰ",
+      "variant": "",
+      "archiveId": "3001168",
+      "title": "2006학년도 9월 물리Ⅰ",
+      "sourcePage": "https://mogozip.com/archive/legacy-2005-09-3-1221",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2005/2005%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2005%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EB%AC%BC%EB%A6%AC1_%EB%AC%B8%EC%A0%9C-34b57cede4.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 4,
+        "sha256": "09b51ba9f20e37cc956ece0fbccd0a548e78c4fd72529d5ccaf447b821471aa0",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001168&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2005-09-3-1221-47-earth",
+      "year": 2006,
+      "session": "9월",
+      "subject": "earth",
+      "subjectLabel": "지구과학Ⅰ",
+      "variant": "",
+      "archiveId": "3001168",
+      "title": "2006학년도 9월 지구과학Ⅰ",
+      "sourcePage": "https://mogozip.com/archive/legacy-2005-09-3-1221",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2005/2005%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2005%EB%85%84_9%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%A7%80%EA%B5%AC%EA%B3%BC%ED%95%991_%EB%AC%B8%EC%A0%9C-cb54427be5.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 4,
+        "sha256": "4de3cbad8bac6df0989587f5acd5fe4033dca8bef3cc74bad20b5ff187baf3eb",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001168&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2005-06-3-1219-0-korean",
+      "year": 2006,
+      "session": "6월",
+      "subject": "korean",
+      "subjectLabel": "언어",
+      "variant": "",
+      "archiveId": "3001185",
+      "title": "2006학년도 6월 언어",
+      "sourcePage": "https://mogozip.com/archive/legacy-2005-06-3-1219",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2005/2005%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2005%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EA%B5%AD%EC%96%B4_%EB%AC%B8%EC%A0%9C-2d33e35a95.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 16,
+        "sha256": "39807ddb0aed81322f96b9568a4fd05035ed6adfbde5dcfe908098ca3cc9768d",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001185&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2005-06-3-1219-4-english",
+      "year": 2006,
+      "session": "6월",
+      "subject": "english",
+      "subjectLabel": "외국어(영어)",
+      "variant": "",
+      "archiveId": "3001159",
+      "title": "2006학년도 6월 외국어(영어)",
+      "sourcePage": "https://mogozip.com/archive/legacy-2005-06-3-1219",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2005/2005%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2005%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%98%81%EC%96%B4_%EB%AC%B8%EC%A0%9C-ddf6670a13.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "f3441d2063dfb0dbd7b5dbb03dbe564018735966e5f684ff6ec33124206ced86",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001159&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2005-06-3-1219-8-math",
+      "year": 2006,
+      "session": "6월",
+      "subject": "math",
+      "subjectLabel": "수리",
+      "variant": "가형",
+      "archiveId": "3001158",
+      "title": "2006학년도 6월 수리 가형",
+      "sourcePage": "https://mogozip.com/archive/legacy-2005-06-3-1219",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2005/2005%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2005%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%88%98%ED%95%99%EA%B0%80%ED%98%95_%EB%AC%B8%EC%A0%9C-2312d49dd4.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 16,
+        "sha256": "9a49407fd10ea03dc945d04a1a7ae02e5699e760a1d956b2ca3ea55d0d9ca62c",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001158&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2005-06-3-1219-10-math",
+      "year": 2006,
+      "session": "6월",
+      "subject": "math",
+      "subjectLabel": "수리",
+      "variant": "나형",
+      "archiveId": "3001158",
+      "title": "2006학년도 6월 수리 나형",
+      "sourcePage": "https://mogozip.com/archive/legacy-2005-06-3-1219",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2005/2005%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2005%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%88%98%ED%95%99%EB%82%98%ED%98%95_%EB%AC%B8%EC%A0%9C-6ad5fcce8d.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "a802d9a6263669e3f492f3fef7b63f9cf8003a5d9b64e20f7cc4104732005255",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001158&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2005-06-3-1219-30-physics",
+      "year": 2006,
+      "session": "6월",
+      "subject": "physics",
+      "subjectLabel": "물리Ⅰ",
+      "variant": "",
+      "archiveId": "3001161",
+      "title": "2006학년도 6월 물리Ⅰ",
+      "sourcePage": "https://mogozip.com/archive/legacy-2005-06-3-1219",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2005/2005%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2005%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EB%AC%BC%EB%A6%AC1_%EB%AC%B8%EC%A0%9C-08a1554822.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 4,
+        "sha256": "56dcb13409df832313d610144a5ba17b91be84f91046efb72b2bd851cf15a6d3",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001161&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-legacy-2005-06-3-1219-34-earth",
+      "year": 2006,
+      "session": "6월",
+      "subject": "earth",
+      "subjectLabel": "지구과학Ⅰ",
+      "variant": "",
+      "archiveId": "3001161",
+      "title": "2006학년도 6월 지구과학Ⅰ",
+      "sourcePage": "https://mogozip.com/archive/legacy-2005-06-3-1219",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A03/2005/2005%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%EB%AA%A8%EC%9D%98%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%B1%EA%B8%89%EC%BB%B7/question-2005%EB%85%84_6%EC%9B%94_%EA%B3%A03_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%A7%80%EA%B5%AC%EA%B3%BC%ED%95%991_%EB%AC%B8%EC%A0%9C-0f693415b1.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 4,
+        "sha256": "5cb4685297577d0d1cbb53d745d7dc6fc6c1b192a52b27ea1b1e95d34757141e",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001161&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-ebsi-2012-05-g2-341170fd-0-korean",
+      "year": 2014,
+      "session": "예비",
+      "subject": "korean",
+      "subjectLabel": "국어",
+      "variant": "A형 · 홀수형",
+      "archiveId": "5006649",
+      "title": "2014학년도 예비 국어 A형 · 홀수형",
+      "sourcePage": "https://mogozip.com/archive/ebsi-2012-05-g2-341170fd",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/ebsi/%EA%B3%A02/2012/05/2014_%EC%88%98%EB%8A%A5_%EC%98%88%EB%B9%84%EC%8B%9C%ED%96%89(%ED%8F%89%EA%B0%80%EC%9B%90)_%EA%B5%AD%EC%96%B4A%ED%98%95/question-e137ba8d7c.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 16,
+        "sha256": "cb1aa31b001b641998592ec881300b5ed35125d223fbe808b63d3883107fab5a",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=5006649&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-ebsi-2012-05-g2-341170fd-2-korean",
+      "year": 2014,
+      "session": "예비",
+      "subject": "korean",
+      "subjectLabel": "국어",
+      "variant": "B형 · 홀수형",
+      "archiveId": "5006649",
+      "title": "2014학년도 예비 국어 B형 · 홀수형",
+      "sourcePage": "https://mogozip.com/archive/ebsi-2012-05-g2-341170fd",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/ebsi/%EA%B3%A02/2012/05/2014_%EC%88%98%EB%8A%A5_%EC%98%88%EB%B9%84%EC%8B%9C%ED%96%89(%ED%8F%89%EA%B0%80%EC%9B%90)_%EA%B5%AD%EC%96%B4B%ED%98%95/question-a0e32102d4.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 16,
+        "sha256": "b774523d31afade8070acd6f56aea989b24cc896f08262ae036bb502b584be8b",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=5006649&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-ebsi-2012-05-g2-341170fd-4-english",
+      "year": 2014,
+      "session": "예비",
+      "subject": "english",
+      "subjectLabel": "영어",
+      "variant": "A형 · 홀수형",
+      "archiveId": "5006654",
+      "title": "2014학년도 예비 영어 A형 · 홀수형",
+      "sourcePage": "https://mogozip.com/archive/ebsi-2012-05-g2-341170fd",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/ebsi/%EA%B3%A02/2012/05/2014_%EC%88%98%EB%8A%A5_%EC%98%88%EB%B9%84%EC%8B%9C%ED%96%89(%ED%8F%89%EA%B0%80%EC%9B%90)_%EC%98%81%EC%96%B4A/question-ff3e5ebc98.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "7601d294caafc011f49cd3272ece50639067aee8b7d6aad086359a8c566b088b",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=5006654&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-ebsi-2012-05-g2-341170fd-6-english",
+      "year": 2014,
+      "session": "예비",
+      "subject": "english",
+      "subjectLabel": "영어",
+      "variant": "B형 · 홀수형",
+      "archiveId": "5006654",
+      "title": "2014학년도 예비 영어 B형 · 홀수형",
+      "sourcePage": "https://mogozip.com/archive/ebsi-2012-05-g2-341170fd",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/ebsi/%EA%B3%A02/2012/05/2014_%EC%88%98%EB%8A%A5_%EC%98%88%EB%B9%84%EC%8B%9C%ED%96%89(%ED%8F%89%EA%B0%80%EC%9B%90)_%EC%98%81%EC%96%B4B/question-2a18d00ffd.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "dedf43b40cb5c4b97a24f255247f65f06e10c2d21eee433b9dbb5e9d216b11f8",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=5006654&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-ebsi-2012-05-g2-341170fd-8-math",
+      "year": 2014,
+      "session": "예비",
+      "subject": "math",
+      "subjectLabel": "수학",
+      "variant": "A형 · 홀수형",
+      "archiveId": "5006650",
+      "title": "2014학년도 예비 수학 A형 · 홀수형",
+      "sourcePage": "https://mogozip.com/archive/ebsi-2012-05-g2-341170fd",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/ebsi/%EA%B3%A02/2012/05/2014_%EC%88%98%EB%8A%A5_%EC%98%88%EB%B9%84%EC%8B%9C%ED%96%89(%ED%8F%89%EA%B0%80%EC%9B%90)_%EC%88%98%ED%95%99A/question-c8e0ed52fa.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 12,
+        "sha256": "14e1d28845c9fef06cd8d02fc6b588a91b18deeebcff4e7f66480c2039c1c6fc",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=5006650&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-ebsi-2012-05-g2-341170fd-10-math",
+      "year": 2014,
+      "session": "예비",
+      "subject": "math",
+      "subjectLabel": "수학",
+      "variant": "B형 · 홀수형",
+      "archiveId": "5006650",
+      "title": "2014학년도 예비 수학 B형 · 홀수형",
+      "sourcePage": "https://mogozip.com/archive/ebsi-2012-05-g2-341170fd",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/ebsi/%EA%B3%A02/2012/05/2014_%EC%88%98%EB%8A%A5_%EC%98%88%EB%B9%84%EC%8B%9C%ED%96%89(%ED%8F%89%EA%B0%80%EC%9B%90)_%EC%88%98%ED%95%99B/question-852fcb1c82.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 12,
+        "sha256": "5faa5ce5ba61e295f5565953709dab1a86c4ed91cb42992d004965224eaf2f78",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=5006650&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-ebsi-2012-05-g2-341170fd-32-physics",
+      "year": 2014,
+      "session": "예비",
+      "subject": "physics",
+      "subjectLabel": "물리Ⅰ",
+      "variant": "",
+      "archiveId": "5006652",
+      "title": "2014학년도 예비 물리Ⅰ",
+      "sourcePage": "https://mogozip.com/archive/ebsi-2012-05-g2-341170fd",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/ebsi/%EA%B3%A02/2012/05/2014_%EC%88%98%EB%8A%A5_%EC%98%88%EB%B9%84%EC%8B%9C%ED%96%89(%ED%8F%89%EA%B0%80%EC%9B%90)_%EB%AC%BC%EB%A6%AC%E2%85%A0/question-4306d4c96c.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 4,
+        "sha256": "38882575d4867f6d73c4dda6790a0b9dcb24a2b04b0cc81f62cd85a9740807e9",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=5006652&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-ebsi-2012-05-g2-341170fd-40-earth",
+      "year": 2014,
+      "session": "예비",
+      "subject": "earth",
+      "subjectLabel": "지구과학Ⅰ",
+      "variant": "",
+      "archiveId": "5006652",
+      "title": "2014학년도 예비 지구과학Ⅰ",
+      "sourcePage": "https://mogozip.com/archive/ebsi-2012-05-g2-341170fd",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/ebsi/%EA%B3%A02/2012/05/2014_%EC%88%98%EB%8A%A5_%EC%98%88%EB%B9%84%EC%8B%9C%ED%96%89(%ED%8F%89%EA%B0%80%EC%9B%90)_%EC%A7%80%EA%B5%AC%EA%B3%BC%ED%95%99%E2%85%A0/question-49d4821157.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 학년도·회차·과목·유형을 텍스트와 렌더링으로 대조",
+        "pages": 4,
+        "sha256": "818096ce5a2c9dcaa3e335f6ee1453a254a2feae1f93ad0a95963407de58b558",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=5006652&lev=0&m=0403&statusYN=W&s=suneung"
+      }
+    },
+    {
+      "id": "legacy-mogozip-2004-june-0-korean",
+      "year": 2004,
+      "session": "6월",
+      "subject": "korean",
+      "subjectLabel": "언어",
+      "variant": "공통",
+      "archiveId": "3001190",
+      "title": "2004학년도 6월 언어 공통",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-06-1-1232",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A01/2003/2003%EB%85%84_6%EC%9B%94_%EA%B3%A01_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%ED%95%99%EB%A0%A5%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%A3%EA%B8%B0%ED%8C%8C%EC%9D%BC/question-2003%EB%85%84_6%EC%9B%94_%EA%B3%A01_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EA%B5%AD%EC%96%B4_%EB%AC%B8%EC%A0%9C-ca05d817d5.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 2004학년도·6월 모의평가·영역·응시계열을 렌더링으로 대조",
+        "pages": 16,
+        "sha256": "db23b41c17822307aa7f60eeec289102007410ffb6a80ea0799f921bb3952379",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001190&lev=0&m=0403&statusYN=W&s=suneung"
+      },
+      "note": "보관 페이지에는 고1 학력평가와 평가원 자료가 함께 있습니다. 이 링크는 PDF 표지에서 2004학년도 6월 대학수학능력시험 모의평가임을 확인한 파일입니다."
+    },
+    {
+      "id": "legacy-mogozip-2004-june-2-english",
+      "year": 2004,
+      "session": "6월",
+      "subject": "english",
+      "subjectLabel": "외국어(영어)",
+      "variant": "공통",
+      "archiveId": "3001194",
+      "title": "2004학년도 6월 외국어(영어) 공통",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-06-1-1232",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A01/2003/2003%EB%85%84_6%EC%9B%94_%EA%B3%A01_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%ED%95%99%EB%A0%A5%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%A3%EA%B8%B0%ED%8C%8C%EC%9D%BC/question-2003%EB%85%84_6%EC%9B%94_%EA%B3%A01_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%98%81%EC%96%B4_%EB%AC%B8%EC%A0%9C-ee998d7d36.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 2004학년도·6월 모의평가·영역·응시계열을 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "b2a2c3effa4b61557ba443f854679bc68c33bb222fb431f0489256d3df31d9b9",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001194&lev=0&m=0403&statusYN=W&s=suneung"
+      },
+      "note": "보관 페이지에는 고1 학력평가와 평가원 자료가 함께 있습니다. 이 링크는 PDF 표지에서 2004학년도 6월 대학수학능력시험 모의평가임을 확인한 파일입니다."
+    },
+    {
+      "id": "legacy-mogozip-2004-june-5-math",
+      "year": 2004,
+      "session": "6월",
+      "subject": "math",
+      "subjectLabel": "수리",
+      "variant": "예체능계",
+      "archiveId": "3001191",
+      "title": "2004학년도 6월 수리 예체능계",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-06-1-1232",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A01/2003/2003%EB%85%84_6%EC%9B%94_%EA%B3%A01_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%ED%95%99%EB%A0%A5%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%A3%EA%B8%B0%ED%8C%8C%EC%9D%BC/question-2003%EB%85%84_6%EC%9B%94_%EA%B3%A01_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%88%98%ED%95%99(%EC%98%88%EC%B2%B4%EB%8A%A5)_%EB%AC%B8%EC%A0%9C-eef3648cda.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 2004학년도·6월 모의평가·영역·응시계열을 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "87e5726e55588919d47184a273800c4758f01858704e7f1ea3812b7c426cd3f9",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001191&lev=0&m=0403&statusYN=W&s=suneung"
+      },
+      "note": "보관 페이지에는 고1 학력평가와 평가원 자료가 함께 있습니다. 이 링크는 PDF 표지에서 2004학년도 6월 대학수학능력시험 모의평가임을 확인한 파일입니다."
+    },
+    {
+      "id": "legacy-mogozip-2004-june-6-math",
+      "year": 2004,
+      "session": "6월",
+      "subject": "math",
+      "subjectLabel": "수리",
+      "variant": "인문계",
+      "archiveId": "3001191",
+      "title": "2004학년도 6월 수리 인문계",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-06-1-1232",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A01/2003/2003%EB%85%84_6%EC%9B%94_%EA%B3%A01_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%ED%95%99%EB%A0%A5%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%A3%EA%B8%B0%ED%8C%8C%EC%9D%BC/question-2003%EB%85%84_6%EC%9B%94_%EA%B3%A01_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%88%98%ED%95%99(%EC%9D%B8%EB%AC%B8%EA%B3%84)_%EB%AC%B8%EC%A0%9C-54c3e4e882.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 2004학년도·6월 모의평가·영역·응시계열을 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "d5e061e5b2342f71a15ac2f01858d45cb94ac0d6350c774a3e0500c8d01cb9b2",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001191&lev=0&m=0403&statusYN=W&s=suneung"
+      },
+      "note": "보관 페이지에는 고1 학력평가와 평가원 자료가 함께 있습니다. 이 링크는 PDF 표지에서 2004학년도 6월 대학수학능력시험 모의평가임을 확인한 파일입니다."
+    },
+    {
+      "id": "legacy-mogozip-2004-june-7-math",
+      "year": 2004,
+      "session": "6월",
+      "subject": "math",
+      "subjectLabel": "수리",
+      "variant": "자연계",
+      "archiveId": "3001191",
+      "title": "2004학년도 6월 수리 자연계",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-06-1-1232",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A01/2003/2003%EB%85%84_6%EC%9B%94_%EA%B3%A01_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%ED%95%99%EB%A0%A5%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%A3%EA%B8%B0%ED%8C%8C%EC%9D%BC/question-2003%EB%85%84_6%EC%9B%94_%EA%B3%A01_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%88%98%ED%95%99(%EC%9E%90%EC%97%B0%EA%B3%84)_%EB%AC%B8%EC%A0%9C-117f6d86b9.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 2004학년도·6월 모의평가·영역·응시계열을 렌더링으로 대조",
+        "pages": 8,
+        "sha256": "9b2b8baff9bf0e94efe47ea9664b21d004ab60e9046bd0a59f71d060b1c4805c",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001191&lev=0&m=0403&statusYN=W&s=suneung"
+      },
+      "note": "보관 페이지에는 고1 학력평가와 평가원 자료가 함께 있습니다. 이 링크는 PDF 표지에서 2004학년도 6월 대학수학능력시험 모의평가임을 확인한 파일입니다."
+    },
+    {
+      "id": "legacy-mogozip-2004-june-8-physics",
+      "year": 2004,
+      "session": "6월",
+      "subject": "physics",
+      "subjectLabel": "사회·과학탐구",
+      "variant": "자연계",
+      "archiveId": "3001193",
+      "title": "2004학년도 6월 사회·과학탐구 자연계",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-06-1-1232",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A01/2003/2003%EB%85%84_6%EC%9B%94_%EA%B3%A01_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%ED%95%99%EB%A0%A5%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%A3%EA%B8%B0%ED%8C%8C%EC%9D%BC/question-2003%EB%85%84_6%EC%9B%94_%EA%B3%A01_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%82%AC%ED%9A%8C%2C%EA%B3%BC%ED%95%99%ED%83%90%EA%B5%AC(%EC%9E%90%EC%97%B0%EA%B3%84)_%EB%AC%B8%EC%A0%9C-8160ab2899.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 2004학년도·6월 모의평가·영역·응시계열을 렌더링으로 대조",
+        "pages": 32,
+        "sha256": "fcb11e84f7a8a306a7dadc1fff04edbd5573a3788abcf3a5dbbc154f1e2dd251",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001193&lev=0&m=0403&statusYN=W&s=suneung"
+      },
+      "note": "보관 페이지에는 고1 학력평가와 평가원 자료가 함께 있습니다. 이 링크는 PDF 표지에서 2004학년도 6월 대학수학능력시험 모의평가임을 확인한 파일입니다. 사회·과학탐구 자연계 합본이며 현행 물리학Ⅰ·지구과학Ⅰ 단독 시험이 아닙니다."
+    },
+    {
+      "id": "legacy-mogozip-2004-june-8-earth",
+      "year": 2004,
+      "session": "6월",
+      "subject": "earth",
+      "subjectLabel": "사회·과학탐구",
+      "variant": "자연계",
+      "archiveId": "3001193",
+      "title": "2004학년도 6월 사회·과학탐구 자연계",
+      "sourcePage": "https://mogozip.com/archive/legacy-2003-06-1-1232",
+      "provider": "모고집",
+      "files": [
+        {
+          "kind": "question",
+          "format": "pdf",
+          "url": "https://mogozip.com/downloads/legacy-public/%EA%B3%A01/2003/2003%EB%85%84_6%EC%9B%94_%EA%B3%A01_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-%ED%95%99%EB%A0%A5%ED%8F%89%EA%B0%80_%EB%AC%B8%EC%A0%9C%EC%A7%80%2C%EC%A0%95%EB%8B%B5%2C%EB%93%A3%EA%B8%B0%ED%8C%8C%EC%9D%BC/question-2003%EB%85%84_6%EC%9B%94_%EA%B3%A01_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC_%EC%82%AC%ED%9A%8C%2C%EA%B3%BC%ED%95%99%ED%83%90%EA%B5%AC(%EC%9E%90%EC%97%B0%EA%B3%84)_%EB%AC%B8%EC%A0%9C-8160ab2899.pdf",
+          "name": "문제지 보관본",
+          "source": "모고집",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "checkedAt": "2026-10-28",
+      "verification": {
+        "method": "PDF 전체 내려받기 및 표지의 2004학년도·6월 모의평가·영역·응시계열을 렌더링으로 대조",
+        "pages": 32,
+        "sha256": "fcb11e84f7a8a306a7dadc1fff04edbd5573a3788abcf3a5dbbc154f1e2dd251",
+        "officialArchive": "https://www.suneung.re.kr/boardCnts/view.do?boardID=1500236&boardSeq=3001193&lev=0&m=0403&statusYN=W&s=suneung"
+      },
+      "note": "보관 페이지에는 고1 학력평가와 평가원 자료가 함께 있습니다. 이 링크는 PDF 표지에서 2004학년도 6월 대학수학능력시험 모의평가임을 확인한 파일입니다. 사회·과학탐구 자연계 합본이며 현행 물리학Ⅰ·지구과학Ⅰ 단독 시험이 아닙니다."
+    }
+  ],
+  "notes": [
+    "공식 게시물에는 ZIP으로 묶여 있는 오래된 시험의 직접 PDF 열람을 돕는 외부 보관본 링크입니다. 출제·공식 게시 기관은 한국교육과정평가원이며 보관본 제공자는 모고집입니다.",
+    "각 PDF의 학년도·회차·과목·유형을 실제 표지와 대조했습니다. 공식 ZIP 원본과 바이트 단위 동일성을 확인했다는 뜻은 아닙니다.",
+    "PDF는 검토용 로컬 캐시에만 내려받았으며 이 사이트에 복제하거나 재호스팅하지 않습니다."
+  ]
+}
