@@ -1,0 +1,1691 @@
+[
+  {
+    "id": "bite-earth-comparison-subject",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "자료 읽기",
+    "title": "누가 더 큰가요?",
+    "prompt": "해수 A의 밀도는 1025 kg/m³, B는 1027 kg/m³예요. “A보다 B의 밀도가 크다”는 문장은 맞나요?",
+    "explanation": [
+      "“A보다 B가 크다”에서 비교 기준은 A, 더 크다고 한 대상은 B예요.",
+      "1027>1025이므로 주어진 문장은 맞아요."
+    ],
+    "takeaway": "비교 문장에서 기준과 판단 대상을 각각 짚어요.",
+    "noteIds": [
+      "earth-read"
+    ],
+    "refs": [],
+    "seconds": 20,
+    "tags": [
+      "비교",
+      "주어"
+    ],
+    "choices": [
+      "틀려요. A의 밀도가 더 커요.",
+      "맞아요. B의 밀도가 더 커요.",
+      "A와 B의 밀도가 같아요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-earth-read-last-condition",
+    "subject": "earth",
+    "kind": "tip",
+    "topic": "자료 읽기",
+    "title": "괄호까지 읽고 시작해요",
+    "prompt": "계산하기 전에 발문과 괄호를 끝까지 읽어요. 특히 “같다고 가정한다”와 “무시한다”를 표시해요.",
+    "explanation": [
+      "“별의 질량과 관측 방향은 같다”면 그 두 조건은 비교 중에 바꾸지 않아요.",
+      "구하려는 양을 한 줄로 적고, 그 양에 필요한 조건만 골라요."
+    ],
+    "takeaway": "조건을 추가로 상상하지 말고, 문제에서 고정한 것을 먼저 남겨요.",
+    "noteIds": [
+      "earth-read"
+    ],
+    "refs": [],
+    "seconds": 20,
+    "tags": [
+      "조건",
+      "루틴"
+    ]
+  },
+  {
+    "id": "bite-earth-anomaly-actual",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "편차",
+    "title": "편차가 크면 더 따뜻할까요?",
+    "prompt": "A의 평년 수온은 15℃이고 수온 편차는 +2℃예요. B의 평년 수온은 25℃이고 편차는 +1℃예요. 실제 수온이 더 높은 곳은 어디인가요?",
+    "explanation": [
+      "실제 수온은 평년값+편차예요.",
+      "A는 17℃, B는 26℃이므로 B가 더 따뜻해요."
+    ],
+    "takeaway": "편차끼리 비교할지, 평년값을 더한 실제 값을 비교할지 구분해요.",
+    "noteIds": [
+      "earth-graphs"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2024-06",
+        "number": 6
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "축",
+      "편차"
+    ],
+    "choices": [
+      "B예요.",
+      "A예요.",
+      "두 곳의 실제 수온이 같아요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-earth-conditions-intersection",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "조건 판정",
+    "title": "두 조건을 모두 만족하는 곳",
+    "prompt": "후보 A·B·C를 분류했어요. “밀도 1027 kg/m³ 이상”은 A·B, “수온 5℃ 이하”는 B·C가 만족해요. 두 조건을 모두 만족하는 후보는 무엇인가요?",
+    "explanation": [
+      "첫 조건의 집합은 {A, B}, 둘째 조건의 집합은 {B, C}예요.",
+      "두 집합에 함께 들어 있는 B만 남겨요."
+    ],
+    "takeaway": "조건이 여러 개면 조건별 후보를 적고, 겹치는 것만 남겨요.",
+    "noteIds": [
+      "earth-graphs"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "교집합",
+      "조건"
+    ],
+    "choices": [
+      "A예요.",
+      "B예요.",
+      "A·B·C 모두예요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-earth-temperature-gap-change",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "변화량",
+    "title": "온도 차가 줄었나요?",
+    "prompt": "서쪽 해역의 수온이 20℃에서 22℃로, 동쪽 해역은 15℃에서 19℃로 올랐어요. 서쪽−동쪽 수온 차는 어떻게 바뀌었나요?",
+    "explanation": [
+      "처음 차는 20−15=5℃, 나중 차는 22−19=3℃예요.",
+      "둘 다 증가해도 증가량이 다르면 두 값의 차는 바뀌어요."
+    ],
+    "takeaway": "각각의 증가·감소와 두 값 사이의 차를 따로 계산해요.",
+    "noteIds": [
+      "earth-change-cause"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2024-09",
+        "number": 15
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "변화량",
+      "엘니뇨"
+    ],
+    "choices": [
+      "5℃에서 7℃로 늘었어요.",
+      "5℃에서 3℃로 줄었어요.",
+      "두 곳 다 따뜻해져서 차는 그대로예요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-earth-freshwater-sinking",
+    "subject": "earth",
+    "kind": "recall",
+    "topic": "심층 순환",
+    "title": "담수가 섞이면 가라앉기 쉬울까요?",
+    "prompt": "차가운 해수에 담수가 섞였어요. 수온과 압력은 그대로라고 할 때, 염분과 밀도는 어떻게 바뀌고 가라앉기는 쉬워지나요, 어려워지나요?",
+    "explanation": [
+      "담수가 섞이면 해수의 염분이 낮아져요.",
+      "같은 수온·압력에서 염분이 낮아지면 밀도가 작아져 침강이 약해져요."
+    ],
+    "takeaway": "원인→염분→밀도→침강 순서로 연결해요.",
+    "noteIds": [
+      "earth-change-cause"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2022-09",
+        "number": 3
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "인과",
+      "밀도"
+    ],
+    "answerText": "염분과 밀도가 낮아져서 가라앉기 어려워져요."
+  },
+  {
+    "id": "bite-earth-reciprocal-ratio",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "비율",
+    "title": "분모와 분자를 뒤집으면",
+    "prompt": "두 별의 광도를 A, B라고 할 때 A/B=1/4예요. B/A는 얼마인가요?",
+    "explanation": [
+      "B/A는 A/B의 역수예요.",
+      "(1/4)×4=1이므로 B/A=4예요."
+    ],
+    "takeaway": "구할 비율의 분자·분모를 먼저 적어요.",
+    "noteIds": [
+      "earth-ratios"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2024-09",
+        "number": 14
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "비율",
+      "역수"
+    ],
+    "choices": [
+      "4예요.",
+      "1/4이에요.",
+      "−4예요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-earth-inverse-temperature",
+    "subject": "earth",
+    "kind": "recall",
+    "topic": "별의 표면 온도",
+    "title": "파장이 두 배면 온도는?",
+    "prompt": "별 A의 최대 복사 에너지 파장은 별 B의 두 배예요. 두 별에 빈의 변위 법칙이 성립할 때, A의 표면 온도는 B의 몇 배인가요?",
+    "explanation": [
+      "최대 복사 에너지 파장×표면 온도는 일정해요.",
+      "파장이 두 배이면 온도는 절반이어야 곱이 같아요."
+    ],
+    "takeaway": "반비례하는 두 양은 같은 방향으로 배수를 적용하지 않아요.",
+    "noteIds": [
+      "earth-ratios"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2024-09",
+        "number": 14
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "반비례",
+      "파장"
+    ],
+    "answerText": "1/2배예요."
+  },
+  {
+    "id": "bite-earth-ridge-relative-speed",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "판 운동",
+    "title": "해령에서 멀어진 거리",
+    "prompt": "해양 지각이 해령에서 생성된 뒤 400만 년 동안 해령에 대해 80 km 이동했어요. 이동 속력이 일정했다면 해령에 대한 평균 속력은 얼마인가요?",
+    "explanation": [
+      "이동 거리÷걸린 시간이므로 80÷4=20 km/100만 년이에요.",
+      "이 값은 해령에 대한 상대 속력이에요. 이를 곧바로 맨틀에 대한 절대 속력이라고 하지는 않아요."
+    ],
+    "takeaway": "거리÷시간을 구한 뒤, 무엇에 대한 속력인지 붙여요.",
+    "noteIds": [
+      "earth-plates"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2026-06",
+        "number": 9
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "기준",
+      "속력"
+    ],
+    "choices": [
+      "100만 년당 20 km예요.",
+      "100만 년당 320 km예요.",
+      "100만 년당 40 km예요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-earth-echo-depth",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "음향 측심",
+    "title": "왕복 시간을 반으로",
+    "prompt": "배에서 보낸 음파가 해저에 반사되어 4초 뒤 돌아왔어요. 해수에서 음파 속력이 1500 m/s로 일정하다면 수심은 얼마인가요?",
+    "explanation": [
+      "4초는 내려가는 시간과 올라오는 시간을 합친 값이에요.",
+      "수심은 1500×4÷2=3000 m예요."
+    ],
+    "takeaway": "왕복 거리인지 한쪽 거리인지 확인하고 2로 나눠요.",
+    "noteIds": [
+      "earth-plates"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2025-09",
+        "number": 4
+      },
+      {
+        "paperId": "earth-2026-11",
+        "number": 6
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "왕복",
+      "단위"
+    ],
+    "choices": [
+      "6000 m예요.",
+      "750 m예요.",
+      "3000 m예요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-earth-paleo-birth-latitude",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "고지자기",
+    "title": "현재 위도로 읽으면 안 돼요",
+    "prompt": "용암이 적도에서 굳으며 당시 지구 자기장 방향을 기록했어요. 이후 지각이 북위 45°로 이동했지만 기울어지거나 다시 자화되지는 않았어요. 암석의 고지자기 복각으로 알 수 있는 것은 무엇인가요?",
+    "explanation": [
+      "고지자기는 암석이 자화될 당시 자기장을 기록해요.",
+      "현재 위치가 달라져도 기록 자체를 현재 위도의 복각으로 바꿔 읽지 않아요."
+    ],
+    "takeaway": "고지자기가 기록한 시점과 현재 관측하는 시점을 나눠요.",
+    "noteIds": [
+      "earth-paleomagnetism"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2022-11",
+        "number": 19
+      },
+      {
+        "paperId": "earth-2025-06",
+        "number": 17
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "시점",
+      "복각"
+    ],
+    "choices": [
+      "암석이 굳을 당시의 위도예요.",
+      "현재 놓인 북위 45°예요.",
+      "이동에 걸린 시간이에요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-earth-geomagnetic-pole",
+    "subject": "earth",
+    "kind": "recall",
+    "topic": "고지자기",
+    "title": "지자기 북극은 막대자석의 어느 극?",
+    "prompt": "현재와 같은 정상 자기장을 지구 안의 막대자석 하나로 나타내요. 지리적 북극 부근에서 자기력선이 지구 안으로 들어간다면, 그쪽 막대자석 극은 N극인가요, S극인가요?",
+    "explanation": [
+      "막대자석 바깥에서 자기력선은 N극에서 나와 S극으로 들어가요.",
+      "지리적 북극 부근은 자기력선이 들어가는 쪽이라 막대자석의 S극에 대응해요."
+    ],
+    "takeaway": "지자기 북극이라는 이름과 막대자석 N극을 그대로 대응시키지 않아요.",
+    "noteIds": [
+      "earth-paleomagnetism"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2023-09",
+        "number": 17
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "방향",
+      "자기장"
+    ],
+    "answerText": "S극이에요."
+  },
+  {
+    "id": "bite-earth-fault-hanging-wall",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "단층",
+    "title": "올라간 것이 상반이라면",
+    "prompt": "경사진 단층면 위쪽의 암반 A가 상반, 아래쪽의 B가 하반이에요. A가 B에 대해 위로 이동했어요. 이 단층은 무엇인가요?",
+    "explanation": [
+      "상반이 하반에 대해 올라가면 역단층이에요.",
+      "지층의 겉보기 높이만 보지 말고 단층면을 기준으로 상반을 정해요."
+    ],
+    "takeaway": "단층면→상반·하반→상대 이동 순서로 판단해요.",
+    "noteIds": [
+      "earth-strata"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2025-06",
+        "number": 19
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "상대 운동",
+      "기준"
+    ],
+    "choices": [
+      "정단층이에요.",
+      "역단층이에요.",
+      "상반·하반이 정해져도 구분할 수 없어요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-earth-angular-unconformity",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "부정합",
+    "title": "둘 다 기울었다는 이유만으로?",
+    "prompt": "퇴적이 끊긴 부정합면 위아래 지층이 모두 동쪽으로 20° 기울어져 서로 평행해요. “지층이 기울었으니 경사 부정합이다”라고 판단해도 되나요?",
+    "explanation": [
+      "경사 부정합은 부정합면 위아래 지층의 기울어진 방향이나 각도가 달라요.",
+      "두 지층이 함께 같은 방향으로 기울었다는 사실만으로는 경사 부정합이 아니에요."
+    ],
+    "takeaway": "각 지층의 기울기와 위아래 지층 사이의 각도를 구분해요.",
+    "noteIds": [
+      "earth-strata"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2026-09",
+        "number": 1
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "조건",
+      "상대 각도"
+    ],
+    "choices": [
+      "네. 두 지층이 모두 기울면 경사 부정합이에요.",
+      "네. 부정합면이 있으면 모두 경사 부정합이에요.",
+      "아니요. 위아래 지층이 평행해서 그 근거로는 안 돼요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-earth-decay-denominator",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "방사성 연대",
+    "title": "모원소를 무엇으로 나누나요?",
+    "prompt": "암석이 굳을 때 자원소는 없었고, 이후 모원소 1개가 안정한 자원소 1개로 변했어요. 외부 출입은 없어요. 현재 모원소 20개, 자원소 60개라면 모원소가 처음의 몇 % 남았나요?",
+    "explanation": [
+      "처음 모원소 수는 현재 모원소+자원소이므로 20+60=80개예요.",
+      "남은 비율은 20/80=1/4=25%예요. 20/60으로 계산하지 않아요."
+    ],
+    "takeaway": "초기 자원소와 외부 출입 조건을 확인한 뒤, 처음 양을 복원해요.",
+    "noteIds": [
+      "earth-decay"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2024-09",
+        "number": 1
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "분모",
+      "반감기"
+    ],
+    "choices": [
+      "25%예요.",
+      "약 33%예요.",
+      "75%예요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-earth-decay-equal-fraction",
+    "subject": "earth",
+    "kind": "recall",
+    "topic": "방사성 붕괴",
+    "title": "줄어든 양보다 줄어든 비율",
+    "prompt": "같은 방사성 동위원소가 100단위에서 10단위로 줄어드는 데 T년 걸렸어요. 10단위에서 1단위로 줄어드는 데는 몇 년 걸리나요? 붕괴 상수는 일정해요.",
+    "explanation": [
+      "두 구간 모두 처음 양의 1/10이 남는 변화예요.",
+      "같은 동위원소는 같은 시간 동안 같은 비율이 남아요. 감소한 양이 90과 9로 달라도 시간은 같아요."
+    ],
+    "takeaway": "방사성 붕괴 시간은 감소한 양보다 남은 비율로 비교해요.",
+    "noteIds": [
+      "earth-decay"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2024-06",
+        "number": 19
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "비율",
+      "시간"
+    ],
+    "answerText": "똑같이 T년 걸려요."
+  },
+  {
+    "id": "bite-earth-intrusion-younger",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "암석의 선후 관계",
+    "title": "지층을 뚫고 들어온 암석",
+    "prompt": "퇴적층 A·B를 화강암 C가 가로질러 관입했어요. 관입 관계만으로 확실히 알 수 있는 것은 무엇인가요?",
+    "explanation": [
+      "이미 존재하는 지층을 마그마가 뚫고 들어가야 관입 관계가 만들어져요.",
+      "관입암에는 단순히 아래에 있으면 더 오래됐다는 규칙을 적용하지 않아요."
+    ],
+    "takeaway": "암석의 높이보다 무엇을 가로질렀는지 먼저 봐요.",
+    "noteIds": [
+      "earth-intrusion"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2024-09",
+        "number": 17
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "선후 관계",
+      "관입"
+    ],
+    "choices": [
+      "C는 A·B가 생긴 뒤에 관입했어요.",
+      "C가 아래쪽에도 있으니 A·B보다 먼저 생겼어요.",
+      "세 암석은 동시에 생겼어요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-earth-basal-fragment-older",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "암석의 선후 관계",
+    "title": "역암 속 화강암 조각",
+    "prompt": "부정합면 바로 위의 기저 역암에 화강암 조각이 들어 있어요. 그 화강암과 역암 중 무엇이 먼저 만들어졌나요?",
+    "explanation": [
+      "화강암이 먼저 만들어지고 풍화·침식되어야 그 조각이 역암에 들어갈 수 있어요.",
+      "조각이 된 암석의 생성→침식→역암의 퇴적 순서예요."
+    ],
+    "takeaway": "암석 조각이 들어 있으면 조각의 원래 암석을 먼저 놓아요.",
+    "noteIds": [
+      "earth-intrusion"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2026-06",
+        "number": 7
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "포함물",
+      "순서"
+    ],
+    "choices": [
+      "화강암이 먼저 만들어졌어요.",
+      "역암이 먼저 만들어졌어요.",
+      "조각의 종류만으로는 전혀 알 수 없어요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-earth-geologic-duration",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "지질 시대",
+    "title": "더 먼저 시작하면 더 길까요?",
+    "prompt": "시생 누대는 40억~25억 년 전, 원생 누대는 25억~5.4억 년 전이라고 해요. 어느 기간이 더 긴가요?",
+    "explanation": [
+      "시생 누대는 40−25=15억 년, 원생 누대는 25−5.4=19.6억 년이에요.",
+      "더 오래전에 시작했다는 사실과 기간이 더 길다는 사실은 달라요."
+    ],
+    "takeaway": "시작 시점만 비교하지 말고 끝 시점을 빼서 기간을 구해요.",
+    "noteIds": [
+      "earth-geologic-time"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2023-11",
+        "number": 10
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "기간",
+      "단위"
+    ],
+    "choices": [
+      "원생 누대가 더 길어요.",
+      "시생 누대가 더 길어요.",
+      "두 기간의 길이가 같아요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-earth-appearance-flourishing",
+    "subject": "earth",
+    "kind": "tip",
+    "topic": "지질 시대",
+    "title": "출현과 번성을 나눠요",
+    "prompt": "“처음 나타난 시대”와 “크게 번성한 시대”를 따로 기억해요. 포유류가 신생대에 번성했다는 말은 신생대에 처음 출현했다는 뜻이 아니에요.",
+    "explanation": [
+      "포유류의 최초 출현은 중생대, 크게 번성한 시대는 신생대로 나눠 적어요.",
+      "선지에서 “최초”, “출현”, “번성” 중 어떤 말을 썼는지 먼저 표시해요."
+    ],
+    "takeaway": "같은 생물이라도 어떤 사건을 묻는지에 따라 시대가 달라져요.",
+    "noteIds": [
+      "earth-geologic-time"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2022-09",
+        "number": 1
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "시점",
+      "생물"
+    ]
+  },
+  {
+    "id": "bite-earth-mudcrack-environment",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "퇴적 환경",
+    "title": "건열이면 바닷가일까요?",
+    "prompt": "세립질 퇴적물 표면에서 건열을 발견했어요. “건열이 있으므로 반드시 바닷가에서 퇴적되었다”는 판단이 맞나요?",
+    "explanation": [
+      "건열은 물에 젖은 세립질 퇴적물이 드러나 마르면서 생겨요.",
+      "마를 수 있는 환경이라는 근거이지, 해안만을 가리키는 근거는 아니에요."
+    ],
+    "takeaway": "퇴적 구조가 알려 주는 조건과 특정 장소를 구분해요.",
+    "noteIds": [
+      "earth-rocks-fossils"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2023-09",
+        "number": 4
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "조건",
+      "퇴적 구조"
+    ],
+    "choices": [
+      "네. 건열은 바닷가에서만 생겨요.",
+      "아니요. 건열은 깊은 바다에서만 생겨요.",
+      "아니요. 호수 가장자리 등 육상에서도 생길 수 있어요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-earth-silica-viscosity",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "마그마",
+    "title": "같은 조건에서 점성 비교",
+    "prompt": "온도와 물 함량이 같은 마그마 A·B가 있어요. SiO₂ 함량은 A가 45%, B가 70%예요. 일반적으로 점성이 더 작은 것은 무엇인가요?",
+    "explanation": [
+      "다른 조건이 같으면 SiO₂ 함량이 낮을수록 점성이 작은 경향이 있어요.",
+      "A의 SiO₂ 함량이 더 낮으므로 A의 점성이 더 작아요."
+    ],
+    "takeaway": "성질을 비교할 때 온도·물 함량처럼 함께 영향을 주는 조건이 같은지 봐요.",
+    "noteIds": [
+      "earth-rocks-fossils"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2026-06",
+        "number": 2
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "통제 조건",
+      "점성"
+    ],
+    "choices": [
+      "B예요.",
+      "SiO₂ 함량과 관계없이 같아요.",
+      "A예요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-earth-typhoon-strength",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "태풍",
+    "title": "중심 기압이 낮아졌어요",
+    "prompt": "태풍의 중심 기압이 980 hPa에서 960 hPa로 낮아졌어요. 주변 기압은 같고 다른 구조 변화는 고려하지 않을 때, 태풍의 세기는 어떻게 판단하나요?",
+    "explanation": [
+      "주변과 중심의 기압 차가 더 커졌어요.",
+      "중심 기압이 더 낮아진 것을 세기가 강해진 근거로 사용해요. 시간이 지났다는 이유로 약해졌다고 하지 않아요."
+    ],
+    "takeaway": "태풍의 세기는 시간 순서보다 중심 기압 등의 자료로 판단해요.",
+    "noteIds": [
+      "earth-weather"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2025-06",
+        "number": 10
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "기압",
+      "비교"
+    ],
+    "choices": [
+      "약해진 것으로 판단해요.",
+      "강해진 것으로 판단해요.",
+      "시간이 지났으므로 무조건 약해져요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-earth-closest-lowest-pressure",
+    "subject": "earth",
+    "kind": "recall",
+    "topic": "태풍 관측",
+    "title": "가장 가까운 때가 최저 기압일까요?",
+    "prompt": "태풍이 관측소를 지나가는 동안 태풍 자체의 세기도 변했어요. 관측소와 태풍 중심의 거리만으로 관측소 기압이 가장 낮았던 시각을 확정할 수 있나요?",
+    "explanation": [
+      "관측소 기압에는 중심과의 거리뿐 아니라 태풍의 세기도 영향을 줘요.",
+      "가장 가까웠다는 이유만으로 최저 기압 시각을 확정하지 말고 기압 관측값을 확인해요."
+    ],
+    "takeaway": "관측값을 바꾸는 요인이 둘이면 하나만으로 결론 내리지 않아요.",
+    "noteIds": [
+      "earth-weather"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2022-06",
+        "number": 18
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "조건",
+      "관측"
+    ],
+    "answerText": "아니요. 태풍의 세기 변화도 확인해야 해요."
+  },
+  {
+    "id": "bite-earth-wind-from-direction",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "풍향",
+    "title": "북풍은 어디로 불까요?",
+    "prompt": "관측소에 북풍이 불어요. 공기는 어느 쪽에서 와서 어느 쪽으로 이동하나요?",
+    "explanation": [
+      "풍향은 바람이 불어오는 쪽의 이름이에요.",
+      "따라서 북풍의 이동 방향은 남쪽이에요."
+    ],
+    "takeaway": "풍향 이름을 이동 화살표로 바꿀 때는 반대쪽을 향하게 해요.",
+    "noteIds": [
+      "earth-wind"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2024-06",
+        "number": 10
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "방향",
+      "풍향"
+    ],
+    "choices": [
+      "남쪽에서 와서 북쪽으로 이동해요.",
+      "북쪽에서 와서 남쪽으로 이동해요.",
+      "북쪽에서 와서 동쪽으로 이동해요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-earth-dangerous-right",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "태풍",
+    "title": "서쪽으로 가는 태풍의 오른쪽",
+    "prompt": "북반구 태풍이 서쪽으로 이동해요. 이동 방향을 바라볼 때 오른쪽인 위험 반원은 태풍 중심의 북쪽인가요, 남쪽인가요?",
+    "explanation": [
+      "서쪽을 바라보고 서면 오른손 쪽은 북쪽이에요.",
+      "위험 반원의 “오른쪽”은 태풍의 진행 방향을 기준으로 정해요."
+    ],
+    "takeaway": "위험 반원을 외운 지리 방향으로 고정하지 말고 진행 화살표를 먼저 그려요.",
+    "noteIds": [
+      "earth-wind"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2025-09",
+        "number": 8
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "기준",
+      "방향"
+    ],
+    "choices": [
+      "북쪽이에요.",
+      "남쪽이에요.",
+      "이동 방향과 관계없이 언제나 동쪽이에요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-earth-ir-palette",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "위성 영상",
+    "title": "밝은 적외 영상의 의미",
+    "prompt": "적외 위성 영상이 “온도가 낮을수록 밝게 표시”하는 방식이에요. 구름 꼭대기 온도가 A는 230 K, B는 270 K라면 어느 구름이 더 밝게 보이나요?",
+    "explanation": [
+      "주어진 표시 방식에서는 더 차가운 곳이 더 밝아요.",
+      "230 K인 A가 더 밝아요. 밝기 표시와 실제 적외선 방출량을 같은 뜻으로 읽지 않아요."
+    ],
+    "takeaway": "영상의 밝기를 해석하기 전에 색상·명암 범례를 확인해요.",
+    "noteIds": [
+      "earth-satellite"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2025-09",
+        "number": 8
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "범례",
+      "적외 영상"
+    ],
+    "choices": [
+      "B예요.",
+      "둘 다 구름이므로 밝기가 같아요.",
+      "A예요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-earth-visible-night",
+    "subject": "earth",
+    "kind": "tip",
+    "topic": "위성 영상",
+    "title": "먼저 영상 종류와 시각",
+    "prompt": "구름의 밝기를 읽기 전에 가시 영상인지 적외 영상인지, 낮인지 밤인지 확인해요.",
+    "explanation": [
+      "가시 영상은 구름 등이 반사한 태양 빛을 이용해요. 밤의 구름 관측에는 제약이 있어요.",
+      "적외 영상은 밤에도 이용할 수 있어요. 온도에 따른 밝기는 주어진 범례로 판단해요."
+    ],
+    "takeaway": "영상 종류→관측 시각→범례 순서로 읽어요.",
+    "noteIds": [
+      "earth-satellite"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2026-06",
+        "number": 4
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "루틴",
+      "영상"
+    ]
+  },
+  {
+    "id": "bite-earth-current-directions",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "표층 순환",
+    "title": "편서풍이 미는 해류",
+    "prompt": "남극 순환 해류는 남극 주변의 편서풍 영향을 받아 흘러요. 편서풍이 서쪽에서 동쪽으로 분다면, 이 해류의 주된 흐름은 어느 방향인가요?",
+    "explanation": [
+      "편서풍은 서쪽에서 동쪽으로 불어요.",
+      "남극 순환 해류도 남극을 둘러싸며 대체로 동쪽으로 흘러요."
+    ],
+    "takeaway": "바람이 불어오는 방향과 실제 해류의 이동 방향을 나눠 적어요.",
+    "noteIds": [
+      "earth-ocean-circulation"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2022-11",
+        "number": 10
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "방향",
+      "바람"
+    ],
+    "choices": [
+      "서쪽에서 동쪽이에요.",
+      "동쪽에서 서쪽이에요.",
+      "남극을 향한 북쪽에서 남쪽이에요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-earth-california-current",
+    "subject": "earth",
+    "kind": "recall",
+    "topic": "표층 순환",
+    "title": "북태평양 동쪽의 남하 해류",
+    "prompt": "북태평양 아열대 순환의 동쪽에서 북아메리카 서안을 따라 남쪽으로 흐르는 캘리포니아 해류는 난류인가요, 한류인가요?",
+    "explanation": [
+      "캘리포니아 해류는 북태평양 아열대 순환의 동쪽 경계에서 남하하는 한류예요.",
+      "같은 북태평양이라도 서쪽의 쿠로시오 해류는 난류라 서로 바꾸지 않아요."
+    ],
+    "takeaway": "해류는 이름·위치·방향·난류/한류를 묶어서 떠올려요.",
+    "noteIds": [
+      "earth-ocean-circulation"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2026-06",
+        "number": 5
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "위치",
+      "한류"
+    ],
+    "answerText": "한류예요."
+  },
+  {
+    "id": "bite-earth-salinity-density",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "해수의 밀도",
+    "title": "더 짜다고 더 무거울까요?",
+    "prompt": "같은 압력에서 해수 A의 염분은 34.8 psu, 밀도는 1027.8 kg/m³이고 B는 35.0 psu, 1027.6 kg/m³예요. 옳은 비교는 무엇인가요?",
+    "explanation": [
+      "염분은 35.0>34.8, 밀도는 1027.8>1027.6이에요.",
+      "밀도에는 수온도 영향을 주므로 염분 순서가 밀도 순서와 꼭 같지는 않아요."
+    ],
+    "takeaway": "수온이 같다는 조건이 없으면 염분 하나로 밀도를 정하지 않아요.",
+    "noteIds": [
+      "earth-ocean-properties"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2022-09",
+        "number": 12
+      },
+      {
+        "paperId": "earth-2026-09",
+        "number": 2
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "조건",
+      "밀도"
+    ],
+    "choices": [
+      "B의 염분이 높으므로 B의 밀도도 더 커요.",
+      "밀도가 큰 A의 염분이 반드시 더 높아요.",
+      "B의 염분이 더 높지만 A의 밀도가 더 커요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-earth-wind-mixed-layer",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "혼합층",
+    "title": "바람으로 더 깊이 섞이면",
+    "prompt": "해수의 다른 조건은 같아요. 바람이 약할 때보다 강할 때 표층 해수가 더 깊은 곳까지 섞였어요. 혼합층 두께는 어떻게 달라졌나요?",
+    "explanation": [
+      "혼합층은 바람 등에 의해 해수가 섞여 수온이 비교적 일정한 표층이에요.",
+      "섞이는 깊이가 깊어졌으므로 혼합층의 두께가 커졌어요."
+    ],
+    "takeaway": "혼합층은 따뜻한 물의 양만이 아니라 실제로 섞이는 깊이로 읽어요.",
+    "noteIds": [
+      "earth-ocean-properties"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2025-06",
+        "number": 4
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "혼합층",
+      "원인"
+    ],
+    "choices": [
+      "얇아졌어요.",
+      "바람은 혼합층 두께와 관계없어요.",
+      "두꺼워졌어요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-earth-enso-upwelling",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "엘니뇨",
+    "title": "무역풍이 약해졌어요",
+    "prompt": "적도 태평양에서 평년보다 무역풍이 약해지고 동태평양 표층 수온이 높아졌어요. 엘니뇨의 일반적인 변화로 동태평양의 용승은 어떻게 되나요?",
+    "explanation": [
+      "무역풍이 약해지면 동태평양에서 차가운 심층수가 올라오는 용승이 약해져요.",
+      "차가운 물의 공급이 줄어 동태평양 표층이 더 따뜻해지는 방향이에요."
+    ],
+    "takeaway": "엘니뇨는 바람→용승→수온 순서로 묶고 동쪽·서쪽을 구분해요.",
+    "noteIds": [
+      "earth-enso"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2024-09",
+        "number": 15
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "인과",
+      "동서"
+    ],
+    "choices": [
+      "약해져요.",
+      "강해져요.",
+      "동쪽 표층 수온이 높아지면 용승도 반드시 강해져요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-earth-enso-pressure-sign",
+    "subject": "earth",
+    "kind": "recall",
+    "topic": "엘니뇨",
+    "title": "차의 편차도 빼기로 구해요",
+    "prompt": "동태평양 기압−서태평양 기압의 평년값은 −2 hPa, 현재 값은 −5 hPa예요. “현재 차−평년 차”로 구한 편차는 몇 hPa인가요?",
+    "explanation": [
+      "현재 값에서 평년값을 빼면 −5−(−2)=−3 hPa예요.",
+      "차 자체가 음수인 것과 평년보다 더 작아져 편차가 음수인 것을 구분해요."
+    ],
+    "takeaway": "기압 차의 편차를 구할 때도 뺄셈의 순서와 괄호를 남겨요.",
+    "noteIds": [
+      "earth-enso"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2023-09",
+        "number": 15
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "부호",
+      "편차"
+    ],
+    "answerText": "−3 hPa예요."
+  },
+  {
+    "id": "bite-earth-tilt-season-altitude",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "자전축 경사",
+    "title": "경사가 더 커지면",
+    "prompt": "북위 37°에서 자전축 경사각이 23.5°에서 24.5°로 커졌어요. 다른 조건은 같을 때 하지와 동지의 태양 남중 고도는 각각 어떻게 바뀌나요?",
+    "explanation": [
+      "북위 37°에서 하지 남중 고도는 90°−37°+경사각이에요.",
+      "동지는 90°−37°−경사각이므로, 경사각이 커지면 하지에는 높아지고 동지에는 낮아져요."
+    ],
+    "takeaway": "자전축 경사 변화는 계절을 정한 뒤 부호를 붙여요.",
+    "noteIds": [
+      "earth-climate-orbits"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2025-09",
+        "number": 14
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "계절",
+      "부호"
+    ],
+    "choices": [
+      "하지에는 높아지고 동지에는 낮아져요.",
+      "하지와 동지 모두 높아져요.",
+      "하지에는 낮아지고 동지에는 높아져요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-earth-precession-quarter",
+    "subject": "earth",
+    "kind": "recall",
+    "topic": "세차 운동",
+    "title": "6500년은 얼마만큼?",
+    "prompt": "세차 운동 주기를 26000년으로 보아요. 6500년은 한 주기의 몇 분의 몇인가요? 회전 방향이나 계절 위치는 묻지 않아요.",
+    "explanation": [
+      "6500/26000=1/4예요.",
+      "기간의 비율을 알아도 구체적인 자전축 방향을 정하려면 회전 방향과 처음 상태가 더 필요해요."
+    ],
+    "takeaway": "주기의 비율 계산과 실제 방향 판정을 따로 해요.",
+    "noteIds": [
+      "earth-climate-orbits"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2025-06",
+        "number": 14
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "주기",
+      "비율"
+    ],
+    "answerText": "1/4주기예요."
+  },
+  {
+    "id": "bite-earth-solar-distance-square",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "태양 복사",
+    "title": "거리가 두 배면 입사 에너지는?",
+    "prompt": "크기가 일정한 행성이 별에서 거리 r에 있을 때, 매초 받는 전체 복사 에너지는 P예요. 별의 광도는 일정해요. 거리가 2r이 되면 매초 얼마를 받나요?",
+    "explanation": [
+      "별빛은 거리의 제곱에 반비례해 약해져요.",
+      "행성의 크기가 같으므로 매초 받는 전체 복사 에너지도 1/2²=1/4배예요."
+    ],
+    "takeaway": "거리를 바꿀 때는 역수만이 아니라 거리의 제곱을 적용해요.",
+    "noteIds": [
+      "earth-climate-solar"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2022-09",
+        "number": 6
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "거리",
+      "제곱"
+    ],
+    "choices": [
+      "P/2예요.",
+      "P/4예요.",
+      "2P예요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-earth-daily-radiation",
+    "subject": "earth",
+    "kind": "tip",
+    "topic": "일사량",
+    "title": "남중 고도 하나로 하루를 정하지 않아요",
+    "prompt": "하루 동안 받는 태양 복사 에너지를 비교할 때는 태양 고도와 낮의 길이를 함께 봐요.",
+    "explanation": [
+      "남중 고도는 하루 중 한 시각의 태양 높이예요. 하루 전체의 입사량과 곧바로 같지는 않아요.",
+      "위도·계절별 비교에서는 낮이 몇 시간 지속되는지도 확인해요."
+    ],
+    "takeaway": "순간적인 높이를 하루 누적량으로 바로 바꾸지 않아요.",
+    "noteIds": [
+      "earth-climate-solar"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2024-11",
+        "number": 15
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "누적",
+      "낮의 길이"
+    ]
+  },
+  {
+    "id": "bite-earth-luminosity-radius-temperature",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "별의 광도",
+    "title": "온도 두 배, 반지름 절반",
+    "prompt": "별 B의 표면 온도는 A의 2배, 반지름은 A의 1/2배예요. 두 별에 광도∝반지름²×표면 온도⁴ 관계를 적용하면 B의 광도는 A의 몇 배인가요?",
+    "explanation": [
+      "반지름 효과는 (1/2)²=1/4배, 온도 효과는 2⁴=16배예요.",
+      "두 효과를 곱하면 16/4=4배예요."
+    ],
+    "takeaway": "별 전체의 광도는 반지름의 제곱과 온도의 네제곱을 함께 반영해요.",
+    "noteIds": [
+      "earth-star-scope"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2023-06",
+        "number": 18
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "비율",
+      "제곱"
+    ],
+    "choices": [
+      "1배예요.",
+      "8배예요.",
+      "4배예요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-earth-wien-shorter-hotter",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "별의 표면 온도",
+    "title": "500 nm와 1000 nm",
+    "prompt": "별 A와 B의 최대 복사 에너지 파장이 각각 500 nm와 1000 nm예요. 표면 온도 A/B는 얼마인가요?",
+    "explanation": [
+      "빈의 변위 법칙에서 온도 비는 파장 비의 역수예요.",
+      "A/B=1000/500=2이므로 파장이 더 짧은 A가 더 뜨거워요."
+    ],
+    "takeaway": "최대 복사 에너지 파장은 짧을수록 표면 온도가 높아요.",
+    "noteIds": [
+      "earth-star-scope"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2024-09",
+        "number": 14
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "파장",
+      "반비례"
+    ],
+    "choices": [
+      "1/2예요.",
+      "4예요.",
+      "2예요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-earth-magnitude-five",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "별의 등급",
+    "title": "절대 등급 5 차이",
+    "prompt": "별 A의 절대 등급은 1, B는 6이에요. 절대 등급 차이 5가 광도 100배 차이에 해당한다면 어느 별의 광도가 몇 배인가요?",
+    "explanation": [
+      "등급 숫자가 작은 별이 더 밝아요.",
+      "1과 6은 5등급 차이이므로 A가 B보다 광도가 100배 커요."
+    ],
+    "takeaway": "등급은 숫자의 대소와 밝기의 대소가 반대예요.",
+    "noteIds": [
+      "earth-star-magnitude"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2026-09",
+        "number": 18
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "등급",
+      "비율"
+    ],
+    "choices": [
+      "B의 광도가 A의 100배예요.",
+      "A의 광도가 B의 100배예요.",
+      "A의 광도가 B의 5배예요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-earth-absorption-temperature",
+    "subject": "earth",
+    "kind": "recall",
+    "topic": "별의 스펙트럼",
+    "title": "흡수선이 강하면 함량도 클까요?",
+    "prompt": "두 별에서 같은 원소의 흡수선 세기가 달라요. 함량 차이로 바로 결론 내리기 전에, 원자의 들뜸·이온화에 영향을 주는 별의 어떤 조건을 확인해야 하나요?",
+    "explanation": [
+      "흡수선 세기에는 원소 함량뿐 아니라 표면 온도도 영향을 줘요.",
+      "같은 함량이어도 온도에 따라 원자의 상태가 달라져 흡수선 세기가 달라질 수 있어요."
+    ],
+    "takeaway": "흡수선 세기를 원소 함량 하나로만 해석하지 않아요.",
+    "noteIds": [
+      "earth-star-magnitude"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2023-09",
+        "number": 6
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "조건",
+      "흡수선"
+    ],
+    "answerText": "표면 온도예요."
+  },
+  {
+    "id": "bite-earth-same-luminosity-radius",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "H-R도",
+    "title": "광도가 같고 더 차가운 별",
+    "prompt": "별 A와 B의 광도는 같고, A의 표면 온도가 B보다 낮아요. 광도∝반지름²×표면 온도⁴ 관계에서 반지름은 어느 별이 더 큰가요?",
+    "explanation": [
+      "같은 광도를 내면서 단위 면적당 방출량이 작으면 표면적이 더 커야 해요.",
+      "표면 온도가 낮은 A의 반지름이 더 커요."
+    ],
+    "takeaway": "광도가 같을 때 차가운 별은 더 큰 반지름으로 보완해요.",
+    "noteIds": [
+      "earth-star-evolution"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2023-09",
+        "number": 6
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "광도",
+      "반지름"
+    ],
+    "choices": [
+      "B가 더 커요.",
+      "A가 더 커요.",
+      "광도가 같으므로 반지름도 같아요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-earth-lifetime-mass-luminosity",
+    "subject": "earth",
+    "kind": "recall",
+    "topic": "별의 수명",
+    "title": "연료만 두 배여도",
+    "prompt": "주계열 수명을 질량/광도에 비례한다고 보아요. 별 B의 질량은 A의 2배, 광도는 A의 16배예요. B의 주계열 수명은 A의 몇 배인가요?",
+    "explanation": [
+      "쓸 수 있는 연료량은 질량으로, 소비 속도는 광도로 비교해요.",
+      "수명 비는 2/16=1/8이에요. 질량이 크다고 수명이 더 길지는 않아요."
+    ],
+    "takeaway": "연료의 양과 쓰는 속도를 나눠서 수명을 비교해요.",
+    "noteIds": [
+      "earth-star-evolution"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2022-06",
+        "number": 17
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "비율",
+      "수명"
+    ],
+    "answerText": "1/8배예요."
+  },
+  {
+    "id": "bite-earth-helium-fuel",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "핵융합",
+    "title": "헬륨 핵융합의 연료",
+    "prompt": "별 중심핵에서 헬륨 핵융합만 진행되고 있어요. “헬륨 핵융합이므로 헬륨이 연료로 소비된다”는 설명이 맞나요?",
+    "explanation": [
+      "헬륨 핵융합은 헬륨 핵을 더 무거운 핵으로 바꾸는 반응이에요.",
+      "수소 핵융합이 헬륨을 만드는 과정이라는 사실과 바꾸지 않아요."
+    ],
+    "takeaway": "핵융합 이름을 보면 무엇을 연료로 쓰는 반응인지 먼저 확인해요.",
+    "noteIds": [
+      "earth-star-recall"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2023-06",
+        "number": 15
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "연료",
+      "핵융합"
+    ],
+    "choices": [
+      "맞아요. 헬륨이 반응의 연료예요.",
+      "틀려요. 헬륨 핵융합은 수소만 소비해요.",
+      "틀려요. 헬륨 핵융합은 항상 헬륨 총량을 늘려요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-earth-hydrogen-helium-net",
+    "subject": "earth",
+    "kind": "recall",
+    "topic": "핵융합",
+    "title": "헬륨 핵 하나를 만들려면",
+    "prompt": "별의 수소 핵융합을 순반응으로 정리할 때, 수소 원자핵 몇 개가 모여 헬륨-4 원자핵 하나를 만드나요?",
+    "explanation": [
+      "헬륨-4 원자핵에는 양성자와 중성자를 합해 핵자 4개가 있어요.",
+      "수소 원자핵 4개가 반응하면서 일부 양성자가 중성자로 바뀌고 에너지를 방출해요."
+    ],
+    "takeaway": "핵융합을 개수로 비교할 때는 질량비와 원자핵 수의 비를 구분해요.",
+    "noteIds": [
+      "earth-star-recall"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2024-06",
+        "number": 12
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "개수",
+      "순반응"
+    ],
+    "answerText": "수소 원자핵 4개예요."
+  },
+  {
+    "id": "bite-earth-common-orbit-period",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "외계 행성",
+    "title": "별과 행성의 공전 주기",
+    "prompt": "별과 행성이 둘만의 공통 질량 중심 주위를 공전해요. 별이 한 바퀴 도는 데 10일 걸리면 행성이 한 바퀴 도는 데는 얼마가 걸리나요?",
+    "explanation": [
+      "별과 행성은 서로 마주 보는 위치 관계를 유지하며 함께 한 바퀴 돌아요.",
+      "궤도 반지름과 속력은 달라도 공전 주기는 같아요."
+    ],
+    "takeaway": "공통 질량 중심 모형에서 주기는 같고, 반지름·속력은 다를 수 있어요.",
+    "noteIds": [
+      "earth-exoplanet-orbit"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2023-06",
+        "number": 20
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "주기",
+      "질량 중심"
+    ],
+    "choices": [
+      "별보다 질량이 작으므로 반드시 10일보다 짧아요.",
+      "10일이에요.",
+      "행성의 반지름이 없어서 주기를 알 수 없어요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-earth-stellar-spectrum-target",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "외계 행성",
+    "title": "누구의 속도를 넣나요?",
+    "prompt": "멀리 있는 별의 흡수선을 관측해요. 같은 시각 별의 시선 속도는 +20 m/s, 행성의 시선 속도는 −20000 m/s예요. 관측한 별의 흡수선 이동을 계산할 때 어느 값을 쓰나요?",
+    "explanation": [
+      "관측한 흡수선은 별빛에 들어 있는 선이에요.",
+      "따라서 별의 시선 속도를 넣어요. 행성의 공전 속도로 바꾸지 않아요."
+    ],
+    "takeaway": "스펙트럼을 낸 천체와 속도의 주어를 맞춰요.",
+    "noteIds": [
+      "earth-exoplanet-orbit"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2024-09",
+        "number": 18
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "주어",
+      "시선 속도"
+    ],
+    "choices": [
+      "행성의 −20000 m/s를 써요.",
+      "두 값을 더한 −19980 m/s를 써요.",
+      "별의 +20 m/s를 써요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-earth-radial-velocity-sign",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "도플러 효과",
+    "title": "양의 시선 속도",
+    "prompt": "시선 속도는 관측자에게서 멀어질 때 양수로 정해요. 별의 시선 속도가 +8 m/s이면 별의 흡수선 파장은 정지 파장보다 길어지나요, 짧아지나요?",
+    "explanation": [
+      "양의 시선 속도는 관측자에게서 멀어짐을 뜻해요.",
+      "멀어지는 광원의 흡수선은 긴 파장 쪽으로 이동해요."
+    ],
+    "takeaway": "부호의 정의→접근·후퇴→파장 변화 순서로 판단해요.",
+    "noteIds": [
+      "earth-exoplanet-signals"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2024-06",
+        "number": 18
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "부호",
+      "도플러"
+    ],
+    "choices": [
+      "짧아져요. 청색 편이예요.",
+      "길어져요. 적색 편이예요.",
+      "시선 속도가 있으므로 파장은 반드시 같아요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-earth-transit-radius-square",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "식 현상",
+    "title": "행성 반지름이 두 배면",
+    "prompt": "별의 표면 밝기는 균일하고 행성은 빛을 내지 않아요. 밝기 감소율은 (행성 반지름/별 반지름)²이에요. 변경 전후 모두 행성 전체가 별 원반 안에 들어오는 구간을 비교해요. 별은 그대로 두고 행성 반지름만 2배로 하면 감소율은 몇 배인가요?",
+    "explanation": [
+      "별을 가리는 면적이 행성 반지름의 제곱에 비례해요.",
+      "반지름이 2배이면 면적과 감소율은 2²=4배예요."
+    ],
+    "takeaway": "식의 깊이는 길이가 아니라 가리는 면적의 비율로 읽어요.",
+    "noteIds": [
+      "earth-exoplanet-signals"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2023-09",
+        "number": 18
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "면적",
+      "제곱"
+    ],
+    "choices": [
+      "2배예요.",
+      "4배예요.",
+      "1/2배예요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-earth-redshift-minus-one",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "적색 편이",
+    "title": "550을 500으로 나누고 끝?",
+    "prompt": "흡수선의 정지 파장은 500 nm, 관측 파장은 550 nm예요. 적색 편이 z=(관측 파장−정지 파장)/정지 파장은 얼마인가요?",
+    "explanation": [
+      "파장 변화량은 550−500=50 nm예요.",
+      "z=50/500=0.1이에요. 550/500=1.1은 1+z예요."
+    ],
+    "takeaway": "파장 자체의 비와 파장 변화량의 비를 구분해요.",
+    "noteIds": [
+      "earth-redshift"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2025-11",
+        "number": 15
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "정의",
+      "분모"
+    ],
+    "choices": [
+      "1.1이에요.",
+      "0.9예요.",
+      "0.1이에요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-earth-hubble-distance",
+    "subject": "earth",
+    "kind": "recall",
+    "topic": "허블 법칙",
+    "title": "속력에서 거리로",
+    "prompt": "특이 속도를 무시할 수 있는 가까운 은하의 후퇴 속력이 1400 km/s예요. 허블 상수 H₀=70 km/s/Mpc이고 v=H₀d를 적용할 때 거리는 몇 Mpc인가요?",
+    "explanation": [
+      "d=v/H₀이므로 1400/70=20이에요.",
+      "허블 상수의 단위까지 나누면 거리 단위 Mpc가 남아요."
+    ],
+    "takeaway": "허블 법칙을 쓸 때 특이 속도 조건과 단위를 확인해요.",
+    "noteIds": [
+      "earth-redshift"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2026-06",
+        "number": 15
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "비례",
+      "단위"
+    ],
+    "answerText": "20 Mpc예요."
+  },
+  {
+    "id": "bite-earth-dark-energy-fraction",
+    "subject": "earth",
+    "kind": "choice",
+    "topic": "우주 구성",
+    "title": "밀도 일정인데 비율은 증가?",
+    "prompt": "우주가 팽창하며 물질의 평균 밀도는 줄고 암흑 에너지 밀도는 일정하다고 해요. 물질과 암흑 에너지만 비교할 때 암흑 에너지가 차지하는 밀도 비율은 어떻게 되나요?",
+    "explanation": [
+      "물질 밀도가 줄면 두 성분의 밀도 합에서 물질 몫이 작아져요.",
+      "암흑 에너지 밀도 자체가 같아도 전체에서 차지하는 비율은 커져요."
+    ],
+    "takeaway": "양 자체가 일정한 것과 전체에 대한 비율이 일정한 것을 나눠요.",
+    "noteIds": [
+      "earth-cosmology"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2024-06",
+        "number": 15
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "밀도",
+      "비율"
+    ],
+    "choices": [
+      "밀도가 일정하므로 비율도 반드시 일정해요.",
+      "물질 밀도가 줄면 암흑 에너지 비율도 줄어요.",
+      "커져요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-earth-early-universe-number-mass",
+    "subject": "earth",
+    "kind": "tip",
+    "topic": "초기 우주",
+    "title": "질량비 3:1은 개수비가 아니에요",
+    "prompt": "수소와 헬륨의 질량비가 3:1이면, 수소 핵 1개의 질량을 1, 헬륨-4 핵은 4로 보아 원자핵 수의 비를 다시 구해요.",
+    "explanation": [
+      "같은 질량 단위에서 수소 핵 수는 3/1=3, 헬륨 핵 수는 1/4이에요.",
+      "개수비는 3:(1/4)=12:1이에요. 질량비 3:1을 그대로 개수비로 쓰지 않아요."
+    ],
+    "takeaway": "질량을 입자 1개의 질량으로 나눠야 입자 수를 비교할 수 있어요.",
+    "noteIds": [
+      "earth-cosmology"
+    ],
+    "refs": [
+      {
+        "paperId": "earth-2026-11",
+        "number": 13
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "질량비",
+      "개수비"
+    ]
+  }
+]

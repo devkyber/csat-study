@@ -29,5 +29,15 @@
   "officialPdfEntries": 546,
   "legacyPdfEntries": 56,
   "practicePapers": 75,
-  "practiceQuestions": 2400
+  "practiceQuestions": 2400,
+  "biteCards": 328,
+  "biteCounts": {
+    "korean": 50,
+    "math": 50,
+    "english": 110,
+    "physics": 40,
+    "earth": 54,
+    "study": 24
+  },
+  "vocabularyCards": 80
 }

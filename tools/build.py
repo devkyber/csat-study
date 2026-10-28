@@ -1,6 +1,6 @@
 """Build the public site from edited content; never copies the private source inventory."""
 from pathlib import Path
-import json, shutil, sys
+import json, shutil, sys, hashlib
 from PIL import Image
 sys.stdout.reconfigure(encoding='utf-8')
 ROOT=Path(__file__).resolve().parents[1]
@@ -20,6 +20,7 @@ def main():
     if len(ids)!=len(set(ids)): raise SystemExit('Duplicate article ids')
     OUT.mkdir(exist_ok=True)
     for p in (ROOT/'web').iterdir():
+        if p.name.endswith('.template.js'): continue
         if p.is_file(): shutil.copy2(p,OUT/p.name)
         elif p.is_dir(): shutil.copytree(p,OUT/p.name,dirs_exist_ok=True)
     vendor=OUT/'vendor'; vendor.mkdir(exist_ok=True)
@@ -83,6 +84,12 @@ def main():
     practice.sort(key=lambda p:(-p['year'],{'수능':0,'9월':1,'6월':2}[p['session']],SUBJECTS.index(p['subject'])))
     practice_index={'papers':practice,'questionCount':sum(p['questionCount'] for p in practice),'targetQuestionCount':2400,'years':[2022,2023,2024,2025,2026]}
     (data_dir/'practice-index.json').write_text(json.dumps(practice_index,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+    bites=[]
+    for subject in SUBJECTS:
+        path=ROOT/f'content/bites/{subject}.json'
+        if path.exists():bites.extend(json.loads(path.read_text(encoding='utf8')))
+    bite_data={'version':1,'cards':bites,'counts':{s:sum(c['subject']==s for c in bites) for s in SUBJECTS}}
+    (data_dir/'bites.json').write_text(json.dumps(bite_data,ensure_ascii=False,separators=(',',':')),encoding='utf8')
     manifest={'sourceFiles':113,'nonemptySourceFiles':109,'articleCount':len(articles),'subjectCounts':{s:sum(a['subject']==s for a in articles) for s in SUBJECTS},'examCheckedAt':archive['checkedAt'],'examPosts':len(archive['entries']),'curriculum':'2027학년도까지','excludedSubject':'언어와 매체','verifiedQuestionLinks':sum(r.get('status')=='question' for r in refs.values()),'verifiedExamLinks':len(refs)}
     manifest['inlineExamples']=len(examples)
     subject_by_id={a['id']:a['subject'] for a in articles}
@@ -92,7 +99,21 @@ def main():
     manifest['legacyPdfEntries']=len(legacy['entries'])
     manifest['practicePapers']=len(practice)
     manifest['practiceQuestions']=practice_index['questionCount']
+    manifest['biteCards']=len(bites)
+    manifest['biteCounts']=bite_data['counts']
+    manifest['vocabularyCards']=sum(c['kind']=='vocab' for c in bites)
     (data_dir/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
     (OUT/'.nojekyll').write_text('',encoding='utf-8')
+    # Precache the text learning surface only. Full exam PDFs, audio and large
+    # question images stay on demand and are never silently downloaded offline.
+    files=['./','index.html','app.js','ui.js','archive.js','examples.js','practice.js','bites.js','bite-engine.mjs','offline.js','style.css','bites.css','manifest.webmanifest','favicon.svg','icons/app-192.png','icons/app-512.png','fonts/Pretendard.woff2','vendor/marked.esm.js','vendor/purify.min.js','vendor/katex.min.js','vendor/katex.min.css','vendor/auto-render.min.js']
+    files += [p.relative_to(OUT).as_posix() for p in sorted((vendor/'fonts').glob('*.woff2'))]
+    files += [f'data/{name}.json' for name in ['articles','exams','manifest','references','exam-pdfs','examples','practice-index','bites']]
+    template=(ROOT/'web/sw.template.js').read_text(encoding='utf8')
+    digest=hashlib.sha256(template.encode())
+    for name in files:
+        digest.update(name.encode());digest.update((OUT/('index.html' if name=='./' else name)).read_bytes())
+    worker=template.replace('__VERSION__',digest.hexdigest()[:16]).replace('__FILES__',json.dumps(files))
+    (OUT/'sw.js').write_text(worker,encoding='utf8')
     print(json.dumps(manifest,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()

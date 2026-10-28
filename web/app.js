@@ -3,10 +3,12 @@ import {subjects, escape, icon, external as link, decayFigure} from './ui.js';
 import {createArchive} from './archive.js';
 import {insertExamples, openQuestionImage} from './examples.js';
 import {createPractice} from './practice.js';
+import {createBites} from './bites.js';
+import {startOffline} from './offline.js';
 
 const $ = selector => document.querySelector(selector);
 const issues = [['조건을 놓쳤을 때','조건'],['비교 기준이 헷갈릴 때','비교'],['선지 둘 중 고민될 때','선지'],['풀이가 떠오르지 않을 때','발상'],['계산이 꼬일 때','계산'],['복습할 때','복습']];
-let articles=[], exams=[], manifest={}, references={}, examples=[], archive, practice;
+let articles=[], exams=[], manifest={}, references={}, examples=[], archive, practice, bites;
 let currentRoute='', currentBase='', restoreScroll=false;
 const scrollPositions=new Map();
 let saved=readLocal('csat-saved',[]), recent=readLocal('csat-recent',[]);
@@ -34,6 +36,7 @@ function home() {
   const recently=recent.map(id => articles.find(a => a.id === id)).filter(Boolean).slice(0,3);
   return `<div class="page">
     <section class="intro"><div><h1>배운 개념을<br>문제에 쓰는 법.</h1><p>문제를 풀며 적어 둔 생각과 공부 팁을 모았습니다.<br>어디서 막혔는지 짚고, 실제 기출에 적용해 보세요.</p><button class="intro-search" data-action="search">${icon('search')}<span>단원이나 막힌 부분을 검색하세요</span>${icon('arrow')}</button></div>${decayFigure()}</section>
+    <a class="bite-home-link" href="#/bites"><div><h2>지금은 한 과목, 5장만.</h2><p>짧은 퀴즈·기출 영단어·공부 팁을 틈날 때 조금씩 익혀요.</p></div><span class="button primary">잠깐 공부 시작 ${icon('arrow')}</span></a>
     <section><div class="section-top"><h2>과목별로 읽기</h2><span>강령부터 문항 분석까지</span></div><div class="subject-grid">${Object.entries(subjects).map(([key,s]) => {const items=articles.filter(a => a.subject === key); return `<a class="subject-entry" href="#/subject/${key}">${icon(key)}<div><h3>${s.name}</h3><p>${s.desc}</p><span class="category-preview">${Object.keys(group(items,'category')).slice(0,4).map(escape).join(' / ')}</span></div><span class="count">${items.length}개 글</span></a>`;}).join('')}</div></section>
     <section><div class="section-top"><h2>이럴 때 찾아보세요</h2></div><div class="chip-list">${issues.map(([label,q]) => `<a class="chip" href="#/search?q=${encodeURIComponent(q)}">${label}</a>`).join('')}</div></section>
     ${recently.length ? `<section><div class="section-top"><h2>이어서 읽기</h2><span>최근 읽은 글</span></div><div class="article-list">${recently.map(a => articleRow(a,true)).join('')}</div></section>` : ''}
@@ -44,7 +47,7 @@ function home() {
 function subjectPage(id) {
   const s=subjects[id]; if (!s) return notFound();
   const items=articles.filter(a => a.subject === id), groups=Object.entries(group(items,'category'));
-  return `<div class="page"><div class="crumb"><a href="#/">학습 노트</a><span>/</span><span>${s.name}</span></div><div class="subject-heading"><div><h1>${s.name}</h1><p class="page-description">${s.desc}</p></div><span class="total">${items.length}개 글</span></div>${subjectTabs(id)}${id!=='study' ? `<p class="subject-practice-link"><a href="#/practice?subject=${id}">이 과목의 5개년 문제 풀기 ${icon('arrow')}</a></p>` : ''}
+  return `<div class="page"><div class="crumb"><a href="#/">학습 노트</a><span>/</span><span>${s.name}</span></div><div class="subject-heading"><div><h1>${s.name}</h1><p class="page-description">${s.desc}</p></div><span class="total">${items.length}개 글</span></div>${subjectTabs(id)}<div class="subject-quick-links"><a href="#/bites?subject=${id}&kind=all&topic=&mode=mix">이 과목 잠깐 공부</a>${id!=='study' ? `<a href="#/practice?subject=${id}">5개년 문제 풀기</a>` : ''}</div>
     <div class="subject-layout"><nav class="category-index" aria-label="단원 색인"><p>단원별 목차</p>${groups.map(([category,rows],i) => `<a href="#/subject/${id}?section=category-${i}" data-section="category-${i}">${escape(category)}<span>${rows.length}</span></a>`).join('')}</nav><div>${groups.map(([category,rows],i) => `<section class="category-section" id="category-${i}"><h2>${escape(category)}</h2><div class="article-list">${rows.map(a => articleRow(a)).join('')}</div></section>`).join('')}</div></div>
   </div>`;
 }
@@ -104,7 +107,7 @@ function savedPage() {
   return `<div class="page"><h1>저장한 글</h1><p class="page-description">다시 읽고 싶은 글을 모아 두세요. 저장한 글은 이 브라우저에만 남습니다.</p>${items.length ? `<div class="article-list" style="margin-top:36px">${items.map(a => articleRow(a,true)).join('')}</div>` : '<p class="empty">글에서 ‘글 저장’을 누르면 이곳에 모입니다.<br><a class="button" href="#/">학습 노트 읽기</a></p>'}</div>`;
 }
 function about() {
-  return `<div class="page about"><h1>이 노트에 대하여</h1><p>공부하면서 적어 둔 풀이 방법, 자주 한 실수, 공부에 대한 생각을 모았습니다. 개념을 처음부터 설명하기보다는 이미 배운 것을 문제에 어떻게 쓸지 다룹니다.</p><h2>어떤 내용을 담았나요?</h2><ul><li>과목별로 문제를 읽고 푸는 방법</li><li>실제로 틀린 이유와 다음에 확인할 것</li><li>기출 지문·문항을 읽으며 남긴 분석</li><li>오답, 복습, 인강, 시험 운영에 관한 팁</li></ul><p>원본 ${manifest.sourceFiles || 113}개를 검토해 ${articles.length}개 글로 정리했습니다. 반복되는 내용은 합치고 개인 점수·신상·입시 기록은 제외했습니다. 언어와 매체도 학습 노트에서 제외했습니다. 원문이 짧은 과목을 별도의 개념 강의로 늘리지는 않았습니다.</p><h2>기출 표기 읽는 법</h2><ul><li><strong>2406</strong>: 2024학년도 6월 모의평가</li><li><strong>2409</strong>: 2024학년도 9월 모의평가</li><li><strong>2411</strong>: 2024학년도 수능</li></ul><p>학년도와 실제 시험을 치른 연도는 다릅니다. 수능 표기의 ‘11’이 항상 실제 시행 월을 뜻하는 것도 아닙니다. 문항 번호는 실제 문제와 대조한 경우에만 확정해 표시합니다.</p><h2>문제와 함께 읽는 방법</h2><p>2017–2026학년도 6월·9월·수능의 제재와 문항 유형을 검토하고, 노트의 판단을 연습할 실제 문제를 골랐습니다. 국어는 독서·문학, 수학은 원노트에 있는 수학Ⅰ·Ⅱ·미적분을 중심으로 연결했습니다. 설명 아래의 문제와 피드백은 원노트를 적용하는 연습을 위해 덧붙인 것입니다.</p><p>설명 아래의 문제에서 어디에 그 판단을 써야 할지 먼저 찾아보세요. 이미지를 누르면 크게 볼 수 있습니다. ‘판단 과정 확인하기’를 열면 이 문제와 노트가 어떻게 연결되는지 볼 수 있습니다.</p><p>과목별 기출 자료실에서는 평가원과 EBSi의 공식 PDF를 바로 엽니다. EBS 해설은 평가원 정답표와 구분했습니다. 공식 개별 PDF가 없는 옛 회차는 표지를 대조한 공개 보관본을 연결하고 보관소 이름을 표시합니다. 문제의 저작권은 한국교육과정평가원 및 해당 권리자에게 있습니다.</p><h2>5개년 기출 분석</h2><p>2022–2026학년도 6월·9월·수능은 전 문항을 따로 풀어 볼 수 있어요. 국어 공통·화법과 작문, 수학 공통·미적분, 영어, 물리학Ⅰ, 지구과학Ⅰ을 다룹니다. 원문 노트에 덧붙여 작성한 단계별 풀이이며, 문제와 EBS 해설을 대조했습니다.</p><p><a href="#/practice">5개년 분석에서 문제를 먼저 풀고</a>, 풀이의 판단 순서와 자신의 생각을 비교해 보세요. 다시 풀 문제도 표시할 수 있습니다.</p><h2>저장과 수정</h2><p>저장한 글, 최근 읽은 글, 문항 복습 기록, 화면 테마는 현재 브라우저에 보관됩니다. 별도의 회원가입은 없습니다. 내용이나 문제 연결의 오류는 ${link('https://github.com/devkyber/csat-study/issues','GitHub 이슈')}로 알려 주세요.</p></div>`;
+  return `<div class="page about"><h1>이 노트에 대하여</h1><p>공부하면서 적어 둔 풀이 방법, 자주 한 실수, 공부에 대한 생각을 모았습니다. 개념을 처음부터 설명하기보다는 이미 배운 것을 문제에 어떻게 쓸지 다룹니다.</p><h2>어떤 내용을 담았나요?</h2><ul><li>과목별로 문제를 읽고 푸는 방법</li><li>실제로 틀린 이유와 다음에 확인할 것</li><li>기출 지문·문항을 읽으며 남긴 분석</li><li>오답, 복습, 인강, 시험 운영에 관한 팁</li></ul><p>원본 ${manifest.sourceFiles || 113}개를 검토해 ${articles.length}개 글로 정리했습니다. 반복되는 내용은 합치고 개인 점수·신상·입시 기록은 제외했습니다. 언어와 매체도 학습 노트에서 제외했습니다. 원문이 짧은 과목을 별도의 개념 강의로 늘리지는 않았습니다.</p><h2>기출 표기 읽는 법</h2><ul><li><strong>2406</strong>: 2024학년도 6월 모의평가</li><li><strong>2409</strong>: 2024학년도 9월 모의평가</li><li><strong>2411</strong>: 2024학년도 수능</li></ul><p>학년도와 실제 시험을 치른 연도는 다릅니다. 수능 표기의 ‘11’이 항상 실제 시행 월을 뜻하는 것도 아닙니다. 문항 번호는 실제 문제와 대조한 경우에만 확정해 표시합니다.</p><h2>문제와 함께 읽는 방법</h2><p>2017–2026학년도 6월·9월·수능의 제재와 문항 유형을 검토하고, 노트의 판단을 연습할 실제 문제를 골랐습니다. 국어는 독서·문학, 수학은 원노트에 있는 수학Ⅰ·Ⅱ·미적분을 중심으로 연결했습니다. 설명 아래의 문제와 피드백은 원노트를 적용하는 연습을 위해 덧붙인 것입니다.</p><p>설명 아래의 문제에서 어디에 그 판단을 써야 할지 먼저 찾아보세요. 이미지를 누르면 크게 볼 수 있습니다. ‘판단 과정 확인하기’를 열면 이 문제와 노트가 어떻게 연결되는지 볼 수 있습니다.</p><p>과목별 기출 자료실에서는 평가원과 EBSi의 공식 PDF를 바로 엽니다. EBS 해설은 평가원 정답표와 구분했습니다. 공식 개별 PDF가 없는 옛 회차는 표지를 대조한 공개 보관본을 연결하고 보관소 이름을 표시합니다. 문제의 저작권은 한국교육과정평가원 및 해당 권리자에게 있습니다.</p><h2>5개년 기출 분석</h2><p>2022–2026학년도 6월·9월·수능은 전 문항을 따로 풀어 볼 수 있어요. 국어 공통·화법과 작문, 수학 공통·미적분, 영어, 물리학Ⅰ, 지구과학Ⅰ을 다룹니다. 원문 노트에 덧붙여 작성한 단계별 풀이이며, 문제와 EBS 해설을 대조했습니다.</p><p><a href="#/practice">5개년 분석에서 문제를 먼저 풀고</a>, 풀이의 판단 순서와 자신의 생각을 비교해 보세요. 다시 풀 문제도 표시할 수 있습니다.</p><h2>잠깐 공부</h2><p><a href="#/bites">잠깐 공부</a>에서는 한 과목을 골라 짧은 퀴즈·떠올리기·팁을 3·5·10장씩 볼 수 있어요. 기출에서 쓰인 영단어도 새 예문으로 연습합니다. 긴 문제를 다 푸는 대신 조건 하나와 판단 하나를 꺼내 보는 연습이에요.</p><p>이 카드는 노트와 기출 분석을 바탕으로 새로 작성했어요. 실제 기출 문장과는 구분하고, 같은 판단이 쓰이는 노트와 원래 문제를 연결했습니다. 헷갈린 카드는 다시 볼 목록에 남고, 진행 중인 묶음은 다음에 이어 볼 수 있어요.</p><p>오프라인 준비가 끝난 기기에서는 짧은 공부를 인터넷 연결 없이 열 수 있어요. 전체 기출 PDF·음원·문제 이미지는 연결이 필요합니다. 다른 기기로 복습 기록을 옮길 때는 기록 파일 저장과 가져오기를 이용해 주세요.</p><h2>저장과 수정</h2><p>저장한 글, 최근 읽은 글, 문항 복습 기록, 화면 테마는 현재 브라우저에 보관됩니다. 별도의 회원가입은 없습니다. 내용이나 문제 연결의 오류는 ${link('https://github.com/devkyber/csat-study/issues','GitHub 이슈')}로 알려 주세요.</p></div>`;
 }
 function notFound() {return '<div class="page"><h1>글을 찾을 수 없습니다.</h1><p class="page-description">과목별 목차에서 다시 찾아주세요.</p><a class="button" href="#/">전체 목차</a></div>';}
 function formRoute(form,path) {
@@ -127,12 +130,13 @@ function route() {
   if (currentBase === base && params.get('section')) {currentRoute=raw;restoreScroll=false;goSection(params.get('section'));return;}
   if (currentRoute) scrollPositions.set(currentRoute,window.scrollY);
   practice.destroy();
+  bites.destroy();
   const readArticle=parts[0] === 'read' ? articles.find(a => a.id === parts[1]) : null;
-  const views={subject:() => subjectPage(parts[1]),read:() => readPage(parts[1]),search:() => searchPage(params),saved:savedPage,exams:() => archive.archivePage(params),paper:() => archive.paperPage(parts[1]),practice:() => practice.render(parts,params),about};
+  const views={subject:() => subjectPage(parts[1]),read:() => readPage(parts[1]),search:() => searchPage(params),saved:savedPage,exams:() => archive.archivePage(params),paper:() => archive.paperPage(parts[1]),practice:() => practice.render(parts,params),bites:() => bites.render(parts,params),about};
   $('#main').innerHTML=!parts.length ? home() : views[parts[0]] ? views[parts[0]]() : notFound();
   if (readArticle) insertExamples(readArticle,examples,markdown);
   document.querySelectorAll('[data-nav]').forEach(a => {
-    const active=a.dataset.nav === (['exams','paper'].includes(parts[0]) ? 'exams' : ['saved','practice'].includes(parts[0]) ? parts[0] : 'home');
+    const active=a.dataset.nav === (['exams','paper'].includes(parts[0]) ? 'exams' : ['saved','practice','bites'].includes(parts[0]) ? parts[0] : 'home');
     a.classList.toggle('active',active);
     if (active) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current');
   });
@@ -157,6 +161,7 @@ function route() {
   else window.scrollTo(0,restoreScroll ? scrollPositions.get(raw) || 0 : 0);
   restoreScroll=false;
   if (parts[0] === 'practice') practice.mount(parts);
+  if (parts[0] === 'bites') bites.mount();
 }
 function openSearch() {if (!$('#search-dialog').open) $('#search-dialog').showModal();$('#global-search').focus();searchDialog();}
 function searchDialog() {
@@ -201,12 +206,14 @@ window.addEventListener('popstate',() => {restoreScroll=true;if (location.hash.s
 updateThemeButton();
 if (!navigator.platform.includes('Mac')) $('kbd').textContent='Ctrl K';
 try {
-  const responses=await Promise.all(['articles','exams','manifest','references','exam-pdfs','examples','practice-index'].map(async name => {const response=await fetch(`./data/${name}.json`);if (!response.ok) throw Error(`${name}: ${response.status}`);return response.json();}));
-  let supplement, practiceIndex;[articles,{entries:exams},manifest,references,supplement,examples,practiceIndex]=responses;
+  const responses=await Promise.all(['articles','exams','manifest','references','exam-pdfs','examples','practice-index','bites'].map(async name => {const response=await fetch(`./data/${name}.json`);if (!response.ok) throw Error(`${name}: ${response.status}`);return response.json();}));
+  let supplement, practiceIndex, biteData;[articles,{entries:exams},manifest,references,supplement,examples,practiceIndex,biteData]=responses;
   archive=createArchive(exams,supplement,manifest);
   practice=createPractice(practiceIndex,articles,markdown);
+  bites=createBites(biteData,articles,markdown);
   window.addEventListener('hashchange',() => {if ((location.hash.slice(1) || '/') !== currentRoute) route();});
   route();
+  startOffline();
 } catch (error) {
   $('#main').innerHTML='<div class="page"><h1>노트를 불러오지 못했습니다.</h1><p class="page-description">네트워크 연결을 확인하고 새로고침해 주세요.</p><button class="button" onclick="location.reload()">다시 불러오기</button></div>';console.error(error);
 }

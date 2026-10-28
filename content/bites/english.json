@@ -1,0 +1,3605 @@
+[
+  {
+    "id": "bite-en-001",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "듣기",
+    "title": "할인은 언제 적용할까요?",
+    "prompt": "사료 12달러짜리 두 봉지와 솔 6달러짜리 하나를 사요. 전체 금액에서 10%를 할인해요. 결제액은 얼마인가요?",
+    "choices": [
+      "27달러",
+      "24달러",
+      "30달러"
+    ],
+    "answer": 0,
+    "explanation": [
+      "먼저 12×2+6=30달러를 구해요. 전체의 10%인 3달러를 빼면 27달러예요."
+    ],
+    "takeaway": "수량을 모두 합한 뒤 할인 범위를 적용해요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 6
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "듣기"
+    ]
+  },
+  {
+    "id": "bite-en-002",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "듣기",
+    "title": "누가 맡은 일인가요?",
+    "prompt": "엄마는 어항 물을 갈기로 했어요. 아들은 “필터가 없네요. 제가 인터넷으로 주문할게요.”라고 해요. 아들이 할 일은 무엇인가요?",
+    "choices": [
+      "어항 물 교체",
+      "필터 주문",
+      "택배 배송"
+    ],
+    "answer": 1,
+    "explanation": [
+      "아들이 직접 하겠다고 맡은 행동은 주문이에요. 물 교체는 엄마의 일이에요."
+    ],
+    "takeaway": "등장한 일마다 주체를 붙여 들어요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 5
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "듣기"
+    ]
+  },
+  {
+    "id": "bite-en-003",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "듣기",
+    "title": "부정된 이유를 지워요",
+    "prompt": "A: 다음 강좌 안 들어? 피곤해서? B: 아니, 재미있어. 시간도 괜찮아. 다만 다른 도시로 이사해. B가 수강하지 않는 이유는 무엇인가요?",
+    "choices": [
+      "수업이 지루해서",
+      "시간이 맞지 않아서",
+      "다른 도시로 이사해서"
+    ],
+    "answer": 2,
+    "explanation": [
+      "피곤함과 시간 문제는 부정됐어요. 실제 이유를 말하는 마지막 문장을 따라가요."
+    ],
+    "takeaway": "질문으로 나온 후보를 확정된 이유로 기억하지 않아요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 7
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "듣기"
+    ]
+  },
+  {
+    "id": "bite-en-004",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "듣기",
+    "title": "언급과 추측을 구별해요",
+    "prompt": "안내: 목공 수업은 도서관 2층에서 금요일 7시에 열려요. 비용은 2만 원이며 열 명을 받아요. 언급하지 않은 정보는 무엇인가요?",
+    "choices": [
+      "준비할 복장",
+      "장소",
+      "모집 인원"
+    ],
+    "answer": 0,
+    "explanation": [
+      "장소·시간·비용·인원은 직접 나왔어요. 작업복이 필요할 것 같아도 복장을 안내한 것은 아니에요."
+    ],
+    "takeaway": "상식으로 필요한 정보를 보태지 않아요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 8
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "듣기"
+    ]
+  },
+  {
+    "id": "bite-en-005",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "듣기",
+    "title": "마감과 발표일은 달라요",
+    "prompt": "안내: Submit your essay by Wednesday. The results will be announced on Friday. 제출 마감일은 언제인가요?",
+    "choices": [
+      "금요일",
+      "수요일",
+      "요일을 알 수 없어요"
+    ],
+    "answer": 1,
+    "explanation": [
+      "submit은 제출, results announced는 결과 발표예요. 두 일정의 역할을 나눠요."
+    ],
+    "takeaway": "날짜 옆에 무엇의 날짜인지 적어요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 9
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "듣기"
+    ]
+  },
+  {
+    "id": "bite-en-006",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "듣기",
+    "title": "조건을 끝까지 적용해요",
+    "prompt": "이어폰 A는 3시간·실리콘·6만 원, B는 4시간·가죽·8만 원, C는 5시간·가죽·11만 원이에요. 3시간 이상, 10만 원 이하, 가죽을 원해요. 어떤 제품인가요?",
+    "choices": [
+      "A",
+      "C",
+      "B"
+    ],
+    "answer": 2,
+    "explanation": [
+      "A는 소재, C는 예산에서 탈락해요. B만 세 조건을 모두 만족해요."
+    ],
+    "takeaway": "값싼 제품이 아니라 모든 조건에 맞는 제품을 골라요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 10
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "듣기"
+    ]
+  },
+  {
+    "id": "bite-en-007",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "듣기",
+    "title": "번호를 가진 사람",
+    "prompt": "A: 미용실에 전화하고 싶어. B: 내가 전화번호를 알려 줄까? A의 자연스러운 대답은 무엇인가요?",
+    "choices": [
+      "응, 알려 줘. 지금 전화할게.",
+      "응, 내가 너에게 번호를 보낼게.",
+      "내 새 머리가 벌써 마음에 들어."
+    ],
+    "answer": 0,
+    "explanation": [
+      "번호를 알고 있는 사람은 B이고 전화를 걸 사람은 A예요. 역할이 맞는 대답을 골라요."
+    ],
+    "takeaway": "응답의 나와 너가 가리키는 사람을 확인해요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 11
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "듣기"
+    ]
+  },
+  {
+    "id": "bite-en-008",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "듣기",
+    "title": "무료인 것은 더하지 않아요",
+    "prompt": "라켓 40달러와 공 한 통 8달러를 고르자 점원이 “공은 이번 행사에서 무료예요.”라고 했어요. 결제액은 얼마인가요?",
+    "choices": [
+      "48달러",
+      "40달러",
+      "32달러"
+    ],
+    "answer": 1,
+    "explanation": [
+      "공의 정가는 나왔지만 지불할 가격은 0달러로 바뀌었어요. 라켓값만 내요."
+    ],
+    "takeaway": "정가와 실제 결제 조건을 구별해요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 6
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "듣기"
+    ]
+  },
+  {
+    "id": "bite-en-009",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "도표",
+    "title": "몇 배인지 계산해요",
+    "prompt": "A 지역 참가자는 18명, B 지역은 12명이에요. A는 B의 몇 배인가요?",
+    "choices": [
+      "6배",
+      "0.67배",
+      "1.5배"
+    ],
+    "answer": 2,
+    "explanation": [
+      "비교 기준인 B의 12로 A의 18을 나누면 1.5예요. 6명은 차이예요."
+    ],
+    "takeaway": "차이와 배수는 계산이 달라요.",
+    "noteIds": [
+      "en-exam"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 25
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "도표"
+    ]
+  },
+  {
+    "id": "bite-en-010",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "안내문",
+    "title": "마감 당일도 포함될까요?",
+    "prompt": "안내문에 Cancel on or before May 5 for a refund.라고 쓰여 있어요. 옳은 설명은 무엇인가요?",
+    "choices": [
+      "5월 5일 당일 취소도 환불 대상이에요.",
+      "5월 5일은 환불 대상이 아니에요.",
+      "5월 6일까지 환불받아요."
+    ],
+    "answer": 0,
+    "explanation": [
+      "on은 당일, before는 그 이전을 포함해요. 두 조건을 or로 연결했어요."
+    ],
+    "takeaway": "마감 표현에서 포함되는 경계를 확인해요.",
+    "noteIds": [
+      "en-exam"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 28
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "안내문"
+    ]
+  },
+  {
+    "id": "bite-en-011",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "주장 범위",
+    "title": "도구보다 앞서는 것",
+    "prompt": "글: 기업은 유행이라서 앱을 도입하면 안 된다. 먼저 해결할 사업 문제를 정하고 그에 맞는 도구를 골라야 한다. 가장 알맞은 주장은 무엇인가요?",
+    "choices": [
+      "앱을 사용하는 모든 기업은 실패한다.",
+      "사업 목적을 기준으로 도구를 선택하자.",
+      "고객을 위해 새로운 앱을 직접 개발하자."
+    ],
+    "answer": 1,
+    "explanation": [
+      "글은 도구를 쓰지 말라고 하지 않아요. 선택의 기준을 목적에 두라는 말이에요."
+    ],
+    "takeaway": "언급되지 않은 개발 의무나 절대적 결론을 보태지 않아요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 20
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "주장 범위"
+    ]
+  },
+  {
+    "id": "bite-en-012",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "주장 범위",
+    "title": "조건부 효과를 지켜요",
+    "prompt": "글: 계획은 실패 가능성을 줄이지만 성공을 보장하지는 않는다. 요지에 맞는 문장은 무엇인가요?",
+    "choices": [
+      "계획을 세우면 반드시 성공한다.",
+      "계획은 결과에 아무 영향을 주지 않는다.",
+      "계획은 성공 가능성을 높일 수 있다."
+    ],
+    "answer": 2,
+    "explanation": [
+      "가능성을 높인다는 주장과 보장은 달라요. 양쪽 극단의 선지는 조건을 지워요."
+    ],
+    "takeaway": "may·can을 반드시로 바꾸지 않아요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 22
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "주장 범위"
+    ]
+  },
+  {
+    "id": "bite-en-013",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "연결",
+    "title": "However가 바꾸는 방향",
+    "prompt": "Some workers prefer constant contact. However, quiet time helps them develop independent ideas. 둘째 문장의 역할은 무엇인가요?",
+    "choices": [
+      "계속 연결되려는 선호에 다른 장점을 대비해요.",
+      "첫 문장의 구체적 사례를 추가해요.",
+      "연락을 좋아하는 이유만 반복해요."
+    ],
+    "answer": 0,
+    "explanation": [
+      "However 뒤에는 혼자 생각하는 시간의 장점이 나와 앞의 선호를 견제해요."
+    ],
+    "takeaway": "연결어와 실제 내용의 방향을 함께 확인해요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 21
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "연결"
+    ]
+  },
+  {
+    "id": "bite-en-014",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "연결",
+    "title": "예시는 무엇을 보여 줄까요?",
+    "prompt": "문장 A: 새 기술은 관찰 범위를 넓힌다. 문장 B: 예를 들어 드론은 사람이 가기 힘든 숲을 촬영한다. B의 기능은 무엇인가요?",
+    "choices": [
+      "A가 틀렸음을 반박해요.",
+      "A의 일반적 설명을 구체화해요.",
+      "기술 개발의 역사 순서를 설명해요."
+    ],
+    "answer": 1,
+    "explanation": [
+      "드론 촬영은 관찰 범위가 넓어지는 한 사례예요. For example만 보지 말고 포함 관계를 확인해요."
+    ],
+    "takeaway": "예시는 앞의 어떤 주장에 속하는지 찾아요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 37
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "연결"
+    ]
+  },
+  {
+    "id": "bite-en-015",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "삽입",
+    "title": "앞뒤를 동시에 맞춰요",
+    "prompt": "① 예전에는 있는 재료 중 하나를 골랐다. ② 이 지식 덕분에 필요한 성질의 재료를 설계할 수 있게 됐다. 두 문장 사이에 넣을 문장은 무엇인가요?",
+    "choices": [
+      "재료는 여러 산업에 사용된다.",
+      "옛사람들은 도구를 오래 사용했다.",
+      "이후 과학자들은 재료의 구조와 성질의 관계를 이해했다."
+    ],
+    "answer": 2,
+    "explanation": [
+      "뒤의 이 지식이 받을 구체적 내용이 필요해요. 구조와 성질의 관계를 알아야 설계로 넘어갈 수 있어요."
+    ],
+    "takeaway": "앞의 변화와 뒤의 지시어를 모두 연결해요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 38
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "삽입"
+    ]
+  },
+  {
+    "id": "bite-en-016",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "순서",
+    "title": "방법·결과·해석",
+    "prompt": "A: 학생에게 두 장소 사이 거리를 추정하게 했다. B: 그 비대칭은 실제 거리가 아니라 인식의 차이를 보여 준다. C: 랜드마크로 가는 거리를 반대 방향보다 짧게 답했다. 순서는 무엇인가요?",
+    "choices": [
+      "A-C-B",
+      "B-A-C",
+      "C-B-A"
+    ],
+    "answer": 0,
+    "explanation": [
+      "A가 측정 방법, C가 결과예요. B의 그 비대칭은 C의 방향별 차이를 받아 해석해요."
+    ],
+    "takeaway": "실험의 방법과 결과를 먼저 연결한 뒤 해석을 붙여요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 36
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "순서"
+    ]
+  },
+  {
+    "id": "bite-en-017",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "지칭",
+    "title": "직접화법의 주체",
+    "prompt": "Mina told Jisu, “I lost my notebook. Can you help me?” 여기서 I와 you는 각각 누구인가요?",
+    "choices": [
+      "I는 Jisu, you는 Mina",
+      "I는 Mina, you는 Jisu",
+      "둘 다 Mina"
+    ],
+    "answer": 1,
+    "explanation": [
+      "따옴표 안의 I는 말을 하는 Mina예요. you는 그 말을 듣는 Jisu예요."
+    ],
+    "takeaway": "직접화법에서는 화자와 청자를 다시 잡아요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 44
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "지칭"
+    ]
+  },
+  {
+    "id": "bite-en-018",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "도표",
+    "title": "큰 숫자와 높은 비율",
+    "prompt": "A 지역은 100명이 늘어 20% 증가했고, B 지역은 60명이 늘어 50% 증가했어요. 옳은 것은 무엇인가요?",
+    "choices": [
+      "인원과 증가율 모두 A가 더 커요.",
+      "인원과 증가율 모두 B가 더 커요.",
+      "증가 인원은 A, 증가율은 B가 더 커요."
+    ],
+    "answer": 2,
+    "explanation": [
+      "100>60이지만 20%<50%예요. 서로 다른 열의 값을 섞으면 판단이 바뀌어요."
+    ],
+    "takeaway": "인원수와 증가율에 각각 이름을 붙여요.",
+    "noteIds": [
+      "en-exam"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 25
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "도표"
+    ]
+  },
+  {
+    "id": "bite-en-019",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "목적",
+    "title": "행사의 목적과 편지의 목적",
+    "prompt": "편지: 저희는 환자 치료비를 모금하는 음악회를 엽니다. 선생님께 개막 피아노 연주를 부탁드립니다. 편지를 보낸 목적은 무엇인가요?",
+    "choices": [
+      "연주 참여를 요청하려고",
+      "받는 사람에게 치료비 기부를 요청하려고",
+      "음악회 취소를 알리려고"
+    ],
+    "answer": 0,
+    "explanation": [
+      "모금은 행사의 배경이에요. 받는 사람에게 직접 부탁한 행동은 연주예요."
+    ],
+    "takeaway": "누구에게 어떤 행동을 원하는지 찾아요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 18
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "목적"
+    ]
+  },
+  {
+    "id": "bite-en-020",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "빈칸",
+    "title": "부정이 걸리는 말",
+    "prompt": "People enjoy funny stories even when details are exaggerated. The goal is amusement, not ___ information. 빈칸에 가장 알맞은 것은 무엇인가요?",
+    "choices": [
+      "amusing",
+      "accurate",
+      "unexpected"
+    ],
+    "answer": 1,
+    "explanation": [
+      "과장을 허용한다는 앞문장 때문에 정확한 정보를 주는 것은 목적이 아니라는 대비가 필요해요."
+    ],
+    "takeaway": "빈칸 앞의 not까지 포함해 문장의 방향을 잡아요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 31
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "빈칸"
+    ]
+  },
+  {
+    "id": "bite-en-021",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "주제 범위",
+    "title": "쓰는 것과 믿는 것",
+    "prompt": "글: 연구자들은 같은 도구와 개념을 사용하며 협업한다. 그것을 철학적으로 똑같이 해석할 필요는 없다. 핵심은 무엇인가요?",
+    "choices": [
+      "협업하려면 모든 신념이 같아야 해요.",
+      "공통 도구는 연구를 방해해요.",
+      "해석이 달라도 공유된 도구로 연구할 수 있어요."
+    ],
+    "answer": 2,
+    "explanation": [
+      "공통된 사용 방식과 개인의 믿음을 분리하는 글이에요. 같은 신념이 필수라는 선지는 대비를 지워요."
+    ],
+    "takeaway": "글이 구별하는 두 개념을 선지에서도 유지해요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 23
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "주제 범위"
+    ]
+  },
+  {
+    "id": "bite-en-022",
+    "subject": "english",
+    "kind": "recall",
+    "topic": "듣기",
+    "title": "질문부터 확인",
+    "prompt": "같은 대화에 가격, 장소, 역할이 모두 나와요. 듣기 시작 전에 무엇부터 확인해야 할까요?",
+    "explanation": [
+      "질문이 정해져야 남길 정보와 비교할 선지가 분명해져요."
+    ],
+    "takeaway": "발문으로 듣기의 목표를 정해요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 5
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "듣기"
+    ],
+    "answerText": "이번 문제가 금액·이유·할 일 중 무엇을 묻는지 확인해요."
+  },
+  {
+    "id": "bite-en-023",
+    "subject": "english",
+    "kind": "recall",
+    "topic": "듣기",
+    "title": "할인식을 말해요",
+    "prompt": "15달러짜리 두 개를 사고 전체의 20%를 할인받아요. 계산식과 결제액을 말해 보세요.",
+    "explanation": [
+      "전체 할인은 수량을 합한 30달러에 적용해요."
+    ],
+    "takeaway": "가격×수량을 먼저 구해요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 6
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "듣기"
+    ],
+    "answerText": "15×2×0.8=24달러예요."
+  },
+  {
+    "id": "bite-en-024",
+    "subject": "english",
+    "kind": "recall",
+    "topic": "주제",
+    "title": "한 문장으로 묶기",
+    "prompt": "글은 도시의 비둘기·갈매기·다람쥐가 각각 먹이와 안전한 공간을 얻어 살아가는 사례를 들어요. 공통 주제를 한 문장으로 말해 보세요.",
+    "explanation": [
+      "종류는 달라도 각 사례가 도시에서 잘 사는 원인을 설명해요."
+    ],
+    "takeaway": "예시들을 같은 질문의 답으로 묶어요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 16
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "주제"
+    ],
+    "answerText": "야생 동물이 도시에서 번성하는 이유예요."
+  },
+  {
+    "id": "bite-en-025",
+    "subject": "english",
+    "kind": "recall",
+    "topic": "삽입",
+    "title": "두 방향의 근거",
+    "prompt": "삽입 후보가 앞 문장과는 자연스럽지만 뒤의 this result가 가리킬 결과가 없어요. 위치를 확정하기 전에 무엇을 확인해야 할까요?",
+    "explanation": [
+      "앞쪽 연결 하나만 맞아서는 충분하지 않아요."
+    ],
+    "takeaway": "삽입문 앞과 뒤를 모두 검증해요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 38
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "삽입"
+    ],
+    "answerText": "뒤 문장의 지시어가 가리킬 결과와 논리 연결을 확인해요."
+  },
+  {
+    "id": "bite-en-026",
+    "subject": "english",
+    "kind": "recall",
+    "topic": "도표",
+    "title": "퍼센트포인트",
+    "prompt": "어떤 비중이 9%에서 7%로 변했어요. 몇 퍼센트포인트 감소했나요?",
+    "explanation": [
+      "비율 자체의 차이는 9−7=2예요. 상대 감소율과 구별해요."
+    ],
+    "takeaway": "비율 차이의 단위를 붙여요.",
+    "noteIds": [
+      "en-exam"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 25
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "도표"
+    ],
+    "answerText": "2퍼센트포인트예요."
+  },
+  {
+    "id": "bite-en-027",
+    "subject": "english",
+    "kind": "recall",
+    "topic": "근거",
+    "title": "지문 밖 설명 지우기",
+    "prompt": "글은 나이가 들면 긍정적 정보에 더 주의를 기울일 수 있다고 해요. 선지는 노화 자체가 멈춘다고 해요. 어떤 비약이 있나요?",
+    "explanation": [
+      "심리적 경향과 생물학적 노화 중단은 다른 주장이에요."
+    ],
+    "takeaway": "관련 있어 보여도 글 밖 결론을 더하지 않아요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 24
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "근거"
+    ],
+    "answerText": "정보에 주의를 기울이는 경향을 노화 중단으로 확대했어요."
+  },
+  {
+    "id": "bite-en-028",
+    "subject": "english",
+    "kind": "tip",
+    "topic": "실전",
+    "title": "근거가 늘지 않는다면",
+    "prompt": "같은 빈칸 문제를 반복해서 읽는데 새로운 근거가 안 나와요. 표시하고 다음 문제로 이동한 뒤 다시 돌아와 보세요.",
+    "explanation": [
+      "다시 볼 때는 첫 답을 변호하지 말고 빈칸 문장의 역할부터 새로 확인해요."
+    ],
+    "takeaway": "풀릴 것 같은 느낌과 실제 근거의 증가를 구별해요.",
+    "noteIds": [
+      "en-exam",
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 33
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "실전"
+    ]
+  },
+  {
+    "id": "bite-en-029",
+    "subject": "english",
+    "kind": "tip",
+    "topic": "주제",
+    "title": "처음 잡은 주제를 수정해요",
+    "prompt": "첫 문장의 장점만 읽고 주제를 확정하지 마세요. 뒤에서 한계나 반대 방향이 나오면 처음 요약도 고쳐요.",
+    "explanation": [
+      "노년의 손실을 말한 뒤 장점을 설명하는 글에서는 첫 문장의 부정적 인상만 남기면 틀려요."
+    ],
+    "takeaway": "글 끝까지 읽은 주제로 선지에 들어가요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 24
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "주제"
+    ]
+  },
+  {
+    "id": "bite-en-030",
+    "subject": "english",
+    "kind": "tip",
+    "topic": "도표",
+    "title": "쉬운 문제에서 한 번 멈춤",
+    "prompt": "도표 선지의 주어·연도·단위를 먼저 짝지어 보세요. 숫자가 비슷해 보여도 증가 인원과 증가율은 다를 수 있어요.",
+    "explanation": [
+      "수치 비교의 기준을 적으면 익숙하다는 느낌 때문에 조건을 생략하는 일을 줄일 수 있어요."
+    ],
+    "takeaway": "항목과 단위부터 맞춰요.",
+    "noteIds": [
+      "en-exam"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 25
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "도표"
+    ]
+  },
+  {
+    "id": "bite-en-031",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "objective",
+    "prompt": "새 예문에서 objective의 뜻은 무엇인가요?",
+    "choices": [
+      "목표",
+      "반대 의견",
+      "관찰 도구"
+    ],
+    "answer": 0,
+    "explanation": [
+      "우리의 주된 목표는 기다리는 시간을 줄이는 것이에요.",
+      "기출에서는 “기업의 활동이 지향하는 사업 목표”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "objective: 목표. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "objective",
+    "example": "Our main objective is to reduce waiting time."
+  },
+  {
+    "id": "bite-en-032",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "thorough",
+    "prompt": "새 예문에서 thorough의 뜻은 무엇인가요?",
+    "choices": [
+      "우연한",
+      "철저한",
+      "일시적인"
+    ],
+    "answer": 1,
+    "explanation": [
+      "철저히 확인한 결과 빠진 두 쪽을 발견했어요.",
+      "기출에서는 “조직의 목표를 충분하고 면밀하게 이해함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "thorough: 철저한. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "thorough",
+    "example": "A thorough check found two missing pages."
+  },
+  {
+    "id": "bite-en-033",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "vague",
+    "prompt": "새 예문에서 vague의 뜻은 무엇인가요?",
+    "choices": [
+      "측정 가능한",
+      "의무적인",
+      "막연한"
+    ],
+    "answer": 2,
+    "explanation": [
+      "그녀는 그 계획에 대해 막연하게만 알고 있었어요.",
+      "기출에서는 “SNS에 있어야 한다는 불분명한 필요”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "vague: 막연한. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "vague",
+    "example": "She had only a vague idea of the plan."
+  },
+  {
+    "id": "bite-en-034",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "measurable",
+    "prompt": "새 예문에서 measurable의 뜻은 무엇인가요?",
+    "choices": [
+      "측정 가능한",
+      "해로운",
+      "피할 수 없는"
+    ],
+    "answer": 0,
+    "explanation": [
+      "속도가 얼마나 나아졌는지 측정할 수 있는 개선이 필요해요.",
+      "기출에서는 “결과를 구체적으로 측정할 수 있는 개선”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "measurable: 측정 가능한. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "measurable",
+    "example": "We need a measurable improvement in speed."
+  },
+  {
+    "id": "bite-en-035",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "expertise",
+    "prompt": "새 예문에서 expertise의 뜻은 무엇인가요?",
+    "choices": [
+      "도덕적 의무",
+      "전문 지식과 능력",
+      "개인적 취향"
+    ],
+    "answer": 1,
+    "explanation": [
+      "이 프로젝트에는 기후 과학에 관한 그녀의 전문 지식이 필요해요.",
+      "기출에서는 “특정 분야에서 축적한 전문성”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "expertise: 전문 지식과 능력. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "expertise",
+    "example": "The project needs her expertise in climate science."
+  },
+  {
+    "id": "bite-en-036",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "domain",
+    "prompt": "새 예문에서 domain의 뜻은 무엇인가요?",
+    "choices": [
+      "통근 시간",
+      "보상",
+      "분야"
+    ],
+    "answer": 2,
+    "explanation": [
+      "그녀는 특정 분야에 대한 지식이 탄탄해요.",
+      "기출에서는 “전문 지식이 적용되는 특정 영역”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "domain: 분야. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "domain",
+    "example": "Her knowledge is strong in one domain."
+  },
+  {
+    "id": "bite-en-037",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "relevant",
+    "prompt": "새 예문에서 relevant의 뜻은 무엇인가요?",
+    "choices": [
+      "관련 있는",
+      "일치하지 않는",
+      "시대에 뒤진"
+    ],
+    "answer": 0,
+    "explanation": [
+      "이 질문과 관련 있는 증거만 공유해 달라는 말이에요.",
+      "기출에서는 “전문가가 배울 수 있는 관련 경험”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "relevant: 관련 있는. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "relevant",
+    "example": "Please share only evidence relevant to this question."
+  },
+  {
+    "id": "bite-en-038",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "designated",
+    "prompt": "새 예문에서 designated의 뜻은 무엇인가요?",
+    "choices": [
+      "숨겨진",
+      "지정된",
+      "자발적인"
+    ],
+    "answer": 1,
+    "explanation": [
+      "도움을 받으려면 지정된 조언자에게 물어보라는 말이에요.",
+      "기출에서는 “특정 역할을 맡도록 정해진 전문가”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "designated: 지정된. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "designated",
+    "example": "Ask the designated adviser for guidance."
+  },
+  {
+    "id": "bite-en-039",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "exposure",
+    "prompt": "새 예문에서 exposure의 뜻은 무엇인가요?",
+    "choices": [
+      "복구",
+      "허가",
+      "노출"
+    ],
+    "answer": 2,
+    "explanation": [
+      "마스크가 먼지에 노출되는 정도를 줄여 줘요.",
+      "기출에서는 “오염된 공기나 물 같은 유해 요인에 접함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "exposure: 노출. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "exposure",
+    "example": "The mask reduces exposure to dust."
+  },
+  {
+    "id": "bite-en-040",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "involuntary",
+    "prompt": "새 예문에서 involuntary의 뜻은 무엇인가요?",
+    "choices": [
+      "비자발적인",
+      "일상적인",
+      "계획적인"
+    ],
+    "answer": 0,
+    "explanation": [
+      "연기를 들이마신 것은 본인이 원해서 한 일이 아니었어요.",
+      "기출에서는 “자신의 선택과 무관하게 이루어지는 노출”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "involuntary: 비자발적인. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "involuntary",
+    "example": "Breathing the smoke was involuntary."
+  },
+  {
+    "id": "bite-en-041",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "elimination",
+    "prompt": "새 예문에서 elimination의 뜻은 무엇인가요?",
+    "choices": [
+      "축적",
+      "제거",
+      "측정"
+    ],
+    "answer": 1,
+    "explanation": [
+      "누출을 없애자 방이 더 안전해졌어요.",
+      "기출에서는 “유해 요인 자체를 없앰”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "elimination: 제거. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "elimination",
+    "example": "The elimination of the leak made the room safer."
+  },
+  {
+    "id": "bite-en-042",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "contaminated",
+    "prompt": "새 예문에서 contaminated의 뜻은 무엇인가요?",
+    "choices": [
+      "희석된",
+      "수입된",
+      "오염된"
+    ],
+    "answer": 2,
+    "explanation": [
+      "오염된 물은 사용할 수 없었어요.",
+      "기출에서는 “유해 물질이 섞인 식수”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "contaminated: 오염된. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "contaminated",
+    "example": "The contaminated water could not be used."
+  },
+  {
+    "id": "bite-en-043",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "presuppose",
+    "prompt": "새 예문에서 presuppose의 뜻은 무엇인가요?",
+    "choices": [
+      "전제로 하다",
+      "반박하다",
+      "미루다"
+    ],
+    "answer": 0,
+    "explanation": [
+      "이 방법은 모두가 같은 믿음을 가지고 있을 것을 전제로 하지 않아요.",
+      "기출에서는 ‘전제로 하다’라는 뜻이에요. 원문은 need not을 붙여, 연구 방식을 공유해도 같은 신념까지 전제로 할 필요는 없다고 말해요."
+    ],
+    "takeaway": "presuppose: 전제로 하다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 23
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "presuppose",
+    "example": "This method does not presuppose identical beliefs."
+  },
+  {
+    "id": "bite-en-044",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "comparable",
+    "prompt": "새 예문에서 comparable의 뜻은 무엇인가요?",
+    "choices": [
+      "상반되는",
+      "비슷한 수준의",
+      "증명된"
+    ],
+    "answer": 1,
+    "explanation": [
+      "두 집단이 비슷한 수준의 결과를 얻었어요.",
+      "기출에서는 “공유된 실천에 상응할 정도의 신념의 통일성”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "comparable: 비슷한 수준의. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 23
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "comparable",
+    "example": "The two groups achieved comparable results."
+  },
+  {
+    "id": "bite-en-045",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "interpretation",
+    "prompt": "새 예문에서 interpretation의 뜻은 무엇인가요?",
+    "choices": [
+      "실험 도구",
+      "승인",
+      "해석"
+    ],
+    "answer": 2,
+    "explanation": [
+      "그 자료는 두 가지 이상의 방식으로 해석할 수 있어요.",
+      "기출에서는 “패러다임을 이해하고 설명하는 방식”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "interpretation: 해석. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 23
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "interpretation",
+    "example": "The data allow more than one interpretation."
+  },
+  {
+    "id": "bite-en-046",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "mend",
+    "prompt": "새 예문에서 mend의 뜻은 무엇인가요?",
+    "choices": [
+      "수선하다",
+      "주문하다",
+      "분류하다"
+    ],
+    "answer": 0,
+    "explanation": [
+      "찢어진 가방을 수선할 수 있는지 묻고 있어요.",
+      "기출에서는 “고장 나거나 손상된 물건을 고침”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "mend: 수선하다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-11",
+        "number": 24
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "mend",
+    "example": "Can you mend the torn bag?"
+  },
+  {
+    "id": "bite-en-047",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "encounter",
+    "prompt": "새 예문에서 encounter의 뜻은 무엇인가요?",
+    "choices": [
+      "설계하다",
+      "마주치다",
+      "피하다"
+    ],
+    "answer": 1,
+    "explanation": [
+      "진행하는 동안 여러 선택의 순간을 마주할 수 있어요.",
+      "기출에서는 “삶의 과정에서 선택의 분기점을 만남”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "encounter: 마주치다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "encounter",
+    "example": "We may encounter several choices on the way."
+  },
+  {
+    "id": "bite-en-048",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "intuition",
+    "prompt": "새 예문에서 intuition의 뜻은 무엇인가요?",
+    "choices": [
+      "확률",
+      "지침",
+      "직관"
+    ],
+    "answer": 2,
+    "explanation": [
+      "계산을 하기 전부터 그녀의 직관이 답을 떠올리게 했어요.",
+      "기출에서는 “분석보다 즉각적인 감각에 기대는 판단”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "intuition: 직관. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "intuition",
+    "example": "Her intuition suggested an answer before any calculation."
+  },
+  {
+    "id": "bite-en-049",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "potent",
+    "prompt": "새 예문에서 potent의 뜻은 무엇인가요?",
+    "choices": [
+      "효과적인",
+      "불완전한",
+      "수동적인"
+    ],
+    "answer": 0,
+    "explanation": [
+      "명확한 피드백은 학습에 효과적인 도구가 될 수 있어요.",
+      "기출에서는 “불확실성을 수치화하는 강력한 방법”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "potent: 효과적인. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "potent",
+    "example": "Clear feedback can be a potent tool for learning."
+  },
+  {
+    "id": "bite-en-050",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "proportion",
+    "prompt": "새 예문에서 proportion의 뜻은 무엇인가요?",
+    "choices": [
+      "원인",
+      "비율",
+      "순서"
+    ],
+    "answer": 1,
+    "explanation": [
+      "시도한 것 중 많은 비율이 성공했어요.",
+      "기출에서는 “가능한 시나리오 중 성공이나 실패가 차지하는 몫”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "proportion: 비율. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "proportion",
+    "example": "A large proportion of the trials succeeded."
+  },
+  {
+    "id": "bite-en-051",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "whereabouts",
+    "prompt": "새 예문에서 whereabouts의 뜻은 무엇인가요?",
+    "choices": [
+      "감정의 강도",
+      "미래 계획",
+      "소재나 행방"
+    ],
+    "answer": 2,
+    "explanation": [
+      "그 일기에는 저녁마다 그녀가 어디에 있었는지 기록돼 있어요.",
+      "기출에서는 “그날 어디에 있었는지에 관한 기록”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "whereabouts: 소재나 행방. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "whereabouts",
+    "example": "The diary records her whereabouts each evening."
+  },
+  {
+    "id": "bite-en-052",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "insight",
+    "prompt": "새 예문에서 insight의 뜻은 무엇인가요?",
+    "choices": [
+      "통찰",
+      "우연",
+      "감시"
+    ],
+    "answer": 0,
+    "explanation": [
+      "일기를 다시 읽으며 그는 자기 습관을 깊이 이해하게 됐어요.",
+      "기출에서는 “경험을 돌아보며 자신을 깊이 이해함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "insight: 통찰. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "insight",
+    "example": "Rereading the diary gave him insight into his habits."
+  },
+  {
+    "id": "bite-en-053",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "narrative",
+    "prompt": "새 예문에서 narrative의 뜻은 무엇인가요?",
+    "choices": [
+      "규칙",
+      "이야기",
+      "감각"
+    ],
+    "answer": 1,
+    "explanation": [
+      "그녀는 따로 떨어진 기억들을 하나의 분명한 이야기로 엮었어요.",
+      "기출에서는 “흩어진 사건을 연결해 만든 자기 이야기”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "narrative: 이야기. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "narrative",
+    "example": "She turned separate memories into a clear narrative."
+  },
+  {
+    "id": "bite-en-054",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "critique",
+    "prompt": "새 예문에서 critique의 뜻은 무엇인가요?",
+    "choices": [
+      "무조건적 찬양",
+      "기억의 삭제",
+      "비판적 검토"
+    ],
+    "answer": 2,
+    "explanation": [
+      "그 수업의 학생들은 그 주장에 대해 신중한 비판적 검토를 내놓았어요.",
+      "기출에서는 “세계와 자신을 이성적으로 검토함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "critique: 비판적 검토. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "critique",
+    "example": "The class offered a careful critique of the argument."
+  },
+  {
+    "id": "bite-en-055",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "congested",
+    "prompt": "새 예문에서 congested의 뜻은 무엇인가요?",
+    "choices": [
+      "혼잡한",
+      "고립된",
+      "평평한"
+    ],
+    "answer": 0,
+    "explanation": [
+      "자전거는 혼잡한 도로를 지나갈 수 있어요.",
+      "기출에서는 “교통과 활동이 밀집한 도시 공간”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "congested: 혼잡한. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "congested",
+    "example": "Bikes can move through congested streets."
+  },
+  {
+    "id": "bite-en-056",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "acquisition",
+    "prompt": "새 예문에서 acquisition의 뜻은 무엇인가요?",
+    "choices": [
+      "폐기",
+      "취득",
+      "수리"
+    ],
+    "answer": 1,
+    "explanation": [
+      "처음 구입하는 비용이 수리 비용보다 낮아요.",
+      "기출에서는 “배송용 자전거를 처음 구입하는 비용”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "acquisition: 취득. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "acquisition",
+    "example": "The acquisition cost is lower than the repair cost."
+  },
+  {
+    "id": "bite-en-057",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "maintenance",
+    "prompt": "새 예문에서 maintenance의 뜻은 무엇인가요?",
+    "choices": [
+      "판매 촉진",
+      "대량 생산",
+      "유지 관리"
+    ],
+    "answer": 2,
+    "explanation": [
+      "정기적으로 관리하면 자전거를 안전한 상태로 유지할 수 있어요.",
+      "기출에서는 “자전거를 계속 사용할 수 있게 관리함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "maintenance: 유지 관리. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "maintenance",
+    "example": "Regular maintenance keeps the bicycle safe."
+  },
+  {
+    "id": "bite-en-058",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "dedicated",
+    "prompt": "새 예문에서 dedicated의 뜻은 무엇인가요?",
+    "choices": [
+      "전용의",
+      "임시의",
+      "값비싼"
+    ],
+    "answer": 0,
+    "explanation": [
+      "전용 차로가 자전거와 자동차를 분리해 줘요.",
+      "기출에서는 “자전거만을 위해 마련된 도로”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "dedicated: 전용의. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "dedicated",
+    "example": "A dedicated lane separates bikes from cars."
+  },
+  {
+    "id": "bite-en-059",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "disclosure",
+    "prompt": "새 예문에서 disclosure의 뜻은 무엇인가요?",
+    "choices": [
+      "가격 통제",
+      "정보 공개",
+      "소유권 양도"
+    ],
+    "answer": 1,
+    "explanation": [
+      "정보를 분명히 공개하면 고객이 제품을 비교하는 데 도움이 돼요.",
+      "기출에서는 “선택에 필요한 정보를 드러내 알림”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "disclosure: 정보 공개. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-11",
+        "number": 23
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "disclosure",
+    "example": "Clear disclosure helps customers compare products."
+  },
+  {
+    "id": "bite-en-060",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "neglect",
+    "prompt": "새 예문에서 neglect의 뜻은 무엇인가요?",
+    "choices": [
+      "표준화하다",
+      "강조하다",
+      "소홀히 하다"
+    ],
+    "answer": 2,
+    "explanation": [
+      "하나의 규칙만 쓰면 중요한 차이들을 충분히 고려하지 못할 수 있어요.",
+      "기출에서는 “강제적 규제가 다양성을 충분히 고려하지 않음”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "neglect: 소홀히 하다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-11",
+        "number": 23
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "neglect",
+    "example": "A single rule may neglect important differences."
+  },
+  {
+    "id": "bite-en-061",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "attribute",
+    "prompt": "새 예문에서 attribute의 뜻은 무엇인가요?",
+    "choices": [
+      "특성",
+      "명령",
+      "비용"
+    ],
+    "answer": 0,
+    "explanation": [
+      "내구성은 구매자들이 비교하는 특성 중 하나예요.",
+      "기출에서는 “자동차의 안전·가격·외형 같은 속성”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "attribute: 특성. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-11",
+        "number": 23
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "attribute",
+    "example": "Durability is one attribute buyers compare."
+  },
+  {
+    "id": "bite-en-062",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "autonomy",
+    "prompt": "새 예문에서 autonomy의 뜻은 무엇인가요?",
+    "choices": [
+      "효율성",
+      "자율성",
+      "복잡성"
+    ],
+    "answer": 1,
+    "explanation": [
+      "새 정책은 고객이 스스로 선택할 자유를 보호해요.",
+      "기출에서는 “개인이 스스로 선택하고 결정할 수 있음”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "autonomy: 자율성. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-11",
+        "number": 23
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "autonomy",
+    "example": "The new policy protects customer autonomy."
+  },
+  {
+    "id": "bite-en-063",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "concise",
+    "prompt": "새 예문에서 concise의 뜻은 무엇인가요?",
+    "choices": [
+      "모호한",
+      "반복적인",
+      "간결한"
+    ],
+    "answer": 2,
+    "explanation": [
+      "팀에 할 일을 짧고 분명하게 설명해 주라는 말이에요.",
+      "기출에서는 “기대하는 행동을 짧고 분명하게 설명함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "concise: 간결한. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "concise",
+    "example": "Give the team a concise description of the task."
+  },
+  {
+    "id": "bite-en-064",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "representation",
+    "prompt": "새 예문에서 representation의 뜻은 무엇인가요?",
+    "choices": [
+      "표현",
+      "실패 원인",
+      "임시 계약"
+    ],
+    "answer": 0,
+    "explanation": [
+      "그 도식은 과정을 눈으로 볼 수 있게 나타낸 것이에요.",
+      "기출에서는 “구체적 행동을 눈으로 볼 수 있게 나타낸 것”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "representation: 표현. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "representation",
+    "example": "The diagram is a visual representation of the process."
+  },
+  {
+    "id": "bite-en-065",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "distribute",
+    "prompt": "새 예문에서 distribute의 뜻은 무엇인가요?",
+    "choices": [
+      "제한하다",
+      "배포하다",
+      "평가하다"
+    ],
+    "answer": 1,
+    "explanation": [
+      "우리는 모든 팀에 그 안내서를 배포할 예정이에요.",
+      "기출에서는 “가치에 맞는 행동 지침을 조직 전체에 널리 공유함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "distribute: 배포하다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "distribute",
+    "example": "We will distribute the guide to every team."
+  },
+  {
+    "id": "bite-en-066",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "transform",
+    "prompt": "새 예문에서 transform의 뜻은 무엇인가요?",
+    "choices": [
+      "보존하다",
+      "추측하다",
+      "바꾸다"
+    ],
+    "answer": 2,
+    "explanation": [
+      "우리는 생각을 실제 행동으로 바꿔야 해요.",
+      "기출에서는 “문화를 실제 행동으로 전환함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "transform: 바꾸다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "transform",
+    "example": "We must transform the idea into action."
+  },
+  {
+    "id": "bite-en-067",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "scattered",
+    "prompt": "새 예문에서 scattered의 뜻은 무엇인가요?",
+    "choices": [
+      "흩어진",
+      "지속적인",
+      "균형 잡힌"
+    ],
+    "answer": 0,
+    "explanation": [
+      "주의가 여기저기 흩어져 있어서 그녀는 집중하기 어려웠어요.",
+      "기출에서는 “주의가 분산되어 있는 상태”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "scattered: 흩어진. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "scattered",
+    "example": "Her scattered attention made it hard to focus."
+  },
+  {
+    "id": "bite-en-068",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "fixate",
+    "prompt": "새 예문에서 fixate의 뜻은 무엇인가요?",
+    "choices": [
+      "완전히 잊다",
+      "집중해 매달리다",
+      "서로 조율하다"
+    ],
+    "answer": 1,
+    "explanation": [
+      "작은 실수 하나에만 매달리지 말라는 말이에요.",
+      "기출에서는 “경험 중 스트레스를 주는 부분에만 주의를 고정함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "fixate: 집중해 매달리다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "fixate",
+    "example": "Do not fixate only on one small mistake."
+  },
+  {
+    "id": "bite-en-069",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "perspective",
+    "prompt": "새 예문에서 perspective의 뜻은 무엇인가요?",
+    "choices": [
+      "감정 표현",
+      "계약 조건",
+      "관점"
+    ],
+    "answer": 2,
+    "explanation": [
+      "더 넓은 관점이 그가 더 많은 선택지를 보는 데 도움이 됐어요.",
+      "기출에서는 “상황을 바라보는 시각과 범위”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "perspective: 관점. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "perspective",
+    "example": "A broader perspective helped him see more options."
+  },
+  {
+    "id": "bite-en-070",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "superficial",
+    "prompt": "새 예문에서 superficial의 뜻은 무엇인가요?",
+    "choices": [
+      "피상적인",
+      "필수적인",
+      "정확한"
+    ],
+    "answer": 0,
+    "explanation": [
+      "겉만 훑어 읽어서 더 깊은 문제를 놓쳤어요.",
+      "기출에서는 “깊이 없이 표면에 머무르는 주의 수준”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "superficial: 피상적인. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "superficial",
+    "example": "A superficial reading missed the deeper issue."
+  },
+  {
+    "id": "bite-en-071",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "prioritize",
+    "prompt": "새 예문에서 prioritize의 뜻은 무엇인가요?",
+    "choices": [
+      "책임을 회피하다",
+      "우선순위를 정하다",
+      "진위를 판정하다"
+    ],
+    "answer": 1,
+    "explanation": [
+      "우리는 긴급한 질문에 대한 답변을 우선해요.",
+      "기출에서는 “어떤 고객 반응에 먼저 대응할지 정함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "prioritize: 우선순위를 정하다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "prioritize",
+    "example": "We prioritize replies to urgent questions."
+  },
+  {
+    "id": "bite-en-072",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "acknowledge",
+    "prompt": "새 예문에서 acknowledge의 뜻은 무엇인가요?",
+    "choices": [
+      "문제를 숨기다",
+      "주장을 취소하다",
+      "알아주고 반응하다"
+    ],
+    "answer": 2,
+    "explanation": [
+      "관리자는 시간을 내어 그녀의 의견을 알아주었어요.",
+      "기출에서는 “고객이 남긴 말을 알아보고 개인적으로 응답함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "acknowledge: 알아주고 반응하다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "acknowledge",
+    "example": "The manager took time to acknowledge her feedback."
+  },
+  {
+    "id": "bite-en-073",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "appreciation",
+    "prompt": "새 예문에서 appreciation의 뜻은 무엇인가요?",
+    "choices": [
+      "감사",
+      "경쟁",
+      "불만"
+    ],
+    "answer": 0,
+    "explanation": [
+      "그의 메시지는 서비스에 대한 고마움을 표현했어요.",
+      "기출에서는 “좋은 경험에 대해 고마움이나 긍정적 평가를 표현함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "appreciation: 감사. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "appreciation",
+    "example": "His message expressed appreciation for the service."
+  },
+  {
+    "id": "bite-en-074",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "solid",
+    "prompt": "새 예문에서 solid의 뜻은 무엇인가요?",
+    "choices": [
+      "일시적인",
+      "확고한",
+      "수동적인"
+    ],
+    "answer": 1,
+    "explanation": [
+      "친절한 답변은 확고한 지지를 얻는 데 도움이 될 수 있어요.",
+      "기출에서는 “쉽게 흔들리지 않는 지지자 관계”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "solid: 확고한. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "solid",
+    "example": "A kind reply can build solid support."
+  },
+  {
+    "id": "bite-en-075",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "incentive",
+    "prompt": "새 예문에서 incentive의 뜻은 무엇인가요?",
+    "choices": [
+      "부작용",
+      "측정값",
+      "유인책"
+    ],
+    "answer": 2,
+    "explanation": [
+      "돈을 지급하면 소유주가 숲을 보호하려는 동기가 생겨요.",
+      "기출에서는 “특정 행동을 하도록 이끄는 경제적 동기”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "incentive: 유인책. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-11",
+        "number": 23
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "incentive",
+    "example": "A payment gives owners an incentive to protect the forest."
+  },
+  {
+    "id": "bite-en-076",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "exceed",
+    "prompt": "새 예문에서 exceed의 뜻은 무엇인가요?",
+    "choices": [
+      "넘어서다",
+      "일치하다",
+      "뒤따르다"
+    ],
+    "answer": 0,
+    "explanation": [
+      "얻는 이익이 처음 드는 비용보다 클 수 있어요.",
+      "기출에서는 “생태계 서비스의 가치가 목재 가치를 능가함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "exceed: 넘어서다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-11",
+        "number": 23
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "exceed",
+    "example": "The benefits may exceed the initial cost."
+  },
+  {
+    "id": "bite-en-077",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "purification",
+    "prompt": "새 예문에서 purification의 뜻은 무엇인가요?",
+    "choices": [
+      "저장",
+      "정화",
+      "증발"
+    ],
+    "answer": 1,
+    "explanation": [
+      "그 습지는 물을 깨끗하게 만드는 데 도움이 돼요.",
+      "기출에서는 “물에서 불순물을 줄여 깨끗하게 함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "purification: 정화. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-11",
+        "number": 23
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "purification",
+    "example": "The wetland supports water purification."
+  },
+  {
+    "id": "bite-en-078",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "erosion",
+    "prompt": "새 예문에서 erosion의 뜻은 무엇인가요?",
+    "choices": [
+      "축적",
+      "순환",
+      "침식"
+    ],
+    "answer": 2,
+    "explanation": [
+      "나무뿌리는 토양이 깎이거나 유실되는 것을 막는 데 도움이 될 수 있어요.",
+      "기출에서는 “토양 등이 깎이거나 유실되는 현상”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "erosion: 침식. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-11",
+        "number": 23
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "erosion",
+    "example": "Tree roots can help prevent soil erosion."
+  },
+  {
+    "id": "bite-en-079",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "accomplish",
+    "prompt": "새 예문에서 accomplish의 뜻은 무엇인가요?",
+    "choices": [
+      "달성하다",
+      "미루다",
+      "과장하다"
+    ],
+    "answer": 0,
+    "explanation": [
+      "그녀는 목표를 이루려고 꾸준히 노력했어요.",
+      "기출에서는 “학생이 자신의 목표를 이룸”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "accomplish: 달성하다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "accomplish",
+    "example": "She worked steadily to accomplish her goal."
+  },
+  {
+    "id": "bite-en-080",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "enhance",
+    "prompt": "새 예문에서 enhance의 뜻은 무엇인가요?",
+    "choices": [
+      "흩뜨리다",
+      "향상시키다",
+      "대체하다"
+    ],
+    "answer": 1,
+    "explanation": [
+      "유익한 게임은 학습 효과를 높일 수 있어요.",
+      "기출에서는 “생산성과 학습 효과를 더 좋게 함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "enhance: 향상시키다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "enhance",
+    "example": "Useful games can enhance learning."
+  },
+  {
+    "id": "bite-en-081",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "derail",
+    "prompt": "새 예문에서 derail의 뜻은 무엇인가요?",
+    "choices": [
+      "효율적으로 조정하다",
+      "새롭게 시작하다",
+      "방해해 어긋나게 하다"
+    ],
+    "answer": 2,
+    "explanation": [
+      "끊임없이 오는 메시지가 공부 계획을 흐트러뜨릴 수 있어요.",
+      "기출에서는 “생산성을 방해해 제 방향에서 벗어나게 함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "derail: 방해해 어긋나게 하다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "derail",
+    "example": "Constant messages can derail a study plan."
+  },
+  {
+    "id": "bite-en-082",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "take advantage of",
+    "prompt": "새 예문에서 take advantage of의 뜻은 무엇인가요?",
+    "choices": [
+      "활용하다",
+      "보상하다",
+      "따라잡다"
+    ],
+    "answer": 0,
+    "explanation": [
+      "교사들은 학생들의 호기심을 활용할 수 있어요.",
+      "기출에서는 “게임이 주의를 끄는 능력을 교육에 이용함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "take advantage of: 활용하다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "take advantage of",
+    "example": "Teachers can take advantage of students' curiosity."
+  },
+  {
+    "id": "bite-en-083",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "aspiring",
+    "prompt": "새 예문에서 aspiring의 뜻은 무엇인가요?",
+    "choices": [
+      "이미 은퇴한",
+      "장차 되기를 희망하는",
+      "우연히 참여한"
+    ],
+    "answer": 1,
+    "explanation": [
+      "건축가가 되기를 희망하는 사람은 이론과 실무를 모두 공부해요.",
+      "기출에서는 “건축가가 되려는 사람”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "aspiring: 장차 되기를 희망하는. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "aspiring",
+    "example": "An aspiring architect studies both theory and practice."
+  },
+  {
+    "id": "bite-en-084",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "discipline",
+    "prompt": "새 예문에서 discipline의 뜻은 무엇인가요?",
+    "choices": [
+      "처벌",
+      "생활 습관",
+      "학문 분야"
+    ],
+    "answer": 2,
+    "explanation": [
+      "역사는 그 교육과정에 포함된 학문 분야 중 하나예요.",
+      "기출에서는 “건축가가 익혀야 할 여러 학문 영역”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "discipline: 학문 분야. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "discipline",
+    "example": "History is one discipline in the program."
+  },
+  {
+    "id": "bite-en-085",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "manual",
+    "prompt": "새 예문에서 manual의 뜻은 무엇인가요?",
+    "choices": [
+      "손으로 하는",
+      "법률에 관한",
+      "자동화된"
+    ],
+    "answer": 0,
+    "explanation": [
+      "그 수리에는 손으로 작업하는 기술이 필요해요.",
+      "기출에서는 “몸과 손을 써서 수행하는 실무 기술”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "manual: 손으로 하는. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "manual",
+    "example": "The repair requires manual skill."
+  },
+  {
+    "id": "bite-en-086",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "scholarship",
+    "prompt": "새 예문에서 scholarship의 뜻은 무엇인가요?",
+    "choices": [
+      "장학금",
+      "학문적 지식",
+      "건축 도면"
+    ],
+    "answer": 1,
+    "explanation": [
+      "실무 기술은 학문적 지식의 뒷받침을 받아야 해요.",
+      "기출에서는 “실무 기술과 짝을 이루는 이론적 학문 소양”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "scholarship: 학문적 지식. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "scholarship",
+    "example": "Practical skill should be supported by scholarship."
+  },
+  {
+    "id": "bite-en-087",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "facilitate",
+    "prompt": "새 예문에서 facilitate의 뜻은 무엇인가요?",
+    "choices": [
+      "지연시키다",
+      "제한하다",
+      "수월하게 하다"
+    ],
+    "answer": 2,
+    "explanation": [
+      "분명한 언어를 쓰면 협력이 더 수월해질 수 있어요.",
+      "기출에서는 “동료 사이의 소통이 잘 이루어지도록 도움”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "facilitate: 수월하게 하다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "facilitate",
+    "example": "Clear language can facilitate cooperation."
+  },
+  {
+    "id": "bite-en-088",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "accommodate",
+    "prompt": "새 예문에서 accommodate의 뜻은 무엇인가요?",
+    "choices": [
+      "수용하다",
+      "비난하다",
+      "예측하다"
+    ],
+    "answer": 0,
+    "explanation": [
+      "그 계획은 서로 다른 요구들을 수용해야 해요.",
+      "기출에서는 “자신과 타인의 요구를 함께 고려해 받아들임”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "accommodate: 수용하다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "accommodate",
+    "example": "The plan should accommodate different needs."
+  },
+  {
+    "id": "bite-en-089",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "constructive",
+    "prompt": "새 예문에서 constructive의 뜻은 무엇인가요?",
+    "choices": [
+      "일방적인",
+      "건설적인",
+      "감정적인"
+    ],
+    "answer": 1,
+    "explanation": [
+      "그들은 문제 해결에 도움이 되는 건설적인 토론을 했어요.",
+      "기출에서는 “문제를 개선하는 데 도움이 되는 방향”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "constructive: 건설적인. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "constructive",
+    "example": "They had a constructive discussion about the problem."
+  },
+  {
+    "id": "bite-en-090",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "resolution",
+    "prompt": "새 예문에서 resolution의 뜻은 무엇인가요?",
+    "choices": [
+      "확대",
+      "고집",
+      "해결"
+    ],
+    "answer": 2,
+    "explanation": [
+      "서로의 말을 듣는 것이 갈등의 해결책에 도달하는 데 도움이 됐어요.",
+      "기출에서는 “집단 내 갈등을 풀어냄”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "resolution: 해결. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "resolution",
+    "example": "Listening helped them reach a resolution of the conflict."
+  },
+  {
+    "id": "bite-en-091",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "around the clock",
+    "prompt": "새 예문에서 around the clock의 뜻은 무엇인가요?",
+    "choices": [
+      "밤낮으로 계속",
+      "정해진 시각에만",
+      "시계 주변에서"
+    ],
+    "answer": 0,
+    "explanation": [
+      "그 공장은 밤낮으로 쉬지 않고 가동돼요.",
+      "기출에서는 “공장을 하루 종일 가동함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "around the clock: 밤낮으로 계속. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-11",
+        "number": 23
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "around the clock",
+    "example": "The factory operates around the clock."
+  },
+  {
+    "id": "bite-en-092",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "shift",
+    "prompt": "새 예문에서 shift의 뜻은 무엇인가요?",
+    "choices": [
+      "공장 설비",
+      "교대 근무 시간",
+      "수확량"
+    ],
+    "answer": 1,
+    "explanation": [
+      "그녀는 한 번의 교대 근무를 여덟 시간씩 해요.",
+      "기출에서는 “작업일을 나눈 근무 시간대”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "shift: 교대 근무 시간. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-11",
+        "number": 23
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "shift",
+    "example": "She works an eight-hour shift."
+  },
+  {
+    "id": "bite-en-093",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "harvest",
+    "prompt": "새 예문에서 harvest의 뜻은 무엇인가요?",
+    "choices": [
+      "생산 설비",
+      "노동 계약",
+      "수확"
+    ],
+    "answer": 2,
+    "explanation": [
+      "수확하는 시기가 그들의 작업 일정에 영향을 줬어요.",
+      "기출에서는 “농작물을 거두는 계절적 작업”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "harvest: 수확. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-11",
+        "number": 23
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "harvest",
+    "example": "The harvest season shaped their work schedule."
+  },
+  {
+    "id": "bite-en-094",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "productivity",
+    "prompt": "새 예문에서 productivity의 뜻은 무엇인가요?",
+    "choices": [
+      "생산성",
+      "생산 비용",
+      "상품 가격"
+    ],
+    "answer": 0,
+    "explanation": [
+      "더 좋은 도구 덕분에 시간당 생산성이 높아졌어요.",
+      "기출에서는 “주어진 시간에 생산하는 양과 효율”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "productivity: 생산성. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-11",
+        "number": 23
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "productivity",
+    "example": "Better tools increased productivity per hour."
+  },
+  {
+    "id": "bite-en-095",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "contribution",
+    "prompt": "새 예문에서 contribution의 뜻은 무엇인가요?",
+    "choices": [
+      "제약",
+      "기여",
+      "모방"
+    ],
+    "answer": 1,
+    "explanation": [
+      "그녀의 기여가 사람들이 글을 쓰는 방식을 바꾸었어요.",
+      "기출에서는 “작사가들이 언어와 문학의 발전에 보탠 것”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "contribution: 기여. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "contribution",
+    "example": "Her contribution changed the way people write."
+  },
+  {
+    "id": "bite-en-096",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "linguistic",
+    "prompt": "새 예문에서 linguistic의 뜻은 무엇인가요?",
+    "choices": [
+      "음량의",
+      "역사 이전의",
+      "언어의"
+    ],
+    "answer": 2,
+    "explanation": [
+      "그 시는 재치 있는 언어 표현 방식을 사용해요.",
+      "기출에서는 “말과 문장의 표현 방식에 관한 성질”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "linguistic: 언어의. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "linguistic",
+    "example": "The poem uses a clever linguistic pattern."
+  },
+  {
+    "id": "bite-en-097",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "distinct",
+    "prompt": "새 예문에서 distinct의 뜻은 무엇인가요?",
+    "choices": [
+      "독특하고 뚜렷한",
+      "불완전한",
+      "보편적인"
+    ],
+    "answer": 0,
+    "explanation": [
+      "각 작가는 다른 것과 구별되는 뚜렷한 이미지를 만들어요.",
+      "기출에서는 “다른 것과 구별되는 선명한 이미지”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "distinct: 독특하고 뚜렷한. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "distinct",
+    "example": "Each writer creates distinct images."
+  },
+  {
+    "id": "bite-en-098",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "recognize",
+    "prompt": "새 예문에서 recognize의 뜻은 무엇인가요?",
+    "choices": [
+      "암기하다",
+      "인정하다",
+      "분리하다"
+    ],
+    "answer": 1,
+    "explanation": [
+      "우리는 그녀가 한 일의 가치를 인정해야 해요.",
+      "기출에서는 “작사가의 공헌과 작품 가치를 받아들여 평가함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "recognize: 인정하다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-11",
+        "number": 20
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "recognize",
+    "example": "We should recognize the value of her work."
+  },
+  {
+    "id": "bite-en-099",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "standardised",
+    "prompt": "새 예문에서 standardised의 뜻은 무엇인가요?",
+    "choices": [
+      "개인화된",
+      "지리적으로 제한된",
+      "표준화된"
+    ],
+    "answer": 2,
+    "explanation": [
+      "표준화된 업무는 팀 사이에서 넘겨주기가 더 쉬워요.",
+      "기출에서는 “일의 방식이 일정한 기준으로 통일됨”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "standardised: 표준화된. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "standardised",
+    "example": "Standardised tasks are easier to transfer between teams."
+  },
+  {
+    "id": "bite-en-100",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "disconnect",
+    "prompt": "새 예문에서 disconnect의 뜻은 무엇인가요?",
+    "choices": [
+      "연결을 끊다",
+      "성능을 높이다",
+      "관계를 숨기다"
+    ],
+    "answer": 0,
+    "explanation": [
+      "디지털 도구는 일이 한 장소에 묶여 있는 관계를 끊을 수 있어요.",
+      "기출에서는 “서비스 업무가 특정 장소에 묶인 관계를 끊음”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "disconnect: 연결을 끊다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "disconnect",
+    "example": "Digital tools can disconnect work from one fixed place."
+  },
+  {
+    "id": "bite-en-101",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "observe",
+    "prompt": "새 예문에서 observe의 뜻은 무엇인가요?",
+    "choices": [
+      "관찰하다",
+      "준수하다",
+      "기념하다"
+    ],
+    "answer": 1,
+    "explanation": [
+      "모든 이용자는 현지 규칙을 지켜야 해요.",
+      "기출에서도 ‘준수하다’라는 뜻이에요. 다만 원문은 no local regulations are observed라고 하여 현지 규정이 준수되지 않는 상황을 설명해요."
+    ],
+    "takeaway": "observe: 준수하다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "observe",
+    "example": "All users must observe the local rules."
+  },
+  {
+    "id": "bite-en-102",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "trace",
+    "prompt": "새 예문에서 trace의 뜻은 무엇인가요?",
+    "choices": [
+      "이동 경로",
+      "작업 목표",
+      "흔적"
+    ],
+    "answer": 2,
+    "explanation": [
+      "그 임시 사무실은 물리적인 흔적을 남기지 않았어요.",
+      "기출에서는 “고용주가 그 장소에 남기는 물질적 자취”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "trace: 흔적. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-11",
+        "number": 21
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "trace",
+    "example": "The temporary office left no physical trace."
+  },
+  {
+    "id": "bite-en-103",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "simultaneous",
+    "prompt": "새 예문에서 simultaneous의 뜻은 무엇인가요?",
+    "choices": [
+      "동시의",
+      "순차적인",
+      "일시적인"
+    ],
+    "answer": 0,
+    "explanation": [
+      "그 계획은 협력과 경쟁을 동시에 해야 한다고 요구해요.",
+      "기출에서는 “협력과 경쟁을 같은 시기에 추구함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "simultaneous: 동시의. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "simultaneous",
+    "example": "The plan requires simultaneous cooperation and competition."
+  },
+  {
+    "id": "bite-en-104",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "pursuit",
+    "prompt": "새 예문에서 pursuit의 뜻은 무엇인가요?",
+    "choices": [
+      "방해",
+      "추구",
+      "회복"
+    ],
+    "answer": 1,
+    "explanation": [
+      "이익을 얻으려는 노력이 의사 결정에 영향을 줄 수 있어요.",
+      "기출에서는 “중요한 목표를 얻으려고 노력함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "pursuit: 추구. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "pursuit",
+    "example": "The pursuit of profit can shape decisions."
+  },
+  {
+    "id": "bite-en-105",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "collaborate",
+    "prompt": "새 예문에서 collaborate의 뜻은 무엇인가요?",
+    "choices": [
+      "경쟁에서 이기다",
+      "정보를 독점하다",
+      "협력하다"
+    ],
+    "answer": 2,
+    "explanation": [
+      "두 동아리는 훈련 행사를 위해 함께 일해요.",
+      "기출에서는 “자원 효율을 위해 다른 조직과 함께 일함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "collaborate: 협력하다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "collaborate",
+    "example": "The two clubs collaborate on training events."
+  },
+  {
+    "id": "bite-en-106",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "at the expense of",
+    "prompt": "새 예문에서 at the expense of의 뜻은 무엇인가요?",
+    "choices": [
+      "희생시키면서",
+      "도움을 받아서",
+      "동시에 달성하면서"
+    ],
+    "answer": 0,
+    "explanation": [
+      "정확성을 희생하면서 속도만 높이지 말라는 말이에요.",
+      "기출에서는 “한쪽을 위해 다른 쪽을 소홀히 하거나 손해 보게 함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "at the expense of: 희생시키면서. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-11",
+        "number": 22
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "at the expense of",
+    "example": "Do not improve speed at the expense of accuracy."
+  },
+  {
+    "id": "bite-en-107",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "frequency",
+    "prompt": "새 예문에서 frequency의 뜻은 무엇인가요?",
+    "choices": [
+      "운행 속력",
+      "운행 빈도",
+      "운행 거리"
+    ],
+    "answer": 1,
+    "explanation": [
+      "버스의 운행 빈도가 높으면 다음 버스가 곧 도착해요.",
+      "기출에서는 “대중교통편이 얼마나 자주 오는지”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "frequency: 운행 빈도. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-11",
+        "number": 23
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "frequency",
+    "example": "High frequency means another bus will arrive soon."
+  },
+  {
+    "id": "bite-en-108",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "wipe out",
+    "prompt": "새 예문에서 wipe out의 뜻은 무엇인가요?",
+    "choices": [
+      "덧붙이다",
+      "잠시 미루다",
+      "없애 버리다"
+    ],
+    "answer": 2,
+    "explanation": [
+      "오래 기다리면 빠른 기차로 아낀 시간이 상쇄될 수 있어요.",
+      "기출에서는 “긴 대기 시간이 빠른 운행의 시간 절약 효과를 상쇄함”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "wipe out: 없애 버리다. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-11",
+        "number": 23
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "wipe out",
+    "example": "A long wait can wipe out the time saved by a fast train."
+  },
+  {
+    "id": "bite-en-109",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "homogeneous",
+    "prompt": "새 예문에서 homogeneous의 뜻은 무엇인가요?",
+    "choices": [
+      "획일적인",
+      "독창적인",
+      "일시적인"
+    ],
+    "answer": 0,
+    "explanation": [
+      "행사들이 비슷비슷해지면서 지역 고유의 특성을 잃었어요.",
+      "기출에서는 “상업화로 문화 행사의 차별성이 사라지고 비슷해짐”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "homogeneous: 획일적인. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-11",
+        "number": 24
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "homogeneous",
+    "example": "The events became homogeneous and lost their local character."
+  },
+  {
+    "id": "bite-en-110",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "delicate",
+    "prompt": "새 예문에서 delicate의 뜻은 무엇인가요?",
+    "choices": [
+      "거대한",
+      "취약한",
+      "단호한"
+    ],
+    "answer": 1,
+    "explanation": [
+      "이 문화적 전통은 쉽게 손상될 수 있어서 보살핌이 필요해요.",
+      "기출에서는 “착취에 쉽게 손상될 수 있는 성질”의 뜻으로 쓰였어요."
+    ],
+    "takeaway": "delicate: 취약한. 문맥에 맞는 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-11",
+        "number": 24
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "어휘"
+    ],
+    "term": "delicate",
+    "example": "This cultural tradition is delicate and needs care."
+  }
+]

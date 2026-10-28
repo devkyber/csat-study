@@ -1,0 +1,1260 @@
+[
+  {
+    "id": "bite-physics-force-receiver",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "조건 읽기",
+    "title": "힘을 받는 물체는?",
+    "prompt": "“A가 B에 오른쪽으로 3 N의 힘을 가한다”고 했어요. 이 문장의 3 N을 힘 그림에 표시할 물체는 무엇인가요?",
+    "explanation": [
+      "“A가 B에”에서 A는 힘을 가하는 물체, B는 힘을 받는 물체예요.",
+      "B의 힘 그림에 오른쪽 3 N을 표시해요. A가 받는 반작용은 별도로 구분해요."
+    ],
+    "takeaway": "힘 문장의 주는 물체와 받는 물체를 먼저 나눠요.",
+    "noteIds": [
+      "phy-read"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2022-06",
+        "number": 8
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "주어",
+      "힘"
+    ],
+    "choices": [
+      "A예요.",
+      "A·B 각각에 같은 방향으로 표시해요.",
+      "B예요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-physics-write-target",
+    "subject": "physics",
+    "kind": "tip",
+    "topic": "조건 읽기",
+    "title": "구할 양을 먼저 한 줄",
+    "prompt": "식을 쓰기 전에 구할 양을 “물체 B의 가속도, 오른쪽을 +”처럼 대상·물리량·기준으로 적어요.",
+    "explanation": [
+      "“속력의 비”를 묻는데 이동 거리의 비를 구하고 끝내지 않도록 구할 양에 밑줄을 그어요.",
+      "값을 구한 뒤 대상, 방향, 단위가 처음 적은 것과 맞는지 확인해요."
+    ],
+    "takeaway": "계산 시작과 끝에서 같은 물리량을 보고 있는지 확인해요.",
+    "noteIds": [
+      "phy-read"
+    ],
+    "refs": [],
+    "seconds": 20,
+    "tags": [
+      "루틴",
+      "기준"
+    ]
+  },
+  {
+    "id": "bite-physics-acceleration-change",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "등가속도",
+    "title": "속도 변화와 걸린 시간",
+    "prompt": "같은 직선 위에서 A의 속도가 3초 동안 +2 m/s에서 +8 m/s로, B는 4초 동안 +1 m/s에서 +9 m/s로 변했어요. 각 구간의 가속도가 일정하면 가속도는 어떻게 비교되나요?",
+    "explanation": [
+      "가속도는 속도 변화량÷시간이에요.",
+      "A는 (8−2)/3=2, B는 (9−1)/4=2 m/s²예요."
+    ],
+    "takeaway": "가속도는 나중 속도 하나가 아니라 속도가 변한 양으로 구해요.",
+    "noteIds": [
+      "phy-kinematics"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2024-06",
+        "number": 18
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "변화량",
+      "가속도"
+    ],
+    "choices": [
+      "A가 +8 m/s², B가 +9 m/s²예요.",
+      "둘 다 +2 m/s²예요.",
+      "B의 나중 속도가 커서 B의 가속도가 더 커요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-physics-average-speed-roundtrip",
+    "subject": "physics",
+    "kind": "recall",
+    "topic": "평균 속력",
+    "title": "돌아와도 이동 거리는 남아요",
+    "prompt": "물체가 직선에서 6 m 앞으로 갔다가 같은 길로 6 m 돌아오는 데 총 4초 걸렸어요. 전체 구간의 평균 속력은 몇 m/s인가요?",
+    "explanation": [
+      "총 이동 거리는 6+6=12 m예요.",
+      "평균 속력은 총 이동 거리/총 시간=12/4=3 m/s예요. 변위가 0이므로 평균 속도는 0이지만 평균 속력은 아니에요."
+    ],
+    "takeaway": "평균 속력에는 총 이동 거리, 평균 속도에는 변위를 써요.",
+    "noteIds": [
+      "phy-kinematics"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2026-06",
+        "number": 3
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "거리",
+      "변위"
+    ],
+    "answerText": "3 m/s예요."
+  },
+  {
+    "id": "bite-physics-relative-gap",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "상대 운동",
+    "title": "가속도가 같으면 간격도 같을까요?",
+    "prompt": "직선에서 B가 A보다 10 m 앞에 있어요. 두 물체는 같은 양의 방향으로 움직이고 처음 속도는 A가 3 m/s, B가 5 m/s예요. 이후 3초 동안 두 가속도가 같으면 간격은 얼마가 되나요?",
+    "explanation": [
+      "가속도가 같으면 속도 차 5−3=2 m/s가 유지돼요.",
+      "앞의 B가 매초 2 m씩 더 가므로 간격은 10+2×3=16 m예요."
+    ],
+    "takeaway": "같은 가속도는 속도 차가 일정하다는 뜻이지, 간격이 일정하다는 뜻은 아니에요.",
+    "noteIds": [
+      "phy-kinematics"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2022-06",
+        "number": 12
+      },
+      {
+        "paperId": "physics-2026-11",
+        "number": 14
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "상대 운동",
+      "조건"
+    ],
+    "choices": [
+      "10 m예요.",
+      "4 m예요.",
+      "16 m예요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-physics-reaction-different-object",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "작용·반작용",
+    "title": "수직 항력과 중력은 한 쌍?",
+    "prompt": "책이 수평 탁자 위에 정지해 있어요. “지구가 책을 당기는 중력”의 반작용은 무엇인가요?",
+    "explanation": [
+      "작용·반작용은 힘을 주는 물체와 받는 물체가 서로 바뀌어요.",
+      "수직 항력과 중력은 모두 책이 받는 힘이라 작용·반작용 쌍이 아니에요."
+    ],
+    "takeaway": "힘의 크기만 보지 말고 두 힘이 서로 다른 물체에 작용하는지 확인해요.",
+    "noteIds": [
+      "phy-equilibrium"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2024-09",
+        "number": 9
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "작용 반작용",
+      "대상"
+    ],
+    "choices": [
+      "탁자가 책을 위로 미는 힘이에요.",
+      "책에 작용하는 중력 자체예요.",
+      "책이 지구를 당기는 힘이에요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-physics-normal-accelerating-lift",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "수직 항력",
+    "title": "위로 가속하는 엘리베이터",
+    "prompt": "질량 2 kg인 물체가 엘리베이터 바닥과 함께 위로 2 m/s²의 가속도로 움직여요. 물체에 중력과 바닥의 수직 항력만 작용하고 g=10 m/s²이면 수직 항력은 얼마인가요?",
+    "explanation": [
+      "위를 +로 두면 N−mg=ma예요.",
+      "N=2×10+2×2=24 N이에요. 정지·등속 조건이 아니므로 N=mg로 놓지 않아요."
+    ],
+    "takeaway": "수직 항력을 무조건 mg로 두지 말고 수직 방향 운동 방정식을 써요.",
+    "noteIds": [
+      "phy-equilibrium"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2026-06",
+        "number": 4
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "힘",
+      "가속도"
+    ],
+    "choices": [
+      "20 N이에요.",
+      "24 N이에요.",
+      "16 N이에요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-physics-cut-string-change",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "계로 보기",
+    "title": "실을 끊은 직후의 변화",
+    "prompt": "질량이 A=2 kg, B=4 kg인 두 물체를 잇던 실을 끊었어요. 끊기 전 실 양끝에는 같은 크기의 0보다 큰 장력이 작용했고, 직후 다른 힘은 그대로예요. 가속도 변화 크기 |ΔaA|/|ΔaB|는 얼마인가요?",
+    "explanation": [
+      "두 물체가 받던 장력의 크기는 같으므로 사라진 힘의 크기도 같아요.",
+      "|Δa|=T/m이므로 비는 (T/2)/(T/4)=2예요."
+    ],
+    "takeaway": "끊기 전후에는 전체 힘을 다시 풀기보다 사라진 힘과 가속도 변화를 연결해요.",
+    "noteIds": [
+      "phy-systems"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2026-09",
+        "number": 19
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "변화량",
+      "질량비"
+    ],
+    "choices": [
+      "2예요.",
+      "1이에요.",
+      "1/2이에요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-physics-whole-system-acceleration",
+    "subject": "physics",
+    "kind": "recall",
+    "topic": "계로 보기",
+    "title": "두 물체를 합쳐 보면",
+    "prompt": "3 kg과 2 kg인 두 물체가 실로 연결되어 같은 가속도로 움직여요. 둘을 합친 계에 작용하는 알짜 외력이 오른쪽 10 N이면 가속도는 얼마인가요?",
+    "explanation": [
+      "계의 총질량은 3+2=5 kg이에요.",
+      "실의 장력은 계 내부 힘이라 합하면 상쇄돼요. a=10/5=2 m/s²예요."
+    ],
+    "takeaway": "같이 움직이는 계의 가속도는 알짜 외력÷총질량으로 먼저 구해요.",
+    "noteIds": [
+      "phy-systems"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2023-06",
+        "number": 14
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "전체 계",
+      "내력"
+    ],
+    "answerText": "오른쪽으로 2 m/s²예요."
+  },
+  {
+    "id": "bite-physics-momentum-rebound",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "운동량",
+    "title": "튕기면 방향도 바뀌어요",
+    "prompt": "질량 0.2 kg인 공이 오른쪽 +10 m/s로 벽에 부딪힌 뒤 왼쪽 −5 m/s로 나왔어요. 공의 운동량 변화량은 얼마인가요?",
+    "explanation": [
+      "운동량 변화는 나중−처음이에요.",
+      "Δp=0.2×(−5−10)=−3 kg·m/s예요. 음수는 왼쪽 방향을 뜻해요."
+    ],
+    "takeaway": "충돌 전후 방향을 부호로 바꾼 뒤 나중에서 처음을 빼요.",
+    "noteIds": [
+      "phy-momentum"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2025-11",
+        "number": 6
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "부호",
+      "충격량"
+    ],
+    "choices": [
+      "+1 kg·m/s예요.",
+      "−3 kg·m/s예요.",
+      "+3 kg·m/s예요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-physics-impulse-average-force",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "충격량",
+    "title": "시간을 늘리면 평균 힘은?",
+    "prompt": "두 충돌에서 물체가 받은 충격량의 크기는 같아요. 충돌 시간은 A가 0.1초, B가 0.2초예요. 평균 힘의 크기 B/A는 얼마인가요?",
+    "explanation": [
+      "평균 힘의 크기는 충격량의 크기÷시간이에요.",
+      "같은 충격량을 두 배 긴 시간에 받는 B의 평균 힘은 절반이에요."
+    ],
+    "takeaway": "충격량이 같을 때는 충돌 시간이 길수록 평균 힘이 작아요.",
+    "noteIds": [
+      "phy-momentum"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2025-06",
+        "number": 14
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "반비례",
+      "평균 힘"
+    ],
+    "choices": [
+      "1/2예요.",
+      "2예요.",
+      "1이에요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-physics-nonconservative-work",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "일과 에너지",
+    "title": "운동 에너지 변화만 보면 될까요?",
+    "prompt": "물체의 운동 에너지는 6 J 증가하고 중력 퍼텐셜 에너지는 10 J 감소했어요. 중력 이외의 힘이 한 일의 합은 얼마인가요? 다른 퍼텐셜 에너지는 없어요.",
+    "explanation": [
+      "중력 이외의 힘이 한 일은 역학적 에너지 변화 ΔK+ΔU예요.",
+      "6+(−10)=−4 J예요. 알짜힘이 한 일 +6 J와 구분해요."
+    ],
+    "takeaway": "어떤 힘이 한 일을 묻는지 확인한 뒤 포함할 에너지 변화를 정해요.",
+    "noteIds": [
+      "phy-work-energy"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2024-09",
+        "number": 19
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "일",
+      "부호"
+    ],
+    "choices": [
+      "−4 J예요.",
+      "+6 J예요.",
+      "+16 J예요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-physics-momentum-from-energies",
+    "subject": "physics",
+    "kind": "recall",
+    "topic": "운동량과 에너지",
+    "title": "에너지 차이를 루트 씌우면?",
+    "prompt": "질량 1 kg인 물체가 같은 방향으로 움직이며 운동 에너지가 2 J에서 8 J로 늘었어요. 운동량 변화량의 크기는 몇 kg·m/s인가요?",
+    "explanation": [
+      "p=√(2mK)이므로 처음 운동량은 √4=2, 나중은 √16=4 kg·m/s예요.",
+      "방향이 같으므로 변화량의 크기는 4−2=2예요. √(2mΔK)로 구하지 않아요."
+    ],
+    "takeaway": "운동량 변화는 처음·나중 운동량을 각각 구해서 빼요.",
+    "noteIds": [
+      "phy-work-energy"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2026-11",
+        "number": 12
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "변화량",
+      "제곱근"
+    ],
+    "answerText": "2 kg·m/s예요."
+  },
+  {
+    "id": "bite-physics-spring-square",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "용수철",
+    "title": "두 배 늘리면 에너지는?",
+    "prompt": "같은 용수철의 자연 길이에서 늘어난 길이를 x에서 2x로 바꿨어요. 탄성 범위 안에서 탄성 퍼텐셜 에너지는 몇 배가 되나요?",
+    "explanation": [
+      "탄성 퍼텐셜 에너지는 kx²/2예요.",
+      "늘어난 길이가 두 배이면 에너지는 2²=4배예요."
+    ],
+    "takeaway": "용수철 힘은 x에, 탄성 에너지는 x²에 비례해요.",
+    "noteIds": [
+      "phy-springs"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2026-09",
+        "number": 17
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "제곱",
+      "탄성 에너지"
+    ],
+    "choices": [
+      "2배예요.",
+      "1/2배예요.",
+      "4배예요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-physics-vertical-spring-equilibrium",
+    "subject": "physics",
+    "kind": "recall",
+    "topic": "용수철",
+    "title": "매달려 정지한 위치",
+    "prompt": "용수철 상수 100 N/m인 가벼운 용수철에 질량 0.2 kg인 물체를 매달아 정지시켰어요. g=10 m/s²일 때 자연 길이에서 몇 cm 늘어났나요?",
+    "explanation": [
+      "정지해 있으므로 위쪽 탄성력과 아래쪽 중력의 크기가 같아 kx=mg예요.",
+      "x=0.2×10/100=0.02 m=2 cm예요."
+    ],
+    "takeaway": "수직 용수철의 평형 위치는 자연 길이와 다를 수 있어요.",
+    "noteIds": [
+      "phy-springs"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2022-11",
+        "number": 8
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "평형",
+      "단위"
+    ],
+    "answerText": "2 cm예요."
+  },
+  {
+    "id": "bite-physics-first-law-sign",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "열역학",
+    "title": "받은 열에서 한 일을 빼요",
+    "prompt": "기체가 열 100 J를 흡수하고 외부에 일 60 J를 했어요. ΔU=Q−W에서 Q는 흡수한 열, W는 기체가 한 일로 정해요. 내부 에너지는 어떻게 변하나요?",
+    "explanation": [
+      "열을 흡수했으므로 Q=+100 J, 기체가 일을 했으므로 W=+60 J예요.",
+      "ΔU=100−60=+40 J예요."
+    ],
+    "takeaway": "열과 일의 부호 정의를 확인하고 ΔU=Q−W에 넣어요.",
+    "noteIds": [
+      "phy-thermodynamics"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2026-06",
+        "number": 14
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "부호",
+      "제1법칙"
+    ],
+    "choices": [
+      "160 J 증가해요.",
+      "40 J 증가해요.",
+      "40 J 감소해요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-physics-adiabatic-compression",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "단열 과정",
+    "title": "압축한 일은 어디로?",
+    "prompt": "기체를 단열 압축하면서 외부가 기체에 30 J의 일을 했어요. 기체가 외부에 한 일을 W로 정할 때 내부 에너지 변화는 얼마인가요?",
+    "explanation": [
+      "단열이므로 Q=0이고, 외부가 기체에 일을 했으므로 기체가 한 일 W=−30 J예요.",
+      "ΔU=Q−W=0−(−30)=+30 J예요."
+    ],
+    "takeaway": "단열은 열교환이 없다는 뜻이에요. 내부 에너지가 일정하다는 뜻은 아니에요.",
+    "noteIds": [
+      "phy-thermodynamics"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2022-09",
+        "number": 14
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "단열",
+      "부호"
+    ],
+    "choices": [
+      "−30 J예요.",
+      "열이 없으므로 0 J예요.",
+      "+30 J예요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-physics-engine-efficiency",
+    "subject": "physics",
+    "kind": "recall",
+    "topic": "열기관",
+    "title": "한 순환의 열효율",
+    "prompt": "열기관이 한 순환에서 열 500 J를 흡수하고 350 J를 방출해요. 순환 후 처음 상태로 돌아왔다면 열효율은 몇 %인가요?",
+    "explanation": [
+      "한 순환의 내부 에너지 변화는 0이라 순일은 500−350=150 J예요.",
+      "열효율은 순일/흡수한 열=150/500=0.30=30%예요."
+    ],
+    "takeaway": "열효율의 분모는 흡수한 열이에요. 방출한 열이나 순열량이 아니에요.",
+    "noteIds": [
+      "phy-thermodynamics"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2023-09",
+        "number": 15
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "효율",
+      "분모"
+    ],
+    "answerText": "30%예요."
+  },
+  {
+    "id": "bite-physics-proper-time-events",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "특수 상대성",
+    "title": "두 사건이 같은 장소인 계",
+    "prompt": "우주선 안의 광원에서 빛을 보내고, 거울에 반사된 빛이 같은 광원으로 돌아왔어요. 두 사건은 발사와 귀환이에요. 어느 관성계가 이 두 사건 사이의 고유 시간을 재나요?",
+    "explanation": [
+      "고유 시간은 두 사건이 같은 장소에서 일어나는 관성계에서 잰 시간이에요.",
+      "광원이 정지한 우주선에서는 발사와 귀환 장소가 같아요."
+    ],
+    "takeaway": "고유 시간을 찾을 때 시계 이름보다 두 사건의 장소를 확인해요.",
+    "noteIds": [
+      "phy-relativity"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2023-11",
+        "number": 12
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "사건",
+      "고유 시간"
+    ],
+    "choices": [
+      "우주선을 움직이는 것으로 보는 모든 관성계예요.",
+      "어느 관성계든 고유 시간은 같게 재요.",
+      "광원이 정지한 우주선의 관성계예요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-physics-coincidence-invariant",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "특수 상대성",
+    "title": "만난 사건이 갈라질까요?",
+    "prompt": "관찰자 A가 보기에 빛 두 개가 같은 장소에 같은 시각 도착해요. 다른 관성계의 관찰자 B에게도 두 빛의 도착은 같은 장소·같은 시각의 한 사건인가요?",
+    "explanation": [
+      "동일한 시공간 점에서 일어난 만남은 다른 관성계에서도 하나의 사건이에요.",
+      "서로 다른 장소에서 일어난 두 사건의 동시성이 관성계에 따라 달라지는 경우와 구분해요."
+    ],
+    "takeaway": "같은 장소의 만남과 떨어진 장소의 동시성을 섞지 않아요.",
+    "noteIds": [
+      "phy-relativity"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2024-06",
+        "number": 9
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "동시성",
+      "사건"
+    ],
+    "choices": [
+      "네. 두 빛이 만나는 사건은 B에게도 하나예요.",
+      "아니요. 상대성 이론에서는 만나는 사건도 반드시 갈라져요.",
+      "장소는 같지만 도착 시각은 반드시 달라요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-physics-electric-field-zero",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "전기장",
+    "title": "큰 전하에서 더 멀리",
+    "prompt": "직선 위에 양전하 +q와 +4q가 3d만큼 떨어져 고정되어 있어요. 두 전하 사이에서 합성 전기장이 0인 점은 +q에서 얼마나 떨어져 있나요?",
+    "explanation": [
+      "전기장 크기 q/r²와 4q/(3d−r)²가 같아야 해요.",
+      "거리 비가 1:2여야 하므로 작은 전하 +q에서 d, 큰 전하 +4q에서 2d인 점이에요."
+    ],
+    "takeaway": "전기장은 거리의 제곱에 반비례해요. 같은 부호의 두 전하 사이 상쇄점은 작은 전하에 가까워요.",
+    "noteIds": [
+      "phy-electrostatics"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2026-06",
+        "number": 19
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "제곱",
+      "상쇄"
+    ],
+    "choices": [
+      "d예요.",
+      "1.5d예요.",
+      "2d예요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-physics-coulomb-distance",
+    "subject": "physics",
+    "kind": "recall",
+    "topic": "쿨롱 법칙",
+    "title": "거리 두 배의 힘",
+    "prompt": "두 점전하의 전하량은 그대로예요. 둘 사이 거리를 2배로 하면 전기력의 크기는 원래의 몇 배가 되나요?",
+    "explanation": [
+      "전기력의 크기는 거리의 제곱에 반비례해요.",
+      "거리가 2배가 되면 1/2²=1/4배예요."
+    ],
+    "takeaway": "쿨롱 법칙에서는 거리를 두 배로 하면 힘은 절반이 아니라 1/4배예요.",
+    "noteIds": [
+      "phy-electrostatics"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2024-09",
+        "number": 18
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "거리",
+      "반비례"
+    ],
+    "answerText": "1/4배예요."
+  },
+  {
+    "id": "bite-physics-wire-field-ratio",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "직선 전류",
+    "title": "전류도 거리도 두 배",
+    "prompt": "매우 긴 곧은 도선의 자기장 크기는 I/r에 비례해요. 전류가 2배가 되고 관측 거리가 2배가 되면 자기장 크기는 몇 배인가요?",
+    "explanation": [
+      "전류가 두 배인 효과는 2배, 거리가 두 배인 효과는 1/2배예요.",
+      "함께 적용하면 2×1/2=1이므로 크기가 같아요."
+    ],
+    "takeaway": "직선 도선의 자기장은 거리의 제곱이 아니라 거리에 반비례해요.",
+    "noteIds": [
+      "phy-magnetic-field"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2025-09",
+        "number": 16
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "비율",
+      "거리"
+    ],
+    "choices": [
+      "1배예요.",
+      "2배예요.",
+      "1/2배예요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-physics-wire-zero-distance",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "자기장 합성",
+    "title": "같은 방향 전류의 상쇄점",
+    "prompt": "서로 평행한 매우 긴 두 도선에 같은 방향으로 전류 I와 2I가 흘러요. 두 도선 사이 거리는 3d이고 자기장 크기는 I/r에 비례해요. 두 도선 사이 상쇄점은 I인 도선에서 얼마나 떨어져 있나요?",
+    "explanation": [
+      "도선 사이에서 두 자기장 방향은 반대예요.",
+      "I/r=2I/(3d−r)이므로 3d−r=2r, r=d예요."
+    ],
+    "takeaway": "직선 전류의 상쇄 거리 비는 전류비와 같아요. 전기장의 제곱 법칙과 구분해요.",
+    "noteIds": [
+      "phy-magnetic-field"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2024-06",
+        "number": 12
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "상쇄",
+      "비율"
+    ],
+    "choices": [
+      "1.5d예요.",
+      "2d예요.",
+      "d예요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-physics-flux-change-rate",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "전자기 유도",
+    "title": "자기 선속 변화율",
+    "prompt": "한 번 감은 회로를 지나는 자기 선속이 2초 동안 3 Wb에서 9 Wb로 일정하게 증가했어요. 유도 기전력의 크기는 얼마인가요?",
+    "explanation": [
+      "유도 기전력 크기는 자기 선속 변화량/시간이에요.",
+      "|9−3|/2=3 V예요. 나중 자기 선속 9를 그대로 나누지 않아요."
+    ],
+    "takeaway": "유도 기전력은 자기 선속 자체보다 그 변화율로 구해요.",
+    "noteIds": [
+      "phy-induction"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2024-06",
+        "number": 13
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "변화율",
+      "기전력"
+    ],
+    "choices": [
+      "3 V예요.",
+      "6 V예요.",
+      "4.5 V예요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-physics-moving-loop-uniform-field",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "전자기 유도",
+    "title": "움직여도 유도 전류가 없을 수 있어요",
+    "prompt": "닫힌 도선 고리 전체가 균일하고 시간에 따라 변하지 않는 자기장 안에 있어요. 고리의 면적·방향을 유지한 채 평행 이동해요. 자기장 경계를 드나들지 않을 때 유도 전류가 흐르나요?",
+    "explanation": [
+      "고리의 면적·방향·자기장이 모두 같아 고리를 지나는 자기 선속이 변하지 않아요.",
+      "따라서 고리 전체의 유도 기전력은 0이에요."
+    ],
+    "takeaway": "운동 여부보다 고리를 지나는 자기 선속이 변하는지 봐요.",
+    "noteIds": [
+      "phy-induction"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2025-06",
+        "number": 18
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "조건",
+      "자기 선속"
+    ],
+    "choices": [
+      "움직이므로 반드시 흘러요.",
+      "속력이 클 때만 반드시 흘러요.",
+      "흐르지 않아요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-physics-field-reversal-difference",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "전자기 유도",
+    "title": "B에서 −B로 바뀔 때",
+    "prompt": "같은 직사각형 고리가 고리 면에 수직인 자기장 영역을 지나가요. 첫 경계는 0→+B, 둘째는 +B→−B이며 +와 −는 반대 방향이에요. 두 경계에서 같은 길이의 변이 경계에 수직으로 같은 속력으로 움직이고, 저항은 같아요. 고리가 한 번에 한 경계만 걸칠 때 유도 전류 크기 둘째/첫째는 얼마인가요?",
+    "explanation": [
+      "첫 경계의 자기장 변화 크기는 |B−0|=B예요.",
+      "둘째는 |−B−B|=2B예요. 나머지 조건이 같으므로 전류 크기도 두 배예요."
+    ],
+    "takeaway": "방향이 반대인 자기장을 지날 때는 부호를 넣어 차를 구해요.",
+    "noteIds": [
+      "phy-induction"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2025-11",
+        "number": 19
+      },
+      {
+        "paperId": "physics-2026-11",
+        "number": 17
+      }
+    ],
+    "seconds": 50,
+    "tags": [
+      "부호",
+      "경계"
+    ],
+    "choices": [
+      "2예요.",
+      "1이에요.",
+      "0이에요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-physics-diamagnetic-response",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "자성체",
+    "title": "자기장 반대쪽으로 자화",
+    "prompt": "물질 A가 외부 자기장과 반대 방향으로 약하게 자화되고, 외부 자기장을 없애면 자화도 사라져요. A는 어떤 자성체인가요?",
+    "explanation": [
+      "반자성체는 외부 자기장과 반대 방향으로 자화돼요.",
+      "상자성체는 같은 방향으로 약하게 자화되므로 자화 방향을 구분해요."
+    ],
+    "takeaway": "외부 자기장에 대한 자화 방향을 먼저 비교해요.",
+    "noteIds": [
+      "phy-magnetism"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2023-06",
+        "number": 2
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "방향",
+      "자화"
+    ],
+    "choices": [
+      "상자성체예요.",
+      "반자성체예요.",
+      "강자성체예요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-physics-ferromagnet-remanence",
+    "subject": "physics",
+    "kind": "tip",
+    "topic": "자성체",
+    "title": "남아 있는 자화도 확인해요",
+    "prompt": "자성체는 외부 자기장이 있을 때의 방향뿐 아니라, 자기장을 없앤 뒤 자화가 남는지도 함께 봐요.",
+    "explanation": [
+      "강자성체는 외부 자기장을 없앤 뒤에도 자화가 남을 수 있어요.",
+      "이미 자화된 강자성체와 영구 자석을 가까이할 때는 마주 보는 극도 확인해요. 언제나 끌린다고 고정하지 않아요."
+    ],
+    "takeaway": "외부 자기장 유무와 이전 자화 상태를 나눠 판단해요.",
+    "noteIds": [
+      "phy-magnetism"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2025-09",
+        "number": 6
+      },
+      {
+        "paperId": "physics-2026-11",
+        "number": 2
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "조건",
+      "잔류 자화"
+    ]
+  },
+  {
+    "id": "bite-physics-normal-angle",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "굴절",
+    "title": "면과 30°라면 입사각은?",
+    "prompt": "빛이 평평한 경계면과 30°를 이루며 들어와요. 경계면에 수직인 법선을 기준으로 한 입사각은 몇 도인가요?",
+    "explanation": [
+      "경계면과 법선은 90°를 이뤄요.",
+      "입사각은 법선과 빛 사이이므로 90°−30°=60°예요."
+    ],
+    "takeaway": "입사각·굴절각은 경계면이 아니라 법선에서 재요.",
+    "noteIds": [
+      "phy-refraction"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2023-06",
+        "number": 15
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "각도",
+      "기준"
+    ],
+    "choices": [
+      "30°예요.",
+      "60°예요.",
+      "90°예요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-physics-critical-angle-equality",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "전반사",
+    "title": "입사각이 임계각과 같으면",
+    "prompt": "굴절률이 큰 매질에서 작은 매질로 빛이 가요. 임계각이 42°일 때 입사각도 정확히 42°라면 어떻게 되나요?",
+    "explanation": [
+      "입사각이 임계각과 같을 때 굴절광은 경계면을 따라 나아가요.",
+      "전반사는 입사각이 임계각보다 클 때 일어나요."
+    ],
+    "takeaway": "전반사 조건의 “크다”를 “크거나 같다”로 바꾸지 않아요.",
+    "noteIds": [
+      "phy-refraction"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2026-09",
+        "number": 9
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "경계값",
+      "전반사"
+    ],
+    "choices": [
+      "굴절각이 90°인 임계 상태예요.",
+      "입사각이 임계각과 같아도 전반사예요.",
+      "굴절각이 0°가 돼요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-physics-wave-speed-frequency",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "파동",
+    "title": "진동수와 속력으로 파장 구하기",
+    "prompt": "한 매질에서 파동의 속력은 10 m/s, 진동수는 5 Hz예요. 파장은 얼마인가요?",
+    "explanation": [
+      "파동 속력 v=진동수 f×파장 λ예요.",
+      "λ=v/f=10/5=2 m예요."
+    ],
+    "takeaway": "속력·진동수·파장 중 주어진 두 양을 v=fλ에 넣어요.",
+    "noteIds": [
+      "phy-waves"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2026-06",
+        "number": 10
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "관계식",
+      "단위"
+    ],
+    "choices": [
+      "50 m예요.",
+      "2 m예요.",
+      "0.5 m예요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-physics-wave-period-boundary",
+    "subject": "physics",
+    "kind": "recall",
+    "topic": "파동",
+    "title": "다른 매질에 들어가도",
+    "prompt": "진동원이 계속 일정하게 진동해 파동을 보내요. 정지한 경계에서 파동이 다른 매질로 들어갔어요. 들어가기 전 주기가 0.2초이면 들어간 뒤 주기는 얼마인가요?",
+    "explanation": [
+      "정지한 매질 경계를 통과할 때 진동수는 진동원이 정한 값으로 유지돼요.",
+      "주기는 진동수의 역수라 변하지 않아요. 속력과 파장은 달라질 수 있어요."
+    ],
+    "takeaway": "매질이 바뀌어도 진동수·주기는 유지되고 속력·파장이 바뀌는지 봐요.",
+    "noteIds": [
+      "phy-waves"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2022-06",
+        "number": 10
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "매질",
+      "주기"
+    ],
+    "answerText": "0.2초예요."
+  },
+  {
+    "id": "bite-physics-photon-wavelength",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "광자",
+    "title": "파장 두 배의 광자",
+    "prompt": "진공에서 광자 A의 파장이 B의 2배예요. E=hc/λ를 적용하면 에너지 A/B는 얼마인가요?",
+    "explanation": [
+      "광자 에너지는 파장에 반비례해요.",
+      "파장이 두 배인 A의 에너지는 B의 절반이에요."
+    ],
+    "takeaway": "광자의 E는 1/λ에 비례해요.",
+    "noteIds": [
+      "phy-quantum"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2026-06",
+        "number": 7
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "반비례",
+      "광자"
+    ],
+    "choices": [
+      "2예요.",
+      "1/2예요.",
+      "1/4예요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-physics-matter-wave-kinetic",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "물질파",
+    "title": "운동 에너지가 네 배면",
+    "prompt": "같은 입자가 비상대론적으로 운동해요. 운동 에너지가 4배가 되면 드브로이 파장 λ=h/√(2mK)는 몇 배가 되나요?",
+    "explanation": [
+      "같은 입자라 질량 m은 같아요.",
+      "운동 에너지가 네 배이면 분모의 제곱근은 두 배가 되므로 파장은 절반이에요."
+    ],
+    "takeaway": "물질파의 파장은 운동 에너지에 단순 반비례하지 않고 그 제곱근에 반비례해요.",
+    "noteIds": [
+      "phy-quantum"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2025-06",
+        "number": 13
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "제곱근",
+      "물질파"
+    ],
+    "choices": [
+      "1/4배예요.",
+      "2배예요.",
+      "1/2배예요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-physics-balmer-final-level",
+    "subject": "physics",
+    "kind": "recall",
+    "topic": "수소 스펙트럼",
+    "title": "발머 계열의 도착 준위",
+    "prompt": "수소 원자의 전자가 높은 에너지 준위에서 내려오며 발머 계열 빛을 방출해요. 도착하는 주양자수 n은 얼마인가요?",
+    "explanation": [
+      "발머 계열은 높은 준위에서 n=2로 내려오는 전이에 해당해요.",
+      "n=1로 도착하는 라이먼 계열, n=3으로 도착하는 파셴 계열과 구분해요."
+    ],
+    "takeaway": "스펙트럼 계열은 출발 준위보다 도착 준위로 묶어요.",
+    "noteIds": [
+      "phy-quantum"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2024-11",
+        "number": 4
+      }
+    ],
+    "seconds": 30,
+    "tags": [
+      "에너지 준위",
+      "계열"
+    ],
+    "answerText": "n=2예요."
+  },
+  {
+    "id": "bite-physics-wire-resistance-geometry",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "전기 저항",
+    "title": "길이 두 배, 단면적 절반",
+    "prompt": "같은 물질·같은 온도의 도선 A·B가 있어요. B는 A보다 길이가 2배, 단면적이 1/2배예요. R=ρL/A에서 저항 B/A는 얼마인가요?",
+    "explanation": [
+      "비저항 ρ는 같아요. 길이가 두 배이면 저항은 두 배예요.",
+      "단면적이 절반이면 다시 두 배이므로 전체는 2÷(1/2)=4배예요."
+    ],
+    "takeaway": "도선 저항을 비교할 때 재료·온도를 고정하고 길이/단면적을 비교해요.",
+    "noteIds": [
+      "phy-solid"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "비율",
+      "저항"
+    ],
+    "choices": [
+      "4예요.",
+      "1이에요.",
+      "2예요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-physics-p-type-minority",
+    "subject": "physics",
+    "kind": "tip",
+    "topic": "반도체",
+    "title": "많다는 말은 전부라는 뜻이 아니에요",
+    "prompt": "p형 반도체의 주요 전하 운반자는 양공이에요. 그렇다고 자유 전자가 전혀 없다고 바꾸지는 않아요.",
+    "explanation": [
+      "p형은 양공이 다수 운반자, 자유 전자는 소수 운반자예요.",
+      "n형도 자유 전자가 다수라는 뜻이지 양공이 0이라는 뜻은 아니에요. “주로”와 “오직”을 나눠 읽어요."
+    ],
+    "takeaway": "전하 운반자를 판단할 때 다수·소수와 존재·부재를 구분해요.",
+    "noteIds": [
+      "phy-solid"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2026-09",
+        "number": 11
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "조건",
+      "반도체"
+    ]
+  },
+  {
+    "id": "bite-physics-nuclear-missing-particle",
+    "subject": "physics",
+    "kind": "choice",
+    "topic": "핵반응",
+    "title": "질량수와 전하를 각각 맞춰요",
+    "prompt": "중수소 핵(질량수 2, 원자 번호 1) 두 개가 반응해 헬륨-3 핵(질량수 3, 원자 번호 2)과 입자 X가 나왔어요. 질량수와 전하를 보존하면 X는 무엇인가요?",
+    "explanation": [
+      "질량수 합은 2+2=4이므로 X의 질량수는 4−3=1이에요.",
+      "원자 번호 합은 1+1=2이므로 X의 전하는 2−2=0이에요. 따라서 중성자예요."
+    ],
+    "takeaway": "핵반응식은 질량수 합과 전하 합을 따로 맞춰요.",
+    "noteIds": [
+      "phy-nuclear"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2022-06",
+        "number": 6
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "보존",
+      "핵반응"
+    ],
+    "choices": [
+      "양성자예요. 질량수 1, 전하 +1이에요.",
+      "중성자예요. 질량수 1, 전하 0이에요.",
+      "전자예요. 질량수 0, 전하 −1이에요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-physics-mass-number-not-mass",
+    "subject": "physics",
+    "kind": "tip",
+    "topic": "질량 결손",
+    "title": "핵자 수와 정지 질량을 나눠요",
+    "prompt": "핵반응에서 질량수의 합이 같다고 정지 질량의 합까지 항상 같다고 하지 않아요.",
+    "explanation": [
+      "질량수는 핵자 수를 세는 정수예요. 결합 에너지에 따른 실제 질량 차이까지 나타내지는 않아요.",
+      "반응 전 정지 질량이 더 크면 그 차이에 해당하는 에너지 Δmc²가 방출될 수 있어요."
+    ],
+    "takeaway": "질량수 보존과 질량 결손에 의한 에너지 방출을 함께 구분해요.",
+    "noteIds": [
+      "phy-nuclear"
+    ],
+    "refs": [
+      {
+        "paperId": "physics-2026-09",
+        "number": 3
+      }
+    ],
+    "seconds": 20,
+    "tags": [
+      "질량 결손",
+      "보존"
+    ]
+  }
+]
