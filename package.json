@@ -1,0 +1,16 @@
+{
+  "name": "csat-study-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "수능 판단 노트 — 과목별 판단법과 평가원 기출 자료실",
+  "scripts": {
+    "build": "python tools/build.py",
+    "preview": "python -m http.server 4173 --directory docs --bind 127.0.0.1",
+    "check": "python tools/check.py"
+  },
+  "dependencies": {
+    "dompurify": "^3.2.7",
+    "katex": "^0.16.22",
+    "marked": "^16.4.1"
+  }
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "articleId": "earth-graphs",
+    "raw": "2406",
+    "year": 2024,
+    "session": "6월",
+    "questions": "16",
+    "status": "question",
+    "label": "2024학년도 6월 지구과학Ⅰ 16번 · 표면 온도·절대 등급·거리의 세 축을 같은 별에 대응",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=3936fb91d85b3d4892d32334eb0b3a94"
+  },
+  {
+    "articleId": "earth-graphs",
+    "raw": "2411",
+    "year": 2024,
+    "session": "수능",
+    "questions": "8",
+    "status": "question",
+    "label": "2024학년도 수능 지구과학Ⅰ 8번 · 은하 분류 표의 공통 특성과 항목별 차이",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=5b4a832bfff0c33e38eb6a6a47e3ca8c"
+  },
+  {
+    "articleId": "earth-decay",
+    "raw": "2406",
+    "year": 2024,
+    "session": "6월",
+    "questions": "19",
+    "status": "question",
+    "label": "2024학년도 6월 지구과학Ⅰ 19번 · 모원소 감소 곡선·초기 함량 대비 남은 비율",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=3936fb91d85b3d4892d32334eb0b3a94"
+  },
+  {
+    "articleId": "earth-star-scope",
+    "raw": "2406",
+    "year": 2024,
+    "session": "6월",
+    "questions": "16",
+    "status": "question",
+    "label": "2024학년도 6월 지구과학Ⅰ 16번 · 최대 방출 파장과 별의 반지름 비율",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=3936fb91d85b3d4892d32334eb0b3a94"
+  },
+  {
+    "articleId": "earth-star-scope",
+    "raw": "2411",
+    "year": 2024,
+    "session": "수능",
+    "questions": "18",
+    "status": "question",
+    "label": "2024학년도 수능 지구과학Ⅰ 18번 · 단위면적 복사 에너지와 최대 방출 파장",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=5b4a832bfff0c33e38eb6a6a47e3ca8c"
+  },
+  {
+    "articleId": "earth-paleomagnetism",
+    "raw": "2411",
+    "year": 2024,
+    "session": "수능",
+    "questions": "13, 20",
+    "status": "question",
+    "label": "2024학년도 수능 지구과학Ⅰ 13, 20번 · 정·역자극과 고지자기 방향·지괴의 과거 극",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=5b4a832bfff0c33e38eb6a6a47e3ca8c"
+  },
+  {
+    "articleId": "earth-exoplanet-orbit",
+    "raw": "2409",
+    "year": 2024,
+    "session": "9월",
+    "questions": "18",
+    "status": "question",
+    "label": "2024학년도 9월 지구과학Ⅰ 18번 · 공통질량중심을 도는 중심별과 행성·중심별 스펙트럼",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=1899d03869ae9e6118cdb6254fc9807a"
+  },
+  {
+    "articleId": "earth-climate-orbits",
+    "raw": "2411",
+    "year": 2024,
+    "session": "수능",
+    "questions": "15",
+    "status": "question",
+    "label": "2024학년도 수능 지구과학Ⅰ 15번 · 자전축 경사·이심률 변화와 반구별 계절 조건",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=5b4a832bfff0c33e38eb6a6a47e3ca8c"
+  },
+  {
+    "articleId": "earth-climate-solar",
+    "raw": "2409",
+    "year": 2024,
+    "session": "9월",
+    "questions": "16",
+    "status": "question",
+    "label": "2024학년도 9월 지구과학Ⅰ 16번 · 경사·세차와 겨울 기온·연교차·낮 길이",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=1899d03869ae9e6118cdb6254fc9807a"
+  },
+  {
+    "articleId": "earth-climate-solar",
+    "raw": "2411",
+    "year": 2024,
+    "session": "수능",
+    "questions": "15",
+    "status": "question",
+    "label": "2024학년도 수능 지구과학Ⅰ 15번 · 거리 조건의 전 지구 복사량과 위도별 낮 길이",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=5b4a832bfff0c33e38eb6a6a47e3ca8c"
+  },
+  {
+    "articleId": "earth-ocean-circulation",
+    "raw": "2411",
+    "year": 2024,
+    "session": "수능",
+    "questions": "10",
+    "status": "question",
+    "label": "2024학년도 수능 지구과학Ⅰ 10번 · 위도별 동서 해류·적도 해류와 남극 순환류",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=5b4a832bfff0c33e38eb6a6a47e3ca8c"
+  },
+  {
+    "articleId": "earth-geologic-time",
+    "raw": "2409",
+    "year": 2024,
+    "session": "9월",
+    "questions": "10",
+    "status": "question",
+    "label": "2024학년도 9월 지구과학Ⅰ 10번 · 누대별 지속 기간과 생물의 출현 시기",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=1899d03869ae9e6118cdb6254fc9807a"
+  }
+]

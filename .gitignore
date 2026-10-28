@@ -1,0 +1,11 @@
+planning/
+PLAN.md
+_local/
+.cache/
+node_modules/
+test-results/
+__pycache__/
+*.local.*
+.env*
+site/
+

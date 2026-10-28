@@ -1,0 +1,119 @@
+[
+  {
+    "articleId": "ko-poems-situation",
+    "raw": "1006",
+    "year": 2010,
+    "session": "6월",
+    "questions": "13–16",
+    "status": "question",
+    "label": "2010학년도 6월 언어 13–16 · 「거문고」 포함",
+    "sourceUrl": "https://wdown.ebsi.co.kr/W61001/01exam/20090604/kor_hsj.pdf",
+    "note": "원본 파일명 2010.10.06을 시행일로 해석하지 않고 기린·중의성 내용으로 공식 세트를 대조했다."
+  },
+  {
+    "articleId": "ko-case-selfportrait",
+    "raw": "1111",
+    "year": 2011,
+    "session": "수능",
+    "questions": "13–16",
+    "status": "question",
+    "label": "2011학년도 수능 언어 13–16 · 「자화상」 포함",
+    "sourceUrl": "https://wdown.ebsi.co.kr/W61001/01exam/20101118/kor2_mun.pdf",
+    "note": "공식 문제지는 짝수형이다. 글은 형별 정답 번호를 새로 제시하지 않는다."
+  },
+  {
+    "articleId": "ko-case-moraetop",
+    "raw": "1506",
+    "year": 2015,
+    "session": "6월",
+    "questions": "34–38",
+    "status": "question",
+    "label": "2015학년도 6월 국어 A형 34–38 · 「모래톱 이야기」",
+    "sourceUrl": "https://wdown.ebsi.co.kr/W61001/01exam/201406123/kora_hsj.pdf",
+    "note": "공식 해설 표지의 A형과 [34~38]을 직접 대조. 원문의 중간 제목 11번을 공식 번호로 옮기지 않는다."
+  },
+  {
+    "articleId": "ko-case-poetry-1906",
+    "raw": "1906",
+    "year": 2019,
+    "session": "6월",
+    "questions": "27–31",
+    "status": "question",
+    "label": "2019학년도 6월 국어 27–31 · 「휴전선」·「우포늪 왁새」·「주을온천행」",
+    "sourceUrl": "https://wdown.ebsi.co.kr/W61001/01exam/20180607/go3/kor_hsj_ZAPG4vEj_11.pdf"
+  },
+  {
+    "articleId": "ko-essay-drama",
+    "raw": "1911",
+    "year": 2019,
+    "session": "수능",
+    "questions": "21–26",
+    "status": "question",
+    "label": "2019학년도 수능 국어 21–26 · 「천변풍경」·「오발탄」",
+    "sourceUrl": "https://wdown.ebsi.co.kr/W61001/01exam/20181115/go3/kor1_hsj_T7eEmP9C_01.pdf"
+  },
+  {
+    "articleId": "ko-case-manhung",
+    "raw": "2109",
+    "year": 2021,
+    "session": "9월",
+    "questions": "38–42",
+    "status": "question",
+    "label": "2021학년도 9월 국어 38–42 · 「만흥」·「우언」",
+    "sourceUrl": "https://wdown.ebsi.co.kr/W61001/01exam/20200916/go3/kor_hsj_N7RGA1D7.pdf"
+  },
+  {
+    "articleId": "ko-case-samiingok",
+    "raw": "2111",
+    "year": 2021,
+    "session": "수능",
+    "questions": "38–42",
+    "status": "question",
+    "label": "2021학년도 수능 국어 38–42 · 「사미인곡」 포함",
+    "sourceUrl": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?cookieGradeVal=high3&datNo=127067",
+    "note": "실제 시행은 2020년 12월 3일이지만 사용자 shorthand는 학년도·수능 코드 2111을 사용한다."
+  },
+  {
+    "articleId": "ko-case-desert",
+    "raw": "2111",
+    "year": 2021,
+    "session": "수능",
+    "questions": "22–25",
+    "status": "question",
+    "label": "2021학년도 수능 국어 22–25 · 「사막을 건너는 법」",
+    "sourceUrl": "https://wdown.ebsi.co.kr/W61001/01exam/20201203/go3/kor_mun_R624XS12.pdf",
+    "note": "원본의 2021.12는 학년도와 실제 시행 월을 혼용한 표기. 공식 표지 및 작품/번호 대조 후 2111로 정규화했다."
+  },
+  {
+    "articleId": "ko-case-musician",
+    "raw": "2206",
+    "year": 2022,
+    "session": "6월",
+    "questions": "18–21",
+    "status": "question",
+    "label": "2022학년도 6월 국어 18–21 · 「무사와 악사」",
+    "sourceUrl": "https://wdown.ebsi.co.kr/W61001/01exam/20210603/go3/kor_main_mun_6D85AS6K.pdf"
+  },
+  {
+    "articleId": "ko-case-samdae",
+    "raw": "1706",
+    "year": 2017,
+    "session": "6월",
+    "questions": "39–42",
+    "status": "question",
+    "label": "2017학년도 6월 국어 39–42 · 「삼대」",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=8acbcc0392a062d65b7f1ea17ea4d999",
+    "note": "평가원 공식 문제지의 13~15쪽에서 세트 범위, 작품, 원문의 40~42번 판단 대상을 직접 대조했다."
+  },
+  {
+    "articleId": "ko-case-sample-change",
+    "raw": "2022 예시",
+    "year": 2022,
+    "session": "예시",
+    "questions": "22–25",
+    "status": "question",
+    "label": "2022학년도 예시 국어 22–25 · 개 소재 시조의 변모와 비평",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=4b0c957f57a31b0fea30b89930f4a2ad",
+    "note": "평가원 공식 예시문항의 8~9쪽에서 이본·작품·갈래 변모, 23번 지시어·행동 변화, 24번 기호 대응을 직접 대조했다. 일반 6월·9월·수능 회차와 구별한다."
+  }
+]

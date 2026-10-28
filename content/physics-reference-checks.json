@@ -1,0 +1,28 @@
+[
+  {
+    "articleId": "phy-induction",
+    "raw": "2007",
+    "session": "7월",
+    "publisher": "교육청",
+    "archive": false,
+    "actualYear": 2020,
+    "questions": "20",
+    "status": "question",
+    "label": "2020년 7월 학력평가 · 물리학Ⅰ 20번",
+    "sourceUrl": "https://wdown.ebsi.co.kr/W61001/01exam/20200722/go3/g_phy1_mun_X3O229V3.pdf",
+    "note": "EBS가 제공하는 실제 교육청 문제지 4쪽과 공식 정답·해설 PDF를 내려받고 렌더/텍스트 대조. 서로 반대 방향인 두 자기장 영역, 같은 크기의 도선 A·B·C, 속력 v·v·2v, 유효 경계 길이와 선속 변화율 비교이므로 원문의 길이·부호·둘 이상의 영역 통과 맥락과 직접 일치한다. 평가원 정규 6·9월 모의평가·수능 자료실과 구별한다. 해설: https://wdown.ebsi.co.kr/W61001/01exam/20200722/go3/g_phy1_hsj_43S57M86.pdf"
+  },
+  {
+    "articleId": "phy-systems",
+    "raw": "2503",
+    "session": "3월",
+    "publisher": "교육청",
+    "archive": false,
+    "actualYear": 2025,
+    "questions": "",
+    "status": "exam",
+    "label": "2025년 3월 학력평가 · 물리학Ⅰ · 문항 확인 중",
+    "sourceUrl": "https://wdown.ebsi.co.kr/W61001/01exam/20250326/go3/g_phy1_mun_C172K36V.pdf",
+    "note": "2025년 3월 26일 고3 교육청 문제지의 존재와 내용을 실제 PDF로 확인했다. 관련 18번은 A·B·C 연결계에서 수평 외력 30N을 제거해 가속도가 바뀌는 문제이며, 초기 정지/등속 또는 실 끊김의 질량비 추론을 직접 묻는 조건과 다르다. 원문 2503의 구체 문항은 확정하지 않는다. 서울특별시교육청 3월 시행 주관은 경기도교육청 학교 공지 https://www.goegy.kr/jeodong-h/na/ntt/selectNttInfo.do?bbsId=1203&mi=3136&nttSn=1083997 의 2025 시행 일정에서도 확인. 학년도 수능 코드로 재해석하지 않는다."
+  }
+]

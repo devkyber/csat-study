@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="과목별 풀이 강령과 실수에서 얻은 인사이트. 국어·수학·영어·물리학Ⅰ·지구과학Ⅰ 판단 노트와 평가원 기출 자료실.">
+  <meta name="theme-color" content="#294c7a"><title>수능 판단 노트</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./vendor/katex.min.css"><link rel="stylesheet" href="./style.css">
+  <script defer src="./vendor/purify.min.js"></script>
+  <script defer src="./vendor/katex.min.js"></script><script defer src="./vendor/auto-render.min.js"></script>
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a href="#main" class="skip">본문으로 이동</a>
+  <header class="masthead">
+    <a class="brand" href="#/" aria-label="수능 판단 노트 홈"><svg width="30" height="32" viewBox="0 0 30 32" aria-hidden="true"><path d="M4 3h17v26H4z" fill="#294c7a"/><path d="M9 9h8M9 14h8M9 19h5" stroke="white" stroke-width="1.5"/><path d="m19 22 7-12 3 2-7 12-4 2z" fill="#b7acdf"/></svg><span><small>수능</small>판단 노트</span></a>
+    <nav aria-label="주 메뉴"><a href="#/" data-nav="home">노트 읽기</a><a href="#/exams" data-nav="exams">기출 자료실</a><a href="#/saved" data-nav="saved" aria-label="저장한 글"><span class="desktop-label">저장한 글</span><span class="mobile-label">저장</span></a></nav>
+    <button class="icon-button" id="search-open" aria-label="노트 검색"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m15 15 6 6" stroke="currentColor" stroke-width="1.7"/></svg></button>
+  </header>
+  <main id="main" tabindex="-1"><p class="loading">노트를 불러오고 있습니다.</p></main>
+  <footer><a href="#/about">이 노트에 대하여</a><span>2027학년도까지의 수능 체계</span><a href="https://github.com/devkyber/csat-study" target="_blank" rel="noopener noreferrer">GitHub</a></footer>
+  <div id="toast" role="status"></div>
+  <dialog id="search-dialog"><div class="dialog-top"><label for="global-search">어디서 막혔나요?</label><button class="icon-button" id="search-close" aria-label="검색 닫기">×</button></div><input id="global-search" type="search" placeholder="개념, 실수, 단원 또는 기출 코드 검색" autocomplete="off"><div id="search-results" aria-live="polite"></div></dialog>
+</body>
+</html>

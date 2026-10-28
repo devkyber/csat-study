@@ -1,0 +1,68 @@
+[
+  {
+    "articleId": "math-errors",
+    "raw": "170921",
+    "year": 2017,
+    "session": "9월",
+    "questions": "21",
+    "status": "question",
+    "label": "2017학년도 9월 수학 나형 21번 · 사차함수 개형과 미분가능성",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=8cf791770cbb3c795a7fc377980155b5",
+    "note": "공식 문제지 PDF 9쪽을 렌더 확인. 최고차항 계수가 음수인 사차함수, 실근 0·2·3, f와 |x(x-2)(x-3)| 중 작은 함수의 미분가능성 조건이다. 원문의 여러 사차 개형을 놓친 사례와 직접 대응하며 가형 21번은 다른 적분 문제이다."
+  },
+  {
+    "articleId": "math-errors",
+    "raw": "171130",
+    "year": 2017,
+    "session": "수능",
+    "questions": "30",
+    "status": "question",
+    "label": "2017학년도 수능 수학 나형 30번 · 역함수와 제한된 구간의 실근",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=f9282e44289e046bb7821696d15134c8",
+    "note": "공식 수학 ZIP의 나형 홀수형 PDF 12쪽을 렌더 확인. f=x³-3x²+6x+k의 역함수 g, 방정식 4f′(x)+12x-18=(f′∘g)(x)가 [0,1]에서 실근을 갖는 k 범위이다. 역함수 변형 시 구간/정의역을 함께 옮기는 원문 맥락과 일치. 가형 30번은 다른 사차함수 문제이다."
+  },
+  {
+    "articleId": "math-inverse",
+    "raw": "171130",
+    "year": 2017,
+    "session": "수능",
+    "questions": "30",
+    "status": "question",
+    "label": "2017학년도 수능 수학 나형 30번 · 역함수 변환과 구간",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=f9282e44289e046bb7821696d15134c8",
+    "note": "math-errors의 같은 공식 문제지 대조 결과. 제한 구간 [0,1]의 조건을 역함수 대응으로 바꿀 때 함께 변환해야 하는 사례이다."
+  },
+  {
+    "articleId": "math-advanced-integral",
+    "raw": "2011가28",
+    "year": 2011,
+    "session": "수능",
+    "questions": "28",
+    "status": "question",
+    "label": "2011학년도 수능 수리 가형 · 미분과 적분 선택 28번",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=b85ae9ae3f5722e8b5182ffff85464fd",
+    "note": "공식 수리 가형 홀수형 PDF 12쪽(인쇄 11쪽)의 미분과 적분 선택 28번을 렌더 확인. f(2x)=2f(x)f′(x), f(a)=0, ∫[2a,4a] f(x)/x dx=k로부터 ∫[a,2a] f(x)²/x² dx를 구한다. 원문의 적분식 연결·치환/부분적분과 직접 일치한다. 2020학년도 수능 가형 28번은 조합, 2021학년도 가형 28번은 합성함수이므로 이 코드는 YYMM이 아니라 2011학년도 표기이다."
+  },
+  {
+    "articleId": "math-recurrences",
+    "raw": "2315",
+    "year": 2023,
+    "session": "수능",
+    "questions": "15",
+    "status": "question",
+    "label": "2023학년도 수능 수학 공통 15번 · 3의 배수에 따른 점화식",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=4dee411efbfef1ab1b44fde9dc8f9378",
+    "note": "공식 문제지 6쪽을 텍스트/렌더 대조. a7=40이고 a[n+1]이 3의 배수인지에 따라 다음 항을 나누는 자연수 수열. 원문의 배수·나머지 분류와 직접 일치한다."
+  },
+  {
+    "articleId": "math-root-tangent",
+    "raw": "2314",
+    "year": 2023,
+    "session": "6월",
+    "questions": "14",
+    "status": "question",
+    "label": "2023학년도 6월 수학 공통 14번 · 첨점과 직선 교점",
+    "sourceUrl": "https://www.suneung.re.kr/boardCnts/fileDown.do?fileSeq=01b0ccdb3da6fd6be4e66777bbc073cb",
+    "note": "공식 문제지 5쪽을 텍스트/렌더 대조. 연속함수 f와 삼차함수 g의 구간별 적분 관계에서 f가 원점에 첨점을 갖고, ㄷ에서 f(x)=x의 실근 개수를 판단한다. 원문의 첨점·직선 교점과 일치. 원문은 회차를 생략했으나 2023/2024 수능·6/9월 14번을 대조하여 2023학년도 6월 14번으로 확인했다."
+  }
+]

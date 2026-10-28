@@ -1,0 +1,19 @@
+{
+  "sourceFiles": 113,
+  "nonemptySourceFiles": 109,
+  "articleCount": 122,
+  "subjectCounts": {
+    "korean": 30,
+    "math": 26,
+    "english": 4,
+    "physics": 18,
+    "earth": 27,
+    "study": 17
+  },
+  "examCheckedAt": "2026-10-28",
+  "examPosts": 417,
+  "curriculum": "2027학년도까지",
+  "excludedSubject": "언어와 매체",
+  "verifiedQuestionLinks": 30,
+  "verifiedExamLinks": 31
+}
