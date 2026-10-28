@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-28",
+  "checkedAt": "2026-10-29",
   "examRange": "2017–2026학년도 6월·9월 모의평가·수능. 2021학년도까지 가·나형, 2022학년도부터 공통+미적분.",
   "examAudit": [
     {
@@ -7453,6 +7453,48 @@
       "sourcePdfPage": 3,
       "sourceSha256": "c157178ab24c970cbd0ad098091098c4ee4aa021101e78e419d0f28d1d938746",
       "verifiedAt": "2026-10-28"
+    },
+    {
+      "id": "math-example-056",
+      "articleId": "math-cubic",
+      "afterHeading": "변곡점과 극점은 무엇이 다를까",
+      "year": 2026,
+      "session": "6월",
+      "variant": "공통",
+      "question": 19,
+      "sourceUrl": "https://wdown.ebsi.co.kr/W61001/01exam/20250604/go3/mathB_1_mun_821MR5A6_1.pdf",
+      "sourcePage": "https://www.ebsi.co.kr/ebs/xip/xipc/previousPaperListAjax.ajax?targetCd=D300&yearList=2025&monthList=03%2C04%2C05%2C06%2C07%2C08%2C09%2C10%2C11%2C12&arOrd=1%2C2%2C3%2C6&subjIdList=140117%2C140118%2CkorPast%2C140119%2C140120%2C140121%2CmathPast%2C80003%2C140115%2C154%2CsciPast&sort=recent&currentPage=3",
+      "solutionUrl": "https://wdown.ebsi.co.kr/W61001/01exam/20250604/go3/mathB_1_hsj_W5938829_2.pdf",
+      "image": "examples/math/2026-06-calc-q19.webp",
+      "alt": "2026학년도 6월 수학 공통 19번 실제 문제",
+      "caption": "2026학년도 6월 수학 공통 19번 · 한국교육과정평가원 출제 / EBSi 공식 문제지 발췌",
+      "sourcePdfPage": 7,
+      "sourceSha256": "2610231dcbbec6205a48fc48d5f99505a62f4b341fe7652c56889814b875f4ee",
+      "verifiedAt": "2026-10-29",
+      "prompt": "극점은 도함수의 부호로 구하고, 변곡점에서는 기울기의 변화를 따로 확인해 보자.",
+      "explanation": "- $f'(x)=9x(x-2)$의 부호는 $x=0,2$를 지나며 $+,-,+$이다. 따라서 $0$에서 극대, $2$에서 극소이다.\n\n- 극댓값 $f(0)=a=20$을 넣으면 극솟값은 $f(2)=24-36+20=8$이다. 이것이 문항에서 구하는 답이다.\n\n- 이어서 변곡점도 확인해 보자. $f''(x)=18x-18$의 부호가 바뀌는 곳은 $x=1$이고 높이는 $f(1)=14$이다. 변곡점 $(1,14)$는 두 극점 $(0,20),(2,8)$의 중점이다.\n\n- $f'(1)=-9$라 변곡점 접선은 수평이 아니다. 극소점 $x=2$와 변곡점 $x=1$을 구분하자.",
+      "answer": "$8$"
+    },
+    {
+      "id": "math-example-057",
+      "articleId": "math-quartic",
+      "afterHeading": "대칭과 공통접선은 두 중근으로 보자",
+      "year": 2023,
+      "session": "6월",
+      "variant": "공통",
+      "question": 19,
+      "sourceUrl": "https://wdown.ebsi.co.kr/W61001/01exam/20220609/go3/mathB_mun_7835PY6C.pdf",
+      "sourcePage": "https://www.ebsi.co.kr/ebs/xip/xipc/previousPaperListAjax.ajax?targetCd=D300&yearList=2022&monthList=03%2C04%2C05%2C06%2C07%2C08%2C09%2C10%2C11%2C12&arOrd=1%2C2%2C3%2C6&subjIdList=140117%2C140118%2CkorPast%2C140119%2C140120%2C140121%2CmathPast%2C80003%2C140115%2C154%2CsciPast&sort=recent&currentPage=3",
+      "solutionUrl": "https://wdown.ebsi.co.kr/W61001/01exam/20220609/go3/mathB_hsj_M2YMQ439.pdf",
+      "image": "examples/math/2023-06-calc-q19.webp",
+      "alt": "2023학년도 6월 수학 공통 19번 실제 문제",
+      "caption": "2023학년도 6월 수학 공통 19번 · 한국교육과정평가원 출제 / EBSi 공식 문제지 발췌",
+      "sourcePdfPage": 7,
+      "sourceSha256": "e7a251f5620ddb16794ebc124b33122674509ac688c1a0f07e7365ce73ce239c",
+      "verifiedAt": "2026-10-29",
+      "prompt": "먼저 문항의 상수 $a,b$를 구한 뒤, 같은 식에서 두 점에 접하는 수평선도 찾아보자.",
+      "explanation": "- $x=1$에서 극소이므로 $f'(1)=4+2a=0$, 따라서 $a=-2$이다.\n\n- $f'=4x(x-1)(x+1)$의 부호를 확인하면 $x=0$에서 극대이다. 극댓값이 $4$라 $b=f(0)=4$이고, 원래 답은 $a+b=2$이다.\n\n- 이제 이 식으로 공통접선을 추가 연습하자. $f=x^4-2x^2+4=(x^2-1)^2+3$이므로 $y=3$을 빼면 $(x-1)^2(x+1)^2$가 남는다.\n\n- 두 중근 $x=-1,1$에서 높이와 기울기가 모두 맞는다. 접점은 두 개, 공통접선 $y=3$은 한 개이다. 공통접선 찾기는 원래 발문 뒤에 덧붙인 연습이다.",
+      "answer": "$2$"
     }
   ]
 }

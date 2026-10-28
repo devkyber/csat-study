@@ -5,6 +5,7 @@ import {insertExamples, openQuestionImage} from './examples.js';
 import {createPractice} from './practice.js';
 import {createBites} from './bites.js';
 import {startOffline} from './offline.js';
+import {insertMathLabs} from './math-labs.js';
 
 const $ = selector => document.querySelector(selector);
 const issues = [['조건을 놓쳤을 때','조건'],['비교 기준이 헷갈릴 때','비교'],['선지 둘 중 고민될 때','선지'],['풀이가 떠오르지 않을 때','발상'],['계산이 꼬일 때','계산'],['복습할 때','복습']];
@@ -134,7 +135,7 @@ function route() {
   const readArticle=parts[0] === 'read' ? articles.find(a => a.id === parts[1]) : null;
   const views={subject:() => subjectPage(parts[1]),read:() => readPage(parts[1]),search:() => searchPage(params),saved:savedPage,exams:() => archive.archivePage(params),paper:() => archive.paperPage(parts[1]),practice:() => practice.render(parts,params),bites:() => bites.render(parts,params),about};
   $('#main').innerHTML=!parts.length ? home() : views[parts[0]] ? views[parts[0]]() : notFound();
-  if (readArticle) insertExamples(readArticle,examples,markdown);
+  if (readArticle) {insertMathLabs(readArticle);insertExamples(readArticle,examples,markdown);}
   document.querySelectorAll('[data-nav]').forEach(a => {
     const active=a.dataset.nav === (['exams','paper'].includes(parts[0]) ? 'exams' : ['saved','practice','bites'].includes(parts[0]) ? parts[0] : 'home');
     a.classList.toggle('active',active);
@@ -149,7 +150,7 @@ function route() {
   }
   window.renderMathInElement?.($('#main'),{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false,strict:'ignore',trust:false});
   document.querySelectorAll('.prose table').forEach(table => {const wrap=document.createElement('div');wrap.className='table-wrap';table.before(wrap);wrap.append(table);});
-  document.querySelectorAll('.prose a').forEach(a => {if (a.href.startsWith('http')) {a.target='_blank';a.rel='noopener noreferrer';}});
+  document.querySelectorAll('.prose a').forEach(a => {if (/^https?:\/\//i.test(a.getAttribute('href') || '')) {a.target='_blank';a.rel='noopener noreferrer';}});
   $('#exam-filter')?.addEventListener('change',event => {if (event.target.tagName === 'SELECT') formRoute(event.currentTarget,'/exams');});
   $('#exam-filter')?.addEventListener('submit',event => {event.preventDefault();formRoute(event.currentTarget,'/exams');});
   $('#page-search')?.addEventListener('submit',event => {event.preventDefault();formRoute(event.currentTarget,'/search');});

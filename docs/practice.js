@@ -36,9 +36,11 @@ export function createPractice(index, articles, markdown) {
     const pages=[...new Set([question.page,...(question.pages || [])])];
     const pageButtons=pages.map(p => `<button type="button" class="button ${p===question.page ? 'selected' : ''}" data-pdf-page="${p}" aria-pressed="${p===question.page}">${p===question.page ? '문제' : '지문'} ${p}쪽</button>`).join('');
     const viewButtons=paper.subject==='korean' ? '<button class="button selected" type="button" data-pdf-view="columns" aria-pressed="true">열별로</button><button class="button" type="button" data-pdf-view="page" aria-pressed="false">전체 쪽</button>' : question.region || question.regions ? '<button class="button selected" type="button" data-pdf-view="question" aria-pressed="true">이 문제만</button><button class="button" type="button" data-pdf-view="page" aria-pressed="false">전체 쪽</button>' : '';
-    return `<div class="crumb"><a href="#/practice?subject=${paper.subject}">5개년 기출 분석</a><span>/</span><span>${paper.year}학년도 ${sessionLabel(paper.session)}</span></div>
-      <div class="practice-heading"><div><p>${subjects[paper.subject].name}${paper.variant ? ' · '+escape(paper.variant) : ''}</p><h1>${question.number}번 <span>${escape(question.topic)}</span></h1></div><a class="button" href="#/practice?subject=${paper.subject}">시험 목록</a></div>
-      <details class="question-index"><summary>문항 선택 <span>${question.number} / ${paper.questions.length}</span></summary><nav aria-label="문항 번호">${paper.questions.map(q => `<a href="${url(paper,q.number)}" ${q.number===question.number ? 'aria-current="page"' : ''} class="${mark(paper,q)==='done' ? 'done' : mark(paper,q)==='review' ? 'review' : ''}" aria-label="${q.number}번${mark(paper,q)==='done' ? ', 다시 풀 수 있어요' : mark(paper,q)==='review' ? ', 다시 풀어 볼 문제' : ''}">${q.number}</a>`).join('')}</nav></details>
+    const numbers=paper.questions.map(q => {const state=mark(paper,q);return `<a href="${url(paper,q.number)}" ${q.number===question.number ? 'aria-current="page"' : ''} class="${state==='done' ? 'done' : state==='review' ? 'review' : ''}" aria-label="${q.number}번${state==='done' ? ', 다시 풀 수 있어요' : state==='review' ? ', 다시 풀어 볼 문제' : ''}">${q.number}<span class="question-marker" aria-hidden="true">${state==='done' ? '✓' : state==='review' ? '↻' : ''}</span></a>`;}).join('');
+    const legend='<p class="question-legend"><span><b aria-hidden="true">↻</b> 다시 풀어 볼 문제</span><span><b aria-hidden="true">✓</b> 다시 풀 수 있어요</span></p>';
+    return `<div class="practice-workspace"><aside class="question-index" aria-label="문항 선택"><div class="question-index-heading"><h2>문항 선택</h2><p>${question.number} / ${paper.questions.length}</p></div><button type="button" class="question-skip" data-question-skip>문제로 이동</button><nav class="practice-number-grid" aria-label="문항 번호">${numbers}</nav>${legend}</aside>
+      <div class="practice-content"><div class="crumb"><a href="#/practice?subject=${paper.subject}">5개년 기출 분석</a><span>/</span><span>${paper.year}학년도 ${sessionLabel(paper.session)}</span></div>
+      <div class="practice-heading"><div><p>${subjects[paper.subject].name}${paper.variant ? ' · '+escape(paper.variant) : ''}</p><h1 tabindex="-1">${question.number}번 <span>${escape(question.topic)}</span></h1></div><a class="button" href="#/practice?subject=${paper.subject}">시험 목록</a></div>
       <div class="practice-layout"><section class="question-document" aria-label="실제 기출 문제">
         ${paper.audioUrl && question.number<=17 ? `<div class="practice-audio"><p>듣기 평가 전체 음원이에요. 재생 막대로 해당 문항을 찾아 들어 보세요.</p><audio controls preload="none" src="${escape(paper.audioUrl)}">${external(paper.audioUrl,'듣기 음원 열기')}</audio>${paper.scriptUrl ? external(paper.scriptUrl,'듣기 대본 PDF') : ''}</div>` : ''}
         <div class="pdf-controls">${paper.subject==='korean' || !viewButtons ? `<div class="pdf-pages">${pageButtons}</div>` : ''}${viewButtons ? `<div class="pdf-views" role="group" aria-label="문제 보기 방식">${viewButtons}</div>` : ''}<div><button class="button" type="button" data-pdf-zoom="out" aria-label="문제 축소">−</button><output id="pdf-zoom">100%</output><button class="button" type="button" data-pdf-zoom="in" aria-label="문제 확대">＋</button></div></div>
@@ -46,7 +48,9 @@ export function createPractice(index, articles, markdown) {
         <div class="pdf-bottom"><button type="button" class="button" data-pdf-turn="-1">앞쪽</button><span id="pdf-page-label">${question.page} / ${paper.pageCount}쪽</span><button type="button" class="button" data-pdf-turn="1">뒤쪽</button>${external(paper.sourceUrl,'원본 PDF 열기')}</div>
       </section><section class="practice-solution" aria-label="문항 풀이"><p class="solution-intro">먼저 답을 골라 보세요.<br>막혔다면 풀이의 첫 단계부터 따라가 봐요.</p><details class="solution-reveal"><summary>풀이 보기</summary><ol class="solution-steps">${question.steps.map(step => `<li>${markdown(step)}</li>`).join('')}</ol><p class="practice-answer"><span>정답</span> ${escape(question.answer)}</p><div class="solution-check"><h2>다음에 확인할 것</h2>${markdown(question.check)}</div>${related.length ? `<div class="practice-related"><h2>함께 읽을 노트</h2>${related.map(a => `<a href="#/read/${a.id}">${escape(a.title)} ${icon('arrow')}</a>`).join('')}</div>` : ''}<p class="tiny-note solution-source">정답과 풀이를 EBS 해설과 대조했어요. ${external(paper.answerSourceUrl,'대조한 해설 PDF')}</p></details>
       <fieldset class="practice-progress"><legend>이 문제는 어땠나요?</legend><button class="button" type="button" data-practice-mark="review" aria-pressed="${mark(paper,question)==='review'}">다시 풀어 볼래요</button><button class="button" type="button" data-practice-mark="done" aria-pressed="${mark(paper,question)==='done'}">다시 풀 수 있어요</button><p class="tiny-note" id="practice-save-status" role="status">기록은 이 브라우저에만 남아요.</p></fieldset>
-      <nav class="practice-next" aria-label="앞뒤 문항">${question.number>1 ? `<a class="button" href="${url(paper,question.number-1)}">이전 문제</a>` : '<span></span>'}${question.number<paper.questions.length ? `<a class="button primary" href="${url(paper,question.number+1)}">다음 문제 ${icon('arrow')}</a>` : `<a class="button primary" href="#/practice?subject=${paper.subject}">다른 시험 보기</a>`}</nav></section></div>`;
+      <nav class="practice-next" aria-label="앞뒤 문항">${question.number>1 ? `<a class="button" href="${url(paper,question.number-1)}">이전 문제</a>` : '<span></span>'}${question.number<paper.questions.length ? `<a class="button primary" href="${url(paper,question.number+1)}">다음 문제 ${icon('arrow')}</a>` : `<a class="button primary" href="#/practice?subject=${paper.subject}">다른 시험 보기</a>`}</nav></section></div></div></div>
+      <button type="button" class="practice-question-toggle" data-question-open aria-haspopup="dialog" aria-controls="practice-question-dialog" aria-expanded="false"><span>문항 선택</span><strong>${question.number} / ${paper.questions.length}</strong></button>
+      <dialog class="practice-question-dialog" id="practice-question-dialog" aria-labelledby="practice-question-title"><div class="dialog-top"><h2 id="practice-question-title">문항 선택 <span>${question.number} / ${paper.questions.length}</span></h2><button class="button" type="button" data-question-close>닫기</button></div><p class="question-dialog-paper">${escape(title(paper))}</p><nav class="practice-number-grid" aria-label="문항 번호">${numbers}</nav>${legend}</dialog>`;
   }
   async function mount(parts) {
     const current=++generation, record=index.papers.find(p => p.id===parts[1]);
@@ -70,12 +74,15 @@ export function createPractice(index, articles, markdown) {
         const next={...progress,[key]:progress[key]===value ? '' : value};
         try {localStorage.setItem('csat-practice',JSON.stringify(next));progress=next;} catch {host.querySelector('#practice-save-status').textContent='브라우저 저장 공간을 사용할 수 없어요.';return;}
         host.querySelectorAll('[data-practice-mark]').forEach(b => b.setAttribute('aria-pressed',String(progress[key]===b.dataset.practiceMark)));
-        const item=host.querySelector('.question-index [aria-current]');
-        item.classList.toggle('done',progress[key]==='done'); item.classList.toggle('review',progress[key]==='review');
-        item.setAttribute('aria-label',`${question.number}번${progress[key]==='done' ? ', 다시 풀 수 있어요' : progress[key]==='review' ? ', 다시 풀어 볼 문제' : ''}`);
+        host.querySelectorAll('.practice-number-grid [aria-current]').forEach(item => {
+          item.classList.toggle('done',progress[key]==='done'); item.classList.toggle('review',progress[key]==='review');
+          item.setAttribute('aria-label',`${question.number}번${progress[key]==='done' ? ', 다시 풀 수 있어요' : progress[key]==='review' ? ', 다시 풀어 볼 문제' : ''}`);
+          item.querySelector('.question-marker').textContent=progress[key]==='done' ? '✓' : progress[key]==='review' ? '↻' : '';
+        });
         host.querySelector('#practice-save-status').textContent=progress[key] ? '이 브라우저에 기록했어요.' : '기록을 해제했어요.';
       }));
-      releaseViewer=mountPdf(host,paper,question);
+      const releaseNavigation=mountQuestionNavigation(host), releasePdf=mountPdf(host,paper,question);
+      releaseViewer=() => {releaseNavigation();releasePdf();};
     } catch (error) {
       if (generation!==current || !host.isConnected) return;
       host.innerHTML='<h1>문제를 불러오지 못했어요.</h1><p>인터넷 연결을 확인한 뒤 다시 열어 주세요.</p><a class="button" href="#/practice">시험 목록으로</a>';
@@ -83,6 +90,50 @@ export function createPractice(index, articles, markdown) {
     }
   }
   return {render,mount,destroy};
+}
+
+function mountQuestionNavigation(host) {
+  const dialog=host.querySelector('#practice-question-dialog'), toggle=host.querySelector('[data-question-open]'), heading=host.querySelector('.practice-heading h1');
+  const desktop=matchMedia('(min-width: 641px)');
+  const sidebar=host.querySelector('.question-index .practice-number-grid'), current=sidebar.querySelector('[aria-current]');
+  const keepCurrentVisible=() => {
+    if (!sidebar.clientHeight) return;
+    const bounds=sidebar.getBoundingClientRect(), item=current.getBoundingClientRect();
+    if (item.top<bounds.top+5 || item.bottom>bounds.bottom-5) sidebar.scrollTop+=item.top-bounds.top-sidebar.clientHeight/2+item.height/2;
+  };
+  const sidebarObserver=new ResizeObserver(keepCurrentVisible);sidebarObserver.observe(sidebar);keepCurrentVisible();
+  const focusQuestion=() => {heading.focus({preventScroll:true});heading.scrollIntoView({block:'start'});};
+  toggle.addEventListener('click',() => {
+    dialog.showModal();toggle.setAttribute('aria-expanded','true');
+    dialog.querySelector('[aria-current]').focus();
+  });
+  host.querySelector('[data-question-close]').addEventListener('click',() => dialog.close());
+  dialog.addEventListener('close',() => toggle.setAttribute('aria-expanded','false'));
+  dialog.addEventListener('click',event => {
+    if (event.target!==dialog) return;
+    const bounds=dialog.getBoundingClientRect();
+    if (event.clientX<bounds.left || event.clientX>bounds.right || event.clientY<bounds.top || event.clientY>bounds.bottom) dialog.close();
+  });
+  host.querySelector('[data-question-skip]').addEventListener('click',focusQuestion);
+  host.querySelectorAll('.practice-number-grid').forEach(grid => {
+    grid.addEventListener('click',event => {
+      if (event.button!==0 || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+      const link=event.target.closest('a');if (!link) return;
+      if (dialog.open) dialog.close();
+      if (link.hasAttribute('aria-current')) {event.preventDefault();focusQuestion();}
+    });
+    grid.addEventListener('keydown',event => {
+      if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+      const links=[...grid.querySelectorAll('a')], from=links.indexOf(event.target);if (from<0) return;
+      const columns=getComputedStyle(grid).gridTemplateColumns.split(' ').length;
+      const moves={ArrowLeft:from-1,ArrowRight:from+1,ArrowUp:from-columns,ArrowDown:from+columns,Home:0,End:links.length-1};
+      if (!(event.key in moves)) return;
+      event.preventDefault();links[Math.max(0,Math.min(links.length-1,moves[event.key]))].focus();
+    });
+  });
+  const resized=() => {if (desktop.matches && dialog.open) {dialog.close();heading.focus({preventScroll:true});}};
+  desktop.addEventListener('change',resized);
+  return () => {sidebarObserver.disconnect();desktop.removeEventListener('change',resized);if (dialog.open) dialog.close();};
 }
 
 // Each mounted reader owns its loading and rendering tasks. Leaving a question

@@ -107,6 +107,7 @@ def main():
     # Precache the text learning surface only. Full exam PDFs, audio and large
     # question images stay on demand and are never silently downloaded offline.
     files=['./','index.html','app.js','ui.js','archive.js','examples.js','practice.js','bites.js','bite-engine.mjs','offline.js','style.css','bites.css','manifest.webmanifest','favicon.svg','icons/app-192.png','icons/app-512.png','fonts/Pretendard.woff2','vendor/marked.esm.js','vendor/purify.min.js','vendor/katex.min.js','vendor/katex.min.css','vendor/auto-render.min.js']
+    files += ['math-labs.js','math-geometry.mjs','math-labs.css']
     files += [p.relative_to(OUT).as_posix() for p in sorted((vendor/'fonts').glob('*.woff2'))]
     files += [f'data/{name}.json' for name in ['articles','exams','manifest','references','exam-pdfs','examples','practice-index','bites']]
     template=(ROOT/'web/sw.template.js').read_text(encoding='utf8')
