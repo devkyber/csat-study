@@ -3601,5 +3601,4005 @@
     ],
     "term": "delicate",
     "example": "This cultural tradition is delicate and needs care."
+  },
+  {
+    "id": "bite-en-111",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "deserve",
+    "prompt": "이 예문에서 deserve의 뜻은 무엇인가요?",
+    "choices": [
+      "받을 만하다",
+      "미리 예상하다",
+      "강하게 요구하다"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 공원 전체를 청소한 자원봉사자들은 감사받을 만해요.",
+      "기출에서는 과학자에 대한 비판이 때로는 타당하다는 설명에 쓰였어요."
+    ],
+    "takeaway": "deserve: 받을 만하다. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "deserve",
+    "example": "The volunteers deserve thanks for cleaning the entire park."
+  },
+  {
+    "id": "bite-en-112",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "influential",
+    "prompt": "이 예문에서 influential의 뜻은 무엇인가요?",
+    "choices": [
+      "논란이 없는",
+      "큰 영향을 미치는",
+      "널리 보급된"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 큰 영향을 미친 그녀의 보고서가 여러 학교의 읽기 교육 방식을 바꿨어요.",
+      "기출에서는 텔레비전과 영화가 대중에게 큰 영향을 미친다는 뜻이에요."
+    ],
+    "takeaway": "influential: 큰 영향을 미치는. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "influential",
+    "example": "Her influential report changed how several schools teach reading."
+  },
+  {
+    "id": "bite-en-113",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "contemporary",
+    "prompt": "이 예문에서 contemporary의 뜻은 무엇인가요?",
+    "choices": [
+      "일시적인",
+      "전통적인",
+      "현대의"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 현대 도시들은 옛날 마을에서는 상상하지 못한 교통 문제를 겪어요.",
+      "기출에서는 텔레비전과 영화의 영향력이 큰 현대 세계를 가리켜요."
+    ],
+    "takeaway": "contemporary: 현대의. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "contemporary",
+    "example": "Contemporary cities face transport problems that earlier towns never imagined."
+  },
+  {
+    "id": "bite-en-114",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "reactive",
+    "prompt": "이 예문에서 reactive의 뜻은 무엇인가요?",
+    "choices": [
+      "일어난 일에 대응하는",
+      "미리 방향을 정하는",
+      "같은 일을 반복하는"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 그 팀은 개선을 계획하기보다 불만에 답하는 대응 중심의 팀이 됐어요.",
+      "기출에서는 자기 창작보다 타인의 연락과 요구에 반응하는 업무를 말해요."
+    ],
+    "takeaway": "reactive: 일어난 일에 대응하는. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "reactive",
+    "example": "The team became reactive, answering complaints instead of planning improvements."
+  },
+  {
+    "id": "bite-en-115",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "willpower",
+    "prompt": "이 예문에서 willpower의 뜻은 무엇인가요?",
+    "choices": [
+      "판단 기준",
+      "의지력",
+      "소유 권한"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 게임을 끝내지 않은 채 멈추고 공부하려면 의지력이 필요했어요.",
+      "기출에서는 주변의 기대와 압력을 견디고 연락을 잠시 끊는 데 필요한 의지예요."
+    ],
+    "takeaway": "willpower: 의지력. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "willpower",
+    "example": "It took willpower to leave the game unfinished and study."
+  },
+  {
+    "id": "bite-en-116",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "abandon",
+    "prompt": "이 예문에서 abandon의 뜻은 무엇인가요?",
+    "choices": [
+      "수정하다",
+      "공개하다",
+      "포기하다"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 세 차례 실험이 실패한 뒤에도 그녀는 그 과제를 포기하려 하지 않았어요.",
+      "기출에서는 받은 편지함을 비우려다 자신의 꿈을 포기하는 상황에 쓰였어요."
+    ],
+    "takeaway": "abandon: 포기하다. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "abandon",
+    "example": "After three failed trials, she refused to abandon the project."
+  },
+  {
+    "id": "bite-en-117",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "sacrifice",
+    "prompt": "이 예문에서 sacrifice의 뜻은 무엇인가요?",
+    "choices": [
+      "다른 것을 위해 희생하다",
+      "자신을 위해 확보하다",
+      "다음 기회로 미루다"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 1분 일찍 끝내려고 정확성을 희생하지 마세요.",
+      "기출에서는 전문가답게 보이려다 자신의 잠재력을 희생하는 상황을 말해요."
+    ],
+    "takeaway": "sacrifice: 다른 것을 위해 희생하다. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "sacrifice",
+    "example": "Do not sacrifice accuracy just to finish a minute earlier."
+  },
+  {
+    "id": "bite-en-118",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "illusion",
+    "prompt": "이 예문에서 illusion의 뜻은 무엇인가요?",
+    "choices": [
+      "앞으로 이룰 계획",
+      "사실과 다른 믿음이나 착각",
+      "실제로 얻은 성과"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 빠른 답장은 중요한 일이 모두 끝났다는 착각을 만들었어요.",
+      "기출에서는 연락에 응답하는 것만으로 전문적으로 일한다고 여기는 착각이에요."
+    ],
+    "takeaway": "illusion: 사실과 다른 믿음이나 착각. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "illusion",
+    "example": "Fast replies created the illusion that all important work was done."
+  },
+  {
+    "id": "bite-en-119",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "branch",
+    "prompt": "이 예문에서 branch의 뜻은 무엇인가요?",
+    "choices": [
+      "결과",
+      "단계",
+      "분야"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 윤리학은 옳고 그름을 다루는 철학의 한 분야예요.",
+      "기출에서는 도덕 교육을 포함한 교육의 여러 분야를 말해요. 나뭇가지라는 뜻에서 확장됐어요."
+    ],
+    "takeaway": "branch: 분야. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "branch",
+    "example": "Ethics is a branch of philosophy concerned with right and wrong."
+  },
+  {
+    "id": "bite-en-120",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "particular",
+    "prompt": "이 예문에서 particular의 뜻은 무엇인가요?",
+    "choices": [
+      "특정한",
+      "보편적인",
+      "까다로운"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 이 열쇠는 여기 있는 모든 수납장이 아니라 특정 수납장 하나를 열어요.",
+      "기출에서는 특정한 교육 내용이나 교수법을 가리켜요. 모든 경우에 통한다는 뜻은 아니에요."
+    ],
+    "takeaway": "particular: 특정한. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "particular",
+    "example": "This key opens one particular cabinet, not every cabinet here."
+  },
+  {
+    "id": "bite-en-121",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "company",
+    "prompt": "이 예문에서 company의 뜻은 무엇인가요?",
+    "choices": [
+      "회사",
+      "함께 있음",
+      "소유물"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 긴 기차 여행 동안 그녀와 함께 있어서 즐거웠어요.",
+      "기출에서는 아이들과 함께 있는 시간을 즐긴다는 뜻이에요. ‘회사’로 읽으면 문장이 어긋나요."
+    ],
+    "takeaway": "company: 함께 있음. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "company",
+    "example": "I enjoyed her company during the long train journey."
+  },
+  {
+    "id": "bite-en-122",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "obstacle",
+    "prompt": "이 예문에서 obstacle의 뜻은 무엇인가요?",
+    "choices": [
+      "목표",
+      "기회",
+      "장애물"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 믿을 만한 자료가 부족한 것은 그 생각을 검증하는 데 장애물이에요.",
+      "기출에서는 사람들이 스스로 혼자 일하지 못하게 막는 방해 요인을 말해요."
+    ],
+    "takeaway": "obstacle: 장애물. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "obstacle",
+    "example": "Lack of reliable data is an obstacle to testing the idea."
+  },
+  {
+    "id": "bite-en-123",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "voluntarily",
+    "prompt": "이 예문에서 voluntarily의 뜻은 무엇인가요?",
+    "choices": [
+      "자발적으로",
+      "우연히",
+      "정기적으로"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 몇몇 학생은 교실 청소를 돕기 위해 자발적으로 남았어요.",
+      "기출에서는 누가 강제하지 않아도 스스로 혼자 일하는 상황에 쓰였어요."
+    ],
+    "takeaway": "voluntarily: 자발적으로. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "voluntarily",
+    "example": "Several students stayed voluntarily to help clean the classroom."
+  },
+  {
+    "id": "bite-en-124",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "isolated",
+    "prompt": "이 예문에서 isolated의 뜻은 무엇인가요?",
+    "choices": [
+      "자립한",
+      "고립된",
+      "경쟁하는"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 반 친구들과 교류가 없어서 새 학생은 고립됐다고 느꼈어요.",
+      "기출에서는 동료와 연결되지 않아 집단에서 떨어져 있다고 느끼는 상태예요."
+    ],
+    "takeaway": "isolated: 고립된. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "isolated",
+    "example": "Without contact with classmates, the new student felt isolated."
+  },
+  {
+    "id": "bite-en-125",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "reassuring",
+    "prompt": "이 예문에서 reassuring의 뜻은 무엇인가요?",
+    "choices": [
+      "놀라게 하는",
+      "부담을 주는",
+      "안심이 되는"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 모두 안전하게 도착했다는 말을 들으니 안심이 됐어요.",
+      "기출에서는 동료와 계속 연결되어 있으면 개인이 안도감을 느낀다는 뜻이에요."
+    ],
+    "takeaway": "reassuring: 안심이 되는. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "reassuring",
+    "example": "It was reassuring to hear that everyone had arrived safely."
+  },
+  {
+    "id": "bite-en-126",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "diverse",
+    "prompt": "이 예문에서 diverse의 뜻은 무엇인가요?",
+    "choices": [
+      "다양한",
+      "성숙한",
+      "대립하는"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 그 워크숍은 예술가·기술자·요리사의 다양한 생각을 환영했어요.",
+      "기출에서는 혼자 생각할 시간을 주면 여러 종류의 아이디어가 나올 수 있다는 뜻이에요."
+    ],
+    "takeaway": "diverse: 다양한. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "diverse",
+    "example": "The workshop welcomed diverse ideas from artists, engineers, and cooks."
+  },
+  {
+    "id": "bite-en-127",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "latter",
+    "prompt": "이 예문에서 latter의 뜻은 무엇인가요?",
+    "choices": [
+      "먼저 언급한 쪽",
+      "나중에 언급한 쪽",
+      "둘을 합친 전체"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 한 계획은 돈을 아끼고 다른 계획은 시간을 아껴요. 우리는 나중에 말한 시간 절약 계획을 골랐어요.",
+      "기출에서는 목표를 세워 훈련하는 두 번째 선수를 가리켜요. the latter는 앞서 든 둘 중 나중에 말한 쪽이에요."
+    ],
+    "takeaway": "latter: 나중에 언급한 쪽. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "latter",
+    "example": "One plan saves money; the other saves time. We chose the latter."
+  },
+  {
+    "id": "bite-en-128",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "sustain",
+    "prompt": "이 예문에서 sustain의 뜻은 무엇인가요?",
+    "choices": [
+      "새로 시작하다",
+      "최대한 줄이다",
+      "계속 유지하다"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 짧은 휴식은 긴 공부 시간 동안 주의를 유지하는 데 도움이 돼요.",
+      "기출에서는 추진력이 노력을 계속 이어 가게 한다는 뜻이에요."
+    ],
+    "takeaway": "sustain: 계속 유지하다. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "sustain",
+    "example": "Short breaks help her sustain attention during a long study session."
+  },
+  {
+    "id": "bite-en-129",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "drive",
+    "prompt": "이 예문에서 drive의 뜻은 무엇인가요?",
+    "choices": [
+      "추진력이나 의욕",
+      "운전 능력",
+      "외부의 명령"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 나아지고자 하는 그녀의 의욕 덕분에 거듭 실패해도 계속 연습했어요.",
+      "기출에서는 목표와 동기를 통해 훈련에 방향을 주는 정신적 추진력이에요. 운전이라는 뜻이 아니에요."
+    ],
+    "takeaway": "drive: 추진력이나 의욕. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "drive",
+    "example": "Her drive to improve kept her practicing after repeated failures."
+  },
+  {
+    "id": "bite-en-130",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "maximize",
+    "prompt": "이 예문에서 maximize의 뜻은 무엇인가요?",
+    "choices": [
+      "정확히 측정하다",
+      "최대화하다",
+      "같게 분배하다"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 그들은 에너지 생산을 최대화하려고 패널을 햇빛이 드는 곳에 놓았어요.",
+      "기출에서는 정신적 추진력을 활용해 기술·신체적 성과를 최대한 높인다는 뜻이에요."
+    ],
+    "takeaway": "maximize: 최대화하다. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "maximize",
+    "example": "They placed the panels in sunlight to maximize energy production."
+  },
+  {
+    "id": "bite-en-131",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "universal",
+    "prompt": "이 예문에서 universal의 뜻은 무엇인가요?",
+    "choices": [
+      "일부에게만 허용되는",
+      "오래도록 변하지 않는",
+      "모두에게 보편적으로 적용되는"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 보편적인 규칙이라면 모든 구성원에게 예외 없이 적용될 거예요.",
+      "기출에서는 모든 사람에게 통하는 하나의 현실 설명이 가능한지를 논의할 때 쓰였어요."
+    ],
+    "takeaway": "universal: 모두에게 보편적으로 적용되는. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-06",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "universal",
+    "example": "A universal rule would apply to every member without exception."
+  },
+  {
+    "id": "bite-en-132",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "authoritative",
+    "prompt": "이 예문에서 authoritative의 뜻은 무엇인가요?",
+    "choices": [
+      "권위 있는",
+      "강압적인",
+      "논쟁적인"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 그 박물관은 저명한 역사가들이 검토한 권위 있는 목록집을 사용해요.",
+      "기출에서는 다른 관점보다 권위 있는 현실 설명을 말해요. 강압적인 태도라는 뜻과 구별해요."
+    ],
+    "takeaway": "authoritative: 권위 있는. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-06",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "authoritative",
+    "example": "The museum uses an authoritative catalogue checked by leading historians."
+  },
+  {
+    "id": "bite-en-133",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "construct",
+    "prompt": "이 예문에서 construct의 뜻은 무엇인가요?",
+    "choices": [
+      "직접 관찰한 물체",
+      "이론적으로 구성한 개념",
+      "공사를 진행하는 행동"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 그 모형은 실험실에 있는 물체가 아니라 이론적으로 구성한 개념이에요.",
+      "기출에서는 관점 없는 보편적 현실 설명이 이론적으로 구성한 개념일 뿐이라고 말해요. 여기서는 명사예요."
+    ],
+    "takeaway": "construct: 이론적으로 구성한 개념. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-06",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "construct",
+    "example": "The model is a theoretical construct, not an object in the laboratory."
+  },
+  {
+    "id": "bite-en-134",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "intelligible",
+    "prompt": "이 예문에서 intelligible의 뜻은 무엇인가요?",
+    "choices": [
+      "믿을 수 있는",
+      "예측할 수 있는",
+      "이해할 수 있는"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 그 그림은 초보자도 복잡한 작동 원리를 이해할 수 있게 했어요.",
+      "기출에서는 인간의 관점을 통해 세계를 이해할 수 있게 된다는 뜻이에요."
+    ],
+    "takeaway": "intelligible: 이해할 수 있는. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-06",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "intelligible",
+    "example": "The diagram made a complex mechanism intelligible to beginners."
+  },
+  {
+    "id": "bite-en-135",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "competent",
+    "prompt": "이 예문에서 competent의 뜻은 무엇인가요?",
+    "choices": [
+      "능숙한",
+      "친숙한",
+      "경쟁적인"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 몇 달 동안 훈련한 뒤 그녀는 라디오 수리에 능숙해졌어요.",
+      "기출에서는 다른 문화를 제대로 이해하고 그 안에서 능숙하게 행동한다는 뜻이에요."
+    ],
+    "takeaway": "competent: 능숙한. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "competent",
+    "example": "After months of training, she became competent at repairing radios."
+  },
+  {
+    "id": "bite-en-136",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "motivate",
+    "prompt": "이 예문에서 motivate의 뜻은 무엇인가요?",
+    "choices": [
+      "행동을 막다",
+      "행동의 동기가 되다",
+      "행동을 관찰하다"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 호기심은 학생들이 뜻밖의 결과를 조사하는 동기가 될 수 있어요.",
+      "기출에서는 태도·신념·가치가 겉으로 보이는 행동을 일으키는 이유가 된다는 뜻이에요."
+    ],
+    "takeaway": "motivate: 행동의 동기가 되다. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "motivate",
+    "example": "Curiosity can motivate students to investigate an unexpected result."
+  },
+  {
+    "id": "bite-en-137",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "foundation",
+    "prompt": "이 예문에서 foundation의 뜻은 무엇인가요?",
+    "choices": [
+      "표면",
+      "장애",
+      "토대"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 신뢰는 오래가는 협력 관계의 토대예요.",
+      "기출에서는 눈에 잘 보이지 않는 가치와 신념이 문화를 떠받치는 토대라는 뜻이에요."
+    ],
+    "takeaway": "foundation: 토대. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "foundation",
+    "example": "Trust is the foundation of a lasting partnership."
+  },
+  {
+    "id": "bite-en-138",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "norm",
+    "prompt": "이 예문에서 norm의 뜻은 무엇인가요?",
+    "choices": [
+      "통상적으로 따르는 규범",
+      "법으로 정한 처벌",
+      "개인의 예외적 취향"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 차례를 기다리는 것은 이 공동체에서 통상적으로 따르는 규범이에요.",
+      "기출에서는 문화 구성원이 당연하게 여기는 행동·판단 기준을 말해요."
+    ],
+    "takeaway": "norm: 통상적으로 따르는 규범. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "norm",
+    "example": "Waiting your turn is a social norm in this community."
+  },
+  {
+    "id": "bite-en-139",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "violate",
+    "prompt": "이 예문에서 violate의 뜻은 무엇인가요?",
+    "choices": [
+      "수정하다",
+      "위반하다",
+      "입증하다"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 그 비공개 파일을 공유하면 모임의 비밀 유지 규칙을 위반하게 돼요.",
+      "기출에서는 다른 문화의 규범이 자신이 상식이라 여긴 기준에 어긋나는 경우를 말해요."
+    ],
+    "takeaway": "violate: 위반하다. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "violate",
+    "example": "Sharing the private file would violate the group's confidentiality rule."
+  },
+  {
+    "id": "bite-en-140",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "convergence",
+    "prompt": "이 예문에서 convergence의 뜻은 무엇인가요?",
+    "choices": [
+      "여러 방향으로 갈라짐",
+      "같은 상태의 반복",
+      "한쪽으로 모여듦"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 그들의 선호가 한쪽으로 모이면서 선택의 차이가 줄었어요.",
+      "기출에서는 추천 알고리즘 때문에 사람들의 음악 취향이 한쪽으로 모일까 하는 우려에 쓰였어요."
+    ],
+    "takeaway": "convergence: 한쪽으로 모여듦. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-09",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "convergence",
+    "example": "The convergence of their preferences left fewer differences between their choices."
+  },
+  {
+    "id": "bite-en-141",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "respective",
+    "prompt": "이 예문에서 respective의 뜻은 무엇인가요?",
+    "choices": [
+      "각각의",
+      "서로 같은",
+      "서로 반대인"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 회의 뒤 학생들은 각자의 교실로 돌아갔어요.",
+      "기출에서는 정답 선지에서 개개인의 음악 취향을 가리켜요. 서로 같다는 뜻이 아니라 각자에게 해당한다는 뜻이에요."
+    ],
+    "takeaway": "respective: 각각의. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-09",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "respective",
+    "example": "After the meeting, the students returned to their respective classrooms."
+  },
+  {
+    "id": "bite-en-142",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "suited to",
+    "prompt": "이 예문에서 suited to의 뜻은 무엇인가요?",
+    "choices": [
+      "~와 같은",
+      "~에 적합한",
+      "~에 지친"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 그 조용한 방은 세심한 주의가 필요한 작업에 적합해요.",
+      "기출에서는 알고리즘이 개인이 좋아할 음악을 찾는 일에 잘 맞는다는 뜻이에요."
+    ],
+    "takeaway": "suited to: ~에 적합한. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-09",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "suited to",
+    "example": "The quiet room is suited to work requiring close attention."
+  },
+  {
+    "id": "bite-en-143",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "premature",
+    "prompt": "이 예문에서 premature의 뜻은 무엇인가요?",
+    "choices": [
+      "신속한",
+      "오래 지연된",
+      "너무 이른"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 자료의 절반이 없는 상태에서 단정적인 결론을 내리기는 너무 일러요.",
+      "기출에서는 삶의 너무 이른 시점에 교육 방향이나 전문 분야를 결정하는 것을 말해요."
+    ],
+    "takeaway": "premature: 너무 이른. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "premature",
+    "example": "With half the data missing, any firm conclusion would be premature."
+  },
+  {
+    "id": "bite-en-144",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "specialization",
+    "prompt": "이 예문에서 specialization의 뜻은 무엇인가요?",
+    "choices": [
+      "전문화",
+      "일반화",
+      "표준화"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 이른 전문화로 그는 한 분야에는 능숙했지만 다른 분야에는 익숙하지 않았어요.",
+      "기출에서는 한 능력이나 영역에 집중해 발달시키는 전문화를 말해요."
+    ],
+    "takeaway": "specialization: 전문화. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "specialization",
+    "example": "Early specialization left him skilled in one field but unfamiliar with others."
+  },
+  {
+    "id": "bite-en-145",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "flexible",
+    "prompt": "이 예문에서 flexible의 뜻은 무엇인가요?",
+    "choices": [
+      "기준이 없는",
+      "상황에 맞게 바꿀 수 있는",
+      "예측하기 어려운"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 유연한 일정이면 조건이 달라질 때 순서를 바꿀 수 있어요.",
+      "기출에서는 일반적인 접근과 구체적인 접근 사이를 유연하게 오가는 상황에 쓰였어요."
+    ],
+    "takeaway": "flexible: 상황에 맞게 바꿀 수 있는. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "flexible",
+    "example": "A flexible schedule lets us change the order when conditions change."
+  },
+  {
+    "id": "bite-en-146",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "excessive",
+    "prompt": "이 예문에서 excessive의 뜻은 무엇인가요?",
+    "choices": [
+      "충분한",
+      "꾸준한",
+      "지나친"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 지나치게 많은 세부 사항 때문에 한 쪽짜리 공지를 읽기 어려웠어요.",
+      "기출에서는 특수성이나 일반성이 지나쳐 다른 영역의 지식을 활용하기 어려워지는 상황이에요."
+    ],
+    "takeaway": "excessive: 지나친. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "excessive",
+    "example": "Excessive detail made the one-page notice difficult to read."
+  },
+  {
+    "id": "bite-en-147",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "underestimate",
+    "prompt": "이 예문에서 underestimate의 뜻은 무엇인가요?",
+    "choices": [
+      "과소평가하다",
+      "잘못 분류하다",
+      "과대평가하다"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 우리는 수리 시간을 과소평가해서 이틀 늦게 끝냈어요.",
+      "기출에서는 자기 영역 밖의 정보가 지닌 가치를 실제보다 낮게 평가한다는 뜻이에요."
+    ],
+    "takeaway": "underestimate: 과소평가하다. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "underestimate",
+    "example": "We underestimated the repair time and finished two days late."
+  },
+  {
+    "id": "bite-en-148",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "optimal",
+    "prompt": "이 예문에서 optimal의 뜻은 무엇인가요?",
+    "choices": [
+      "가장 흔한",
+      "가장 알맞은",
+      "가장 저렴한"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 가장 알맞은 경로는 이동 시간과 안전을 균형 있게 고려해요.",
+      "기출에서는 여러 영역을 아우르는 창의성 발달에 가장 적합한 지원을 말해요."
+    ],
+    "takeaway": "optimal: 가장 알맞은. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "optimal",
+    "example": "The optimal route balances travel time with safety."
+  },
+  {
+    "id": "bite-en-149",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "ownership",
+    "prompt": "이 예문에서 ownership의 뜻은 무엇인가요?",
+    "choices": [
+      "관리 비용",
+      "사용 기록",
+      "소유권"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 자전거가 팔린 뒤 소유권은 미나에게 넘어갔어요.",
+      "기출에서는 여러 권리의 묶음으로 설명되는 소유권을 말해요."
+    ],
+    "takeaway": "ownership: 소유권. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-06",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "ownership",
+    "example": "Ownership of the bicycle passed to Mina after the sale."
+  },
+  {
+    "id": "bite-en-150",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "party",
+    "prompt": "이 예문에서 party의 뜻은 무엇인가요?",
+    "choices": [
+      "당사자",
+      "정당",
+      "파티"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 임차인과 소유주, 두 당사자가 계약서에 서명했어요.",
+      "기출에서는 토지에 서로 다른 권리를 가진 소유주·은행·임차인 등을 말해요. 모임이나 정당이 아니에요."
+    ],
+    "takeaway": "party: 당사자. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-06",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "party",
+    "example": "Both parties signed the agreement: the tenant and the owner."
+  },
+  {
+    "id": "bite-en-151",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "misconception",
+    "prompt": "이 예문에서 misconception의 뜻은 무엇인가요?",
+    "choices": [
+      "충분한 확신",
+      "잘못된 생각",
+      "미해결 질문"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 자신감이 있다는 것은 전혀 두렵지 않다는 뜻이라는 생각은 오해예요.",
+      "기출에서는 자신감이 생기면 두려움 없이 살게 된다는 오해를 말해요."
+    ],
+    "takeaway": "misconception: 잘못된 생각. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "misconception",
+    "example": "It is a misconception that confidence means never feeling afraid."
+  },
+  {
+    "id": "bite-en-152",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "willing",
+    "prompt": "이 예문에서 willing의 뜻은 무엇인가요?",
+    "choices": [
+      "이미 해낸",
+      "억지로 해야 하는",
+      "기꺼이 하려는"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 그녀는 긴장됐지만 낯선 일을 기꺼이 시도하려 했어요.",
+      "기출에서는 두려움을 느끼면서도 자신에게 중요한 일을 하려는 의향을 말해요."
+    ],
+    "takeaway": "willing: 기꺼이 하려는. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "willing",
+    "example": "She was willing to try the unfamiliar task despite her nervousness."
+  },
+  {
+    "id": "bite-en-153",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "inevitably",
+    "prompt": "이 예문에서 inevitably의 뜻은 무엇인가요?",
+    "choices": [
+      "불가피하게",
+      "뜻밖에도",
+      "의도적으로"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 물을 새로 넣지 않으면 그 작은 수조는 불가피하게 마를 거예요.",
+      "기출에서는 자신감을 키울 때 취약한 상태를 받아들이는 일이 반드시 따른다는 뜻이에요."
+    ],
+    "takeaway": "inevitably: 불가피하게. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "inevitably",
+    "example": "Without any new water, the small tank will inevitably run dry."
+  },
+  {
+    "id": "bite-en-154",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "courage",
+    "prompt": "이 예문에서 courage의 뜻은 무엇인가요?",
+    "choices": [
+      "익숙함",
+      "용기",
+      "무관심"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 다른 사람들이 모두 조용할 때 질문하려면 용기가 필요했어요.",
+      "기출에서는 두려움과 낯섦 속으로 들어가는 용기를 말해요."
+    ],
+    "takeaway": "courage: 용기. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "courage",
+    "example": "It took courage to ask a question when everyone else stayed silent."
+  },
+  {
+    "id": "bite-en-155",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "justification",
+    "prompt": "이 예문에서 justification의 뜻은 무엇인가요?",
+    "choices": [
+      "추가 보상",
+      "예상 결과",
+      "정당한 이유"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 예산을 늘리려면 개인적 선호 이상의 정당한 이유가 필요해요.",
+      "기출에서는 자기 재능을 보여 주는 것 외에는 불필요한 추가 작업을 정당화할 근거가 없다는 뜻이에요."
+    ],
+    "takeaway": "justification: 정당한 이유. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-09",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "justification",
+    "example": "A larger budget needs justification beyond personal preference."
+  },
+  {
+    "id": "bite-en-156",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "extensive",
+    "prompt": "이 예문에서 extensive의 뜻은 무엇인가요?",
+    "choices": [
+      "광범위한",
+      "독점적인",
+      "새로운"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 연구자들은 스무 도시에서 광범위하게 인터뷰를 진행했어요.",
+      "기출에서는 전문가가 업무에서 누리는 폭넓은 자율성을 말해요."
+    ],
+    "takeaway": "extensive: 광범위한. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-09",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "extensive",
+    "example": "The researchers conducted extensive interviews across twenty cities."
+  },
+  {
+    "id": "bite-en-157",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "temptation",
+    "prompt": "이 예문에서 temptation의 뜻은 무엇인가요?",
+    "choices": [
+      "의무",
+      "유혹",
+      "금지"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 그는 아무도 요청하지 않은 기능을 더 넣고 싶은 유혹을 참았어요.",
+      "기출에서는 필요 이상으로 높은 품질의 일을 하고 싶은 유혹을 말해요."
+    ],
+    "takeaway": "temptation: 유혹. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-09",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "temptation",
+    "example": "He resisted the temptation to add features nobody had requested."
+  },
+  {
+    "id": "bite-en-158",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "in good faith",
+    "prompt": "이 예문에서 in good faith의 뜻은 무엇인가요?",
+    "choices": [
+      "확실한 증거를 갖고",
+      "대가를 기대하며",
+      "선의로"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 그녀는 도움이 되기를 바라며 선의로 조언을 전했어요.",
+      "기출에서는 in all good faith라는 형태로 나와요. 고객에게 불필요한 추가 작업도 전문가는 선의로 할 수 있다는 뜻이에요."
+    ],
+    "takeaway": "in good faith: 선의로. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-09",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "in good faith",
+    "example": "She shared the advice in good faith, hoping it would help."
+  },
+  {
+    "id": "bite-en-159",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "anticipation",
+    "prompt": "이 예문에서 anticipation의 뜻은 무엇인가요?",
+    "choices": [
+      "기대",
+      "오해",
+      "무관심"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 학생들은 방문하는 과학자를 만나기를 기대하며 기다렸어요.",
+      "기출에서는 인간의 결정 역할이 줄어든 미래를 두려움이나 기대를 갖고 상상하는 상황이에요."
+    ],
+    "takeaway": "anticipation: 기대. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "anticipation",
+    "example": "The students waited in anticipation of meeting the visiting scientist."
+  },
+  {
+    "id": "bite-en-160",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "diminished",
+    "prompt": "이 예문에서 diminished의 뜻은 무엇인가요?",
+    "choices": [
+      "불확실한",
+      "줄어든",
+      "감춰진"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 변화 이후 관리자는 일상적인 결정에서 줄어든 역할을 맡았어요.",
+      "기출에서는 AI의 영향력이 커지면서 인간의 역할이 줄어들 것으로 상상하는 상황이에요."
+    ],
+    "takeaway": "diminished: 줄어든. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "diminished",
+    "example": "After the change, the manager had a diminished role in daily decisions."
+  },
+  {
+    "id": "bite-en-161",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "capacity",
+    "prompt": "이 예문에서 capacity의 뜻은 무엇인가요?",
+    "choices": [
+      "의무",
+      "의지",
+      "능력"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 그 도구는 작은 오류를 찾아내는 우리의 능력을 높였어요.",
+      "기출에서는 인간이 실패를 극복할 수 있는 능력 등을 말해요. 여기서는 저장 용량이라는 뜻이 아니에요."
+    ],
+    "takeaway": "capacity: 능력. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "capacity",
+    "example": "The tool increased our capacity to detect small errors."
+  },
+  {
+    "id": "bite-en-162",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "infallibility",
+    "prompt": "이 예문에서 infallibility의 뜻은 무엇인가요?",
+    "choices": [
+      "오류가 전혀 없음",
+      "스스로 수정함",
+      "빠르게 판단함"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 답 하나를 맞혔다고 그 시스템에 오류가 전혀 없다는 것이 증명되지는 않아요.",
+      "기출에서는 AI가 절대 틀리지 않는다는 성질을 말해요. 지문은 이를 뒷받침할 증거가 거의 없다고 해요."
+    ],
+    "takeaway": "infallibility: 오류가 전혀 없음. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "infallibility",
+    "example": "One correct answer does not prove the system's infallibility."
+  },
+  {
+    "id": "bite-en-163",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "in light of",
+    "prompt": "이 예문에서 in light of의 뜻은 무엇인가요?",
+    "choices": [
+      "~와 무관하게",
+      "~을 고려하여",
+      "~을 드러내려고"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 새 증거를 고려하여 우리는 이전 결론을 수정했어요.",
+      "기출에서는 인간이 자신의 오류 가능성을 인정한다는 점을 고려하는 맥락이에요."
+    ],
+    "takeaway": "in light of: ~을 고려하여. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "in light of",
+    "example": "In light of the new evidence, we revised our earlier conclusion."
+  },
+  {
+    "id": "bite-en-164",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "account for",
+    "prompt": "이 예문에서 account for의 뜻은 무엇인가요?",
+    "choices": [
+      "책임을 묻다",
+      "몫을 차지하다",
+      "설명하다"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 그 단순한 모형은 이 결과들 사이의 차이를 설명하지 못해요.",
+      "기출에서는 번아웃을 있음·없음으로만 나누면 다양한 경험을 설명하지 못한다는 뜻이에요. ‘몫을 차지하다’가 아니에요."
+    ],
+    "takeaway": "account for: 설명하다. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-06",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "account for",
+    "example": "The simple model cannot account for the differences between these results."
+  },
+  {
+    "id": "bite-en-165",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "partial",
+    "prompt": "이 예문에서 partial의 뜻은 무엇인가요?",
+    "choices": [
+      "부분적인",
+      "일시적인",
+      "편파적인"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 수리 후 일부만 개선됐고 몇몇 결함은 남았어요.",
+      "기출에서는 일은 할 수 있지만 번아웃을 일부 경험하는 상태예요. 여기서는 ‘편파적인’이 아니에요."
+    ],
+    "takeaway": "partial: 부분적인. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-06",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "partial",
+    "example": "The repair brought only partial improvement; some faults remained."
+  },
+  {
+    "id": "bite-en-166",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "severe",
+    "prompt": "이 예문에서 severe의 뜻은 무엇인가요?",
+    "choices": [
+      "흔한",
+      "심한",
+      "갑작스러운"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 손상이 심해서 그 다리를 건너기에는 안전하지 않았어요.",
+      "기출에서는 번아웃의 정도가 심하거나 덜 심하다고 구별할 때 쓰였어요."
+    ],
+    "takeaway": "severe: 심한. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-06",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "severe",
+    "example": "The severe damage made the bridge unsafe to cross."
+  },
+  {
+    "id": "bite-en-167",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "accumulation",
+    "prompt": "이 예문에서 accumulation의 뜻은 무엇인가요?",
+    "choices": [
+      "분배",
+      "감소",
+      "축적"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 작은 오류들이 쌓여 결국 최종 결과가 달라졌어요.",
+      "기출에서는 신뢰할 수 있는 지식이 점차 쌓인다는 뜻이에요."
+    ],
+    "takeaway": "accumulation: 축적. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "accumulation",
+    "example": "The accumulation of small errors eventually changed the final result."
+  },
+  {
+    "id": "bite-en-168",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "unregulated",
+    "prompt": "이 예문에서 unregulated의 뜻은 무엇인가요?",
+    "choices": [
+      "규제받지 않는",
+      "정리되지 않은",
+      "사용되지 않는"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 그 규제받지 않는 시장에는 판매자의 주장을 통제하는 규칙이 없었어요.",
+      "기출에서는 소셜 미디어의 정보 유통이 규제되지 않는 성격을 말해요."
+    ],
+    "takeaway": "unregulated: 규제받지 않는. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "unregulated",
+    "example": "The unregulated market had no rules controlling what sellers could claim."
+  },
+  {
+    "id": "bite-en-169",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "circulate",
+    "prompt": "이 예문에서 circulate의 뜻은 무엇인가요?",
+    "choices": [
+      "검증하다",
+      "유포하다",
+      "수정하다"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 그 이야기를 반 친구들 사이에 퍼뜨리기 전에 확인해 주세요.",
+      "기출에서는 이용자가 잘못된 정보를 다른 사람들에게 퍼뜨리는 행동을 말해요."
+    ],
+    "takeaway": "circulate: 유포하다. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "circulate",
+    "example": "Please check the story before you circulate it among classmates."
+  },
+  {
+    "id": "bite-en-170",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "safeguard",
+    "prompt": "이 예문에서 safeguard의 뜻은 무엇인가요?",
+    "choices": [
+      "자세히 조사하다",
+      "자유롭게 공개하다",
+      "지키고 보호하다"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 편집자들은 보도의 신뢰성을 지키려고 출처를 확인해요.",
+      "기출에서는 정보의 신뢰성이 훼손되지 않도록 보호한다는 뜻이에요."
+    ],
+    "takeaway": "safeguard: 지키고 보호하다. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "safeguard",
+    "example": "Editors check sources to safeguard the reliability of their reports."
+  },
+  {
+    "id": "bite-en-171",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "rational",
+    "prompt": "이 예문에서 rational의 뜻은 무엇인가요?",
+    "choices": [
+      "이성적이고 합리적인",
+      "감정이 없는",
+      "모두가 동의하는"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 합리적인 결정은 소문을 따르기보다 증거를 따져요.",
+      "기출에서는 정확한 정보에 근거해 이성적으로 판단하는 공적 공동체를 말해요."
+    ],
+    "takeaway": "rational: 이성적이고 합리적인. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "rational",
+    "example": "A rational decision weighs evidence rather than following a rumor."
+  },
+  {
+    "id": "bite-en-172",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "significant",
+    "prompt": "이 예문에서 significant의 뜻은 무엇인가요?",
+    "choices": [
+      "유일한",
+      "상당한",
+      "정확히 정해진"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 연구자들은 현지 가족들과 상당한 시간을 보냈어요.",
+      "기출에서는 관찰·대화에 상당한 시간을 써야 한다는 주장에 쓰였어요. 뒤에서는 실제로 충분한 시간을 쓰지 않았다고 설명해요."
+    ],
+    "takeaway": "significant: 상당한. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-09",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "significant",
+    "example": "The researchers spent a significant amount of time with local families."
+  },
+  {
+    "id": "bite-en-173",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "conduct",
+    "prompt": "이 예문에서 conduct의 뜻은 무엇인가요?",
+    "choices": [
+      "허락하다",
+      "발표하다",
+      "수행하다"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 그 팀은 보고서를 쓰기 전에 인터뷰를 진행할 거예요.",
+      "기출에서는 인류학자의 관찰이 주로 숙소의 베란다에서 수행됐다고 설명해요."
+    ],
+    "takeaway": "conduct: 수행하다. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-09",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "conduct",
+    "example": "The team will conduct interviews before writing the report."
+  },
+  {
+    "id": "bite-en-174",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "venture",
+    "prompt": "이 예문에서 venture의 뜻은 무엇인가요?",
+    "choices": [
+      "위험이나 낯섦을 무릅쓰고 나아가다",
+      "되돌아가다",
+      "우연히 도착하다"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 그들은 안내인 없이 낯선 계곡으로 들어가 보기로 했어요.",
+      "기출에서는 때로 안내인 없이 현지 공동체 안으로 들어가 보는 행동을 말해요."
+    ],
+    "takeaway": "venture: 위험이나 낯섦을 무릅쓰고 나아가다. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-09",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "venture",
+    "example": "They decided to venture into the unfamiliar valley without a guide."
+  },
+  {
+    "id": "bite-en-175",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "uncertain",
+    "prompt": "이 예문에서 uncertain의 뜻은 무엇인가요?",
+    "choices": [
+      "불가능한",
+      "불확실한",
+      "불필요한"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 마지막 검사가 끝나지 않아 결과는 여전히 불확실했어요.",
+      "기출에서는 앞으로 무엇이 일어날지 확실하지 않은 상황을 말해요."
+    ],
+    "takeaway": "uncertain: 불확실한. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "uncertain",
+    "example": "The outcome remained uncertain because the final test was unfinished."
+  },
+  {
+    "id": "bite-en-176",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "unlikely",
+    "prompt": "이 예문에서 unlikely의 뜻은 무엇인가요?",
+    "choices": [
+      "일어날 수 없는",
+      "일어나면 위험한",
+      "일어날 가능성이 낮은"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 일주일 내내 하늘이 맑아서 내일 비가 올 가능성은 낮아 보여요.",
+      "기출에서는 발표 중 컴퓨터 고장처럼 발생 가능성이 낮은 사건을 말해요. 불가능하다는 뜻은 아니에요."
+    ],
+    "takeaway": "unlikely: 일어날 가능성이 낮은. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "unlikely",
+    "example": "With clear skies all week, rain tomorrow seems unlikely."
+  },
+  {
+    "id": "bite-en-177",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "to some extent",
+    "prompt": "이 예문에서 to some extent의 뜻은 무엇인가요?",
+    "choices": [
+      "어느 정도는",
+      "예외 없이",
+      "대체로 반대로"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 그 점검표는 어느 정도 도움이 되지만 모든 실수를 막을 수는 없어요.",
+      "기출에서는 가능한 상황을 미리 생각하는 일이 어느 정도 도움이 된다는 뜻이에요. 전부 인정한다는 말은 아니에요."
+    ],
+    "takeaway": "to some extent: 어느 정도는. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "to some extent",
+    "example": "To some extent, the checklist helps, but it cannot prevent every mistake."
+  },
+  {
+    "id": "bite-en-178",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "conscious",
+    "prompt": "이 예문에서 conscious의 뜻은 무엇인가요?",
+    "choices": [
+      "익숙해서 자동으로 하는",
+      "의식적으로 하는",
+      "남이 시켜서 하는"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 그녀는 답하기 전에 잠깐 멈추려고 의식적으로 노력했어요.",
+      "기출에서는 끝없는 걱정을 멈추기 위해 의도적으로 기울이는 노력을 말해요."
+    ],
+    "takeaway": "conscious: 의식적으로 하는. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-06",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "conscious",
+    "example": "She made a conscious effort to pause before answering."
+  },
+  {
+    "id": "bite-en-179",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "random",
+    "prompt": "이 예문에서 random의 뜻은 무엇인가요?",
+    "choices": [
+      "매번 같은",
+      "반드시 해로운",
+      "일정한 규칙 없이 우연한"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 우연한 날씨 변화가 야외 실험에 영향을 미쳤어요.",
+      "기출에서는 자기 가치의 근거로 삼은 외적 요인이 우연적일 수 있다는 뜻이에요."
+    ],
+    "takeaway": "random: 일정한 규칙 없이 우연한. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-06",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "random",
+    "example": "A random change in the weather affected the outdoor test."
+  },
+  {
+    "id": "bite-en-180",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "misleading",
+    "prompt": "이 예문에서 misleading의 뜻은 무엇인가요?",
+    "choices": [
+      "잘못 판단하게 하는",
+      "정보가 적은",
+      "이해하기 어려운"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 오해를 일으키는 표시는 적은 양의 음식을 한 끼 식사처럼 보이게 했어요.",
+      "기출에서는 타인의 컨디션 같은 외적 요인 때문에 자기 실력을 잘못 판단할 수 있다는 뜻이에요."
+    ],
+    "takeaway": "misleading: 잘못 판단하게 하는. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-06",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "misleading",
+    "example": "The misleading label made a small portion look like a full meal."
+  },
+  {
+    "id": "bite-en-181",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "favorable",
+    "prompt": "이 예문에서 favorable의 뜻은 무엇인가요?",
+    "choices": [
+      "평범한",
+      "유리한",
+      "예상한"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 유리한 바람 덕분에 배가 예상보다 일찍 도착했어요.",
+      "기출에서는 낮은 습도처럼 등반 성과에 도움을 주는 유리한 조건을 말해요."
+    ],
+    "takeaway": "favorable: 유리한. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-06",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "favorable",
+    "example": "Favorable winds helped the boat finish sooner than expected."
+  },
+  {
+    "id": "bite-en-182",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "take credit for",
+    "prompt": "이 예문에서 take credit for의 뜻은 무엇인가요?",
+    "choices": [
+      "~의 책임을 떠넘기다",
+      "~에 비용을 지불하다",
+      "~을 자기 공으로 돌리다"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 그는 팀원이 한 일을 자기 공으로 돌리려 하지 않았어요.",
+      "기출에서는 외부 조건으로 얻은 성과를 자신의 능력에 따른 공으로 여기는 상황이에요."
+    ],
+    "takeaway": "take credit for: ~을 자기 공으로 돌리다. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-06",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "take credit for",
+    "example": "He would not take credit for work that his teammate had done."
+  },
+  {
+    "id": "bite-en-183",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "abusive",
+    "prompt": "이 예문에서 abusive의 뜻은 무엇인가요?",
+    "choices": [
+      "모욕하고 해를 주는",
+      "단호하게 요구하는",
+      "비판을 받아들이는"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 모욕적인 말은 문제 해결에 도움이 되기보다 다른 사람에게 상처를 줘요.",
+      "기출에서는 직장에서 없애려는 폭언이나 욕설을 말해요. 단호하게 말하는 것과 구별해요."
+    ],
+    "takeaway": "abusive: 모욕하고 해를 주는. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "abusive",
+    "example": "Abusive comments hurt others instead of helping solve the problem."
+  },
+  {
+    "id": "bite-en-184",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "unaware",
+    "prompt": "이 예문에서 unaware의 뜻은 무엇인가요?",
+    "choices": [
+      "동의하지 않는",
+      "알지 못하는",
+      "관심이 없는"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 아무도 알려 주지 않아서 나는 변경 사항을 몰랐어요.",
+      "기출에서는 자신의 행동이 바람직하지 않다는 사실을 몰랐다는 뜻이에요."
+    ],
+    "takeaway": "unaware: 알지 못하는. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "unaware",
+    "example": "I was unaware of the change because nobody had told me."
+  },
+  {
+    "id": "bite-en-185",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "undesirable",
+    "prompt": "이 예문에서 undesirable의 뜻은 무엇인가요?",
+    "choices": [
+      "예상하지 못한",
+      "피할 수 없는",
+      "바람직하지 않은"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 그 지름길에는 정확성을 떨어뜨리는 바람직하지 않은 영향이 있었어요.",
+      "기출에서는 직원이 피해야 하지만 스스로 문제인지 몰랐던 바람직하지 않은 행동을 말해요."
+    ],
+    "takeaway": "undesirable: 바람직하지 않은. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "undesirable",
+    "example": "The shortcut had an undesirable effect: it reduced accuracy."
+  },
+  {
+    "id": "bite-en-186",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "unintentional",
+    "prompt": "이 예문에서 unintentional의 뜻은 무엇인가요?",
+    "choices": [
+      "의도하지 않은",
+      "알려지지 않은",
+      "인정되지 않은"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 빠뜨린 것은 고의가 아니었어요. 그녀는 페이지가 빠진 것을 알아차리지 못했어요.",
+      "기출에서는 직원의 잘못 가운데 일부가 고의는 아니라는 뜻이에요. 알려지지 않았다는 뜻이 아니에요."
+    ],
+    "takeaway": "unintentional: 의도하지 않은. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "unintentional",
+    "example": "The omission was unintentional; she had not noticed the missing page."
+  },
+  {
+    "id": "bite-en-187",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "distinguish",
+    "prompt": "이 예문에서 distinguish의 뜻은 무엇인가요?",
+    "choices": [
+      "연결하다",
+      "구별하다",
+      "설명하다"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 표시는 원본 파일과 수정된 파일을 구별하는 데 도움이 돼요.",
+      "기출에서는 고의로 규정을 어기는 사람과 규정을 몰랐던 사람을 가려낸다는 뜻이에요."
+    ],
+    "takeaway": "distinguish: 구별하다. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-09",
+        "number": 20
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "distinguish",
+    "example": "The labels help us distinguish original files from revised ones."
+  },
+  {
+    "id": "bite-en-188",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "fundamental",
+    "prompt": "이 예문에서 fundamental의 뜻은 무엇인가요?",
+    "choices": [
+      "복잡한",
+      "고유한",
+      "근본적인"
+    ],
+    "answer": 2,
+    "explanation": [
+      "예문 뜻: 신뢰는 이런 협력에 근본적으로 필요한 조건이에요.",
+      "기출에서는 옥타브를 설명하며 음악의 기본적 특성을 말할 때 쓰였어요."
+    ],
+    "takeaway": "fundamental: 근본적인. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-09",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "fundamental",
+    "example": "Trust is a fundamental requirement for this kind of cooperation."
+  },
+  {
+    "id": "bite-en-189",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "correspond to",
+    "prompt": "이 예문에서 correspond to의 뜻은 무엇인가요?",
+    "choices": [
+      "~에 상응하다",
+      "~에 반대하다",
+      "~을 대신하다"
+    ],
+    "answer": 0,
+    "explanation": [
+      "예문 뜻: 도표의 각 기호는 재료 한 종류에 대응해요.",
+      "기출에서는 음이 비슷하게 들리는 현상과 주파수가 두 배·절반이 되는 관계가 서로 대응한다는 뜻이에요."
+    ],
+    "takeaway": "correspond to: ~에 상응하다. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-09",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "correspond to",
+    "example": "Each symbol on the chart corresponds to one type of material."
+  },
+  {
+    "id": "bite-en-190",
+    "subject": "english",
+    "kind": "vocab",
+    "topic": "어휘",
+    "title": "in spite of",
+    "prompt": "이 예문에서 in spite of의 뜻은 무엇인가요?",
+    "choices": [
+      "~ 때문에",
+      "~에도 불구하고",
+      "~을 제외하고"
+    ],
+    "answer": 1,
+    "explanation": [
+      "예문 뜻: 소음에도 불구하고 그녀는 그 장을 끝까지 읽었어요.",
+      "기출에서는 음악 문화가 크게 달라도 옥타브는 공통 기반이라는 양보 관계에 쓰였어요."
+    ],
+    "takeaway": "in spite of: ~에도 불구하고. 단어의 익숙한 뜻보다 이 문장의 뜻을 골라요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-09",
+        "number": 21
+      }
+    ],
+    "seconds": 25,
+    "tags": [
+      "어휘"
+    ],
+    "term": "in spite of",
+    "example": "In spite of the noise, she finished reading the chapter."
+  },
+  {
+    "id": "bite-en-191",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "듣기",
+    "title": "새 정보로 대답을 바꿔요",
+    "prompt": "A: I'd love to join your choir, but you already have a pianist. B: Actually, our pianist has left, and we'd like you to join. A의 응답으로 알맞은 것은 무엇인가요?",
+    "choices": [
+      "Then I'll keep looking for another choir.",
+      "You can join my choir as a singer.",
+      "I'd be happy to play for your choir."
+    ],
+    "answer": 2,
+    "explanation": [
+      "B가 기존 피아니스트의 빈자리를 알리고 A에게 합류를 제안했어요.",
+      "처음의 '자리가 없다'는 생각은 뒤의 정보로 바뀌었어요. 합류를 반기는 응답이 맞아요."
+    ],
+    "takeaway": "대화 뒤에서 바뀐 사실을 반영해 답해요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 12
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "듣기"
+    ]
+  },
+  {
+    "id": "bite-en-192",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "함축",
+    "title": "깨끗한 목록의 대가",
+    "prompt": "Jin replied to every minor request but never began his own research. He called his empty task list a success. 글쓴이가 이 '성공'을 비판한다면 가장 적절한 이유는 무엇인가요?",
+    "choices": [
+      "남의 요구 처리가 자신의 중요한 목표를 밀어냈어요.",
+      "모든 요청을 처리했으니 연구도 완성됐어요.",
+      "요청을 보낸 사람들이 연구를 방해하려고 했어요."
+    ],
+    "answer": 0,
+    "explanation": [
+      "작은 요청을 전부 처리한 것과 자신의 연구를 진행한 것은 달라요.",
+      "타인의 악의는 주어지지 않았어요. 비판의 대상은 목표와 우선순위가 어긋난 점이에요."
+    ],
+    "takeaway": "표면적인 성과가 무엇을 대신했는지 봐요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 21
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "함축"
+    ]
+  },
+  {
+    "id": "bite-en-193",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "지칭",
+    "title": "this cost가 받는 내용",
+    "prompt": "The device saves energy by switching its sensors off. However, it cannot detect sudden changes while they are off. This cost must be weighed against the energy savings. this cost는 무엇인가요?",
+    "choices": [
+      "에너지 소비가 줄어드는 점",
+      "센서가 꺼진 동안 갑작스러운 변화를 감지하지 못하는 점",
+      "장치의 판매 가격이 비싸다는 점"
+    ],
+    "answer": 1,
+    "explanation": [
+      "cost는 여기서 돈이 아니라 에너지를 아끼며 감수하는 불리한 점이에요.",
+      "센서를 끈 동안 감지하지 못한다는 앞 문장 전체를 받아요. 판매 가격은 나오지 않았어요."
+    ],
+    "takeaway": "지시어가 받는 말의 긍정·부정 성격까지 맞춰요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 39
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "지칭"
+    ]
+  },
+  {
+    "id": "bite-en-194",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "요약",
+    "title": "한 행동의 두 의미",
+    "prompt": "A school garden supplies vegetables for lunch. It also gives students a place to study plant growth. 두 문장을 모두 담은 요약은 무엇인가요?",
+    "choices": [
+      "그 정원은 학생들의 식비를 완전히 없애 줘요.",
+      "그 정원은 식물 연구만을 위해 만든 곳이에요.",
+      "그 정원은 식재료를 제공하면서 학습 장소로도 쓰여요."
+    ],
+    "answer": 2,
+    "explanation": [
+      "식재료 공급과 학습 장소라는 두 기능을 함께 남겨야 해요.",
+      "식비가 전혀 들지 않는다는 말은 없고, 연구만 한다는 요약은 첫 문장을 지워요."
+    ],
+    "takeaway": "요약할 때 나란히 제시된 기능을 하나도 빼지 않아요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-06",
+        "number": 40
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "요약"
+    ]
+  },
+  {
+    "id": "bite-en-195",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "듣기",
+    "title": "이미 해결된 걱정",
+    "prompt": "A: I'm worried I left the classroom window open. B: I checked it before leaving and closed it. A의 자연스러운 응답은 무엇인가요?",
+    "choices": [
+      "Thanks. That's a relief.",
+      "Please close it when you leave tomorrow.",
+      "That's why I want to open it now."
+    ],
+    "answer": 0,
+    "explanation": [
+      "B는 앞으로 확인하겠다고 한 것이 아니라 이미 확인하고 닫았다고 했어요.",
+      "걱정이 해결됐으므로 고맙고 안심된다는 반응이 자연스러워요."
+    ],
+    "takeaway": "약속한 행동과 이미 끝낸 행동을 구별해요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 12
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "듣기"
+    ]
+  },
+  {
+    "id": "bite-en-196",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "주장 범위",
+    "title": "소개한 방법이 곧 주장일까요?",
+    "prompt": "Some parents expect one educational app to teach all social skills. Children also need adults to listen, talk, and act with them every day. 글에 가장 가까운 주장은 무엇인가요?",
+    "choices": [
+      "모든 교육용 앱을 사용하지 못하게 해야 해요.",
+      "앱 하나에 맡기기보다 일상에서 어른이 함께 상호작용해야 해요.",
+      "앱을 더 오래 사용하면 사회성이 완성돼요."
+    ],
+    "answer": 1,
+    "explanation": [
+      "첫 문장의 기대를 그대로 지지하는 글이 아니에요. 뒤에서 실제 관계와 상호작용의 필요를 덧붙여요.",
+      "앱의 전면 금지나 사용 시간 확대는 주장하지 않았어요."
+    ],
+    "takeaway": "문제 상황을 소개한 문장과 필자의 대안을 나눠요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 20
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "주장 범위"
+    ]
+  },
+  {
+    "id": "bite-en-197",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "조건",
+    "title": "익숙해져도 되는 범위",
+    "prompt": "An animal first hides from an unfamiliar sound. After the sound repeats without harm, it resumes feeding. 이 관찰이 뒷받침하는 설명은 무엇인가요?",
+    "choices": [
+      "반복되는 자극은 위험해도 모두 무시해야 해요.",
+      "처음 보는 모든 자극은 곧바로 유익해요.",
+      "해롭지 않은 반복 자극에는 경계 반응이 줄 수 있어요."
+    ],
+    "answer": 2,
+    "explanation": [
+      "반응이 줄어든 조건은 자극이 반복됐고 해가 없었다는 점이에요.",
+      "위험한 자극까지 포함하거나 처음부터 유익하다고 바꾸면 조건을 벗어나요."
+    ],
+    "takeaway": "결론에 붙은 안전성 조건을 남겨요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 34
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "조건"
+    ]
+  },
+  {
+    "id": "bite-en-198",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "연결",
+    "title": "개인에서 집단으로",
+    "prompt": "Buyers call their food choices completely personal. Yet many choose according to the same shared health beliefs. 둘째 문장은 첫 문장을 어떻게 조정하나요?",
+    "choices": [
+      "개인적 선택에도 집단이 공유하는 기준이 영향을 준다고 봐요.",
+      "모든 소비자가 반드시 같은 식품을 산다고 확정해요.",
+      "건강에 관한 믿음은 식품 선택과 무관하다고 해요."
+    ],
+    "answer": 0,
+    "explanation": [
+      "Yet 뒤에는 완전히 개인적이라는 설명을 제한하는 공유 기준이 나와요.",
+      "같은 믿음을 공유하는 사람이 많다는 말이 모든 사람의 구매 결과가 같다는 뜻은 아니에요."
+    ],
+    "takeaway": "개인적이라는 주장에 사회적 연결이 더해지는지 봐요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2022-09",
+        "number": 39
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "연결"
+    ]
+  },
+  {
+    "id": "bite-en-199",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "듣기",
+    "title": "장소와 신청 경로",
+    "prompt": "The workshop takes place at the library. Registration is online only; no applications are accepted at the door. 안내에 맞는 행동은 무엇인가요?",
+    "choices": [
+      "행사 장소인 도서관 입구에서 신청해요.",
+      "참가 전에 온라인으로 신청해요.",
+      "온라인 신청 대신 행사 후 이름을 남겨요."
+    ],
+    "answer": 1,
+    "explanation": [
+      "행사가 열리는 장소와 신청을 받는 경로는 달라요.",
+      "online only와 현장 신청 불가 조건을 함께 따르면 온라인 신청이 맞아요."
+    ],
+    "takeaway": "장소가 언급됐다고 그곳에서 신청할 수 있다고 보태지 않아요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-06",
+        "number": 9
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "듣기"
+    ]
+  },
+  {
+    "id": "bite-en-200",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "부정",
+    "title": "부정하지 않은 것",
+    "prompt": "Our values shape how we interpret the world. This does not mean that nothing exists outside our minds. 글이 부정하는 것은 무엇인가요?",
+    "choices": [
+      "가치관이 해석에 영향을 준다는 설명",
+      "사람마다 해석이 달라질 가능성",
+      "'마음 밖에는 아무것도 존재하지 않는다'는 결론"
+    ],
+    "answer": 2,
+    "explanation": [
+      "This does not mean 뒤의 내용은 필자가 자신의 주장으로 받아들이지 않는 결론이에요.",
+      "관점이 영향을 준다는 말에서 외부 세계 자체가 없다는 말로 넘어가지 않도록 막고 있어요."
+    ],
+    "takeaway": "부정문 속에 들어 있는 생각을 필자의 주장으로 읽지 않아요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-06",
+        "number": 21
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "부정"
+    ]
+  },
+  {
+    "id": "bite-en-201",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "순서",
+    "title": "반례가 가리킬 예측",
+    "prompt": "A: Our model predicts that the blue light turns on first. B: If the red light appears first, that prediction will be challenged. B가 A 다음에 와야 하는 가장 직접적인 이유는 무엇인가요?",
+    "choices": [
+      "that prediction이 A에서 제시한 순서 예측을 받아요.",
+      "B가 A의 예측을 사실로 확정해요.",
+      "두 문장에 light가 있어 어느 순서든 같아요."
+    ],
+    "answer": 0,
+    "explanation": [
+      "B의 that prediction에는 먼저 제시된 구체적인 예측이 필요해요.",
+      "B는 반대 결과가 나오면 예측이 흔들린다는 조건문이므로 사실로 확정하는 문장이 아니에요."
+    ],
+    "takeaway": "반례를 말하기 전에 무엇의 반례인지 찾아요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-06",
+        "number": 36
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "순서"
+    ]
+  },
+  {
+    "id": "bite-en-202",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "반전",
+    "title": "doesn't always의 범위",
+    "prompt": "Past investment can keep people on a bad path. Yet this tendency does not always harm them: an advance commitment may help them keep a useful habit. 필자의 최종 입장은 무엇인가요?",
+    "choices": [
+      "과거에 투자했다면 어떤 일이든 계속해야 해요.",
+      "같은 경향도 상황에 따라 해롭거나 도움이 될 수 있어요.",
+      "이 경향은 예외 없이 해로워요."
+    ],
+    "answer": 1,
+    "explanation": [
+      "does not always는 항상 해롭다는 일반화를 깨요. 뒤의 유용한 습관은 예외를 구체화해요.",
+      "나쁜 경로를 계속하는 문제점까지 사라진 것은 아니에요."
+    ],
+    "takeaway": "후반의 예외를 읽고 첫 평가의 범위를 수정해요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-06",
+        "number": 37
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "반전"
+    ]
+  },
+  {
+    "id": "bite-en-203",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "듣기",
+    "title": "일정 변경 뒤의 다음 말",
+    "prompt": "A: Could we move tomorrow's meeting? My train was canceled, but I can join any day after Thursday. B는 어떻게 답하는 것이 가장 적절한가요?",
+    "choices": [
+      "Congratulations on finishing the meeting.",
+      "I'll cancel your train ticket for you.",
+      "I'll find a new meeting date and let you know."
+    ],
+    "answer": 2,
+    "explanation": [
+      "A의 요청은 열차 예매 처리가 아니라 회의 날짜를 다시 잡는 것이에요.",
+      "after Thursday는 새 날짜를 고를 조건이에요. 회의가 끝났다는 말은 없어요."
+    ],
+    "takeaway": "사정 설명에 끌리지 말고 실제 요청에 답해요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-09",
+        "number": 12
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "듣기"
+    ]
+  },
+  {
+    "id": "bite-en-204",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "추론",
+    "title": "보이는 것 너머",
+    "prompt": "Visitors can recognize a community's clothing and food. Understanding why members act as they do also requires examining their beliefs. 이 글에서 더 알아보라고 하는 것은 무엇인가요?",
+    "choices": [
+      "겉으로 보이는 행동의 바탕이 되는 믿음",
+      "음식과 옷의 종류를 가능한 많이 외우는 법",
+      "그 공동체 사람들의 행동을 바꿀 명령"
+    ],
+    "answer": 0,
+    "explanation": [
+      "둘째 문장은 외형을 더 수집하라는 것이 아니라 행동의 이유를 알아보라고 해요.",
+      "그 문화를 이해하는 일과 구성원을 바꾸려는 일은 달라요."
+    ],
+    "takeaway": "행동 자체와 행동을 낳는 기준을 구별해요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-09",
+        "number": 20
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "추론"
+    ]
+  },
+  {
+    "id": "bite-en-205",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "정의",
+    "title": "같은 곳에 있으면 한 팀일까요?",
+    "prompt": "여기서 '팀'은 공동 목표를 위해 서로 영향을 주며 활동하는 사람들이에요. 같은 체육관에서 서로 대화하지 않고 각자 운동하는 사람들을 이 정의만으로 팀이라고 할 수 있나요?",
+    "choices": [
+      "네. 같은 장소에 있다는 조건만으로 충분해요.",
+      "아니요. 공동 목표를 위한 상호작용이 제시되지 않았어요.",
+      "네. 모두 운동하므로 서로 영향을 주는 것이 확실해요."
+    ],
+    "answer": 1,
+    "explanation": [
+      "공간을 공유한다는 사실만으로 정의에 필요한 상호작용이 생기지는 않아요.",
+      "문제에서 정한 정의의 조건을 실제 사례에 하나씩 적용해요."
+    ],
+    "takeaway": "일상적 명칭보다 글이 정한 정의를 우선해요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-09",
+        "number": 38
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "정의"
+    ]
+  },
+  {
+    "id": "bite-en-206",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "논리 관계",
+    "title": "장점이 늘어도 불편할 수 있어요",
+    "prompt": "An extra security check protects an account from strangers. It also makes the owner wait longer to sign in. 두 문장을 가장 정확히 연결한 설명은 무엇인가요?",
+    "choices": [
+      "보안이 강화되면 이용 시간은 반드시 줄어요.",
+      "이용이 불편하므로 보호 효과도 없어요.",
+      "보호 효과를 높이는 절차가 이용의 부담도 늘려요."
+    ],
+    "answer": 2,
+    "explanation": [
+      "같은 절차가 보안에는 장점, 이용 편의에는 부담을 줄 수 있어요.",
+      "한쪽의 효과를 다른 쪽에도 그대로 옮기면 안 돼요."
+    ],
+    "takeaway": "두 평가 기준을 따로 놓고 장단점을 읽어요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2023-09",
+        "number": 39
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "논리 관계"
+    ]
+  },
+  {
+    "id": "bite-en-207",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "듣기",
+    "title": "누구에게서 무엇을 얻나요?",
+    "prompt": "A: I don't know which colleges offer that course. B: Your teacher may know; ask her for details. A의 응답으로 가장 적절한 것은 무엇인가요?",
+    "choices": [
+      "Good idea. I'll get the information from her.",
+      "I'm sure she'll appreciate my advice.",
+      "I'll ask her to teach the course at my college."
+    ],
+    "answer": 0,
+    "explanation": [
+      "교사는 정보의 제공자이고 A는 정보를 구하는 사람이에요.",
+      "조언을 주는 역할을 A에게 바꾸거나 강좌 개설을 부탁하면 대화에 없는 요청이 돼요."
+    ],
+    "takeaway": "응답에서도 정보가 누구에게서 누구에게 가는지 유지해요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-06",
+        "number": 13
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "듣기"
+    ]
+  },
+  {
+    "id": "bite-en-208",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "함축",
+    "title": "권리 하나와 권리 전체",
+    "prompt": "A person may hold the right to enter a property without holding the right to sell it. Here, ownership is described as several separate rights. 이 설명에 맞는 것은 무엇인가요?",
+    "choices": [
+      "출입할 수 있으면 반드시 팔 수도 있어요.",
+      "한 권리를 가졌다고 모든 권리를 가진 것은 아니에요.",
+      "팔 수 없다면 어떤 권리도 가질 수 없어요."
+    ],
+    "answer": 1,
+    "explanation": [
+      "출입과 판매가 별개의 권리라고 명시돼 있어요.",
+      "부분을 가졌다는 사실을 전체 소유로 키우거나, 한 권리가 없다는 사실을 모든 권리의 부재로 바꾸면 틀려요."
+    ],
+    "takeaway": "부분과 전체를 오가는 선지를 조심해요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-06",
+        "number": 21
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "함축"
+    ]
+  },
+  {
+    "id": "bite-en-209",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "안내문",
+    "title": "included가 묶는 항목",
+    "prompt": "The course fee includes all materials. Lunch must be purchased separately. 안내와 일치하는 것은 무엇인가요?",
+    "choices": [
+      "점심값까지 모두 수강료에 들어 있어요.",
+      "재료와 점심을 모두 따로 결제해야 해요.",
+      "재료비는 수강료에 들어 있고 점심값은 별도예요."
+    ],
+    "answer": 2,
+    "explanation": [
+      "includes는 재료가 수강료에 포함된다는 뜻이에요. separately는 점심에만 붙어요.",
+      "두 항목의 포함 여부를 구분하면 별도의 금액 계산 없이도 판단할 수 있어요."
+    ],
+    "takeaway": "포함과 별도 결제의 적용 대상을 각각 붙여요.",
+    "noteIds": [
+      "en-exam"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-06",
+        "number": 28
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "안내문"
+    ]
+  },
+  {
+    "id": "bite-en-210",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "삽입",
+    "title": "앞의 결과와 뒤의 이유",
+    "prompt": "① The plant grew quickly after receiving extra light. ② Its short life was caused by damage to its roots. 사이에 넣어 두 문장을 이어 주는 문장은 무엇인가요?",
+    "choices": [
+      "It grew taller, but it did not live longer.",
+      "The lamp used more electricity than before.",
+      "Many people enjoy growing plants indoors."
+    ],
+    "answer": 0,
+    "explanation": [
+      "앞의 빠른 성장을 taller로 받고, 뒤에서 설명할 짧은 수명을 did not live longer로 먼저 제시해요.",
+      "전기 사용량이나 취미는 뒤 문장의 its short life를 이어 주지 못해요."
+    ],
+    "takeaway": "삽입문이 앞의 결과와 뒤의 설명을 모두 이어 주는지 봐요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-06",
+        "number": 39
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "삽입"
+    ]
+  },
+  {
+    "id": "bite-en-211",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "듣기",
+    "title": "제안의 대상에 답해요",
+    "prompt": "A: It may get cold while we watch the stars. B: Should I bring a warm jacket? A의 가장 자연스러운 대답은 무엇인가요?",
+    "choices": [
+      "Yes, we saw a bright star yesterday.",
+      "Yes, bringing one would be sensible.",
+      "No, the jacket belongs to my brother."
+    ],
+    "answer": 1,
+    "explanation": [
+      "B는 별을 본 경험이나 옷의 소유자를 묻지 않고 준비물의 필요성을 물었어요.",
+      "추워질 수 있다는 앞의 이유에 맞춰 재킷을 가져오라는 응답이 이어져요."
+    ],
+    "takeaway": "마지막 질문이 물은 판단에 직접 답해요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-09",
+        "number": 12
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "듣기"
+    ]
+  },
+  {
+    "id": "bite-en-212",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "부정",
+    "title": "두려움과 자신감은 양자택일일까요?",
+    "prompt": "Confidence does not require the absence of fear. It can grow when you act while feeling afraid. 글에 맞는 설명은 무엇인가요?",
+    "choices": [
+      "두려움이 완전히 없어질 때까지 행동하면 안 돼요.",
+      "두려움을 느끼는 사람은 자신감을 가질 수 없어요.",
+      "두려움을 느끼면서 행동해도 자신감을 키울 수 있어요."
+    ],
+    "answer": 2,
+    "explanation": [
+      "첫 문장은 두려움이 없어야 한다는 필수 조건을 부정해요.",
+      "둘째 문장은 두려움과 행동이 함께 존재할 수 있다는 경우를 보여 줘요."
+    ],
+    "takeaway": "A의 존재가 B의 부재를 뜻하는지 확인해요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-09",
+        "number": 20
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "부정"
+    ]
+  },
+  {
+    "id": "bite-en-213",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "도표",
+    "title": "every year의 반례 하나",
+    "prompt": "A의 참가율은 세 해에 각각 42%, 38%, 41%예요. 'A stayed above 40% in every year.'는 자료와 맞나요?",
+    "choices": [
+      "아니요. 가운데 해의 38%가 조건을 벗어나요.",
+      "네. 첫해와 마지막 해가 40%보다 높아요.",
+      "참가자 수가 없어서 비율 조건을 판단할 수 없어요."
+    ],
+    "answer": 0,
+    "explanation": [
+      "every year는 세 해 모두를 요구해요. 한 해라도 40% 이하이면 문장 전체가 성립하지 않아요.",
+      "참가자 수는 필요하지 않고 주어진 비율만 비교하면 돼요."
+    ],
+    "takeaway": "모든 해라는 선지는 반례가 하나라도 있는지 확인해요.",
+    "noteIds": [
+      "en-exam"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-09",
+        "number": 25
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "도표"
+    ]
+  },
+  {
+    "id": "bite-en-214",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "지칭",
+    "title": "this fine control이 가리키는 것",
+    "prompt": "① The editor can change sounds in units shorter than a blink. ② This fine control lets her remove tiny unwanted noises. This fine control이 직접 받는 것은 무엇인가요?",
+    "choices": [
+      "편집자가 음악을 오래 들어 온 경험",
+      "매우 짧은 단위로 소리를 수정할 수 있는 능력",
+      "소리가 사람에게 주는 즐거움"
+    ],
+    "answer": 1,
+    "explanation": [
+      "fine은 여기서 세밀하다는 뜻이고 control은 앞의 작은 단위 조절 능력을 받아요.",
+      "편집자의 경험이나 감정은 앞 문장에서 제시되지 않았어요."
+    ],
+    "takeaway": "지시 표현의 성질과 앞 내용의 구체적 능력을 맞춰요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2024-09",
+        "number": 38
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "지칭"
+    ]
+  },
+  {
+    "id": "bite-en-215",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "듣기",
+    "title": "취소된 것은 어느 일정인가요?",
+    "prompt": "A: I'll change our dinner booking because you have a meeting then. B: The meeting has been canceled, so I'm free. 다음 행동으로 맞는 것은 무엇인가요?",
+    "choices": [
+      "저녁 식사 예약도 이미 취소됐어요.",
+      "다른 회의를 그 시간에 새로 잡아야 해요.",
+      "회의 때문에 저녁 예약을 바꿀 필요가 없어졌어요."
+    ],
+    "answer": 2,
+    "explanation": [
+      "취소된 것은 회의예요. 따라서 저녁 예약을 바꾸려던 이유가 사라졌어요.",
+      "저녁 예약 자체가 취소됐다는 말은 없어요."
+    ],
+    "takeaway": "취소된 대상과 그 취소로 달라진 행동을 나눠요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-06",
+        "number": 11
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "듣기"
+    ]
+  },
+  {
+    "id": "bite-en-216",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "범주",
+    "title": "일을 해냈다면 피로가 없을까요?",
+    "prompt": "Fatigue can range from mild to severe. A person may still finish a task while experiencing a mild form. 글에 맞는 판단은 무엇인가요?",
+    "choices": [
+      "과제를 끝냈다는 사실만으로 피로가 없다고 할 수는 없어요.",
+      "과제를 끝낸 사람에게는 피로가 전혀 없어요.",
+      "피로가 있다면 누구나 어떤 일도 할 수 없어요."
+    ],
+    "answer": 0,
+    "explanation": [
+      "정도의 차이가 있으므로 피로가 있어도 일을 해낼 수 있어요.",
+      "있음·없음 두 칸으로만 분류하면 mild라는 중간 정도를 놓쳐요."
+    ],
+    "takeaway": "정도로 설명하는 현상을 흑백으로 나누지 않아요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-06",
+        "number": 21
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "범주"
+    ]
+  },
+  {
+    "id": "bite-en-217",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "대조",
+    "title": "남겨야 하는 것은 무엇인가요?",
+    "prompt": "A digital file can be copied exactly to a new drive. The original drive may break while the information remains unchanged. 이때 보존의 핵심 대상은 무엇인가요?",
+    "choices": [
+      "처음 사용한 장치 자체만이에요.",
+      "특정 장치가 아니라 그 안의 정보예요.",
+      "복사할 때마다 새로 달라진 내용이에요."
+    ],
+    "answer": 1,
+    "explanation": [
+      "같은 정보가 다른 장치에도 그대로 남을 수 있다는 조건이에요.",
+      "장치의 손상과 정보의 소실을 동일하게 보면 보존 대상을 잘못 잡아요."
+    ],
+    "takeaway": "내용과 그것을 담은 매체를 구별해요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-06",
+        "number": 31
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "대조"
+    ]
+  },
+  {
+    "id": "bite-en-218",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "연결",
+    "title": "역접 뒤에서 달라지는 점",
+    "prompt": "Measuring every emission is expensive. Nevertheless, new sensors are making measurement cheaper. 둘째 문장의 역할은 무엇인가요?",
+    "choices": [
+      "측정 비용이 비싼 이유를 더 설명해요.",
+      "측정은 원래 비용이 전혀 들지 않았다고 해요.",
+      "앞의 비용 부담을 줄일 수 있는 변화를 제시해요."
+    ],
+    "answer": 2,
+    "explanation": [
+      "앞에는 비용이라는 장애가 있고, 뒤에는 그 장애를 낮추는 기술 변화가 있어요.",
+      "새 기술의 개선이 이전 비용 부담의 존재 자체를 부정하는 것은 아니에요."
+    ],
+    "takeaway": "역접 뒤의 개선이 앞의 어떤 한계를 다루는지 찾아요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-06",
+        "number": 38
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "연결"
+    ]
+  },
+  {
+    "id": "bite-en-219",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "듣기",
+    "title": "희망과 동의는 달라요",
+    "prompt": "Mina wants to keep a rescued cat, but she shares a flat with Jisu. She needs Jisu's agreement before deciding. Mina가 친구에게 할 말로 맞는 것은 무엇인가요?",
+    "choices": [
+      "I need to check with my flatmate first.",
+      "My flatmate has already agreed.",
+      "I'll keep it because no one else needs to decide."
+    ],
+    "answer": 0,
+    "explanation": [
+      "키우고 싶다는 희망만 확정됐고 지수의 동의는 아직 확인해야 해요.",
+      "needs agreement를 already agreed로 바꾸면 미완료 조건을 완료된 사실로 바꾸게 돼요."
+    ],
+    "takeaway": "하기를 원하는 것과 해도 된다는 조건을 구별해요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-09",
+        "number": 15
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "듣기"
+    ]
+  },
+  {
+    "id": "bite-en-220",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "주체",
+    "title": "확인할 책임은 누구에게 있나요?",
+    "prompt": "Users do not only read online posts; they also create and share them. Therefore, they should check facts before passing information on. 책임의 주체로 제시된 사람은 누구인가요?",
+    "choices": [
+      "플랫폼을 운영하는 회사들만",
+      "정보를 만들거나 공유하는 이용자들",
+      "정보를 처음 쓴 전문 기자들만"
+    ],
+    "answer": 1,
+    "explanation": [
+      "therefore 앞의 행동 주체가 이용자예요. 그들이 전달에도 참여하므로 사실 확인 책임이 이어져요.",
+      "회사나 기자에게만 책임이 있다고 범위를 좁히지 않아요."
+    ],
+    "takeaway": "결론의 they를 앞 문장의 행동 주체와 연결해요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-09",
+        "number": 20
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "주체"
+    ]
+  },
+  {
+    "id": "bite-en-221",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "조건",
+    "title": "가정이 필자의 결론일까요?",
+    "prompt": "If learning were only storing separate facts, prior knowledge would make no difference. In fact, new information changes existing patterns of knowledge. 필자의 실제 설명은 무엇인가요?",
+    "choices": [
+      "이전 지식은 학습에 아무 영향도 없어요.",
+      "사실들은 서로 완전히 독립적으로만 저장돼요.",
+      "학습은 기존 지식과 새 정보를 연결하며 패턴을 바꾸는 일이에요."
+    ],
+    "answer": 2,
+    "explanation": [
+      "첫 문장은 if로 제시한 가정이고, 둘째 문장은 실제 설명으로 그 가정과 달라져요.",
+      "가정문의 결과를 필자의 확정된 결론으로 옮기면 방향이 뒤집혀요."
+    ],
+    "takeaway": "가정으로 소개된 설명과 실제 채택한 설명을 구별해요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-09",
+        "number": 36
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "조건"
+    ]
+  },
+  {
+    "id": "bite-en-222",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "추론",
+    "title": "필요한 능력과 확보된 능력",
+    "prompt": "Good management requires accurate forecasts. However, the system is difficult to predict at the needed level of detail. 이 글에서 알 수 있는 것은 무엇인가요?",
+    "choices": [
+      "정확한 예측이 필요해도 실제로 그 수준을 확보하기 어려워요.",
+      "정확한 예측이 필요하므로 이미 가능해요.",
+      "예측이 어려우므로 관리자는 미래를 생각할 필요가 없어요."
+    ],
+    "answer": 0,
+    "explanation": [
+      "requires는 필요 조건을 말할 뿐 그 능력을 이미 갖췄다는 뜻이 아니에요.",
+      "뒤 문장은 필요한 수준과 현실적으로 가능한 수준 사이의 어려움을 제시해요."
+    ],
+    "takeaway": "필요하다는 말과 가능하다는 말을 바꾸지 않아요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2025-09",
+        "number": 39
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "추론"
+    ]
+  },
+  {
+    "id": "bite-en-223",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "듣기",
+    "title": "모르는 취향을 다루는 제안",
+    "prompt": "A: I know he likes reading, but not which books he wants. B: Then let's give him a bookshop voucher so he can choose. B의 제안이 해결하는 문제는 무엇인가요?",
+    "choices": [
+      "받는 사람은 책을 싫어한다는 문제예요.",
+      "받는 사람이 직접 골라 구체적 취향을 몰라도 돼요.",
+      "두 사람이 이미 같은 책을 샀다는 문제예요."
+    ],
+    "answer": 1,
+    "explanation": [
+      "독서를 좋아한다는 넓은 취향은 알지만 원하는 책은 모른다는 상황이에요.",
+      "상품권은 그 구체적 선택을 받는 사람에게 맡겨요. 싫어함이나 중복 구매는 주어지지 않았어요."
+    ],
+    "takeaway": "제안이 바로 앞의 어떤 정보 부족을 메우는지 봐요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-06",
+        "number": 13
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "듣기"
+    ]
+  },
+  {
+    "id": "bite-en-224",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "주장 범위",
+    "title": "some을 none으로 바꾸지 않아요",
+    "prompt": "Thinking about possible problems can help us prepare. Endless worry about events we cannot control only adds distress. 알맞은 요지는 무엇인가요?",
+    "choices": [
+      "미래 문제는 전혀 생각하지 말아야 해요.",
+      "걱정이 많을수록 대비도 반드시 좋아져요.",
+      "도움 되는 대비와 지나친 걱정을 구별해야 해요."
+    ],
+    "answer": 2,
+    "explanation": [
+      "첫 문장은 대비의 일부 효용을 인정하고 둘째는 통제를 벗어난 끝없는 걱정을 제한해요.",
+      "둘째의 비판을 모든 생각의 금지로 확대하면 첫 문장과 충돌해요."
+    ],
+    "takeaway": "일부를 비판했다고 범주 전체를 부정하지 않아요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-06",
+        "number": 20
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "주장 범위"
+    ]
+  },
+  {
+    "id": "bite-en-225",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "비교",
+    "title": "기간이 바꾸는 효과",
+    "prompt": "Narrow focus helps with one urgent task for a short time. If it continues too long, important signals elsewhere may be missed. 효과를 바꾸는 조건은 무엇인가요?",
+    "choices": [
+      "한곳에 집중한 상태가 얼마나 오래 이어지는가",
+      "사용한 기기의 가격이 얼마나 비싼가",
+      "과제의 답이 이미 알려져 있는가"
+    ],
+    "answer": 0,
+    "explanation": [
+      "짧은 시간에는 도움이 되지만 너무 오래 지속되면 다른 신호를 놓친다고 했어요.",
+      "집중 자체를 항상 좋거나 항상 나쁘다고 보면 기간 조건을 지워요."
+    ],
+    "takeaway": "같은 행동도 지속 기간에 따라 평가가 달라질 수 있어요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-06",
+        "number": 33
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "비교"
+    ]
+  },
+  {
+    "id": "bite-en-226",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "범위",
+    "title": "경제적 손실만 말한 게 아니에요",
+    "prompt": "Losing a job can reduce a person's income. It may also remove a source of purpose and achievement. 두 문장을 읽고 피해야 할 요약은 무엇인가요?",
+    "choices": [
+      "실직은 소득과 삶의 의미 모두에 영향을 줄 수 있어요.",
+      "실직의 영향은 오직 경제적인 손실뿐이에요.",
+      "직업은 경제적 보상 외에도 성취감을 줄 수 있어요."
+    ],
+    "answer": 1,
+    "explanation": [
+      "둘째 문장이 목적과 성취감을 더했으므로 오직 경제적이라는 제한은 틀려요.",
+      "이 카드는 맞는 요약이 아니라 피해야 할 요약을 묻고 있어요."
+    ],
+    "takeaway": "또한으로 늘어난 범위를 요약에도 남기고 발문의 방향을 확인해요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-06",
+        "number": 40
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "범위"
+    ]
+  },
+  {
+    "id": "bite-en-227",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "듣기",
+    "title": "질문 속 시간을 답해요",
+    "prompt": "A: I know the appointment is tomorrow, but I forgot when I must stop eating beforehand. Could you remind me? 가장 직접적인 응답은 무엇인가요?",
+    "choices": [
+      "Your test results will arrive next week.",
+      "You made the appointment last month.",
+      "Don't eat anything after nine tonight."
+    ],
+    "answer": 2,
+    "explanation": [
+      "묻는 것은 예약일도 결과 발표일도 아닌 금식 시작 시각이에요.",
+      "응답의 시간 표현이 어떤 행동에 붙는지 맞춰야 해요."
+    ],
+    "takeaway": "시간이 있는 선지라고 고르지 말고 질문이 물은 행동에 붙여요.",
+    "noteIds": [
+      "en-listening"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-09",
+        "number": 11
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "듣기"
+    ]
+  },
+  {
+    "id": "bite-en-228",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "원인",
+    "title": "위반이 곧 고의일까요?",
+    "prompt": "Some workers break rules because they do not know them. Clear explanations should come before assuming every violation is deliberate. 글에 맞는 판단은 무엇인가요?",
+    "choices": [
+      "규칙 위반만 보고 모두 고의라고 단정할 수 없어요.",
+      "규칙을 어긴 사람은 누구나 의도적으로 행동했어요.",
+      "규칙을 설명하면 모든 위반이 반드시 사라져요."
+    ],
+    "answer": 0,
+    "explanation": [
+      "원인으로 무지가 제시됐으므로 위반이라는 결과만으로 고의를 확정할 수 없어요.",
+      "교육이 필요하다는 말이 교육 후 모든 위반이 사라진다는 보장은 아니에요."
+    ],
+    "takeaway": "같은 결과에 다른 원인이 있을 수 있는지 확인해요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-09",
+        "number": 20
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "원인"
+    ]
+  },
+  {
+    "id": "bite-en-229",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "연결",
+    "title": "In this way 앞에는 무엇이 필요할까요?",
+    "prompt": "① Students receive comments, revise their draft, and write again. ② In this way, they improve both meaning and form. 둘째 문장이 첫 문장 뒤에 오는 이유는 무엇인가요?",
+    "choices": [
+      "둘째 문장이 먼저 해야 할 준비물을 나열해요.",
+      "In this way가 앞의 반복적인 피드백·수정 과정을 받아 효과를 말해요.",
+      "첫 문장이 둘째 문장의 효과가 틀렸다고 반박해요."
+    ],
+    "answer": 1,
+    "explanation": [
+      "this way에는 구체적인 방법이 필요해요. 첫 문장의 피드백과 수정이 그 방법이에요.",
+      "둘째 문장은 방법 자체를 반복하는 대신 그 방법으로 좋아지는 점을 설명해요."
+    ],
+    "takeaway": "방법을 받는 표현과 그 방법의 효과를 연결해요.",
+    "noteIds": [
+      "en-connections"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-09",
+        "number": 36
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "연결"
+    ]
+  },
+  {
+    "id": "bite-en-230",
+    "subject": "english",
+    "kind": "choice",
+    "topic": "추론",
+    "title": "남은 것과 중요했던 것",
+    "prompt": "Stone buildings survive longer than wooden ones. That does not prove they mattered more to the people who built them. 이 글이 경계하는 추론은 무엇인가요?",
+    "choices": [
+      "재료에 따라 남아 있는 기간이 다를 수 있다고 보기",
+      "남아 있는 건축물을 증거의 일부로 조사하기",
+      "오래 남아 있다는 이유만으로 역사적으로 더 중요했다고 보기"
+    ],
+    "answer": 2,
+    "explanation": [
+      "보존 기간은 재료의 내구성과 관련될 수 있어요. 그것만으로 당시의 중요성을 비교할 수는 없어요.",
+      "남은 자료를 쓰지 말라는 말이 아니라 그 자료의 생존을 중요성과 같게 보지 말라는 말이에요."
+    ],
+    "takeaway": "관찰할 수 있게 남은 정도와 원래의 중요도를 구별해요.",
+    "noteIds": [
+      "en-main-idea"
+    ],
+    "refs": [
+      {
+        "paperId": "english-2026-09",
+        "number": 39
+      }
+    ],
+    "seconds": 40,
+    "tags": [
+      "추론"
+    ]
   }
 ]

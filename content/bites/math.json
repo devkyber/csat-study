@@ -1615,5 +1615,2500 @@
       "조건",
       "비율"
     ]
+  },
+  {
+    "id": "bite-math-058",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "값의 범위",
+    "title": "모든 값에 성립해야 한다면",
+    "prompt": "모든 실수 $x$에 대해 $x^2+2x+a\\ge0$이어야 해요. $a$의 조건은 무엇인가요?",
+    "explanation": [
+      "$x^2+2x+a=(x+1)^2+a-1$이고 가장 작은 값은 $a-1$이에요.",
+      "가장 작은 값도 $0$ 이상이어야 모든 $x$에서 성립해요."
+    ],
+    "takeaway": "‘모든’이라는 조건은 가장 불리한 경우까지 확인하라는 뜻이에요.",
+    "noteIds": [
+      "math-conditions"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "값의 범위"
+    ],
+    "choices": [
+      "$a\\ge0$",
+      "$a\\le1$",
+      "$a\\ge1$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-059",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "값의 범위",
+    "title": "정수 조건으로 후보 줄이기",
+    "prompt": "$x$는 정수이고 $\\sqrt5<x<\\sqrt{20}$이에요. 가능한 $x$를 모두 고르세요.",
+    "explanation": [
+      "$2<\\sqrt5<3$, $4<\\sqrt{20}<5$예요.",
+      "두 경계 사이의 정수는 $3,4$만 남아요."
+    ],
+    "takeaway": "정수 조건이 있으면 정확한 소수값보다 이웃 정수와의 대소를 먼저 봐요.",
+    "noteIds": [
+      "math-conditions"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "값의 범위"
+    ],
+    "choices": [
+      "$3$",
+      "$3,4$",
+      "$2,3,4$"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-060",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "경계",
+    "title": "절댓값 두 개를 거리로 읽기",
+    "prompt": "$|x-1|+|x-5|$가 최솟값을 갖게 하는 실수 $x$의 범위는 무엇인가요?",
+    "explanation": [
+      "식은 수직선 위에서 $x$와 $1$, $x$와 $5$ 사이 거리의 합이에요.",
+      "$1$과 $5$ 사이에서는 두 거리를 더하면 항상 $4$이고, 바깥에서는 $4$보다 커져요."
+    ],
+    "takeaway": "거리의 합이 최소가 되는 점이 하나뿐인지, 구간 전체인지 확인해요.",
+    "noteIds": [
+      "math-cases"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "경계"
+    ],
+    "choices": [
+      "$1\\le x\\le5$",
+      "$x=3$뿐",
+      "$x\\le1$ 또는 $x\\ge5$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-061",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "경계",
+    "title": "부호를 나눌 경계가 둘일 때",
+    "prompt": "$(x-1)(x+2)<0$의 해는 무엇인가요?",
+    "explanation": [
+      "곱이 음수이려면 두 인수의 부호가 달라야 해요.",
+      "$-2<x<1$에서 $x+2>0$, $x-1<0$이에요. 두 끝점은 곱이 $0$이라 제외해요."
+    ],
+    "takeaway": "인수마다 0이 되는 점을 표시한 뒤 구간별 부호와 등호를 따로 봐요.",
+    "noteIds": [
+      "math-cases"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "경계"
+    ],
+    "choices": [
+      "$x<-2$ 또는 $x>1$",
+      "$-2\\le x\\le1$",
+      "$-2<x<1$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-062",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "식 정리",
+    "title": "큰 두 수의 차를 비교할 때",
+    "prompt": "$x>0$이에요. $\\sqrt{x^2+1}-x$와 $1$의 대소를 가장 짧게 판단하면?",
+    "explanation": [
+      "켤레식을 곱하면 차는 $1/(\\sqrt{x^2+1}+x)$예요.",
+      "분모가 $1$보다 크므로 값은 $0$과 $1$ 사이예요."
+    ],
+    "takeaway": "무리식의 차는 유리화해 분모와 1의 대소로 바꿀 수 있어요.",
+    "noteIds": [
+      "math-algebra"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "식 정리"
+    ],
+    "choices": [
+      "$\\sqrt{x^2+1}-x>1$",
+      "$0<\\sqrt{x^2+1}-x<1$",
+      "$\\sqrt{x^2+1}-x=1$"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-063",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "부호",
+    "title": "음수를 곱했을 때 부등호",
+    "prompt": "$-2<x<3$에서 $-3x+1$의 범위는 무엇인가요?",
+    "explanation": [
+      "$-3$을 곱하면 부등호가 뒤집혀 $-9<-3x<6$이에요.",
+      "각 항에 $1$을 더하면 $-8<-3x+1<7$이에요."
+    ],
+    "takeaway": "음수를 곱할 때는 순서를 뒤집고, 상수를 더할 때는 양 끝도 함께 옮겨요.",
+    "noteIds": [
+      "math-algebra"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "부호"
+    ],
+    "choices": [
+      "$-8<-3x+1<7$",
+      "$7<-3x+1<-8$",
+      "$-5<-3x+1<10$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-064",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "최댓값",
+    "title": "등호 조건이 범위 밖이라면",
+    "prompt": "$0<x<1$에서 $x+1/x\\ge2$예요. 이 식의 최솟값이 $2$라고 할 수 있나요?",
+    "explanation": [
+      "등호는 $x=1/x$, 양수 조건에서 $x=1$일 때만 성립해요.",
+      "주어진 범위에서는 항상 $2$보다 크고, $1$에 가까워질수록 $2$에 가까워져요."
+    ],
+    "takeaway": "부등식의 하한을 찾은 뒤 등호가 실제 허용되는지 확인해요.",
+    "noteIds": [
+      "math-algebra"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "최댓값"
+    ],
+    "choices": [
+      "네. 산술·기하 평균으로 2 이상이면 2가 최솟값이에요.",
+      "네. x가 0에 가까워지면 2가 돼요.",
+      "아니요. 등호가 되는 x=1은 범위 밖이에요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-065",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "식 정리",
+    "title": "전개하지 않고 일차항 읽기",
+    "prompt": "다항식 $f(x)=a x^3+b x^2+c x+d$에서 $f(0)=4$, $f\\prime(0)=-2$예요. 바로 정해지는 것은?",
+    "explanation": [
+      "$x=0$을 넣으면 상수항 $d$만 남아요.",
+      "$f\\prime(x)=3ax^2+2bx+c$이므로 $f\\prime(0)$은 일차항 계수 $c$예요."
+    ],
+    "takeaway": "0에서의 함수값과 미분계수는 각각 상수항과 일차항 계수를 바로 알려 줘요.",
+    "noteIds": [
+      "math-algebra"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "식 정리"
+    ],
+    "choices": [
+      "$c=4$, $d=-2$",
+      "$d=4$, $c=-2$",
+      "$a=4$, $b=-2$"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-066",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "식 정리",
+    "title": "분수 안에 숨은 직선",
+    "prompt": "$x\\ne1$일 때 $\\dfrac{x^2+1}{x-1}$을 몫과 나머지로 나누면 무엇인가요?",
+    "explanation": [
+      "$x^2+1=(x-1)(x+1)+2$로 써요.",
+      "다항식 부분과 남은 분수 부분을 나누면 점근선이나 극한을 읽기 쉬워져요."
+    ],
+    "takeaway": "분자 차수가 크면 바로 미분하기 전에 몫과 나머지로 나눠 봐요.",
+    "noteIds": [
+      "math-algebra"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "식 정리"
+    ],
+    "choices": [
+      "$x+1+\\dfrac2{x-1}$",
+      "$x+1$",
+      "$x-1+\\dfrac2{x-1}$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-067",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "조건 대상",
+    "title": "같은 조건을 두 번 센다면",
+    "prompt": "$a+b=3$, $2a+2b=6$이 주어졌어요. 두 미지수 $a,b$를 각각 하나로 정할 수 있나요?",
+    "explanation": [
+      "$(a,b)=(0,3)$과 $(1,2)$가 모두 두 식을 만족해요.",
+      "조건의 개수보다 서로 독립적인 정보를 주는지가 중요해요."
+    ],
+    "takeaway": "식을 몇 개 얻었는지보다 각 식이 새 관계를 주는지 확인해요.",
+    "noteIds": [
+      "math-representations"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "조건 대상"
+    ],
+    "choices": [
+      "네. 미지수가 둘이고 식도 둘이므로 항상 정해져요.",
+      "네. a=b=1.5만 가능해요.",
+      "아니요. 두 번째 식은 첫 번째 식의 2배라 새 조건이 아니에요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-068",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "좌표 관계",
+    "title": "평행이동 뒤에도 남는 양",
+    "prompt": "두 그래프를 모두 위로 $3$만큼 평행이동해요. 반드시 그대로인 것은 무엇인가요?",
+    "explanation": [
+      "새 함수가 $f+3$, $g+3$이면 차는 $(f+3)-(g+3)=f-g$예요.",
+      "x축은 함께 이동하지 않았으므로 x절편은 달라질 수 있어요."
+    ],
+    "takeaway": "같이 옮긴 대상 사이의 관계와 고정된 좌표축과의 관계를 구별해요.",
+    "noteIds": [
+      "math-representations"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "좌표 관계"
+    ],
+    "choices": [
+      "각 그래프의 모든 함숫값",
+      "같은 x에서 두 그래프 사이의 세로 차",
+      "각 그래프와 x축의 교점"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-069",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "로그 정의역",
+    "title": "음수의 정수 부분",
+    "prompt": "$\\log N=-1.3=n+\\alpha$이고 $n$은 정수, $0\\le\\alpha<1$이에요. $(n,\\alpha)$는 무엇인가요?",
+    "explanation": [
+      "소수 부분 $\\alpha$는 음수가 될 수 없어요.",
+      "$-1.3=-2+0.7$로 써야 두 조건을 모두 만족해요."
+    ],
+    "takeaway": "음수에서 정수 부분은 소수점을 버린 값이 아니라 내림값이에요.",
+    "noteIds": [
+      "math-exponential"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "로그 정의역"
+    ],
+    "choices": [
+      "$(-2,0.7)$",
+      "$(-1,-0.3)$",
+      "$(-1,0.3)$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-070",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "부호",
+    "title": "밑이 1보다 작으면",
+    "prompt": "$\\log_{1/2}x>2$를 만족하는 $x$의 범위는 무엇인가요?",
+    "explanation": [
+      "밑이 $0$과 $1$ 사이인 로그함수는 감소해요.",
+      "따라서 $x<(1/2)^2$이고, 진수 조건 $x>0$도 함께 남겨요."
+    ],
+    "takeaway": "감소하는 로그에서는 대소 방향을 뒤집고 진수 조건을 합쳐요.",
+    "noteIds": [
+      "math-exponential"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "부호"
+    ],
+    "choices": [
+      "$x>1/4$",
+      "$x<1/4$",
+      "$0<x<1/4$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-071",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "밑 변환",
+    "title": "로그 안의 합을 나눌 수 있나요?",
+    "prompt": "$a,b>0$이에요. 항상 성립하는 식은 무엇인가요?",
+    "explanation": [
+      "로그값의 합은 진수의 곱으로 합쳐요.",
+      "$a=b=1$을 넣으면 $\\log_2(a+b)=1$이지만 두 로그의 합은 $0$이에요."
+    ],
+    "takeaway": "진수 안의 덧셈에는 로그의 곱셈 법칙을 쓰지 않아요.",
+    "noteIds": [
+      "math-exponential"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "밑 변환"
+    ],
+    "choices": [
+      "$\\log_2(a+b)=\\log_2(ab)$",
+      "$\\log_2 a+\\log_2 b=\\log_2(ab)$",
+      "$\\log_2(a+b)=\\log_2a+\\log_2b$"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-072",
+    "subject": "math",
+    "kind": "recall",
+    "topic": "밑 변환",
+    "title": "같은 로그값을 문자 하나로",
+    "prompt": "$a,b>0$, $\\log_2a=\\log_4b=k$예요. $a$와 $b$의 관계를 말해 보세요.",
+    "explanation": [
+      "$a=2^k$, $b=4^k=(2^k)^2$로 바꿔요."
+    ],
+    "takeaway": "여러 로그가 같은 값이면 공통값을 지수로 바꿔 관계를 찾을 수 있어요.",
+    "noteIds": [
+      "math-exponential"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "밑 변환"
+    ],
+    "answerText": "$b=a^2$예요."
+  },
+  {
+    "id": "bite-math-073",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "값의 범위",
+    "title": "홀수 제곱근과 짝수 제곱근",
+    "prompt": "실수 $x$에 대해 $x^3=-8$과 $x^4=-8$의 실근 개수는 차례로 몇 개인가요?",
+    "explanation": [
+      "$x^3=-8$은 $x=-2$ 한 개예요.",
+      "실수의 네제곱은 $0$ 이상이므로 $x^4=-8$은 불가능해요."
+    ],
+    "takeaway": "음수의 거듭제곱근을 볼 때는 지수의 홀짝과 실수 범위를 먼저 확인해요.",
+    "noteIds": [
+      "math-exponential"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "값의 범위"
+    ],
+    "choices": [
+      "0개, 0개",
+      "1개, 2개",
+      "1개, 0개"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-074",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "좌표 관계",
+    "title": "안쪽의 -2는 좌표를 어떻게 바꿀까요?",
+    "prompt": "$f(3)=5$예요. 그래프 $y=f(-2x)$ 위에서 이 점에 대응하는 점은 무엇인가요?",
+    "explanation": [
+      "같은 함수값을 얻으려면 안쪽 입력이 $-2x=3$이어야 해요.",
+      "$x=-3/2$이고 높이 $5$는 그대로예요."
+    ],
+    "takeaway": "안쪽 배수는 입력을 맞추는 방정식으로 처리해요. 좌표에 그대로 곱하지 않아요.",
+    "noteIds": [
+      "math-exp-graphs"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "좌표 관계"
+    ],
+    "choices": [
+      "$(3,-10)$",
+      "$(-3/2,5)$",
+      "$(-6,5)$"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-075",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "역함수대칭",
+    "title": "이동한 지수함수의 역함수",
+    "prompt": "$y=2^{x-1}+3$의 역함수 식은 무엇인가요?",
+    "explanation": [
+      "$y-3=2^{x-1}$에서 $x=1+\\log_2(y-3)$이에요.",
+      "마지막에 $x,y$를 교환해요. 원래 치역 $y>3$이 새 정의역이에요."
+    ],
+    "takeaway": "평행이동량을 외워 바꾸기보다 x를 y의 식으로 푼 뒤 좌표를 교환해요.",
+    "noteIds": [
+      "math-exp-graphs"
+    ],
+    "refs": [],
+    "seconds": 50,
+    "tags": [
+      "역함수대칭"
+    ],
+    "choices": [
+      "$y=1+\\log_2(x-3)\\quad(x>3)$",
+      "$y=\\log_2(x-1)+3\\quad(x>1)$",
+      "$y=\\log_2x-2\\quad(x>0)$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-076",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "부호",
+    "title": "지수가 음수일 때 밑 비교",
+    "prompt": "$a>b>0$이에요. $a^{-2}$와 $b^{-2}$의 대소는 무엇인가요?",
+    "explanation": [
+      "양수이므로 $a^2>b^2>0$이에요.",
+      "역수를 취하면 대소가 뒤집혀 $1/a^2<1/b^2$예요."
+    ],
+    "takeaway": "음의 지수는 역수로 바꾼 뒤 대소를 확인해요.",
+    "noteIds": [
+      "math-exponential"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "부호"
+    ],
+    "choices": [
+      "$a^{-2}>b^{-2}$",
+      "주어진 조건만으로 비교할 수 없어요.",
+      "$a^{-2}<b^{-2}$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-077",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "좌표 관계",
+    "title": "로그 그래프의 정수점",
+    "prompt": "$y=\\log_2x$에서 $1\\le x\\le10$이고 $x,y$가 모두 정수인 점은 몇 개인가요?",
+    "explanation": [
+      "$x=2^y$로 바꾸면 가능한 $y$는 $0,1,2,3$이에요.",
+      "각각 $x=1,2,4,8$에 대응하고, $y=4$이면 $x=16$으로 범위를 벗어나요."
+    ],
+    "takeaway": "격자점은 x를 전부 넣기보다 정수 y를 고정하는 쪽이 쉬울 수 있어요.",
+    "noteIds": [
+      "math-exp-graphs"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "좌표 관계"
+    ],
+    "choices": [
+      "3개",
+      "4개",
+      "10개"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-078",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "주기",
+    "title": "앞의 진폭과 안쪽 주기",
+    "prompt": "$y=-3\\sin(2x-\\pi)$의 가장 작은 양의 주기는 무엇인가요?",
+    "explanation": [
+      "안쪽 각이 $2\\pi$ 증가하려면 $x$가 $\\pi$ 증가해야 해요.",
+      "바깥의 $-3$은 세로 반전과 진폭을 바꾸며 주기는 바꾸지 않아요."
+    ],
+    "takeaway": "주기는 안쪽 각이 한 바퀴 변하는 데 필요한 x의 변화량으로 읽어요.",
+    "noteIds": [
+      "math-trig-graphs"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "주기"
+    ],
+    "choices": [
+      "$\\pi$",
+      "$2\\pi$",
+      "$\\pi/3$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-079",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "치환 범위",
+    "title": "삼각함수의 최댓값도 구간 안에서",
+    "prompt": "$0\\le x\\le\\pi/6$에서 $2\\sin x+1$의 최댓값은 무엇인가요?",
+    "explanation": [
+      "이 구간에서 $\\sin x$는 $0$부터 $1/2$까지 증가해요.",
+      "따라서 $x=\\pi/6$에서 $2(1/2)+1=2$예요."
+    ],
+    "takeaway": "사인의 전체 범위 [-1,1]을 쓰기 전에 주어진 각의 범위를 옮겨요.",
+    "noteIds": [
+      "math-trig-graphs"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "치환 범위"
+    ],
+    "choices": [
+      "$3$",
+      "$1$",
+      "$2$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-080",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "삼각함수 부호",
+    "title": "합에서 곱을 바로 얻기",
+    "prompt": "$0<\\theta<\\pi/2$이고 $\\sin\\theta+\\cos\\theta=\\sqrt{3/2}$예요. $\\sin\\theta\\cos\\theta$는 무엇인가요?",
+    "explanation": [
+      "양변을 제곱하면 $1+2\\sin\\theta\\cos\\theta=3/2$예요.",
+      "각각의 사인·코사인 값을 구하지 않고 곱을 바로 얻어요."
+    ],
+    "takeaway": "구할 것이 곱이면 각을 먼저 구하기보다 합의 제곱에 곱이 나타나는지 봐요.",
+    "noteIds": [
+      "math-trig-graphs"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "삼각함수 부호"
+    ],
+    "choices": [
+      "$1/2$",
+      "$1/4$",
+      "$3/4$"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-081",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "삼각함수 부호",
+    "title": "제곱근의 부호를 고르는 정보",
+    "prompt": "$\\pi<\\theta<3\\pi/2$이고 $\\sin\\theta=-3/5$예요. $\\cos\\theta$는 무엇인가요?",
+    "explanation": [
+      "$\\cos^2\\theta=1-9/25=16/25$라 절댓값은 $4/5$예요.",
+      "제3사분면에서는 가로좌표도 음수이므로 $-4/5$를 골라요."
+    ],
+    "takeaway": "제곱 관계는 크기를 알려 주고, 사분면은 부호를 정해 줘요.",
+    "noteIds": [
+      "math-trig-graphs"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "삼각함수 부호"
+    ],
+    "choices": [
+      "$-4/5$",
+      "$4/5$",
+      "$-2/5$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-082",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "대칭기준",
+    "title": "두 근을 각각 계산하지 않고",
+    "prompt": "$0<x<\\pi$에서 $\\sin x=1/3$의 두 근을 $\\alpha,\\beta$라 해요. 두 근의 합은 무엇인가요?",
+    "explanation": [
+      "$\\sin(\\pi-x)=\\sin x$이므로 두 근은 $x=\\pi/2$를 중심으로 대칭이에요.",
+      "$\\beta=\\pi-\\alpha$이므로 합은 $\\pi$예요."
+    ],
+    "takeaway": "근의 합을 물으면 정확한 각 대신 대칭의 중심을 먼저 찾아요.",
+    "noteIds": [
+      "math-trig-graphs"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "대칭기준"
+    ],
+    "choices": [
+      "$\\pi/2$",
+      "$2\\pi$",
+      "$\\pi$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-083",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "동치검증",
+    "title": "탄젠트는 분모가 0이면 안 돼요",
+    "prompt": "$0\\le x<2\\pi$에서 $\\tan x\\cos x=\\sin x$를 정리하면 양변이 같아 보여요. 해를 정할 때 꼭 남겨야 할 원래 식의 조건은 무엇인가요?",
+    "explanation": [
+      "$\\tan x=\\sin x/\\cos x$는 $\\cos x\\ne0$인 곳에서만 정의돼요.",
+      "약분한 뒤에도 $x=\\pi/2,3\\pi/2$는 제외해요. $\\sin x\\ne0$만으로는 이 점들을 걸러 낼 수 없어요."
+    ],
+    "takeaway": "분모를 곱해서 지울 때는 원래 식이 정의되지 않는 점을 함께 적어요.",
+    "noteIds": [
+      "math-trig-graphs"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "동치검증"
+    ],
+    "choices": [
+      "탄젠트도 모든 실수에서 정의되니 추가 조건이 없어요.",
+      "$\\cos x\\ne0$",
+      "$\\sin x\\ne0$만 확인하면 충분해요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-084",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "치환 범위",
+    "title": "사인으로 치환한 뒤 실근 걸러 내기",
+    "prompt": "$2\\sin^2x-3\\sin x+1=0$을 풀면 $u=\\sin x$의 후보가 $1,1/2$예요. $0\\le x<2\\pi$에서 서로 다른 해는 몇 개인가요?",
+    "explanation": [
+      "$\\sin x=1$은 꼭대기에서 한 번, $\\sin x=1/2$는 두 번 만나요.",
+      "치환한 방정식의 근 두 개를 원래 각 두 개로 바로 세면 안 돼요."
+    ],
+    "takeaway": "새 변수의 근마다 원래 입력이 몇 개 대응하는지 따로 세어요.",
+    "noteIds": [
+      "math-trig-graphs"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "치환 범위"
+    ],
+    "choices": [
+      "3개",
+      "4개",
+      "2개"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-085",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "도형 조건",
+    "title": "둔각의 코사인 부호",
+    "prompt": "두 변의 길이가 $3,4$이고 끼인각이 $120^\\circ$인 삼각형이에요. 맞은편 변의 길이의 제곱은 무엇인가요?",
+    "explanation": [
+      "코사인법칙으로 $c^2=3^2+4^2-2\\cdot3\\cdot4\\cos120^\\circ$예요.",
+      "$\\cos120^\\circ=-1/2$이므로 $25+12=37$이에요."
+    ],
+    "takeaway": "둔각에서는 코사인이 음수여서 코사인법칙의 마지막 항이 더해져요.",
+    "noteIds": [
+      "math-trig-geometry"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "도형 조건"
+    ],
+    "choices": [
+      "$13$",
+      "$25$",
+      "$37$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-086",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "도형 조건",
+    "title": "사인값이 같다고 각도 같을까요?",
+    "prompt": "삼각형의 각 $A$에 대해 $\\sin A=1/2$라는 정보만 있어요. 가능한 $A$는 무엇인가요?",
+    "explanation": [
+      "삼각형의 각은 $0^\\circ<A<180^\\circ$예요.",
+      "이 범위에서 사인값 $1/2$는 예각과 그 보각 두 곳에서 나와요. 다른 변·각 조건으로 골라야 해요."
+    ],
+    "takeaway": "사인법칙으로 각을 찾으면 예각·둔각의 두 후보가 가능한지 확인해요.",
+    "noteIds": [
+      "math-trig-geometry"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "도형 조건"
+    ],
+    "choices": [
+      "$150^\\circ$뿐",
+      "$30^\\circ$ 또는 $150^\\circ$",
+      "$30^\\circ$뿐"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-087",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "도형 조건",
+    "title": "같은 높이를 공유하는 넓이비",
+    "prompt": "삼각형 $ABC$의 변 $BC$ 위에 $D$가 있고 $BD:DC=2:3$이에요. 삼각형 $ABD$와 $ACD$의 넓이비는 무엇인가요?",
+    "explanation": [
+      "두 삼각형은 A에서 직선 BC까지의 높이가 같아요.",
+      "넓이식에서 높이와 $1/2$가 약분되어 밑변의 비만 남아요."
+    ],
+    "takeaway": "넓이비가 필요하면 두 높이를 각각 구하기 전에 같은 높이인지 확인해요.",
+    "noteIds": [
+      "math-trig-geometry"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "도형 조건"
+    ],
+    "choices": [
+      "$2:3$",
+      "$4:9$",
+      "$\\sqrt2:\\sqrt3$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-088",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "도형 조건",
+    "title": "원에 내접한 사각형의 두 각",
+    "prompt": "볼록사각형 $ABCD$가 한 원에 내접해요. $\\cos A=2/5$이면 $\\cos C$는 무엇인가요?",
+    "explanation": [
+      "마주 보는 두 각의 합은 $180^\\circ$라 $C=180^\\circ-A$예요.",
+      "보각은 사인값이 같지만 코사인값은 부호가 반대예요."
+    ],
+    "takeaway": "내접사각형의 보각 관계를 사인과 코사인에 똑같이 적용하지 않아요.",
+    "noteIds": [
+      "math-trig-geometry"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "도형 조건"
+    ],
+    "choices": [
+      "$2/5$",
+      "$3/5$",
+      "$-2/5$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-089",
+    "subject": "math",
+    "kind": "recall",
+    "topic": "보조선",
+    "title": "접선 길이에 필요한 직각삼각형",
+    "prompt": "반지름이 $5$인 원의 중심은 $O$예요. 원 밖 점 $P$에서 그은 접선의 접점을 $T$라 하고 $OP=13$이면 $PT$는 얼마인가요?",
+    "explanation": [
+      "반지름 $OT$와 접선 $PT$는 수직이에요.",
+      "$PT^2=OP^2-OT^2=13^2-5^2=144$예요."
+    ],
+    "takeaway": "접점과 중심을 이으면 접선 길이를 구할 직각삼각형이 생겨요.",
+    "noteIds": [
+      "math-trig-geometry"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "보조선"
+    ],
+    "answerText": "$12$예요."
+  },
+  {
+    "id": "bite-math-090",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "최댓값",
+    "title": "0인 항을 더하면 최대가 반복돼요",
+    "prompt": "등차수열 $a_n=9-3n$의 첫 $n$개 항의 합을 $S_n$이라 해요. $S_n$이 최대가 되는 자연수 $n$을 모두 고르세요.",
+    "explanation": [
+      "항은 $6,3,0,-3,\\ldots$이므로 합은 $6,9,9,6,\\ldots$예요.",
+      "양수 항까지 더한 뒤 $0$을 더해도 합이 같고, 이후에는 계속 감소해요."
+    ],
+    "takeaway": "부분합의 최대에서는 양수에서 음수로 바뀌는 사이에 0인 항이 있는지 봐요.",
+    "noteIds": [
+      "math-sequences"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "최댓값"
+    ],
+    "choices": [
+      "$2,3$",
+      "$2$뿐",
+      "$3,4$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-091",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "기준항",
+    "title": "같은 간격으로 뽑은 항의 합",
+    "prompt": "등차수열에서 $a_2=3$, $a_{10}=19$예요. $a_2+a_4+a_6+a_8+a_{10}$의 값은 무엇인가요?",
+    "explanation": [
+      "두 칸씩 뽑은 다섯 항도 등차수열이에요.",
+      "합은 $5\\times(3+19)/2=55$예요. 원래 열 개 항의 합이 아니에요."
+    ],
+    "takeaway": "띄엄띄엄 뽑은 합은 뽑힌 항들의 개수와 양끝 값으로 계산해요.",
+    "noteIds": [
+      "math-sequences"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "기준항"
+    ],
+    "choices": [
+      "$110$",
+      "$44$",
+      "$55$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-092",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "항사이간격",
+    "title": "짝수 번 곱하면 공비의 부호는 사라져요",
+    "prompt": "등비수열에서 $a_1=2$, $a_3=18$이에요. 공비에 대한 다른 조건이 없다면 $a_2$는 무엇인가요?",
+    "explanation": [
+      "$a_3=a_1r^2$에서 $r^2=9$라 $r=3,-3$ 모두 가능해요.",
+      "$a_2=2r$이므로 $6,-6$을 모두 남겨요."
+    ],
+    "takeaway": "짝수 간격의 항으로 공비를 구할 때는 부호가 아직 정해지지 않을 수 있어요.",
+    "noteIds": [
+      "math-sequences"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "항사이간격"
+    ],
+    "choices": [
+      "$9$뿐",
+      "$6$ 또는 $-6$",
+      "$6$뿐"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-093",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "조건 대상",
+    "title": "주기의 나머지가 0인 경우",
+    "prompt": "수열이 $2,-1,4$를 순서대로 반복해요. $a_{99}$는 무엇인가요?",
+    "explanation": [
+      "$99$는 $3$의 배수라 묶음의 마지막 자리예요.",
+      "나머지가 $1,2,0$일 때 각각 첫째·둘째·셋째 값으로 대응시켜요."
+    ],
+    "takeaway": "주기로 큰 항을 찾을 때 나머지 0은 첫 자리가 아니라 마지막 자리예요.",
+    "noteIds": [
+      "math-recurrences"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "조건 대상"
+    ],
+    "choices": [
+      "$4$",
+      "$2$",
+      "$-1$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-094",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "소거",
+    "title": "합의 합에서 한 항은 몇 번 나올까요?",
+    "prompt": "$S_n=a_1+\\cdots+a_n$이에요. $S_1+S_2+S_3$을 항별로 모은 식은 무엇인가요?",
+    "explanation": [
+      "$a_1+(a_1+a_2)+(a_1+a_2+a_3)$을 써 봐요.",
+      "먼저 나온 항일수록 더 많은 부분합에 포함돼요."
+    ],
+    "takeaway": "부분합을 다시 더하면 각 항의 등장 횟수를 세어요.",
+    "noteIds": [
+      "math-sums"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "소거"
+    ],
+    "choices": [
+      "$a_1+a_2+a_3$",
+      "$a_1+2a_2+3a_3$",
+      "$3a_1+2a_2+a_3$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-095",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "주기 판단",
+    "title": "항이 되돌아와도 규칙이 바뀐다면",
+    "prompt": "$a_{n+1}=n-a_n$, $a_1=1$이면 처음 네 항은 $1,0,2,1$이에요. $a_1=a_4$이니 주기가 $3$이라는 판단을 다음 항으로 확인하면?",
+    "explanation": [
+      "$n=4$를 대입하면 $a_5=4-a_4=3$이에요. 주기가 $3$이라면 $a_5=a_2=0$이어야 하므로 맞지 않아요.",
+      "현재 항값이 같아도 번호 $n$이 달라지면 다음 값을 정하는 계산이 달라져요."
+    ],
+    "takeaway": "관찰한 반복을 증명할 때는 현재 값 외에 번호 같은 상태도 함께 확인해요.",
+    "noteIds": [
+      "math-recurrences"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "주기 판단"
+    ],
+    "choices": [
+      "$a_5=0$이므로 주기가 $3$인 반복이 이어져요.",
+      "$a_5=3$이므로 $a_2=0$과 달라, 주기가 $3$이 아니에요.",
+      "$a_5=1$이므로 같은 값 $1$이 계속 이어져요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-096",
+    "subject": "math",
+    "kind": "recall",
+    "topic": "소거",
+    "title": "차가 아니라 몫이 이어질 때",
+    "prompt": "$\\dfrac23\\cdot\\dfrac34\\cdot\\dfrac45\\cdot\\dfrac56$의 값을 말해 보세요.",
+    "explanation": [
+      "분자의 $3,4,5$가 앞 분수의 분모와 차례로 약분돼요.",
+      "처음 분자 $2$와 마지막 분모 $6$만 남아요."
+    ],
+    "takeaway": "연속된 차는 합에서, 연속된 몫은 곱에서 가운데가 사라지는지 봐요.",
+    "noteIds": [
+      "math-sums"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "소거"
+    ],
+    "answerText": "$1/3$이에요."
+  },
+  {
+    "id": "bite-math-097",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "기준항",
+    "title": "상수를 옮겨 등비수열 만들기",
+    "prompt": "$a_{n+1}=2a_n+3$이에요. $b_n=a_n+c$가 $b_{n+1}=2b_n$을 만족하게 하는 $c$는 무엇인가요?",
+    "explanation": [
+      "$b_{n+1}=2a_n+3+c$, $2b_n=2a_n+2c$예요.",
+      "상수항을 맞추면 $3+c=2c$라 $c=3$이에요."
+    ],
+    "takeaway": "일차 점화식의 더해지는 상수는 기준값을 옮겨 없앨 수 있어요.",
+    "noteIds": [
+      "math-recurrences"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "기준항"
+    ],
+    "choices": [
+      "$-3$",
+      "$3/2$",
+      "$3$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-098",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "경계",
+    "title": "등비수열 합 공식의 분모",
+    "prompt": "$1+r+r^2+\\cdots+r^9=(r^{10}-1)/(r-1)$을 쓰려 해요. $r=1$일 때의 합은 어떻게 구하나요?",
+    "explanation": [
+      "분수 공식은 $r\\ne1$에서만 그대로 쓸 수 있어요.",
+      "원래 합은 $r=1$에서도 정의되며 모든 항이 $1$이에요."
+    ],
+    "takeaway": "변형한 공식의 예외와 원래 식 자체가 정의되는지를 구별해요.",
+    "noteIds": [
+      "math-sequences"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "경계"
+    ],
+    "choices": [
+      "식이 정의되지 않으니 원래 합도 존재하지 않아요.",
+      "공식에 나누기를 하지 않고 열 개의 1을 더해 10으로 구해요.",
+      "분자와 분모가 0이니 합은 0이에요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-099",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "항의 개수",
+    "title": "인덱스를 바꾸면 안의 식도 바뀌어요",
+    "prompt": "$\\sum_{k=3}^{5}(k-2)^2$에서 $j=k-2$로 바꾸면 무엇인가요?",
+    "explanation": [
+      "$k=3,4,5$는 $j=1,2,3$에 대응해요.",
+      "안쪽의 $k-2$도 $j$로 바꾸어야 같은 세 항 $1,4,9$를 더해요."
+    ],
+    "takeaway": "합의 번호를 이동하면 시작·끝·일반항을 함께 옮겨요.",
+    "noteIds": [
+      "math-sums"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "항의 개수"
+    ],
+    "choices": [
+      "$\\sum_{j=1}^{3}j^2$",
+      "$\\sum_{j=3}^{5}j^2$",
+      "$\\sum_{j=1}^{3}(j-2)^2$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-100",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "극한과 함숫값",
+    "title": "속함수는 어느 쪽에서 접근하나요?",
+    "prompt": "$f(t)=1$($t>0$), $f(t)=-1$($t\\le0$)이에요. $\\lim_{x\\to0}f(x^2)$는 무엇인가요?",
+    "explanation": [
+      "$x\\ne0$인 근방에서는 $x^2>0$이라 안쪽 입력은 항상 양수 쪽이에요.",
+      "따라서 $f(x^2)=1$이에요. $f(0)=-1$을 그대로 넣으면 안 돼요."
+    ],
+    "takeaway": "겉함수가 불연속이면 속함수가 접근하는 방향을 먼저 확인해요.",
+    "noteIds": [
+      "math-limits"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "극한과 함숫값"
+    ],
+    "choices": [
+      "$-1$",
+      "좌우가 달라 극한이 없어요.",
+      "$1$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-101",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "인수차수",
+    "title": "0을 곱해도 발산을 없애지 못할 수 있어요",
+    "prompt": "$x>0$에서 $g(x)=1/x^2$예요. $\\lim_{x\\to0+}xg(x)$는 무엇인가요?",
+    "explanation": [
+      "$xg(x)=1/x$로 먼저 정리해요.",
+      "$x$가 $0$으로 가도 $g$가 더 빠르게 커져서 곱이 양의 무한대로 발산해요."
+    ],
+    "takeaway": "0으로 가는 인수가 있다는 이유만으로 곱의 극한을 0으로 정하지 않아요.",
+    "noteIds": [
+      "math-limits"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "인수차수"
+    ],
+    "choices": [
+      "$1$이에요.",
+      "$+\\infty$로 발산해요.",
+      "$0$이에요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-102",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "인수차수",
+    "title": "유한한 극한이 요구하는 중복도",
+    "prompt": "다항식 $P$에 대해 $\\lim_{x\\to2}\\dfrac{P(x)}{(x-2)^2}=3$이에요. 반드시 맞는 것은 무엇인가요?",
+    "explanation": [
+      "$P(x)=(x-2)^2Q(x)$로 쓸 수 있어야 분모의 두 인수가 사라져요.",
+      "극한이 $3$이므로 $Q(2)=3$이에요. $P$ 자체의 값이나 미분계수와 혼동하지 않아요."
+    ],
+    "takeaway": "분모의 인수 개수와 유한한 극한 조건으로 분자의 중복도를 먼저 정해요.",
+    "noteIds": [
+      "math-limits"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "인수차수"
+    ],
+    "choices": [
+      "$P(2)=P\\prime(2)=0$",
+      "$P(2)=3$",
+      "$P\\prime(2)=3$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-103",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "연속",
+    "title": "점프에 0이 되는 인수를 곱하면",
+    "prompt": "$g(x)=-1$($x<0$), $g(x)=1$($x\\ge0$)이고 $H(x)=xg(x)$예요. $H$는 $0$에서 연속인가요?",
+    "explanation": [
+      "$x<0$에서는 $H(x)=-x$, $x\\ge0$에서는 $H(x)=x$예요.",
+      "$g$의 점프가 있어도 $x$를 곱한 결과는 양쪽에서 $0$으로 이어져요."
+    ],
+    "takeaway": "곱의 연속성은 각 인자의 이름이 아니라 실제 곱의 극한으로 확인해요.",
+    "noteIds": [
+      "math-continuity"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "연속"
+    ],
+    "choices": [
+      "아니요. g가 불연속이므로 곱도 반드시 불연속이에요.",
+      "아니요. 왼쪽 극한은 -1, 오른쪽 극한은 1이에요.",
+      "네. 좌극한·우극한·함숫값이 모두 0이에요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-104",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "연속",
+    "title": "절댓값이 점프를 없앨 때",
+    "prompt": "$g(x)=-2$($x<1$), $g(x)=2$($x\\ge1$)예요. $|g(x)|$는 $x=1$에서 어떤가요?",
+    "explanation": [
+      "두 구간 모두 절댓값은 $2$예요.",
+      "절댓값을 취한 새 함수가 실제로 어떻게 정의되는지 다시 써야 해요."
+    ],
+    "takeaway": "원함수의 불연속이나 첨점을 새 함수에 그대로 옮기지 않아요.",
+    "noteIds": [
+      "math-continuity"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "연속"
+    ],
+    "choices": [
+      "절댓값 기호가 있으므로 반드시 첨점이 생겨요.",
+      "항상 2인 함수가 되므로 연속이에요.",
+      "g가 점프하므로 절댓값도 불연속이에요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-105",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "미분가능",
+    "title": "두 식의 차에 인수가 두 개",
+    "prompt": "$x<1$에서는 다항식 $P(x)$, $x\\ge1$에서는 다항식 $Q(x)$로 이어 붙였어요. $P(x)-Q(x)=(x-1)^2(x+2)$이면 $x=1$에서 무엇이 보장되나요?",
+    "explanation": [
+      "차이에 $(x-1)^2$가 있어 $P(1)=Q(1)$이고 $P\\prime(1)=Q\\prime(1)$이에요.",
+      "양쪽이 다항식이므로 값과 기울기가 모두 이어져요."
+    ],
+    "takeaway": "다항식 연결에서는 두 식의 차에 있는 인수의 중복도로 값과 기울기를 함께 확인해요.",
+    "noteIds": [
+      "math-differentiability"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "미분가능"
+    ],
+    "choices": [
+      "연속이고 미분가능해요.",
+      "연속만 되고 반드시 미분불가능해요.",
+      "함숫값이 다르므로 불연속이에요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-106",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "미분가능",
+    "title": "점프를 곱한 함수의 미분계수",
+    "prompt": "$g(x)=-1$($x<0$), $g(x)=1$($x\\ge0$), $H(x)=x^2g(x)$예요. $H\\prime(0)$은 무엇인가요?",
+    "explanation": [
+      "$H(0)=0$이므로 미분계수는 $\\lim_{h\\to0}h g(h)$예요.",
+      "$g(h)$는 $-1$ 또는 $1$이라 양쪽 모두 $0$으로 가요."
+    ],
+    "takeaway": "불연속인 인수에는 곱의 미분법부터 쓰지 말고 결과 함수의 미분계수 정의로 돌아가요.",
+    "noteIds": [
+      "math-differentiability"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "미분가능"
+    ],
+    "choices": [
+      "$1$",
+      "존재하지 않아요.",
+      "$0$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-107",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "미분가능",
+    "title": "대칭인 두 점의 기울기는 별개예요",
+    "prompt": "$f(x)=|x|$에서 $h\\ne0$이면 $\\dfrac{f(h)-f(-h)}{2h}=0$이에요. 이 사실로 $f\\prime(0)=0$이라고 할 수 있나요?",
+    "explanation": [
+      "대칭인 두 점의 높이는 같아서 이 기울기는 항상 $0$이에요.",
+      "하지만 $[f(h)-f(0)]/h=|h|/h$는 좌우에서 $-1,1$로 달라요."
+    ],
+    "takeaway": "평균변화율의 극한을 미분계수로 읽기 전에 두 점이 어떻게 움직이는지 확인해요.",
+    "noteIds": [
+      "math-derivative"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "미분가능"
+    ],
+    "choices": [
+      "네. 대칭함수는 항상 원점에서 미분가능해요.",
+      "아니요. 미분계수는 기준점 0과 움직이는 점의 기울기로 따로 봐야 해요.",
+      "네. 두 점이 0에 가까워지면 어떤 기울기 극한도 미분계수예요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-108",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "도함수 부호",
+    "title": "평균값 정리의 조건이 빠졌다면",
+    "prompt": "$f(x)=|x|$는 $[-1,1]$에서 연속이고 양끝 함숫값이 같아요. $(-1,1)$ 안에 $f\\prime(c)=0$인 점이 반드시 있나요?",
+    "explanation": [
+      "평균값 정리는 열린 구간 전체의 미분가능성이 필요해요.",
+      "이 함수는 꼭짓점에서 그 조건을 만족하지 않아 정리를 적용할 수 없어요."
+    ],
+    "takeaway": "평균값 정리에서는 닫힌 구간의 연속과 열린 구간의 미분가능을 둘 다 확인해요.",
+    "noteIds": [
+      "math-derivative"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "도함수 부호"
+    ],
+    "choices": [
+      "아니요. 0에서 미분불가능하고, 나머지 점의 기울기는 -1 또는 1이에요.",
+      "네. 양끝 높이가 같으면 언제나 수평 접선이 있어요.",
+      "네. 연속 조건만으로 평균값 정리를 쓸 수 있어요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-109",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "도함수 부호",
+    "title": "0 이상과 엄격한 증가의 차이",
+    "prompt": "미분가능한 함수가 어떤 구간에서 $f\\prime(x)\\ge0$을 만족해요. 이 정보만으로 반드시 말할 수 있는 것은?",
+    "explanation": [
+      "도함수가 음수가 아니면 비감소해요.",
+      "상수함수도 조건을 만족하므로 엄격한 증가나 일대일 대응까지는 보장되지 않아요."
+    ],
+    "takeaway": "f′≥0을 읽을 때 상수인 구간이 허용되는지 구별해요.",
+    "noteIds": [
+      "math-derivative"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "도함수 부호"
+    ],
+    "choices": [
+      "서로 다른 두 입력의 함숫값은 항상 달라요.",
+      "그 구간 안에서 도함수는 절대로 0이 아니에요.",
+      "x가 커질 때 함숫값이 작아지지는 않아요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-110",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "함숫값차",
+    "title": "기울기만으로는 높이를 모릅니다",
+    "prompt": "모든 실수 $x$에서 $f\\prime(x)=2x$예요. 다른 조건 없이 하나로 정해지는 것은?",
+    "explanation": [
+      "$f(x)=x^2+C$이고 아직 $C$를 몰라요.",
+      "차에서는 $C$가 없어져 $f(3)-f(1)=9-1=8$이에요."
+    ],
+    "takeaway": "도함수는 높이의 차를 정하지만 절대 높이에는 기준값이 하나 더 필요해요.",
+    "noteIds": [
+      "math-derivative"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "함숫값차"
+    ],
+    "choices": [
+      "$f(3)$",
+      "$f(3)-f(1)$",
+      "$f(0)$"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-111",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "접선과교점",
+    "title": "인수 하나의 기울기도 곱해야 해요",
+    "prompt": "$f(x)=(2x-3)(x+1)^2$예요. $f\\prime(3/2)$는 무엇인가요?",
+    "explanation": [
+      "$2x-3=0$인 점이므로 곱의 미분에서 이 인수가 그대로 남는 항은 사라져요.",
+      "남은 항은 $2(x+1)^2$이므로 $2(5/2)^2=25/2$예요."
+    ],
+    "takeaway": "근에서 인수 하나를 가릴 때 그 인수가 2x−3이면 미분계수 2도 곱해요.",
+    "noteIds": [
+      "math-derivative"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "접선과교점"
+    ],
+    "choices": [
+      "$25/2$",
+      "$25/4$",
+      "$0$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-112",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "최댓값",
+    "title": "극대점만 보고 끝내면",
+    "prompt": "$f(x)=x^3-3x$를 $[-2,3]$에서 봐요. 내부 극점은 $x=-1,1$이에요. 최댓값을 고르세요.",
+    "explanation": [
+      "후보 $x=-2,-1,1,3$에서 함숫값은 각각 $-2,2,-2,18$이에요.",
+      "내부 극댓값 $2$보다 오른쪽 끝점의 값이 커요."
+    ],
+    "takeaway": "닫힌 구간의 최대·최소는 내부 극점뿐 아니라 양 끝점도 비교해요.",
+    "noteIds": [
+      "math-derivative"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "최댓값"
+    ],
+    "choices": [
+      "$2$",
+      "$-2$",
+      "$18$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-113",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "극값",
+    "title": "절댓값을 씌운 뒤 생기는 극소",
+    "prompt": "$F(x)=|x^2-1|$이에요. $x=1$에서 $F$는 어떤가요?",
+    "explanation": [
+      "$1$ 근처에서 함수값은 $0$ 이상이고 $F(1)=0$이라 극소예요.",
+      "왼쪽 식은 $1-x^2$, 오른쪽 식은 $x^2-1$이라 기울기는 각각 $-2,2$예요."
+    ],
+    "takeaway": "극값의 존재와 그 점에서의 미분가능성은 별도로 판단해요.",
+    "noteIds": [
+      "math-differentiability"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "극값"
+    ],
+    "choices": [
+      "극값을 가지려면 미분가능해야 하므로 극소가 아니에요.",
+      "극소값 0을 갖지만 미분불가능해요.",
+      "미분가능하고 도함수는 0이에요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-114",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "도함수 부호",
+    "title": "도함수의 두 근에서 같은 일이 생길까요?",
+    "prompt": "$f\\prime(x)=(x-1)^2(x+2)$예요. 원함수의 극점은 어디에 있나요?",
+    "explanation": [
+      "$x=-2$에서 도함수 부호가 음수에서 양수로 바뀌어요.",
+      "$x=1$에서는 제곱 인수만 $0$이 되어 양쪽 부호가 양수로 같아요."
+    ],
+    "takeaway": "도함수의 근을 찾은 다음 각 근에서 실제 부호가 바뀌는지 따로 확인해요.",
+    "noteIds": [
+      "math-derivative"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "도함수 부호"
+    ],
+    "choices": [
+      "$x=-2$에서만 극소",
+      "$x=-2,1$에서 모두 극소",
+      "$x=1$에서만 극대"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-115",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "접선과교점",
+    "title": "접선이 주어진 점을 지나려면",
+    "prompt": "$y=x^2$의 $x=t$에서의 접선이 $(0,-1)$을 지나야 해요. $t$를 정하는 식은 무엇인가요?",
+    "explanation": [
+      "접선은 $y=t^2+2t(x-t)=2tx-t^2$예요.",
+      "주어진 점을 이 직선에 대입하면 $-1=-t^2$예요. 주어진 점이 곡선 위에 있을 필요는 없어요."
+    ],
+    "takeaway": "곡선 위 접점과 접선이 지나는 별도 점을 구분해 식에 대입해요.",
+    "noteIds": [
+      "math-root-tangent"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "접선과교점"
+    ],
+    "choices": [
+      "$t^2=-1$",
+      "$2t=-1$",
+      "$-t^2=-1$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-116",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "접선과교점",
+    "title": "접선에 수직인 직선의 기울기",
+    "prompt": "접선의 기울기가 $2/3$이에요. 같은 점에서 이 접선과 수직인 직선의 기울기는 무엇인가요?",
+    "explanation": [
+      "두 기울기가 모두 유한할 때 수직인 직선의 기울기 곱은 $-1$이에요.",
+      "역수만 취하지 말고 부호도 바꾸어요."
+    ],
+    "takeaway": "문제에서 요구한 선이 접선인지, 접선에 수직인 선인지 먼저 표시해요.",
+    "noteIds": [
+      "math-advanced-derivative"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "접선과교점"
+    ],
+    "choices": [
+      "$-2/3$",
+      "$-3/2$",
+      "$3/2$"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-117",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "역대응",
+    "title": "역함수의 정의역도 바뀝니다",
+    "prompt": "$f(x)=x^2$의 정의역을 $[-3,0]$으로 제한했어요. 역함수의 식과 정의역은 무엇인가요?",
+    "explanation": [
+      "원함수의 입력이 음수 또는 $0$이므로 역대응도 음의 제곱근을 골라요.",
+      "원함수의 치역 $[0,9]$가 역함수의 정의역이 돼요."
+    ],
+    "takeaway": "역함수는 식의 부호와 정의역을 원래 대응 범위에 맞춰 함께 정해요.",
+    "noteIds": [
+      "math-inverse"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "역대응"
+    ],
+    "choices": [
+      "$f^{-1}(x)=-\\sqrt x$, $0\\le x\\le9$",
+      "$f^{-1}(x)=\\sqrt x$, $0\\le x\\le9$",
+      "$f^{-1}(x)=-\\sqrt x$, $-3\\le x\\le0$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-118",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "역함수대칭",
+    "title": "감소함수의 교점은 대각선 밖에도",
+    "prompt": "$f(x)=1/x$를 양수 전체에서 정의했어요. 원함수와 역함수의 그래프는 어떻게 만나나요?",
+    "explanation": [
+      "$y=1/x$를 $x$에 대해 풀어 좌표를 바꾸면 다시 $y=1/x$예요.",
+      "감소함수에서는 역함수와의 교점이 $y=x$ 위에만 있다는 규칙을 쓸 수 없어요."
+    ],
+    "takeaway": "역함수 교점을 셀 때 원함수의 증가·감소와 두 식이 같은 경우를 확인해요.",
+    "noteIds": [
+      "math-inverse"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "역함수대칭"
+    ],
+    "choices": [
+      "y=x 위의 (1,1)에서만 만나요.",
+      "감소함수이므로 교점이 없어요.",
+      "역함수도 1/x이므로 그래프 전체가 겹쳐요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-119",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "대칭기준",
+    "title": "중심에서 같은 거리의 두 높이",
+    "prompt": "삼차함수의 변곡점은 $(2,5)$이고 $f(1)=8$이에요. $f(3)$은 무엇인가요?",
+    "explanation": [
+      "$1$과 $3$은 중심 가로좌표 $2$에서 같은 거리에 있어요.",
+      "점대칭으로 두 높이의 평균이 $5$라 $f(1)+f(3)=10$이에요."
+    ],
+    "takeaway": "점대칭은 함숫값이 같은 관계가 아니라 중심 높이를 기준으로 합이 일정한 관계예요.",
+    "noteIds": [
+      "math-cubic"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "대칭기준"
+    ],
+    "choices": [
+      "$-8$",
+      "$2$",
+      "$8$"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-120",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "대칭기준",
+    "title": "중근도 포함한 근의 합",
+    "prompt": "삼차함수 $f(x)=(x-1)^2(x-4)$의 변곡점 가로좌표는 무엇인가요?",
+    "explanation": [
+      "전개한 식은 $x^3-6x^2+9x-4$이므로 $f^{\\prime\\prime}(x)=6x-12$예요.",
+      "또는 중복도를 포함한 세 근 $1,1,4$의 평균 $(1+1+4)/3=2$로 확인해요."
+    ],
+    "takeaway": "근의 평균으로 삼차함수 중심을 찾을 때는 서로 다른 근만 평균 내지 않아요.",
+    "noteIds": [
+      "math-cubic"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "대칭기준"
+    ],
+    "choices": [
+      "$2$",
+      "$5/2$",
+      "$1$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-121",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "함숫값차",
+    "title": "도함수 계수로 구하는 극값 차",
+    "prompt": "$f\\prime(x)=3(x-1)(x-3)$이에요. $f(1)-f(3)$은 얼마인가요?",
+    "explanation": [
+      "$1<x<3$에서 도함수는 음수라 $f(1)$이 더 높아요.",
+      "$u=x-2$로 놓으면 차는 $-\\int_{-1}^{1}3(u^2-1)\\,du=4$예요."
+    ],
+    "takeaway": "극값의 높이 차는 도함수 적분으로 구해요. 원함수의 상수항은 필요 없어요.",
+    "noteIds": [
+      "math-cubic"
+    ],
+    "refs": [],
+    "seconds": 50,
+    "tags": [
+      "함숫값차"
+    ],
+    "choices": [
+      "$12$",
+      "$4/3$",
+      "$4$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-122",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "평행한 접선",
+    "title": "변곡접선과 평행한 할선이 있을까요?",
+    "prompt": "$f(x)=x^3+x$의 변곡접선 기울기는 $1$이에요. 서로 다른 실수 $p,q$를 잇는 할선의 기울기가 $1$일 수 있나요?",
+    "explanation": [
+      "기울기는 $[f(q)-f(p)]/(q-p)=q^2+pq+p^2+1$이에요.",
+      "$q^2+pq+p^2=(q+p/2)^2+3p^2/4$는 서로 다른 $p,q$에서 양수예요."
+    ],
+    "takeaway": "점대칭만 보고 할선 기울기를 같다고 하지 말고 평균변화율 식으로 확인해요.",
+    "noteIds": [
+      "math-cubic"
+    ],
+    "refs": [],
+    "seconds": 50,
+    "tags": [
+      "평행한 접선"
+    ],
+    "choices": [
+      "네. p,q를 음수로 고르면 1보다 작아져요.",
+      "아니요. 할선 기울기는 항상 1보다 커요.",
+      "네. p와 q를 원점에 대칭으로 잡으면 1이에요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-123",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "높이와거리",
+    "title": "접선과 곡선 사이 넓이의 계수",
+    "prompt": "삼차함수와 그 접선의 차가 $f(x)-\\ell(x)=2x^2(x-3)$예요. $0\\le x\\le3$에서 둘 사이 넓이는 무엇인가요?",
+    "explanation": [
+      "구간 안에서 차는 음수이므로 넓이는 $\\int_0^3 2x^2(3-x)\\,dx$예요.",
+      "$[2x^3-x^4/2]_0^3=54-81/2=27/2$예요."
+    ],
+    "takeaway": "접선과의 차를 적분할 때는 계수와 교점 사이 부호를 먼저 확인해요.",
+    "noteIds": [
+      "math-area-motion"
+    ],
+    "refs": [],
+    "seconds": 50,
+    "tags": [
+      "높이와거리"
+    ],
+    "choices": [
+      "$27/2$",
+      "$-27/2$",
+      "$27$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-124",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "공통접선",
+    "title": "기울어진 공통접선도 두 번 접해요",
+    "prompt": "$f(x)=x^4-2x^2+3x$예요. $f(x)-(3x-1)=(x^2-1)^2$에서 알 수 있는 사실은?",
+    "explanation": [
+      "차이는 $(x-1)^2(x+1)^2$라 두 점에서 값과 기울기가 모두 같아요.",
+      "원함수에 선형항 $3x$가 있어도 같은 선형항을 접선에 더하면 두 접점이 유지돼요."
+    ],
+    "takeaway": "공통접선은 기울기 0이 아니라 두 접점에서 차이가 중근이 되는 것으로 확인해요.",
+    "noteIds": [
+      "math-quartic"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "공통접선"
+    ],
+    "choices": [
+      "직선 y=3x−1은 x=0에서만 접해요.",
+      "공통접선은 수평이어야 하므로 이 식은 접선을 나타내지 않아요.",
+      "직선 y=3x−1은 x=−1과 x=1에서 모두 접해요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-125",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "변곡접선",
+    "title": "차이함수의 극점과 원함수의 극점",
+    "prompt": "$f(x)=x^3(x-4)+x$이고 변곡접선은 $\\ell(x)=x$예요. $F=f-\\ell$에서 $F\\prime(3)=0$이면 $f\\prime(3)$은 무엇인가요?",
+    "explanation": [
+      "$F\\prime=f\\prime-\\ell\\prime=f\\prime-1$이에요.",
+      "$F\\prime(3)=0$은 $f\\prime(3)=1$이라는 뜻이며 원함수의 수평 접점은 아니에요."
+    ],
+    "takeaway": "접선을 뺀 함수의 기울기 0은 원함수와 그 접선의 기울기가 같다는 뜻이에요.",
+    "noteIds": [
+      "math-quartic"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "변곡접선"
+    ],
+    "choices": [
+      "$3$",
+      "$1$",
+      "$0$"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-126",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "대칭기준",
+    "title": "선형항을 뺀 뒤에 보이는 대칭",
+    "prompt": "$f(x)=x^4-2x^2+3x$예요. y축 대칭을 이용하려면 어떤 함수가 짝함수인가요?",
+    "explanation": [
+      "$f(x)-3x=x^4-2x^2$는 짝수 차수 항만 남아요.",
+      "원함수에는 홀수 차수인 $3x$가 있어 y축 대칭이라고 할 수 없어요."
+    ],
+    "takeaway": "사차함수에서 선형항을 뺀 부분의 대칭을 원함수 전체의 대칭으로 옮기지 않아요.",
+    "noteIds": [
+      "math-quartic"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "대칭기준"
+    ],
+    "choices": [
+      "$f(x)-3x$",
+      "$f(x)$",
+      "$f(x)-3$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-127",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "사차함수비율",
+    "title": "외운 비율을 쓸 두 점이 있는지",
+    "prompt": "$f(x)=x^4+2x^2$에 바깥 극점까지의 거리와 같은 높이 교점 사이의 $1:\\sqrt2$ 비율을 바로 적용해도 되나요?",
+    "explanation": [
+      "$f\\prime(x)=4x(x^2+1)$의 실근은 $0$뿐이에요.",
+      "$au^4+bu^2+d$에서 바깥 극점을 만드는 조건은 $ab<0$인데 여기서는 $ab>0$이에요."
+    ],
+    "takeaway": "비율 공식 앞에서 그 비율이 비교하는 점들이 실제로 존재하는지 확인해요.",
+    "noteIds": [
+      "math-quartic"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "사차함수비율"
+    ],
+    "choices": [
+      "네. 모든 사차함수에는 1:√2 비율이 있어요.",
+      "네. 짝함수이기만 하면 극점은 항상 세 개예요.",
+      "아니요. 도함수의 실근이 0뿐이라 그 비율에 필요한 바깥 극점이 없어요."
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-128",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "부호",
+    "title": "적분 구간을 거꾸로 읽으면",
+    "prompt": "$\\int_1^4 f(x)\\,dx=6$이에요. $\\int_4^1f(x)\\,dx$는 무엇인가요?",
+    "explanation": [
+      "정적분은 구간의 방향을 바꾸면 부호가 반대가 돼요.",
+      "기하학적 넓이는 양수지만, 방향이 있는 정적분값과는 구별해요."
+    ],
+    "takeaway": "적분값의 부호를 볼 때 함수의 부호와 상·하한의 순서를 함께 봐요.",
+    "noteIds": [
+      "math-integrals"
+    ],
+    "refs": [],
+    "seconds": 20,
+    "tags": [
+      "부호"
+    ],
+    "choices": [
+      "$0$",
+      "$-6$",
+      "$6$"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-129",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "대칭적분",
+    "title": "홀함수끼리 곱하면",
+    "prompt": "$\\int_{-1}^{1}x\\sin x\\,dx$는 홀함수 대칭으로 $0$이라고 해도 되나요?",
+    "explanation": [
+      "$(-x)\\sin(-x)=x\\sin x$이므로 곱 전체는 짝함수예요.",
+      "$(-1,0)$과 $(0,1)$에서 곱이 양수라 양쪽 적분이 더해져요."
+    ],
+    "takeaway": "각 인자의 홀짝보다 적분하는 식 전체의 홀짝을 확인해요.",
+    "noteIds": [
+      "math-integrals"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "대칭적분"
+    ],
+    "choices": [
+      "아니요. 홀함수 두 개의 곱은 짝함수이고 이 적분은 양수예요.",
+      "네. 식에 x가 있으니 홀함수예요.",
+      "네. 대칭 구간의 모든 적분은 0이에요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-130",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "대칭적분",
+    "title": "구간 중점을 기준으로 짝짓기",
+    "prompt": "연속함수 $f$가 $0\\le x\\le4$에서 $f(x)+f(4-x)=6$을 만족해요. $\\int_0^4f(x)\\,dx$는 무엇인가요?",
+    "explanation": [
+      "$I=\\int_0^4f(x)\\,dx$라 하면 치환으로 $\\int_0^4f(4-x)\\,dx=I$예요.",
+      "두 식을 더하면 $2I=\\int_0^4 6\\,dx=24$예요."
+    ],
+    "takeaway": "f(x)와 f(a−x)가 함께 나오면 같은 구간의 적분을 뒤집어 더해 봐요.",
+    "noteIds": [
+      "math-integrals"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "대칭적분"
+    ],
+    "choices": [
+      "$24$",
+      "$6$",
+      "$12$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-131",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "대칭적분",
+    "title": "한 주기 적분은 시작점이 달라도",
+    "prompt": "연속함수 $f$의 주기가 $3$이고 $\\int_0^3f(x)\\,dx=2$예요. $\\int_1^7f(x)\\,dx$는 무엇인가요?",
+    "explanation": [
+      "구간의 길이 $6$은 두 주기예요.",
+      "주기함수는 시작점과 관계없이 한 주기 적분이 같아서 $2+2=4$예요."
+    ],
+    "takeaway": "주기 적분에서는 끝점 숫자보다 구간 길이가 주기의 몇 배인지 봐요.",
+    "noteIds": [
+      "math-integrals"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "대칭적분"
+    ],
+    "choices": [
+      "$14/3$",
+      "$4$",
+      "$2$"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-132",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "대칭적분",
+    "title": "위로 올라가며 반복되는 함수",
+    "prompt": "연속함수 $f$가 $f(x+2)=f(x)+3$을 만족하고 $\\int_0^2f(x)\\,dx=5$예요. $\\int_2^4f(x)\\,dx$는 무엇인가요?",
+    "explanation": [
+      "$u=x-2$로 바꾸면 $\\int_0^2[f(u)+3]\\,du$예요.",
+      "추가된 높이 $3$이 구간 길이 $2$만큼 쌓여 $5+3\\times2=11$이에요."
+    ],
+    "takeaway": "평행이동하며 반복될 때 적분의 증가량은 높이 증가 × 구간 길이예요.",
+    "noteIds": [
+      "math-integrals"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "대칭적분"
+    ],
+    "choices": [
+      "$11$",
+      "$8$",
+      "$5$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-133",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "누적적분",
+    "title": "쌓인 넓이가 가장 클 때",
+    "prompt": "연속함수 $f$는 $0<x<2$에서 양수, $2<x<4$에서 음수예요. $F(x)=\\int_0^x f(t)\\,dt$가 $[0,4]$에서 최대가 되는 곳은?",
+    "explanation": [
+      "$F\\prime(x)=f(x)$라 $F$는 $2$까지 증가하고 그 뒤 감소해요.",
+      "적분할 함수의 가장 높은 점과 쌓인 적분값이 가장 큰 점은 달라요."
+    ],
+    "takeaway": "누적적분의 극값은 적분할 함수의 높이보다 부호가 바뀌는 곳에서 찾아요.",
+    "noteIds": [
+      "math-advanced-integral"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "누적적분"
+    ],
+    "choices": [
+      "$x=4$",
+      "$f(x)$가 가장 큰 점",
+      "$x=2$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-134",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "누적적분",
+    "title": "적분이 0이면 두 함수가 같을까요?",
+    "prompt": "$\\int_{-1}^{1}(f(x)-g(x))\\,dx=0$이에요. 이 조건만으로 $f(x)=g(x)$가 구간 전체에서 성립하나요?",
+    "explanation": [
+      "$f(x)=x$, $g(x)=0$이면 적분은 $0$이지만 두 함수는 $x=0$에서만 같아요.",
+      "같은 총적분과 모든 점에서 같은 함숫값을 구별해요."
+    ],
+    "takeaway": "적분 등식은 전체 변화량의 조건이지 각 점의 값이 같다는 조건이 아니에요.",
+    "noteIds": [
+      "math-area-motion"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "누적적분"
+    ],
+    "choices": [
+      "네. 두 함수의 교점이 반드시 무한히 많아요.",
+      "아니요. 위아래의 부호 있는 넓이가 상쇄될 수도 있어요.",
+      "네. 차의 적분이 0이면 차도 항상 0이에요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-135",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "높이와거리",
+    "title": "역함수 적분을 주변 넓이로",
+    "prompt": "$f(x)=x^2$($x\\ge0$)이고 $\\int_0^2x^2\\,dx=8/3$이에요. $\\int_0^4 f^{-1}(y)\\,dy$는 무엇인가요?",
+    "explanation": [
+      "$0\\le x\\le2$, $0\\le y\\le4$인 직사각형 넓이는 $8$이에요.",
+      "곡선 아래 넓이 $8/3$을 빼면 y축에서 곡선까지 가로로 쌓은 넓이 $16/3$이 남아요."
+    ],
+    "takeaway": "역함수 적분은 좌표와 범위를 바꾼 뒤 원함수와 나누는 주변 넓이를 볼 수 있어요.",
+    "noteIds": [
+      "math-area-motion"
+    ],
+    "refs": [],
+    "seconds": 50,
+    "tags": [
+      "높이와거리"
+    ],
+    "choices": [
+      "$16/3$",
+      "$8/3$",
+      "$32/3$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-136",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "누적적분",
+    "title": "상한과 하한이 함께 움직이면",
+    "prompt": "$F(x)=\\int_x^{x^2}(1+t^2)\\,dt$예요. $F\\prime(2)$는 무엇인가요?",
+    "explanation": [
+      "$F\\prime(x)=(1+x^4)\\cdot2x-(1+x^2)$예요.",
+      "$x=2$에서 위끝 기여는 $17\\times4=68$, 아래끝 기여는 $5$라 $63$이에요."
+    ],
+    "takeaway": "상한에서 함수값 × 상한 미분을 구하고, 하한에서도 같은 값을 구해 빼요.",
+    "noteIds": [
+      "math-integrals"
+    ],
+    "refs": [],
+    "seconds": 50,
+    "tags": [
+      "누적적분"
+    ],
+    "choices": [
+      "$12$",
+      "$68$",
+      "$63$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-137",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "상수와함수",
+    "title": "적분 밖의 x도 미분합니다",
+    "prompt": "$F(x)=x\\int_0^x t\\,dt$예요. $F\\prime(2)$는 무엇인가요?",
+    "explanation": [
+      "곱의 미분으로 $F\\prime(x)=\\int_0^x t\\,dt+x\\cdot x=3x^2/2$예요.",
+      "바깥의 $x$는 적분변수 $t$와 무관하지만, $x$로 미분할 때는 상수가 아니에요."
+    ],
+    "takeaway": "적분할 때 상수인 것과 나중에 미분할 때 상수인 것을 구별해요.",
+    "noteIds": [
+      "math-advanced-integral"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "상수와함수"
+    ],
+    "choices": [
+      "$2$",
+      "$6$",
+      "$4$"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-138",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "도함수 부호",
+    "title": "음수인 함수에도 로그미분을 쓰려면",
+    "prompt": "$x<0$에서 $f(x)=x$예요. $\\ln|f(x)|$를 미분하면 무엇인가요?",
+    "explanation": [
+      "$x<0$에서 $\\ln|x|=\\ln(-x)$예요.",
+      "연쇄법칙으로 $(-1)/(-x)=1/x$이고, $x=0$은 제외돼요."
+    ],
+    "takeaway": "함수의 부호가 음수인 구간에서는 ln|f|를 쓰되 0인 점은 따로 봐요.",
+    "noteIds": [
+      "math-advanced-derivative"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "도함수 부호"
+    ],
+    "choices": [
+      "$1/x$",
+      "$-1/x$",
+      "음수 구간이므로 절댓값을 써도 정의되지 않아요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-139",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "도함수 부호",
+    "title": "곱과 합성을 한 번씩 미분하기",
+    "prompt": "$f(x)=x e^{2x}$예요. $f\\prime(1)$은 무엇인가요?",
+    "explanation": [
+      "$f\\prime(x)=e^{2x}+2xe^{2x}$예요. 곱을 미분한 두 항과 안쪽 식 $2x$의 미분 $2$를 모두 반영해요.",
+      "$x=1$을 대입하면 $e^2+2e^2=3e^2$예요."
+    ],
+    "takeaway": "곱을 미분할 때 두 항을 모두 쓰고, 합성함수 안쪽 미분도 곱해요.",
+    "noteIds": [
+      "math-advanced-derivative"
+    ],
+    "refs": [],
+    "seconds": 30,
+    "tags": [
+      "도함수 부호"
+    ],
+    "choices": [
+      "$e^2$",
+      "$2e^2$",
+      "$3e^2$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-140",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "도함수 부호",
+    "title": "밑과 지수에 모두 x가 있으면",
+    "prompt": "$x>0$에서 $y=x^x$예요. $y\\prime$를 $y$로 나타내면 무엇인가요?",
+    "explanation": [
+      "$\\ln y=x\\ln x$로 바꾸고 미분하면 $y\\prime/y=\\ln x+1$이에요.",
+      "밑이나 지수 중 하나를 상수처럼 놓고 미분하지 않아요."
+    ],
+    "takeaway": "밑과 지수가 함께 변하면 양수 범위에서 로그를 취해 곱의 미분으로 바꿔 봐요.",
+    "noteIds": [
+      "math-advanced-derivative"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "도함수 부호"
+    ],
+    "choices": [
+      "$y\\prime=x\\cdot x^{x-1}$",
+      "$y\\prime=y(\\ln x+1)$",
+      "$y\\prime=y\\ln x$"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-141",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "역함수미분",
+    "title": "기울기가 0이면 역수를 쓸 수 없어요",
+    "prompt": "$f(x)=x^3$의 역함수를 $g$라고 해요. $f\\prime(0)=0$일 때 $g$의 $x=0$에서의 미분계수는 어떻게 되나요?",
+    "explanation": [
+      "역함수는 $\\sqrt[3]x$이고 0에서의 차분비는 $1/h^{2/3}$이에요.",
+      "이 값은 유한한 수로 수렴하지 않아요. 역수 공식은 대응점에서 $f\\prime\\ne0$인지 확인해야 해요."
+    ],
+    "takeaway": "역함수의 존재와 역함수의 미분가능은 서로 다른 조건이에요.",
+    "noteIds": [
+      "math-advanced-derivative"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "역함수미분"
+    ],
+    "choices": [
+      "유한한 미분계수가 존재하지 않아요.",
+      "$g\\prime(0)=0$이에요.",
+      "$g\\prime(0)=1$이에요."
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-142",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "최댓값",
+    "title": "같은 각의 사인·코사인 합",
+    "prompt": "실수 $x$에 대해 $3\\sin x+4\\cos x$의 최댓값은 무엇인가요?",
+    "explanation": [
+      "$3\\sin x+4\\cos x=5\\sin(x+\\alpha)$로 합성할 수 있어요.",
+      "$\\cos\\alpha=3/5$, $\\sin\\alpha=4/5$이고 x가 실수 전체라 최댓값 $5$에 도달해요."
+    ],
+    "takeaway": "사인과 코사인이 동시에 1이 될 수는 없어요. 같은 각의 일차 결합은 진폭으로 묶어요.",
+    "noteIds": [
+      "math-advanced-derivative"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "최댓값"
+    ],
+    "choices": [
+      "$7$",
+      "$4$",
+      "$5$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-143",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "접선과교점",
+    "title": "추가 교점이 가능한 방향",
+    "prompt": "$f(x)=e^x$와 직선 $y=1+2x$는 $x=0$에서 만나요. 다른 교점은 $x<0$과 $x>0$ 중 어느 쪽에 있나요?",
+    "explanation": [
+      "차이 $D=e^x-1-2x$는 $D(0)=0$, $D\\prime(0)=-1$, $D^{\\prime\\prime}>0$이에요.",
+      "$x<0$에서는 $D\\prime<0$라 $D(x)>D(0)=0$이에요. 오른쪽에서는 처음 음수였다가 무한히 커져 다시 $0$이 돼요."
+    ],
+    "takeaway": "볼록성과 만나는 점의 기울기로 방향을 고른 뒤, 끝에서의 부호로 교점의 존재까지 확인해요.",
+    "noteIds": [
+      "math-advanced-derivative"
+    ],
+    "refs": [],
+    "seconds": 60,
+    "tags": [
+      "접선과교점"
+    ],
+    "choices": [
+      "양쪽에 하나씩 있어요.",
+      "$x>0$",
+      "$x<0$"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-144",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "치환적분",
+    "title": "감소하는 치환은 구간도 뒤집혀요",
+    "prompt": "$u=1-x$로 치환하면 $\\int_0^1(1-x)^2\\,dx$는 어떤 식이 되나요?",
+    "explanation": [
+      "$dx=-du$이고 $x=0,1$은 각각 $u=1,0$이에요.",
+      "미분 인자의 마이너스와 상·하한의 역전을 함께 처리해요."
+    ],
+    "takeaway": "치환이 감소하면 dx의 부호와 새 구간의 순서를 둘 다 옮겨요.",
+    "noteIds": [
+      "math-advanced-integral"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "치환적분"
+    ],
+    "choices": [
+      "$-\\int_1^0u^2\\,du=\\int_0^1u^2\\,du$",
+      "$\\int_1^0u^2\\,du$",
+      "$-\\int_0^1u^2\\,du$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-145",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "치환선택",
+    "title": "부분적분에서 차수가 줄어드는 쪽",
+    "prompt": "$\\int_0^1 x e^x\\,dx$에서 다항식 $x$를 미분하는 부분적분을 했어요. 값은 무엇인가요?",
+    "explanation": [
+      "$[xe^x]_0^1-\\int_0^1e^x\\,dx$로 바뀌어요.",
+      "$e-(e-1)=1$이에요. 곱의 적분을 적분끼리의 곱으로 만들면 안 돼요."
+    ],
+    "takeaway": "다항식과 지수함수의 곱은 다항식의 차수를 낮추는 부분적분을 생각해요.",
+    "noteIds": [
+      "math-advanced-integral"
+    ],
+    "refs": [],
+    "seconds": 50,
+    "tags": [
+      "치환선택"
+    ],
+    "choices": [
+      "$e-1$",
+      "$e$",
+      "$1$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-146",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "치환선택",
+    "title": "음수 구간의 1/x 적분",
+    "prompt": "$\\int_{-2}^{-1}\\dfrac1x\\,dx$는 무엇인가요?",
+    "explanation": [
+      "구간이 $0$을 지나지 않으므로 원시함수 $\\ln|x|$를 쓸 수 있어요.",
+      "$\\ln1-\\ln2=-\\ln2$예요. 적분할 함수가 음수라는 점으로 부호도 확인해요."
+    ],
+    "takeaway": "1/x의 원시함수는 0을 지나지 않는 구간에서 ln|x|로 써요.",
+    "noteIds": [
+      "math-advanced-integral"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "치환선택"
+    ],
+    "choices": [
+      "음수에 로그를 씌울 수 없어서 이 적분은 존재하지 않아요.",
+      "$-\\ln2$",
+      "$\\ln2$"
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-147",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "거리와변위",
+    "title": "올라간 높이와 내려간 높이의 합",
+    "prompt": "연속적으로 미분가능한 함수가 $[0,1]$에서 증가하고 $[1,3]$에서 감소해요. $f(0)=2$, $f(1)=7$, $f(3)=4$이면 $\\int_0^3|f\\prime(x)|\\,dx$는?",
+    "explanation": [
+      "증가량 $7-2=5$와 감소량의 크기 $7-4=3$을 더해요.",
+      "$f(3)-f(0)=2$는 부호 있는 변화량이므로 이 질문의 답이 아니에요."
+    ],
+    "takeaway": "도함수 절댓값의 적분은 함수가 오르내린 양의 크기를 모두 더해요.",
+    "noteIds": [
+      "math-advanced-integral"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "거리와변위"
+    ],
+    "choices": [
+      "$8$",
+      "$2$",
+      "$12$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "bite-math-148",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "높이와거리",
+    "title": "곡선 아래와 나머지 넓이의 비",
+    "prompt": "$0\\le x\\le2$, $0\\le y\\le8$인 직사각형을 $y=x^3$이 나눠요. 곡선 아래 넓이 : 직사각형의 나머지 넓이는?",
+    "explanation": [
+      "직사각형 넓이는 $16$, 곡선 아래는 $\\int_0^2x^3dx=4$예요.",
+      "나머지는 $12$라 $4:12=1:3$이에요. 전체와의 비 $1:4$와 구별해요."
+    ],
+    "takeaway": "넓이비에서 분모가 전체인지, 곡선 밖의 나머지인지 확인해요.",
+    "noteIds": [
+      "math-area-motion"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "높이와거리"
+    ],
+    "choices": [
+      "$1:4$",
+      "$3:1$",
+      "$1:3$"
+    ],
+    "answer": 2
+  },
+  {
+    "id": "bite-math-149",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "도함수 부호",
+    "title": "도함수의 최솟값으로 증가 판단",
+    "prompt": "$f\\prime(x)=x^2-2x+2$예요. $f$의 증가·감소를 어떻게 판단하나요?",
+    "explanation": [
+      "$f\\prime(x)=(x-1)^2+1\\ge1>0$이에요.",
+      "도함수의 최솟값이 양수라 원함수의 기울기는 항상 양수예요. 원함수의 높이는 아직 몰라요."
+    ],
+    "takeaway": "도함수의 부호가 복잡하면 도함수 자체의 최소·최대를 먼저 조사해요.",
+    "noteIds": [
+      "math-advanced-derivative"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "도함수 부호"
+    ],
+    "choices": [
+      "이차항 계수가 양수이므로 원함수는 항상 양수예요.",
+      "도함수의 최솟값이 1이므로 실수 전체에서 증가해요.",
+      "도함수의 꼭짓점 x=1에서 원함수가 극소예요."
+    ],
+    "answer": 1
+  },
+  {
+    "id": "bite-math-150",
+    "subject": "math",
+    "kind": "choice",
+    "topic": "도함수 부호",
+    "title": "증가함수끼리 곱해도 증가할까요?",
+    "prompt": "$x<0$에서 $f(x)=x$, $g(x)=x$는 각각 증가해요. 곱 $f(x)g(x)$도 증가하나요?",
+    "explanation": [
+      "곱의 도함수는 $2x$라 이 구간에서 음수예요.",
+      "각 인자의 증감뿐 아니라 값의 부호도 곱의 증감에 영향을 줘요."
+    ],
+    "takeaway": "곱의 증감은 각 함수의 증감만 합쳐 판단하지 말고 곱의 도함수 부호로 확인해요.",
+    "noteIds": [
+      "math-derivative"
+    ],
+    "refs": [],
+    "seconds": 40,
+    "tags": [
+      "도함수 부호"
+    ],
+    "choices": [
+      "아니요. 곱은 x²이고 x<0에서 감소해요.",
+      "네. 증가함수의 곱은 부호와 관계없이 증가해요.",
+      "네. 두 함수가 같으면 곱은 항상 증가해요."
+    ],
+    "answer": 0
   }
 ]

@@ -3,7 +3,7 @@ from pathlib import Path
 from collections import Counter
 import json,re,sys
 root=Path(__file__).resolve().parents[1]
-subjects={'korean':50,'math':50,'english':110,'physics':40,'earth':54,'study':24}
+subjects={'korean':140,'math':150,'english':230,'physics':120,'earth':140,'study':50}
 notes={a['id']:a for s in subjects for a in json.loads((root/f'content/{s}.json').read_text(encoding='utf8'))}
 papers={p.stem:json.loads(p.read_text(encoding='utf8')) for p in (root/'content/practice').glob('*/*.json')}
 errors=[];warnings=[];ids=set();prompts=set();covered=set();counts=Counter();kinds=Counter();vocab=[]
@@ -48,7 +48,9 @@ for subject,minimum in subjects.items():
         require(not re.search(r'TODO|TBD|추후 작성|예시 예정|M03|\ufffd',text),f'{ident}: placeholder/removed source marker')
         if len(text)>850:warnings.append(f'{ident}: long card ({len(text)} characters)')
     require(len(cards)>=minimum,f'{subject}: {len(cards)} < {minimum} cards')
-require(len(vocab)>=80,f'Vocabulary: {len(vocab)} < 80')
+require(len(vocab)>=160,f'Vocabulary: {len(vocab)} < 160')
+terms=Counter(c.get('term','').casefold().strip() for c in vocab)
+require(all(count==1 for count in terms.values()),f'Duplicated vocabulary terms: {[term for term,count in terms.items() if count>1]}')
 missing=sorted(set(notes)-covered)
 require(not missing,f'Notes without short practice: {missing}')
 report={'cards':sum(counts.values()),'bySubject':dict(counts),'byKind':dict(kinds),'notesCovered':len(set(notes)&covered),'totalNotes':len(notes),'errors':errors,'warnings':warnings}
