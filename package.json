@@ -6,7 +6,7 @@
   "scripts": {
     "build": "python tools/build.py",
     "preview": "python -m http.server 4173 --directory docs --bind 127.0.0.1",
-    "check": "python tools/check.py && python tools/check_practice.py --require-complete && node tools/check_practice_render.cjs && python tools/check_bites.py && node tools/check_bite_render.cjs && node tools/check_bite_engine.mjs && node tools/check_math_lessons.cjs && node tools/check_math_geometry.mjs"
+    "check": "python tools/check.py && python tools/check_practice.py --require-complete && node tools/check_practice_render.cjs && node tools/check_practice_progress.cjs && python tools/check_bites.py && node tools/check_bite_render.cjs && node tools/check_bite_engine.mjs && node tools/check_markdown.mjs && node tools/check_math_lessons.cjs && node tools/check_math_geometry.mjs"
   },
   "dependencies": {
     "dompurify": "^3.2.7",

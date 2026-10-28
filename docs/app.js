@@ -1,15 +1,17 @@
-import {marked} from './vendor/marked.esm.js';
+import {Marked} from './vendor/marked.esm.js';
+import {createMarkdown} from './markdown.mjs';
 import {subjects, escape, icon, external as link, decayFigure} from './ui.js';
 import {createArchive} from './archive.js';
 import {insertExamples, openQuestionImage} from './examples.js';
 import {createPractice} from './practice.js';
 import {createBites} from './bites.js';
+import {searchCards} from './bite-engine.mjs';
 import {startOffline} from './offline.js';
 import {insertMathLabs} from './math-labs.js';
 
 const $ = selector => document.querySelector(selector);
 const issues = [['조건을 놓쳤을 때','조건'],['비교 기준이 헷갈릴 때','비교'],['선지 둘 중 고민될 때','선지'],['풀이가 떠오르지 않을 때','발상'],['계산이 꼬일 때','계산'],['복습할 때','복습']];
-let articles=[], exams=[], manifest={}, references={}, examples=[], archive, practice, bites;
+let articles=[], exams=[], manifest={}, references={}, examples=[], biteCards=[], archive, practice, bites;
 let currentRoute='', currentBase='', restoreScroll=false;
 const scrollPositions=new Map();
 let saved=readLocal('csat-saved',[]), recent=readLocal('csat-recent',[]);
@@ -33,6 +35,18 @@ function subjectTabs(current='') {
 function articleRow(article, withSubject=false) {
   return `<a class="article-row" href="#/read/${article.id}">${withSubject ? `<small>${subjects[article.subject].name} / ${escape(article.category)}</small>` : ''}<h3>${escape(article.title)}</h3><p>${escape(article.summary)}</p>${icon('arrow')}</a>`;
 }
+function cardPreviewUrl(card,from) {return `#/bites/card/${card.id}?from=${encodeURIComponent(from)}`;}
+function cardRow(card,from) {
+  return `<a class="article-row card-result" href="${escape(cardPreviewUrl(card,from))}"><small>${subjects[card.subject].name} · ${escape(card.topic)} · 약 ${card.seconds}초</small><h3>${escape(card.kind==='vocab' ? card.term : card.title)}</h3>${icon('arrow')}</a>`;
+}
+function cardSearchUrl(query,subject='all') {
+  return '#/bites?'+new URLSearchParams({subject:subject || 'all',q:query,kind:'all',topic:'',mode:'mix',note:'',paper:'',number:'',size:'5'});
+}
+function notePractice(article) {
+  const kind=article.subject==='english' ? 'quiz' : 'all';
+  const count=biteCards.filter(c=>c.noteIds?.includes(article.id) && (kind!=='quiz' || ['choice','recall'].includes(c.kind))).length;
+  return {count,size:Math.min(5,count),href:'#/bites?'+new URLSearchParams({subject:article.subject,kind,note:article.id,paper:'',number:'',q:'',topic:'',mode:'mix',size:'5'})};
+}
 function home() {
   const recently=recent.map(id => articles.find(a => a.id === id)).filter(Boolean).slice(0,3);
   return `<div class="page">
@@ -52,14 +66,7 @@ function subjectPage(id) {
     <div class="subject-layout"><nav class="category-index" aria-label="단원 색인"><p>단원별 목차</p>${groups.map(([category,rows],i) => `<a href="#/subject/${id}?section=category-${i}" data-section="category-${i}">${escape(category)}<span>${rows.length}</span></a>`).join('')}</nav><div>${groups.map(([category,rows],i) => `<section class="category-section" id="category-${i}"><h2>${escape(category)}</h2><div class="article-list">${rows.map(a => articleRow(a)).join('')}</div></section>`).join('')}</div></div>
   </div>`;
 }
-function markdown(source) {
-  const math=[];
-  source=source.replace(/\$\$[\s\S]*?\$\$|\$(?!\s)[^$\n]+?\$|\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\)/g,m => `MATHSLOT${math.push(m)-1}END`);
-  source=source.replace(/<([가-힣][^<>\n]{0,30})>/g,(_,s) => '&lt;'+s+'&gt;');
-  let html=marked.parse(source,{breaks:false,gfm:true});
-  html=html.replace(/MATHSLOT(\d+)END/g,(_,i) => escape(math[+i]));
-  return window.DOMPurify.sanitize(html);
-}
+const markdown=createMarkdown(Marked,html=>window.DOMPurify.sanitize(html),escape);
 function parseRef(raw,subject,articleId='') {
   const verified=references[articleId+':'+raw] || references[subject+':'+raw] || references[raw];
   if (verified) return {...verified,raw};
@@ -85,9 +92,10 @@ function readPage(id) {
   const groups=Object.entries(group(articles.filter(x => x.subject === a.subject),'category'));
   const nav=groups.map(([category,items]) => `<details ${category === a.category ? 'open' : ''}><summary>${escape(category)}</summary>${items.map(x => `<a href="#/read/${x.id}" class="${x.id === id ? 'current' : ''}" ${x.id === id ? 'aria-current="page"' : ''}>${escape(x.title)}</a>`).join('')}</details>`).join('');
   const related=articles.filter(x => x.id !== id && x.subject === a.subject).map(x => ({a:x,score:(x.category === a.category ? 4 : 0)+(x.tags || []).filter(t => a.tags?.includes(t)).length})).sort((x,y) => y.score-x.score).slice(0,3);
+  const short=notePractice(a);
   return `<div class="read-shell"><aside class="sidebar" aria-label="${s.name} 목차"><a href="#/subject/${a.subject}">${s.name} 전체 목차</a>${nav}</aside>
-    <article class="reading"><div class="crumb"><a href="#/">학습 노트</a><span>/</span><a href="#/subject/${a.subject}">${s.name}</a><span>/</span><span>${escape(a.category)}</span></div><details class="mobile-index"><summary>${s.name} 목차</summary>${nav}</details><h1>${escape(a.title)}</h1><p class="lead">${escape(a.summary)}</p><div class="article-actions"><button class="button ${saved.includes(id) ? 'saved' : ''}" data-action="save" data-id="${id}" aria-pressed="${saved.includes(id)}">${saved.includes(id) ? '저장됨' : '글 저장'}</button><button class="button" data-action="share">링크 복사</button><button class="button" data-action="print">인쇄</button><a class="button" href="#/exams?subject=${a.subject === 'study' ? '' : a.subject}">기출 PDF</a></div>
-    <div class="prose">${markdown(a.body)}</div><section class="related"><h2>함께 읽을 노트</h2>${related.map(({a:x}) => `<a href="#/read/${x.id}">${escape(x.title)}</a>`).join('')}</section></article>
+    <article class="reading"><div class="crumb"><a href="#/">학습 노트</a><span>/</span><a href="#/subject/${a.subject}">${s.name}</a><span>/</span><span>${escape(a.category)}</span></div><details class="mobile-index"><summary>${s.name} 목차</summary>${nav}</details><h1>${escape(a.title)}</h1><p class="lead">${escape(a.summary)}</p><div class="article-actions">${short.count ? `<a class="button" href="${escape(short.href)}">이 노트 ${short.size}장 연습</a>` : ''}<button class="button ${saved.includes(id) ? 'saved' : ''}" data-action="save" data-id="${id}" aria-pressed="${saved.includes(id)}">${saved.includes(id) ? '저장됨' : '글 저장'}</button><button class="button" data-action="share">링크 복사</button><button class="button" data-action="print">인쇄</button><a class="button" href="#/exams?subject=${a.subject === 'study' ? '' : a.subject}">기출 PDF</a></div>
+    <div class="prose">${markdown(a.body)}</div>${short.count ? `<section class="note-practice"><h2>읽은 판단을 짧게 써 봐요.</h2><p>이 노트에 연결된 카드 ${short.count}장 중 ${short.size}장만 꺼내 볼게요. 답을 고르고, 방금 읽은 생각을 썼는지 확인해 보세요.</p><a class="button primary" href="${escape(short.href)}">이 노트 ${short.size}장 연습 ${icon('arrow')}</a></section>` : ''}<section class="related"><h2>함께 읽을 노트</h2>${related.map(({a:x}) => `<a href="#/read/${x.id}">${escape(x.title)}</a>`).join('')}</section></article>
     <aside class="aside"><div class="toc"><h2>이 글의 순서</h2><div id="toc-links"></div></div><section class="exam-links"><h2>원문에 적힌 기출</h2><div>${refsHtml(a)}</div></section></aside>
   </div>`;
 }
@@ -100,8 +108,12 @@ function searchArticles(query) {
 }
 function searchPage(params) {
   const q=params.get('q') || '', items=searchArticles(q), subject=params.get('subject') || '';
-  const filtered=subject ? items.filter(a => a.subject === subject) : items;
-  return `<div class="page"><div class="crumb"><a href="#/">학습 노트</a><span>/</span><span>검색</span></div><h1>노트에서 찾아보기</h1><form id="page-search" class="filters search-form"><div><label for="page-search-input">검색어</label><input id="page-search-input" name="q" value="${escape(q)}" type="search" placeholder="조건, 선지, 반감기, 2406…"></div><input type="hidden" name="subject" value="${escape(subject)}"><button class="button primary" type="submit">검색</button></form><div class="chip-list"><a class="chip ${!subject ? 'selected' : ''}" href="#/search?q=${encodeURIComponent(q)}">전체 ${items.length}</a>${Object.entries(subjects).map(([key,s]) => {const n=items.filter(a => a.subject === key).length;return n ? `<a class="chip ${subject === key ? 'selected' : ''}" href="#/search?q=${encodeURIComponent(q)}&subject=${key}">${s.name} ${n}</a>` : '';}).join('')}</div><div class="result-meta"><span>${escape(q || '검색어를 입력하세요')}</span><span>${filtered.length}개 글</span></div>${filtered.length ? `<div class="article-list">${filtered.map(a => articleRow(a,true)).join('')}</div>` : `<p class="empty">${q ? '검색 결과가 없습니다. 더 짧은 단어를 입력하거나 과목별 목차를 살펴보세요.' : '막힌 단원이나 궁금한 내용을 검색해 보세요.'}</p>`}</div>`;
+  const foundCards=q.trim() ? searchCards(biteCards,q) : [];
+  const searchOrigin='#/search?'+new URLSearchParams({q,subject});
+  const filtered=subject ? items.filter(a => a.subject === subject) : items, cards=subject ? foundCards.filter(c=>c.subject===subject) : foundCards;
+  return `<div class="page"><div class="crumb"><a href="#/">학습 노트</a><span>/</span><span>검색</span></div><h1>노트와 카드에서 찾아보기</h1><form id="page-search" class="filters search-form"><div><label for="page-search-input">검색어</label><input id="page-search-input" name="q" value="${escape(q)}" type="search" placeholder="반감기, 변곡점, objective, 2406…"></div><input type="hidden" name="subject" value="${escape(subject)}"><button class="button primary" type="submit">검색</button></form><div class="chip-list"><a class="chip ${!subject ? 'selected' : ''}" href="#/search?q=${encodeURIComponent(q)}">전체 ${items.length+foundCards.length}</a>${Object.entries(subjects).map(([key,s]) => {const n=items.filter(a => a.subject === key).length+foundCards.filter(c=>c.subject===key).length;return n ? `<a class="chip ${subject === key ? 'selected' : ''}" href="#/search?q=${encodeURIComponent(q)}&subject=${key}">${s.name} ${n}</a>` : '';}).join('')}</div><div class="result-meta"><span>${escape(q || '검색어를 입력하세요')}</span><span>노트 ${filtered.length}개 · 카드 ${cards.length}장</span></div>
+    ${cards.length ? `<section class="search-section"><div class="section-top"><h2>잠깐 공부 ${cards.length}장</h2><a href="${escape(cardSearchUrl(q,subject))}">카드 목록에서 고르기 ${icon('arrow')}</a></div><div class="article-list">${cards.slice(0,12).map(c=>cardRow(c,searchOrigin)).join('')}</div>${cards.length>12 ? `<a class="button search-more" href="${escape(cardSearchUrl(q,subject))}">카드 ${cards.length}장 모두 보기</a>` : ''}</section>` : ''}
+    ${filtered.length ? `<section class="search-section"><h2>학습 노트 ${filtered.length}개</h2><div class="article-list">${filtered.map(a => articleRow(a,true)).join('')}</div></section>` : ''}${!filtered.length && !cards.length ? `<p class="empty">${q ? '검색 결과가 없어요. 더 짧은 단어를 입력하거나 과목별 목차를 살펴보세요.' : '막힌 단원이나 다시 볼 단어를 검색해 보세요.'}</p>` : ''}</div>`;
 }
 function savedPage() {
   const items=saved.map(id => articles.find(a => a.id === id)).filter(Boolean);
@@ -135,6 +147,8 @@ function route() {
   const readArticle=parts[0] === 'read' ? articles.find(a => a.id === parts[1]) : null;
   const views={subject:() => subjectPage(parts[1]),read:() => readPage(parts[1]),search:() => searchPage(params),saved:savedPage,exams:() => archive.archivePage(params),paper:() => archive.paperPage(parts[1]),practice:() => practice.render(parts,params),bites:() => bites.render(parts,params),about};
   $('#main').innerHTML=!parts.length ? home() : views[parts[0]] ? views[parts[0]]() : notFound();
+  const continuation=bites.continuation();
+  if (['read','practice'].includes(parts[0]) && continuation) $('#main').insertAdjacentHTML('afterbegin',`<nav class="study-return" aria-label="잠깐 공부로 돌아가기"><a href="${escape(continuation.href)}">${icon('arrow')} ${escape(continuation.label)}</a></nav>`);
   if (readArticle) {insertMathLabs(readArticle);insertExamples(readArticle,examples,markdown);}
   document.querySelectorAll('[data-nav]').forEach(a => {
     const active=a.dataset.nav === (['exams','paper'].includes(parts[0]) ? 'exams' : ['saved','practice','bites'].includes(parts[0]) ? parts[0] : 'home');
@@ -145,7 +159,9 @@ function route() {
   const headings=[...document.querySelectorAll('.prose > h2,.prose > h3')];
   headings.forEach((h,i) => h.id='section-'+i);
   if ($('#toc-links')) {
-    $('#toc-links').innerHTML=headings.map((h,i) => `<a href="#${escape(path)}?section=section-${i}" data-section="section-${i}" class="${h.tagName === 'H3' ? 'subheading' : ''}">${escape(h.textContent)}</a>`).join('');
+    const contents=headings.map((h,i) => `<a href="#${escape(path)}?section=section-${i}" data-section="section-${i}" class="${h.tagName === 'H3' ? 'subheading' : ''}">${escape(h.textContent)}</a>`).join('');
+    $('#toc-links').innerHTML=contents;
+    if (headings.length>1) $('.article-actions').insertAdjacentHTML('afterend',`<details class="mobile-toc"><summary>이 글에서 필요한 부분 찾기</summary><nav aria-label="현재 글의 목차">${contents}</nav></details>`);
     if (!headings.length) $('.toc').hidden=true;
   }
   window.renderMathInElement?.($('#main'),{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false,strict:'ignore',trust:false});
@@ -158,16 +174,17 @@ function route() {
   $('#practice-filter')?.addEventListener('change',event => {if (event.target.tagName === 'SELECT') formRoute(event.currentTarget,'/practice');});
   currentBase=base;currentRoute=raw;
   $('#main').focus({preventScroll:true});
+  const practiceScroll=parts[0]==='practice' && parts[1] && restoreScroll && scrollPositions.has(raw) ? scrollPositions.get(raw) : null;
   if (params.get('section')) requestAnimationFrame(() => goSection(params.get('section')));
-  else window.scrollTo(0,restoreScroll ? scrollPositions.get(raw) || 0 : 0);
+  else window.scrollTo(0,practiceScroll!==null ? 0 : restoreScroll ? scrollPositions.get(raw) || 0 : 0);
   restoreScroll=false;
-  if (parts[0] === 'practice') practice.mount(parts);
+  if (parts[0] === 'practice') practice.mount(parts,{restoreScrollY:practiceScroll});
   if (parts[0] === 'bites') bites.mount();
 }
 function openSearch() {if (!$('#search-dialog').open) $('#search-dialog').showModal();$('#global-search').focus();searchDialog();}
 function searchDialog() {
-  const query=$('#global-search').value, found=searchArticles(query);
-  $('#search-results').innerHTML=query ? `${found.slice(0,9).map(a => `<a href="#/read/${a.id}" data-close-search><small>${subjects[a.subject].name} / ${escape(a.category)}</small><strong>${escape(a.title)}</strong><p>${escape(a.summary)}</p></a>`).join('') || '<p class="empty">찾은 글이 없습니다. 더 짧은 단어로 검색해 보세요.</p>'}${found.length>9 ? `<a href="#/search?q=${encodeURIComponent(query)}" data-close-search><strong>${found.length}개 결과 모두 보기</strong></a>` : ''}` : '<p class="tiny-note">예: 고지자기, 선지, 부호, 경우, 인강, 2406</p>';
+  const query=$('#global-search').value, found=searchArticles(query), cards=query.trim() ? searchCards(biteCards,query) : [];
+  $('#search-results').innerHTML=query.trim() ? `${cards.length ? `<h3 class="search-group-title">잠깐 공부</h3>${cards.slice(0,4).map(c=>`<a href="${escape(cardPreviewUrl(c,'#/search?q='+encodeURIComponent(query)))}" data-close-search><small>${subjects[c.subject].name} · ${escape(c.topic)} · 약 ${c.seconds}초</small><strong>${escape(c.kind==='vocab' ? c.term : c.title)}</strong></a>`).join('')}` : ''}${found.length ? `<h3 class="search-group-title">학습 노트</h3>${found.slice(0,5).map(a => `<a href="#/read/${a.id}" data-close-search><small>${subjects[a.subject].name} / ${escape(a.category)}</small><strong>${escape(a.title)}</strong><p>${escape(a.summary)}</p></a>`).join('')}` : ''}${found.length || cards.length ? `<a href="#/search?q=${encodeURIComponent(query)}" data-close-search><strong>노트 ${found.length}개 · 카드 ${cards.length}장 모두 보기</strong></a>` : '<p class="empty">찾은 내용이 없어요. 더 짧은 단어로 검색해 보세요.</p>'}` : '<p class="tiny-note">예: 고지자기, 변곡점, 반감기, objective, 2406</p>';
 }
 function updateThemeButton() {
   const dark=document.documentElement.dataset.theme === 'dark';
@@ -179,7 +196,7 @@ document.addEventListener('click',async event => {
   if (event.target.closest('.skip')) {event.preventDefault();$('#main').focus();window.scrollTo(0,0);return;}
   const section=event.target.closest('[data-section]');
   if (section && !event.ctrlKey && !event.metaKey) {
-    event.preventDefault();scrollPositions.set(currentRoute,window.scrollY);history.pushState(null,'',section.href);currentRoute=location.hash.slice(1);goSection(section.dataset.section);return;
+    event.preventDefault();scrollPositions.set(currentRoute,window.scrollY);section.closest('.mobile-toc')?.removeAttribute('open');history.pushState(null,'',section.href);currentRoute=location.hash.slice(1);goSection(section.dataset.section);return;
   }
   const image=event.target.closest('[data-image]');
   if (image) {openQuestionImage(image.dataset.image,image.dataset.caption,image);return;}
@@ -209,8 +226,9 @@ if (!navigator.platform.includes('Mac')) $('kbd').textContent='Ctrl K';
 try {
   const responses=await Promise.all(['articles','exams','manifest','references','exam-pdfs','examples','practice-index','bites'].map(async name => {const response=await fetch(`./data/${name}.json`);if (!response.ok) throw Error(`${name}: ${response.status}`);return response.json();}));
   let supplement, practiceIndex, biteData;[articles,{entries:exams},manifest,references,supplement,examples,practiceIndex,biteData]=responses;
+  biteCards=biteData.cards;
   archive=createArchive(exams,supplement,manifest);
-  practice=createPractice(practiceIndex,articles,markdown);
+  practice=createPractice(practiceIndex,articles,markdown,biteCards);
   bites=createBites(biteData,articles,markdown);
   window.addEventListener('hashchange',() => {if ((location.hash.slice(1) || '/') !== currentRoute) route();});
   route();
