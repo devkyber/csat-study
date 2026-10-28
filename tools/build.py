@@ -29,8 +29,13 @@ def main():
     for name in ['katex.min.css','katex.min.js']: shutil.copy2(deps/'katex/dist'/name,vendor/name)
     shutil.copy2(deps/'katex/dist/contrib/auto-render.min.js',vendor/'auto-render.min.js')
     shutil.copytree(deps/'katex/dist/fonts',vendor/'fonts',dirs_exist_ok=True)
-    for package,license_name in [('katex','LICENSE'),('marked','LICENSE.md'),('dompurify','LICENSE')]:
+    for package,license_name in [('katex','LICENSE'),('marked','LICENSE.md'),('dompurify','LICENSE'),('pdfjs-dist','LICENSE')]:
         shutil.copy2(deps/package/license_name,vendor/f'{package}-LICENSE.txt')
+    pdfjs=vendor/'pdfjs';pdfjs.mkdir(exist_ok=True)
+    for name in ['pdf.mjs','pdf.worker.mjs']:
+        shutil.copy2(deps/'pdfjs-dist/build'/name,pdfjs/name)
+    for name in ['cmaps','standard_fonts','wasm','iccs']:
+        shutil.copytree(deps/'pdfjs-dist'/name,pdfjs/name,dirs_exist_ok=True)
     data_dir=OUT/'data';data_dir.mkdir(exist_ok=True)
     (data_dir/'articles.json').write_text(json.dumps(articles,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
     archive=json.loads((ROOT/'content/exams.json').read_text(encoding='utf-8'))
@@ -62,6 +67,22 @@ def main():
             if not key: raise ValueError('Reference needs articleId or subject')
             refs[key+':'+item['raw']]=item
     (data_dir/'references.json').write_text(json.dumps(refs,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+    practice=[]
+    region_path=ROOT/'content/practice-regions.json'
+    regions=json.loads(region_path.read_text(encoding='utf-8')) if region_path.exists() else {}
+    for path in sorted((ROOT/'content/practice').glob('*/*.json')):
+        paper=json.loads(path.read_text(encoding='utf-8'))
+        for question in paper['questions']:
+            region=regions.get(f"{paper['id']}:{question['number']}")
+            if region:question['regions' if isinstance(region[0],list) else 'region']=region
+        relative=path.relative_to(ROOT/'content/practice')
+        target=data_dir/'practice'/relative;target.parent.mkdir(exist_ok=True,parents=True)
+        target.write_text(json.dumps(paper,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+        practice.append({key:paper[key] for key in ['id','subject','year','session','variant']})
+        practice[-1].update(file=relative.as_posix(),questionCount=len(paper['questions']))
+    practice.sort(key=lambda p:(-p['year'],{'수능':0,'9월':1,'6월':2}[p['session']],SUBJECTS.index(p['subject'])))
+    practice_index={'papers':practice,'questionCount':sum(p['questionCount'] for p in practice),'targetQuestionCount':2400,'years':[2022,2023,2024,2025,2026]}
+    (data_dir/'practice-index.json').write_text(json.dumps(practice_index,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
     manifest={'sourceFiles':113,'nonemptySourceFiles':109,'articleCount':len(articles),'subjectCounts':{s:sum(a['subject']==s for a in articles) for s in SUBJECTS},'examCheckedAt':archive['checkedAt'],'examPosts':len(archive['entries']),'curriculum':'2027학년도까지','excludedSubject':'언어와 매체','verifiedQuestionLinks':sum(r.get('status')=='question' for r in refs.values()),'verifiedExamLinks':len(refs)}
     manifest['inlineExamples']=len(examples)
     subject_by_id={a['id']:a['subject'] for a in articles}
@@ -69,6 +90,8 @@ def main():
     manifest['directPdfEntries']=len(pdfs['entries'])
     manifest['officialPdfEntries']=official_pdf_count
     manifest['legacyPdfEntries']=len(legacy['entries'])
+    manifest['practicePapers']=len(practice)
+    manifest['practiceQuestions']=practice_index['questionCount']
     (data_dir/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
     (OUT/'.nojekyll').write_text('',encoding='utf-8')
     print(json.dumps(manifest,ensure_ascii=False,indent=2))
